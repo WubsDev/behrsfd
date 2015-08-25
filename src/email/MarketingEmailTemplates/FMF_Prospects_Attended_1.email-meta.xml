@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Email template for Prospects attended for FMF</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FMF_Prospects Attended_1</name>
+    <style>none</style>
+    <subject>Great to see you {!Lead.FirstName}</subject>
+    <textOnly>Hi {!Lead.FirstName},
+
+Thank you for visiting BehrPro at the 2013 Federación Mexicana de Fútbol Asociación event in Phoenix. Please call your local Home Depot Store (www.behrpro.com/storelocator) so we can tell you more about BEHR® and KILZ® products or professional services. 
+
+Discover how Behr can help you build your business
+
+Learn about BEHR® and KILZ® products 
+Free delivery to your job site* 
+Save money with volume pricing 
+Learn about Behr&apos;s factory tinting 
+Learn about Behr&apos;s nationwide reach 
+
+*Where available 
+
+Go to www.behrpro.com/bpservices to learn more about our service offering. 
+
+Sincerely, 
+{!Zip_Code_Assignment__c.Behr_InStore_Rep__c}
+Behr InStore Rep
+{!Zip_Code_Assignment__c.Behr_InStore_Rep_Email__c}
+
+You have opted-in to receive email newsletters from BehrPro. If you no longer wish to receive promotional notifications and news, please send us an email at unsubscribe@pronews.behrpro.com
+
+If this email has been forwarded to you and you wish to subscribe, please send us an email at subscribe@pronews.behrpro.com
+
+To read our Privacy Policy go to www.behrpro.com/privacypolicy
+
+We recently updated our Privacy Policy. If you wish to change your preferences, please follow the directions in the Privacy Policy.
+
+Trademarks are the property of their respective owners.
+
+©2013 Behr Process Corporation. All Rights Reserved.
+
+Behr Process Corporation
+3400 W. Segerstrom Avenue
+Santa Ana, CA 92704</textOnly>
+    <type>custom</type>
+</EmailTemplate>

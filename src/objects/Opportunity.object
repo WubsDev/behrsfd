@@ -1,0 +1,3892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Opportunity Sales Process</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>Educate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Explore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Position%2FPrepare</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recommend</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Won%2FSatisfy</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Purchase_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Purchase Amount</label>
+        <summarizedField>Actual_Sales__c.Purchase_Amount__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>All_Time_Direct_Sales__c</fullName>
+        <description>Direct sales for all times</description>
+        <externalId>false</externalId>
+        <label>All Time Direct Sales</label>
+        <summarizedField>Actual_Sales__c.Purchase_Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Actual_Sales__c.Sale_Type__c</field>
+            <operation>equals</operation>
+            <value>Direct</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Approval_Status__c</fullName>
+        <description>Approval status for direct zone pricing on opportunity</description>
+        <externalId>false</externalId>
+        <label>Approval Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending RPSM Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending RVP Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending SVP Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Avoid_Stage_Backtrack_1__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Avoid Stage Backtrack 1</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Behr_Closed_won_date_US__c</fullName>
+        <externalId>false</externalId>
+        <label>Closed Won Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Behr_Rep_Contact_Number__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Phone number customer can reach you</inlineHelpText>
+        <label>Behr Rep Contact Number</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Behr_Rep_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Behr Rep Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Behr_Rep_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Behr Rep Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CC_LYTD__c</fullName>
+        <externalId>false</externalId>
+        <label>CC LYTD</label>
+        <summarizedField>Actual_Sales__c.LYTD_Currency__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CC_LY__c</fullName>
+        <externalId>false</externalId>
+        <label>CC LY</label>
+        <summarizedField>Actual_Sales__c.LY_Currency__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CC_Rolling_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>CC Rolling Year</label>
+        <summarizedField>Actual_Sales__c.Rolling_year_Currency__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CC_TYTD__c</fullName>
+        <externalId>false</externalId>
+        <label>CC TYTD</label>
+        <summarizedField>Actual_Sales__c.TYTD_Currency__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CC_TY__c</fullName>
+        <externalId>false</externalId>
+        <label>CC TY</label>
+        <summarizedField>Actual_Sales__c.TY_Currency__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account.Tier_Level__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <description>Ship To City details.</description>
+        <externalId>false</externalId>
+        <label>City</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Competitors__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitors</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Benjamin Moore</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Comex</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dunn-Edwards</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Glidden (PRO)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Glidden (THD)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ICI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kelly Moore</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kilz</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PPG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sherwin Williams</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vista</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Count_Opportunity_Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Count Opportunity Product</label>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Country_Picklist__c</fullName>
+        <description>This field used in order to make the country and state picklist values consistent between Opportunity and Quote.</description>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Canada</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mexico</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>United States</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Country__c</fullName>
+        <description>Ship To Country details.</description>
+        <externalId>false</externalId>
+        <label>Country</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DB_Competitor__c</fullName>
+        <description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and can delete this field.</description>
+        <externalId>false</externalId>
+        <label>DB Competitor</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Competitor A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Competitor B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Competitor C</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>DTP_LYTD__c</fullName>
+        <externalId>false</externalId>
+        <label>DTP LYTD</label>
+        <summarizedField>Actual_Sales__c.LYTD_Currency_DTP__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>DTP_LY__c</fullName>
+        <externalId>false</externalId>
+        <label>DTP LY</label>
+        <summarizedField>Actual_Sales__c.LY_Currency_DTP__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>DTP_Rolling_Year__c</fullName>
+        <externalId>false</externalId>
+        <label>DTP Rolling Year</label>
+        <summarizedField>Actual_Sales__c.Rolling_year_Currency_DTP__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>DTP_TYTD__c</fullName>
+        <externalId>false</externalId>
+        <label>DTP TYTD</label>
+        <summarizedField>Actual_Sales__c.TYTD_Currency_DTP__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>DTP_TY__c</fullName>
+        <externalId>false</externalId>
+        <label>DTP TY</label>
+        <summarizedField>Actual_Sales__c.TY_Currency_DTP__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Description__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Data_Quality_Score__c =100,&quot;All Opportunity Details Captured&quot;, &quot;Missing: &quot;&amp;IF( ISPICKVAL( Type ,&quot;&quot;),&quot;Type, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF(LEN( TEXT(MONTH(CloseDate))) = 0, &quot;Close Date, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( Amount &lt;= 0, &quot;Amount, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( ISPICKVAL( LeadSource,&quot;&quot;), &quot;Lead Source, &quot;,&quot;&quot;)&amp;&quot;&quot;&amp;IF( LEN(NextStep)=0, &quot;Next Steps&quot;,&quot;&quot;))</formula>
+        <label>Data Quality Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Quality_Score__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISPICKVAL(Type,&quot;&quot;), 0,20) + IF( LEN( TEXT(MONTH(CloseDate))) = 0, 0,20) + IF( Amount &lt;= 0, 0,20) + IF( ISPICKVAL( LeadSource,&quot;&quot;), 0,20) + IF( LEN(NextStep)=0, 0,20)</formula>
+        <label>Data Quality Score</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Direct_LYTD__c</fullName>
+        <description>Last Year To Date direct sales</description>
+        <externalId>false</externalId>
+        <label>Direct LYTD</label>
+        <summarizedField>Actual_Sales__c.LYTD_Currency_DTP__c</summarizedField>
+        <summaryFilterItems>
+            <field>Actual_Sales__c.Sale_Type__c</field>
+            <operation>equals</operation>
+            <value>Direct</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Direct_TYTD__c</fullName>
+        <description>TY to date direct sales rollup</description>
+        <externalId>false</externalId>
+        <label>Direct TYTD</label>
+        <summarizedField>Actual_Sales__c.TYTD_Currency_DTP__c</summarizedField>
+        <summaryFilterItems>
+            <field>Actual_Sales__c.Sale_Type__c</field>
+            <operation>equals</operation>
+            <value>Direct</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Exterior_Paint__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Exterior Paint</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>First_Sale_Date__c</fullName>
+        <description>Rollup from actual sales for first sale date</description>
+        <externalId>false</externalId>
+        <label>First Sale Date</label>
+        <summarizedField>Actual_Sales__c.Order_date__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>min</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Floor_Coatings__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Floor Coatings</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Interior_Paint__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Interior Paint</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Sale_Date__c</fullName>
+        <description>Last sale date</description>
+        <externalId>false</externalId>
+        <label>Last Sale Date</label>
+        <summarizedField>Actual_Sales__c.Order_date__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Behr In-Store Rep</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Behr PPSSS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BehrPRO Rep</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Home Depot</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mktg-driven National Event/Trade Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>NAM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RAM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Regional Event/Trade Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Managed_Amount__c</fullName>
+        <description>Managed amount rollup</description>
+        <externalId>false</externalId>
+        <label>Managed Amount</label>
+        <summarizedField>Actual_Sales__c.Managed_Amount__c</summarizedField>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Id__c</fullName>
+        <description>Opportunity ID used to associate the quote in SAP</description>
+        <displayFormat>O-{000000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Opportunity Id</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Lost_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Lost Reason</label>
+        <picklist>
+            <picklistValues>
+                <fullName>THD Value Prop does not fit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>THD Service</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>THD does not carry right product</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Price</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Product Performance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Bid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Potential</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>P2P_2015_Qualified__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>A check box for sales administration to identify the opportunity as qualified for the P2P incentive program.</description>
+        <externalId>false</externalId>
+        <label>P2P 2015 Qualified</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PEN__PriceBook2Id__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>Pricebook2Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PriceBook2Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(not(isblank( Account.Parent.Name)) , Account.Parent.Name, Account.Name )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Parent Account Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Price_per_Gallon__c</fullName>
+        <externalId>false</externalId>
+        <label>Price Per Gallon</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pricebook2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Primer__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Primer</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Pro_Rewards_Account_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Pro_Rewards_Account_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pro Rewards Account Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Description</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Project_Timeline__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Timeline</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAP_Account__c</fullName>
+        <externalId>false</externalId>
+        <label>SAP Ship to Account #</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SAP_Shop_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.SAP_Account_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SAP Shop Account #</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>StageName</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Qualifying</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>10</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pricing / Quoting</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>30</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Price Quote – Bid Room</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>40</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Won</fullName>
+                <closed>true</closed>
+                <default>false</default>
+                <forecastCategory>Closed</forecastCategory>
+                <probability>100</probability>
+                <won>true</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Lost</fullName>
+                <closed>true</closed>
+                <default>false</default>
+                <forecastCategory>Omitted</forecastCategory>
+                <probability>0</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Open</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>10</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Position/Prepare</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>25</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Explore</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>50</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Educate/Recommend</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>75</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Educate</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>60</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recommend</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>75</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Won/Satisfy</fullName>
+                <closed>true</closed>
+                <default>false</default>
+                <forecastCategory>Closed</forecastCategory>
+                <probability>100</probability>
+                <won>true</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lost</fullName>
+                <closed>true</closed>
+                <default>false</default>
+                <forecastCategory>Omitted</forecastCategory>
+                <probability>0</probability>
+                <won>false</won>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Stains__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Stains</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date_of_Project__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date of Project</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>State_Picklist__c</fullName>
+        <externalId>false</externalId>
+        <label>State</label>
+        <picklist>
+            <controllingField>Country_Picklist__c</controllingField>
+            <picklistValues>
+                <fullName>Aguascalientes</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alabama</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alaska</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Alberta</fullName>
+                <controllingFieldValues>Canada</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>American Samoa</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Arizona</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Arkansas</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Armed Forces Americas</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Armed Forces Europe</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Armed Forces Pacific</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Baja California</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Baja California Sur</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>British Columbia</fullName>
+                <controllingFieldValues>Canada</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>California</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Campeche</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chiapas</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chihuahua</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Coahuila</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Colima</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Colorado</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Connecticut</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Delaware</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>District of Columbia</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Durango</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Federal District</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Federated Micronesia</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Florida</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Georgia</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Guam</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Guanajuato</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Guerrero</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hawaii</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hidalgo</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Idaho</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Illinois</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Indiana</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Iowa</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Jalisco</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kansas</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kentucky</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Louisiana</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Maine</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Manitoba</fullName>
+                <controllingFieldValues>Canada</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Marshall Islands</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Maryland</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Massachusetts</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mexico State</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Michigan</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Michoacán</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Minnesota</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mississippi</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Missouri</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Montana</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Morelos</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nayarit</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nebraska</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nevada</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Brunswick</fullName>
+                <controllingFieldValues>Canada</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Newfoundland and Labrador</fullName>
+                <controllingFieldValues>Canada</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Hampshire</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Jersey</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Mexico</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New York</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>North Carolina</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>North Dakota</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Northern Mariana Islands</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Northwest Territories</fullName>
+                <controllingFieldValues>Canada</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nova Scotia</fullName>
+                <controllingFieldValues>Canada</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nuevo León</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Nunavut</fullName>
+                <controllingFieldValues>Canada</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oaxaca</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ohio</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oklahoma</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ontario</fullName>
+                <controllingFieldValues>Canada</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Oregon</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Palau</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pennsylvania</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prince Edward Island</fullName>
+                <controllingFieldValues>Canada</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Puebla</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Puerto Rico</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quebec</fullName>
+                <controllingFieldValues>Canada</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Querétaro</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quintana Roo</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rhode Island</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Luis Potosí</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Saskatchewan</fullName>
+                <controllingFieldValues>Canada</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sinaloa</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sonora</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>South Carolina</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>South Dakota</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tabasco</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tamaulipas</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tennessee</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Texas</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tlaxcala</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>United States Minor Outlying Islands</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>US Virgin Islands</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utah</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Veracruz</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vermont</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Virginia</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Washington</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>West Virginia</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wisconsin</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wyoming</fullName>
+                <controllingFieldValues>United States</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yucatán</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yukon Territories</fullName>
+                <controllingFieldValues>Canada</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Zacatecas</fullName>
+                <controllingFieldValues>Mexico</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>State__c</fullName>
+        <description>Ship To State details</description>
+        <externalId>false</externalId>
+        <label>State</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Street__c</fullName>
+        <description>Ship To State details</description>
+        <externalId>false</externalId>
+        <label>Street</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Lead_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub-Lead Source</label>
+        <picklist>
+            <controllingField>LeadSource</controllingField>
+            <picklistValues>
+                <fullName>Contractor Trade Show</fullName>
+                <controllingFieldValues>Behr In-Store Rep</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>THD Pro Blitz</fullName>
+                <controllingFieldValues>Behr In-Store Rep</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cold Call</fullName>
+                <controllingFieldValues>BehrPRO Rep</controllingFieldValues>
+                <controllingFieldValues>NAM</controllingFieldValues>
+                <controllingFieldValues>RAM</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Previous Customer</fullName>
+                <controllingFieldValues>Behr PPSSS</controllingFieldValues>
+                <controllingFieldValues>BehrPRO Rep</controllingFieldValues>
+                <controllingFieldValues>NAM</controllingFieldValues>
+                <controllingFieldValues>RAM</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Referral</fullName>
+                <controllingFieldValues>BehrPRO Rep</controllingFieldValues>
+                <controllingFieldValues>NAM</controllingFieldValues>
+                <controllingFieldValues>RAM</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pro Rep Referral</fullName>
+                <controllingFieldValues>BehrPRO Rep</controllingFieldValues>
+                <controllingFieldValues>NAM</controllingFieldValues>
+                <controllingFieldValues>RAM</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DTP Driver</fullName>
+                <controllingFieldValues>BehrPRO Rep</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Advertisement</fullName>
+                <controllingFieldValues>Marketing</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MMT</fullName>
+                <controllingFieldValues>Marketing</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Purchased List</fullName>
+                <controllingFieldValues>Marketing</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trade Magazine Publication</fullName>
+                <controllingFieldValues>Marketing</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web to Lead</fullName>
+                <controllingFieldValues>Behr In-Store Rep</controllingFieldValues>
+                <controllingFieldValues>Marketing</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BehrPro Website</fullName>
+                <controllingFieldValues>Marketing</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PAR</fullName>
+                <controllingFieldValues>Home Depot</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PASA</fullName>
+                <controllingFieldValues>Home Depot</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PPSS</fullName>
+                <controllingFieldValues>Home Depot</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Associate</fullName>
+                <controllingFieldValues>Home Depot</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>See Trade Association/Affiliation</fullName>
+                <controllingFieldValues>Mktg-driven National Event/Trade Show</controllingFieldValues>
+                <controllingFieldValues>Regional Event/Trade Show</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Store Walk In</fullName>
+                <controllingFieldValues>Behr PPSSS</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SyncedQuoteId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>THD_Store__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <description>Home Depot Store involved in this opportunity</description>
+        <externalId>false</externalId>
+        <label>THD Store</label>
+        <referenceTo>Home_Depot_Store__c</referenceTo>
+        <relationshipLabel>Opportunities</relationshipLabel>
+        <relationshipName>Opportunity</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Total_Actuals_LYTD__c</fullName>
+        <externalId>false</externalId>
+        <formula>CC_LYTD__c +  DTP_LYTD__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Actuals LYTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Actuals_LY__c</fullName>
+        <externalId>false</externalId>
+        <formula>CC_LY__c +  DTP_LY__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Actuals LY</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Actuals_Rolling_Year__c</fullName>
+        <externalId>false</externalId>
+        <formula>CC_Rolling_Year__c +  DTP_Rolling_Year__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Actuals Rolling Year</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Actuals_TYTD__c</fullName>
+        <externalId>false</externalId>
+        <formula>CC_TYTD__c +  DTP_TYTD__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Actuals TYTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Actuals_TY__c</fullName>
+        <externalId>false</externalId>
+        <formula>CC_TY__c +  DTP_TY__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Actuals TY</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_DTP_Sales__c</fullName>
+        <externalId>false</externalId>
+        <label>Total DTP Sales</label>
+        <summarizedField>Actual_Sales__c.Purchase_Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Actual_Sales__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>DTP Orders</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_POS_Sales__c</fullName>
+        <externalId>false</externalId>
+        <label>Total POS Sales</label>
+        <summarizedField>Actual_Sales__c.Purchase_Amount__c</summarizedField>
+        <summaryFilterItems>
+            <field>Actual_Sales__c.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>POS Sales, POS Sales</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Actual_Sales__c.Opportunity__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>THD</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <externalId>false</externalId>
+        <formula>If (  ISNULL(Start_Date_of_Project__c), Year( CloseDate ), Year(Start_Date_of_Project__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Year</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zipcode__c</fullName>
+        <description>Ship To Zipcode details</description>
+        <externalId>false</externalId>
+        <label>Zipcode</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zone_item_max__c</fullName>
+        <description>Zone as a rollup from the item max</description>
+        <externalId>false</externalId>
+        <label>Product Zone Max</label>
+        <summarizedField>OpportunityLineItem.Zone__c</summarizedField>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>max</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>case_safe_id__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>case safe id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>of_quotes__c</fullName>
+        <description># of quotes</description>
+        <externalId>false</externalId>
+        <label># of quotes</label>
+        <summaryForeignKey>Quote.OpportunityId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>zone_account__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Zone__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Zone</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>ClosingNextMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_MONTH</value>
+        </filters>
+        <label>Closing Next Month</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingThisMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Closing This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>MyMonthView</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CREATED_DATE</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Month View</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Opportunities</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>OPPORTUNITY.FISCAL_YEAR</columns>
+        <columns>Total_Actuals_TY__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Opportunities</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Opportunities10K</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <operation>greaterThan</operation>
+            <value>10000</value>
+        </filters>
+        <label>Opportunities &gt; $10K</label>
+    </listViews>
+    <listViews>
+        <fullName>Opportunities50K</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.AMOUNT</field>
+            <operation>greaterThan</operation>
+            <value>50000</value>
+        </filters>
+        <label>Opportunities &gt; $50K</label>
+    </listViews>
+    <listViews>
+        <fullName>OpportunitiesLost</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Closed Lost</value>
+        </filters>
+        <label>Opportunities Lost</label>
+    </listViews>
+    <listViews>
+        <fullName>OpportunitiesWon</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.STAGE_NAME</field>
+            <operation>equals</operation>
+            <value>Closed Won</value>
+        </filters>
+        <label>Opportunities Won</label>
+    </listViews>
+    <listViews>
+        <fullName>Pending_Approval</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Approval_Status__c</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Approval_Status__c</field>
+            <operation>contains</operation>
+            <value>pending</value>
+        </filters>
+        <label>Pending Approval</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>SystemAdministrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Randy_Rivers</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.FIRST_NAME</field>
+            <operation>equals</operation>
+            <value>Randy</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>greaterThan</operation>
+            <value>1/1/2015</value>
+        </filters>
+        <label>Randy Rivers</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>Sales_Admin</group>
+        </sharedTo>
+    </listViews>
+    <namedFilters>
+        <fullName>nf_01I7000000084mXEAQ_00N70000003DYLtEAO</fullName>
+        <active>true</active>
+        <field>Actual_Sales__c.Opportunity__c</field>
+        <filterItems>
+            <field>Opportunity.AccountId</field>
+            <operation>equals</operation>
+            <valueField>$Source.Account_Name__c</valueField>
+        </filterItems>
+        <isOptional>true</isOptional>
+        <name>nf_01I7000000084mXEAQ_00N70000003DYLtEAO</name>
+        <sourceObject>Actual_Sales__c</sourceObject>
+    </namedFilters>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Opportunity</fullName>
+        <active>true</active>
+        <businessProcess>Opportunity Sales Process</businessProcess>
+        <label>Opportunity</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending RVP Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending SVP Approval</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Competitors__c</picklist>
+            <values>
+                <fullName>Benjamin Moore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dunn-Edwards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Glidden %28PRO%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Glidden %28THD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ICI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kelly Moore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kilz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PPG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sherwin Williams</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vista</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Country_Picklist__c</picklist>
+            <values>
+                <fullName>Canada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mexico</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United States</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Behr In-Store Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Behr PPSSS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BehrPRO Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Depot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mktg-driven National Event%2FTrade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional Event%2FTrade Show</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Opportunity_Lost_Reason__c</picklist>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD Value Prop does not fit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD does not carry right product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Opportunity_Type__c</picklist>
+            <values>
+                <fullName>Bid</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Potential</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>State_Picklist__c</picklist>
+            <values>
+                <fullName>Aguascalientes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alabama</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alaska</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alberta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>American Samoa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arizona</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arkansas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armed Forces Americas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armed Forces Europe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armed Forces Pacific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Baja California</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Baja California Sur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>British Columbia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>California</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campeche</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiapas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chihuahua</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coahuila</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colima</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colorado</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connecticut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delaware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>District of Columbia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Durango</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Federal District</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Federated Micronesia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Florida</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Georgia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guanajuato</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guerrero</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hawaii</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hidalgo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Idaho</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illinois</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indiana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iowa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jalisco</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kansas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kentucky</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Louisiana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manitoba</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marshall Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maryland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Massachusetts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mexico State</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michigan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michoacán</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minnesota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mississippi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missouri</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Montana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Morelos</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nayarit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nebraska</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nevada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Brunswick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Hampshire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Jersey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Mexico</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New York</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Newfoundland and Labrador</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North Carolina</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North Dakota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northern Mariana Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northwest Territories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nova Scotia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nuevo León</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nunavut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oaxaca</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ohio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oklahoma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ontario</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oregon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Palau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pennsylvania</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince Edward Island</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Puebla</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Puerto Rico</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quebec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Querétaro</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quintana Roo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rhode Island</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>San Luis Potosí</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saskatchewan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinaloa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sonora</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South Carolina</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South Dakota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tabasco</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tamaulipas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tennessee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Texas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tlaxcala</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Virgin Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United States Minor Outlying Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utah</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veracruz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vermont</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virginia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Washington</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>West Virginia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wisconsin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wyoming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yucatán</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yukon Territories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zacatecas</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Lead_Source__c</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Associate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BehrPro Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DTP Driver</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PASA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PPSS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Previous Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pro Rep Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>See Trade Association%2FAffiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Store Walk In</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD Pro Blitz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Magazine Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web to Lead</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Direct</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Opportunity_Auto</fullName>
+        <active>true</active>
+        <businessProcess>Opportunity Sales Process</businessProcess>
+        <description>Record type visible only to SFDC Admin</description>
+        <label>Opportunity (Auto)</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending RPSM Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Competitors__c</picklist>
+            <values>
+                <fullName>Benjamin Moore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dunn-Edwards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Glidden %28PRO%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Glidden %28THD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ICI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kelly Moore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kilz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PPG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sherwin Williams</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vista</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Country_Picklist__c</picklist>
+            <values>
+                <fullName>Canada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mexico</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United States</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>DB_Competitor__c</picklist>
+            <values>
+                <fullName>Competitor A</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor B</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor C</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Behr In-Store Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Behr PPSSS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BehrPRO Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Depot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mktg-driven National Event%2FTrade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional Event%2FTrade Show</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Opportunity_Lost_Reason__c</picklist>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD Value Prop does not fit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD does not carry right product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Opportunity_Type__c</picklist>
+            <values>
+                <fullName>Bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Potential</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>State_Picklist__c</picklist>
+            <values>
+                <fullName>Aguascalientes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alabama</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alaska</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alberta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>American Samoa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arizona</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Arkansas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armed Forces Americas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armed Forces Europe</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armed Forces Pacific</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Baja California</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Baja California Sur</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>British Columbia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>California</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Campeche</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chiapas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chihuahua</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coahuila</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colima</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Colorado</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connecticut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delaware</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>District of Columbia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Durango</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Federal District</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Federated Micronesia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Florida</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Georgia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guam</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guanajuato</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Guerrero</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hawaii</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hidalgo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Idaho</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illinois</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Indiana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iowa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Jalisco</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kansas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kentucky</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Louisiana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manitoba</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marshall Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Maryland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Massachusetts</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mexico State</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michigan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michoacán</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Minnesota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mississippi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Missouri</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Montana</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Morelos</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nayarit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nebraska</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nevada</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Brunswick</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Hampshire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Jersey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Mexico</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New York</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Newfoundland and Labrador</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North Carolina</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North Dakota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northern Mariana Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Northwest Territories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nova Scotia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nuevo León</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nunavut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oaxaca</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ohio</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oklahoma</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ontario</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Oregon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Palau</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pennsylvania</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prince Edward Island</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Puebla</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Puerto Rico</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quebec</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Querétaro</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quintana Roo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rhode Island</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>San Luis Potosí</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Saskatchewan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sinaloa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sonora</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South Carolina</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>South Dakota</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tabasco</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tamaulipas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tennessee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Texas</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tlaxcala</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>US Virgin Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>United States Minor Outlying Islands</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utah</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veracruz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vermont</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Virginia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Washington</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>West Virginia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wisconsin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wyoming</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yucatán</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yukon Territories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Zacatecas</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Lead_Source__c</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Associate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BehrPro Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DTP Driver</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PASA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PPSS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Previous Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pro Rep Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>See Trade Association%2FAffiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Store Walk In</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD Pro Blitz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Magazine Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web to Lead</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Direct</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Opportunity_For_Quote</fullName>
+        <active>true</active>
+        <businessProcess>Opportunity Sales Process</businessProcess>
+        <label>Opportunity For Quote</label>
+        <picklistValues>
+            <picklist>Competitors__c</picklist>
+            <values>
+                <fullName>Benjamin Moore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Comex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dunn-Edwards</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Glidden %28PRO%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Glidden %28THD%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ICI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kelly Moore</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Kilz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PPG</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sherwin Williams</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vista</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Behr In-Store Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Behr PPSSS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BehrPRO Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Depot</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mktg-driven National Event%2FTrade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RAM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional Event%2FTrade Show</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Opportunity_Lost_Reason__c</picklist>
+            <values>
+                <fullName>Others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Product Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD Value Prop does not fit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD does not carry right product</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Opportunity_Type__c</picklist>
+            <values>
+                <fullName>Bid</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Potential</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Lead_Source__c</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Associate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BehrPro Website</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cold Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>DTP Driver</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MMT</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PAR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PASA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PPSS</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Previous Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pro Rep Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>See Trade Association%2FAffiliation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Store Walk In</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD Pro Blitz</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Magazine Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web to Lead</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Direct</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>THD</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.STAGE_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.LEAD_SOURCE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CORE.USERS.FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.AMOUNT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.LAST_UPDATE</customTabListAdditionalFields>
+        <listViewButtons>MassManager__Mass_Edit_Standard_Fields</listViewButtons>
+        <listViewButtons>MassManager__Mass_Update</listViewButtons>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>00N70000002SO2L</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.LEAD_SOURCE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.AMOUNT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.LAST_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.LAST_UPDATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Opportunity_Lost_Reason__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <validationRules>
+        <fullName>BEHR_Lost_Oppty_Closed_Competitors_US</fullName>
+        <active>true</active>
+        <description>All lost opportunities must have a closed competitors.</description>
+        <errorConditionFormula>AND( ISPICKVAL(  StageName  , &quot;Closed Lost&quot;) ,   ISNULL(Competitors__c) )</errorConditionFormula>
+        <errorDisplayField>Competitors__c</errorDisplayField>
+        <errorMessage>All opportunities that have been lost must have a competitors.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Contact_Check_rule</fullName>
+        <active>true</active>
+        <description>An Account should have tagged to a Contact</description>
+        <errorConditionFormula>AND(ISBLANK(Primary_Contact__c),Count_Opportunity_Product__c&gt;0)</errorConditionFormula>
+        <errorMessage>Contact is required When Opportunity Product exist</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lost_Oppty_Closed_Reason</fullName>
+        <active>true</active>
+        <description>All lost opportunities must have a closed reason.</description>
+        <errorConditionFormula>AND( ISPICKVAL(  StageName  , &quot;Closed Lost&quot;) ,   
+           ISPICKVAL(   Opportunity_Lost_Reason__c , &quot;&quot;) 
+)</errorConditionFormula>
+        <errorDisplayField>Opportunity_Lost_Reason__c</errorDisplayField>
+        <errorMessage>All opportunities that have been lost must have a reason.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Opportunity_Stage_Default</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISNEW(),NOT(ISPICKVAL(StageName,&quot;Position/Prepare&quot;)))</errorConditionFormula>
+        <errorMessage>Opportunity should be Position/Prepare when created.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>MassManager__Mass_Delete</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Delete</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)} 
+
+var records = {!GETRECORDIDS($ObjectType.Opportunity )}; 
+var strIDs=&apos;&apos;; 
+if (records[0] == null) 
+{ 
+alert(&apos;Please select a record&apos;); 
+} 
+else 
+{ 
+for (var n=0; n&lt;records.length; n++) 
+{ 
+if(strIDs == &apos;&apos;) 
+strIDs = records[n]; 
+else 
+strIDs = strIDs + &quot;,&quot; + records[n] ; 
+} 
+window.location.href = &apos;/apex/MassManager__MassDelete?deleteIds=&apos;+strIDs + &apos;&amp;selectedObject=Opportunity&amp;retURL=&apos;+ window.location.href; 
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MassManager__Mass_Edit_Standard_Fields</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Edit</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)} 
+
+var records = {!GETRECORDIDS($ObjectType.Opportunity)}; 
+var strIDs=&apos;&apos;; 
+if (records[0] == null) 
+{ 
+alert(&apos;Please select a record&apos;); 
+} 
+else 
+{ 
+for (var n=0; n&lt;records.length; n++) 
+{ 
+if(strIDs == &apos;&apos;) 
+strIDs = records[n]; 
+else 
+strIDs = strIDs + &quot;,&quot; + records[n] ; 
+}
+window.location.href = &apos;/apex/MassManager__MassEdit?selectedRecords=&apos;+strIDs + &apos;&amp;selectedObject=opportunity&amp;selectedFields=Name,OwnerId,AccountId,CampaignId,Amount,CloseDate,StageName,Type&amp;retURL=&apos;+ window.location.href;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>MassManager__Mass_Update</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Update</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)} 
+
+var records = {!GETRECORDIDS($ObjectType.Opportunity)}; 
+var strIDs=&apos;&apos;; 
+if (records[0] == null) 
+{ 
+alert(&apos;Please select a record&apos;); 
+} 
+else 
+{ 
+for (var n=0; n&lt;records.length; n++) 
+{ 
+if(strIDs == &apos;&apos;) 
+strIDs = records[n]; 
+else 
+strIDs = strIDs + &quot;,&quot; + records[n] ; 
+}
+window.location.href = &apos;/apex/MassManager__MassUpdate?selectedRecords=&apos;+strIDs + &apos;&amp;selectedObject=opportunity&amp;retURL=&apos;+ window.location.href;
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Edit</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Mass Edit</masterLabel>
+        <openType>sidebar</openType>
+        <page>MassEditOpp</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Update</fullName>
+        <availability>online</availability>
+        <description>Mass update</description>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Mass Update</masterLabel>
+        <openType>sidebar</openType>
+        <page>MassUpdateOpportunity</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+</CustomObject>

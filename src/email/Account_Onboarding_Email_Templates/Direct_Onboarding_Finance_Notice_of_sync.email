@@ -1,0 +1,9 @@
+A direct on-boarding request for {!Direct_Onboarding__c.Account_Name__c} has synced with SAP and you can complete the master data.
+
+CUSTOMER INFORMATION:
+
+Company Name: {!Direct_Onboarding__c.Company_Name__c}
+SAP #: {!Account.SAP_Account_Number__c}
+
+Link to Account Record: {!Direct_Onboarding__c.Account_Link__c} 
+Link to Direct Onboarding Record: {!Direct_Onboarding__c.Link}

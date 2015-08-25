@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Ownership_Approval__c$Name</field>
+    </columns>
+    <columns>
+        <field>Ownership_Approval__c$CreatedDate</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Actual Sales Update records that were not submitted for approval</description>
+    <filter>
+        <criteriaItems>
+            <column>Ownership_Approval__c$Status__c</column>
+            <operator>equals</operator>
+            <value>Not Submitted</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Ownership_Approval__c$CreatedBy</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Actual Sales Update Not Submitted</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Actual_Sales_Updates__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Ownership_Approval__c$CreatedDate</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Ownership_Approval__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

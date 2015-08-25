@@ -1,0 +1,42 @@
+The Case "{!Case.CaseNumber}" is ready to be worked on.
+
+Requester:  {!Case.Requester__c}
+Account Name: {!Case.Account}
+Contact Name: {!Case.Contact}
+Opportunity Name: {!Case.Opportunity__c}
+Estimated Spend: {!Case.Estimated_Spend_Amount__c}
+YTD Sales : {!Case.YTD_Sales__c}
+
+Case Type: {!Case.RecordType}
+Date Need By: {!Case.Date_Needed_By__c}
+Hot Rush: {!Case.Hot_Rush__c}
+Hot Rush Reason: {!Case.Hot_Rush_Reason__c}
+Description:  {!Case.Description}
+
+Date: {!TODAY()}
+
+Exterior Project Details:
+Preferred Color Scheme:  {!Case.Ext_Preferred_Color_Scheme__c}
+Neutral or Bright Colors:  {!Case.Neutral_Or_Bright_Colors__c}
+Other Colors:  {!Case.Other_Colors__c}
+Color Family:  {!Case.Color_Family__c}
+Favorite Colors to Include:  {!Case.Favorite_Colors_To_Include__c}
+Highlighted Features:  {!Case.Highlighted_Features__c}
+Architectural Considerations:  {!Case.Architectural_Considerations__c}
+Colors to Avoid:  {!Case.Ext_Colors_To_Avoid__c}
+Other Building Colors to Consider:  {!Case.Other_Building_Colors_To_Consider__c}
+
+Interior Project Details:
+Purpose and function of space:  {!Case.Purpose_And_Function_Of_Space__c}
+Lighting in Room:  {!Case.Lighting_In_Room__c}
+Preferred Color Scheme:  {!Case.Int_Preferred_Color_Scheme__c}
+Color Family Preference:  {!Case.Color_Family_Preference__c}
+Colors to Avoid:  {!Case.Int_Colors_To_Avoid__c}
+
+Color Rendering Details:
+Color Rendering Services Needed?  {!Case.Color_Rendering_Services_Needed__c}
+Rendering Type:  {!Case.Rendering_Type__c}
+Type of Paper:  {!Case.Type_Of_Paper__c}
+# of printed Copies:  {!Case.Quantity__c}
+
+Link to Account Record: {!Case.Link}

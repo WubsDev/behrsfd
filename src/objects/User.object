@@ -1,0 +1,1406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>EditUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FreezeUserAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ManagePermSetsAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>PasswordUnlockAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ResetPasswordAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>UserActivationAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <fields>
+        <fullName>DB_Region__c</fullName>
+        <description>This is a field that is installed by and used with the Adoption Dashboard AppExchange package. If your org already has a similar field, you can change the reports that are part of the Adoption Dashboard package to use your custom field and then delete this field.</description>
+        <externalId>false</externalId>
+        <label>DB Region</label>
+        <picklist>
+            <picklistValues>
+                <fullName>NA</fullName>
+                <color>#009900</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>EMEA</fullName>
+                <color>#3333FF</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>APAC</fullName>
+                <color>#CC6600</color>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>LA</fullName>
+                <color>#990000</color>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Days_of_Service__c</fullName>
+        <externalId>false</externalId>
+        <formula>datevalue(Now())-PRO_DOH__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days of Service</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Direct_Budget_Apr__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Budget - Apr</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Budget_Aug__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Budget - Aug</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Budget_Dec__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Budget - Dec</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Budget_Feb__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Budget - Feb</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Budget_Jan__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Budget - Jan</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Budget_Jul__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Budget - Jul</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Budget_Jun__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Budget - Jun</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Budget_Mar__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Budget - Mar</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Budget_May__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Budget - May</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Budget_Nov__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Budget - Nov</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Budget_Oct__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Budget - Oct</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Budget_Sep__c</fullName>
+        <externalId>false</externalId>
+        <label>Direct Budget - Sep</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct_Budget_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Budget_Apr__c + Direct_Budget_Aug__c + Direct_Budget_Dec__c  + Direct_Budget_Feb__c + Direct_Budget_Jan__c  + Direct_Budget_Jul__c + Direct_Budget_Jun__c  +Direct_Budget_Mar__c + Direct_Budget_May__c + Direct_Budget_Nov__c  + Direct_Budget_Oct__c  +Direct_Budget_Sep__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Direct Budget - Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Division__c</fullName>
+        <externalId>false</externalId>
+        <label>Division</label>
+        <picklist>
+            <picklistValues>
+                <fullName>East</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>West</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Central</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>FCL__c</fullName>
+        <description>Fulfillment Center Lites</description>
+        <externalId>false</externalId>
+        <label>FCL</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Austin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Charlotte/Durham/Raleigh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cleveland</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Detroit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Houston</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kansas City</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Las Vegas</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mass/Conn/R.Island</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Miami</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Minnesota</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Hampshire</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>New Orleans</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phoenix</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pittsburgh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Portland</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rochester</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sacramento</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Antonio</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>San Francisco</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>St. Louis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utah</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Washington DC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FC__c</fullName>
+        <description>Fulfillment Center</description>
+        <externalId>false</externalId>
+        <label>FC</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Allentown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Atlanta</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dallas</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Denver</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Orlando</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sauk Village</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seattle</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Standard</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>HD_Budget_Apr__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Budget - Apr</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HD_Budget_Aug__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Budget - Aug</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HD_Budget_Dec__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Budget - Dec</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HD_Budget_Feb__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Budget - Feb</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HD_Budget_Jan__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Budget - Jan</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HD_Budget_Jul__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Budget - Jul</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HD_Budget_Jun__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Budget - Jun</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HD_Budget_Mar__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Budget - Mar</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HD_Budget_May__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Budget - May</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HD_Budget_Nov__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Budget - Nov</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HD_Budget_Oct__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Budget - Oct</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HD_Budget_Sep__c</fullName>
+        <externalId>false</externalId>
+        <label>HD Budget - Sep</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HD_Budget_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>HD_Budget_Apr__c + HD_Budget_Aug__c + HD_Budget_Dec__c + HD_Budget_Feb__c + HD_Budget_Jan__c + HD_Budget_Jul__c + HD_Budget_Jun__c + HD_Budget_Mar__c + HD_Budget_May__c + HD_Budget_Nov__c + HD_Budget_Oct__c + HD_Budget_Sep__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HD Budget - Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Jan_DOS__c</fullName>
+        <description>Days of service as of Jan 1 this year.</description>
+        <externalId>false</externalId>
+        <formula>Date(YEAR(today()), 01, 01)-PRO_DOH__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Jan DOS</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Jan_YOS__c</fullName>
+        <description>Years of service as of Jan 1 this year</description>
+        <externalId>false</externalId>
+        <formula>If(Jan_DOS__c&lt;365, 0, 
+If(Jan_DOS__c&lt;730, 1, 
+If(Jan_DOS__c&lt;1095,2, 
+If(Jan_DOS__c&lt;1460,3, 
+If(Jan_DOS__c&lt;1825,4,4 
+)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Jan YOS</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ManagerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Market__c</fullName>
+        <externalId>false</externalId>
+        <label>Market</label>
+        <picklist>
+            <picklistValues>
+                <fullName>101 - Minnesota</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>106 - Pittsburgh</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>109 - St. Louis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>10 - Rochester</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>116 - New York City</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>129 - Kansas City</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>12 - San Diego</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>133 - Puerto Rico</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>139 - Ohio Valley</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>156 - Cincinnati</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>157 - Columbus</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>15 - New Jersey</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>164 - Milwaukee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>16 - Dallas/Ft. Worth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>196 - Palm Springs</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1 - Atlanta</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>20 - Long Island</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>21 - Bay Area</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>25 - Ft. Myers/Naples</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>260 - New Hampshire</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>276 - Indianapolis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>29 - Sacramento</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 - Miami/Ft. Lauderdale/West Palm Bch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>314 - Toledo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>34 - Allentown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>36 - Las Vegas</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>39 - Boston</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 - Daytona/Mel/Orlando</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>40 - San Antonio</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>42 - San Antonio</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>43 - Washington DC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>44 - Seattle/Tacoma</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>45 - Charlotte</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>47 - Inland/Desert</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>48 - Los Angeles</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4 - Tampa/St. Petersburg</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>51 - Colorado</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>54 - Portland</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5 - New Orleans</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6 - Phoenix</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>72 - Detroit</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>75/234 - Chicago</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>76 - Utah</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>8 - Austin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>PRO_DOH__c</fullName>
+        <description>Date rep was hired as a PRO</description>
+        <externalId>false</externalId>
+        <label>PRO DOH</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pro_Rep_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Pro Rep ID</label>
+        <length>3</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPSM_New__c</fullName>
+        <externalId>false</externalId>
+        <label>RPSM</label>
+        <relationshipName>RPSM_User</relationshipName>
+        <restrictedAdminField>false</restrictedAdminField>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>RPSM__c</fullName>
+        <description>Regional Pro Sales Manager</description>
+        <externalId>false</externalId>
+        <label>RPSM Old</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Abe Suleiman</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bill Mahoney</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Brandon Jones</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Brian Emmert</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dermot McGuire</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Greg Goodwin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>John Wysor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Luke Markes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mike Marienthal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Neal Sherman</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phillip Hayes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Randy Rivers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Spyros Zorbas</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RVP__c</fullName>
+        <externalId>false</externalId>
+        <label>RVP</label>
+        <relationshipName>RVP_User</relationshipName>
+        <restrictedAdminField>false</restrictedAdminField>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Revenue_Assumptions__c</fullName>
+        <description>As of Jan 01 this year, years of service to determine the revenue assumptions for this year.</description>
+        <externalId>false</externalId>
+        <formula>if( Jan_YOS__c  = 0,525000,
+if( Jan_YOS__c =1, 912500,
+if( Jan_YOS__c =2, 1100000 ,1225000)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Revenue Assumptions</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SVP__c</fullName>
+        <externalId>false</externalId>
+        <label>SVP</label>
+        <relationshipName>SVP_User</relationshipName>
+        <restrictedAdminField>false</restrictedAdminField>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Hierarchy</type>
+    </fields>
+    <fields>
+        <fullName>Salesforce_password__c</fullName>
+        <externalId>false</externalId>
+        <label>Salesforce password</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_Apr__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Budget_Apr__c + HD_Budget_Apr__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget - Apr</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_Aug__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Budget_Aug__c + HD_Budget_Aug__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget - Aug</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_Dec__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Budget_Dec__c + HD_Budget_Dec__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget - Dec</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_Feb__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Budget_Feb__c + HD_Budget_Feb__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget - Feb</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_Jan__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Budget_Jan__c + HD_Budget_Jan__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget - Jan</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_Jul__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Budget_Jul__c + HD_Budget_Jul__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget - Jul</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_Jun__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Budget_Jun__c + HD_Budget_Jun__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget - Jun</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_Mar__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Budget_Mar__c + HD_Budget_Mar__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget - Mar</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_May__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Budget_May__c + HD_Budget_May__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget - May</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_Nov__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Budget_Nov__c + HD_Budget_Nov__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget - Nov</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_Oct__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Budget_Oct__c + HD_Budget_Oct__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget - Oct</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_Sep__c</fullName>
+        <externalId>false</externalId>
+        <formula>Direct_Budget_Sep__c + HD_Budget_Sep__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget - Sep</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_TM__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Budget_Aug__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget TM</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Budget_TYTD__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Budget_Jan__c +  Total_Budget_Feb__c + Total_Budget_Mar__c + Total_Budget_Apr__c +  Total_Budget_May__c + Total_Budget_Jun__c +  Total_Budget_Jul__c +  Total_Budget_Aug__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Budget TYTD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>VP_Pro_Sales__c</fullName>
+        <externalId>false</externalId>
+        <label>VP Pro Sales</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Years_of_service__c</fullName>
+        <externalId>false</externalId>
+        <formula>If( Days_of_Service__c  &lt;365, 0, 
+If(Days_of_Service__c  &lt;730, 1,
+If(Days_of_Service__c  &lt;1095,2,
+If(Days_of_Service__c  &lt;1460,3,
+If(Days_of_Service__c &lt;1825,4,
+If(Days_of_Service__c  &lt;2190,5,
+If(Days_of_Service__c  &lt;2555,6,
+If(Days_of_Service__c &lt;2920,7,
+If(Days_of_Service__c &lt;3285,8,
+If(Days_of_Service__c  &lt;3650,9,
+If(Days_of_Service__c &lt;4015,10,11)))))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Years of service</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>ActiveUsers_2</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CORE.USERS.ADDRESS_CITY</columns>
+        <columns>CORE.USERS.PHONE</columns>
+        <columns>VP_Pro_Sales__c</columns>
+        <columns>Division__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>Standard User Level 2</value>
+        </filters>
+        <label>Active Users_with manager</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>ActiveUsers_phone</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CORE.USERS.ADDRESS_CITY</columns>
+        <columns>CORE.USERS.PHONE</columns>
+        <columns>MOBILE_USER</columns>
+        <columns>CORE.USERS.CELL</columns>
+        <columns>CORE.PROFILE.USERTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Users_with phone</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>AdminUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>System Administrator</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Admin Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>AllInactiveUsers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.EMAIL</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>All Inactive Users</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Active</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Active</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Appirio</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.EMAIL</field>
+            <operation>contains</operation>
+            <value>Appirio</value>
+        </filters>
+        <label>Appirio</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Last_hired</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>PRO_DOH__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>Standard</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>Rep</value>
+        </filters>
+        <label>Last hired</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>SystemAdministrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>NAM_Team</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USER_ROLE.NAME</field>
+            <operation>contains</operation>
+            <value>NAM</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>NAM Team</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>SystemAdministrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Read_Only</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <label>Read Only</label>
+        <sharedTo>
+            <role>IT_DEV</role>
+            <role>ProMarketingUser</role>
+            <role>ProMktgAdministrator</role>
+            <role>SystemAdministrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Standard_Level_2</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.PROFILE.USERTYPE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>equals</operation>
+            <value>Standard User Level 2</value>
+        </filters>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Standard Level 2</label>
+        <language>en_US</language>
+        <sharedTo>
+            <roleAndSubordinates>IT_DEV</roleAndSubordinates>
+            <roleAndSubordinates>ProMktgAdministrator</roleAndSubordinates>
+            <roleAndSubordinates>SystemAdministrator</roleAndSubordinates>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>active_non_chatter_pro</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>RPSM__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>notContain</operation>
+            <value>Chatter</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>standard</value>
+        </filters>
+        <label>active non chatter Pro only</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>all_active_non_chatter</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>DELEGATED_APPROVER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>notContain</operation>
+            <value>chatter</value>
+        </filters>
+        <label>all active - non chatter</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>frozen</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>notContain</operation>
+            <value>Chatter</value>
+        </filters>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>standard</value>
+        </filters>
+        <filters>
+            <field>IS_FROZEN</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Frozen</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>managers</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CORE.USERS.USERNAME</columns>
+        <columns>CORE.USERS.LAST_LOGIN</columns>
+        <columns>CORE.USER_ROLE.NAME</columns>
+        <columns>CORE.USERS.ACTIVE</columns>
+        <columns>CORE.PROFILE.NAME</columns>
+        <columns>MANAGER</columns>
+        <columns>CORE.USERS.PHONE</columns>
+        <columns>CORE.USERS.CELL</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.PROFILE.NAME</field>
+            <operation>contains</operation>
+            <value>3</value>
+        </filters>
+        <label>managers</label>
+        <language>en_US</language>
+    </listViews>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupDialogsAdditionalFields>
+        <lookupFilterFields>FULL_NAME</lookupFilterFields>
+        <lookupFilterFields>CORE.USER_ROLE.NAME</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USER_ROLE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.EXTENSION</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.CELL</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>FULL_NAME</searchFilterFields>
+        <searchFilterFields>CORE.USERS.PHONE</searchFilterFields>
+        <searchFilterFields>CORE.USERS.CELL</searchFilterFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USER_ROLE.NAME</searchResultsAdditionalFields>
+    </searchLayouts>
+</CustomObject>

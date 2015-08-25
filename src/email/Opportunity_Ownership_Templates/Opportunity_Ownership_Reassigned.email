@@ -1,0 +1,7 @@
+Attention {!Ownership_Approval_Opportunity__c.}
+
+Opportunity {!Opportunity.Name} has been reassigned by {!User.Name}
+
+Comments: {!ApprovalRequest.Comments}
+
+Please email smart@behr.com with any questions.

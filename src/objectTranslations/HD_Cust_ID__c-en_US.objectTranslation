@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HD Cust ID</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HD Cust IDs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- HD Cust IDs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Apr 2013 --></label>
+        <name>Apr_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apr 2014 --></label>
+        <name>Apr_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Apr 2015 --></label>
+        <name>Apr_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aug 2013 --></label>
+        <name>Aug_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aug 2014 --></label>
+        <name>Aug_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Aug 2015 --></label>
+        <name>Aug_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dec 2013 --></label>
+        <name>Dec_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dec 2014 --></label>
+        <name>Dec_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dec 2015 --></label>
+        <name>Dec_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feb 2013 --></label>
+        <name>Feb_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feb 2014 --></label>
+        <name>Feb_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feb 2015 --></label>
+        <name>Feb_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- HD cust ID Backend --></label>
+        <name>HD_cust_ID_Backend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jan 2013 --></label>
+        <name>Jan_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jan 2014 --></label>
+        <name>Jan_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jan 2015 --></label>
+        <name>Jan_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jul 2013 --></label>
+        <name>Jul_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jul 2014 --></label>
+        <name>Jul_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jul 2015 --></label>
+        <name>Jul_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jun 2013 --></label>
+        <name>Jun_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jun 2014 --></label>
+        <name>Jun_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jun 2015 --></label>
+        <name>Jun_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mar 2013 --></label>
+        <name>Mar_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mar 2014 --></label>
+        <name>Mar_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mar 2015 --></label>
+        <name>Mar_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- May 2013 --></label>
+        <name>May_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- May 2014 --></label>
+        <name>May_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- May 2015 --></label>
+        <name>May_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needs Added --></label>
+        <name>Needs_Added__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nov 2013 --></label>
+        <name>Nov_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nov 2014 --></label>
+        <name>Nov_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Nov 2015 --></label>
+        <name>Nov_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oct 2013 --></label>
+        <name>Oct_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oct 2014 --></label>
+        <name>Oct_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Oct 2015 --></label>
+        <name>Oct_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone 1 --></label>
+        <name>Phone_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone 1 clean --></label>
+        <name>Phone_1_clean__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone 2 --></label>
+        <name>Phone_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone 2 clean --></label>
+        <name>Phone_2_clean__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sep 2013 --></label>
+        <name>Sep_2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sep 2014 --></label>
+        <name>Sep_2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sep 2015 --></label>
+        <name>Sep_2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Up Date --></label>
+        <name>Sign_Up_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street 2 --></label>
+        <name>Street_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Sales --></label>
+        <name>Total_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2013 --></label>
+        <name>X2013__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2014 --></label>
+        <name>X2014__c</name>
+    </fields>
+    <fields>
+        <label><!-- 2015 --></label>
+        <name>X2015__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>Zip_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>HD Cust ID Layout</layout>
+        <sections>
+            <label><!-- 2013 --></label>
+            <section>2013</section>
+        </sections>
+        <sections>
+            <label><!-- 2014 --></label>
+            <section>2014</section>
+        </sections>
+        <sections>
+            <label><!-- 2015 --></label>
+            <section>2015</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Year Totals --></label>
+            <section>Year Totals</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

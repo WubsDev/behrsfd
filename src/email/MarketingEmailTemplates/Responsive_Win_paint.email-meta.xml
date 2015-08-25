@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Win Paint Responsive</name>
+    <style>none</style>
+    <subject>Win Paint For A Year*</subject>
+    <textOnly>BEHR PRO - KILZ PRO-X
+
+WIN PAINT FOR A YEAR
+
+
+
+
+Hi {!Lead.FirstName},
+
+I wanted to give you a heads up about a great new promotion BehrPro is offering professional customers like you – a chance to win a year of paint*! If you win, you&apos;ll get a year&apos;s supply of our new KILZ PRO-X® 100 advanced high-hide commercial grade paint.
+
+Here are just a few of the ways KILZ PRO-X 100 series can help you finish jobs faster:
+
+Increased wet and dry hide gives you better coverage
+Better consistency for easy spray, brush and roll with superior finish
+Excellent touch up means a quick final prep for walk through
+
+Entering to win is simple, just click here.
+
+Sweepstakes Dates
+Now – December 31, 2013**
+
+If you have any questions, don&apos;t hesitate to get in touch or find the answers at pro.behr.com/kpxsweeps.
+
+Sincerely,
+{!Lead.OwnerFullName}
+{!Lead.OwnerTitle}
+{!Lead.OwnerPhone}
+{!Lead.OwnerEmail}
+
+
+*No purchase necessary to enter or win. Limit 1,500 gallons. Prize covers all BEHR® &amp; KILZ® product lines.  See official contest rules for details.
+
+** Promotion Period: This KILZ Pro-X Win Paint for a Year Sweepstakes begins at 12:01 A.M. Pacific Time on August 23, 2013 and ends 11:59 P.M. Pacific Time on December 31, 2013.
+
+
+
+
+
+
+You have opted-in to receive email newsletters from BehrPro. If you no longer wish to receive promotional notifications and news, please  Click Here.
+
+If this email has been forwarded to you and you wish to subscribe, please Click Here.
+
+To read our Privacy Policy, please Click Here.
+
+We recently updated our Privacy Policy. If you wish to change your preferences, please follow the directions in the Privacy Policy.
+
+Trademarks are the property of their respective owners.
+
+©2013 Behr Process Corporation. All Rights Reserved.
+
+Behr Process Corporation
+3400 W. Segerstrom Avenue
+Santa Ana, CA 92704</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Quotes/Orders</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Quotes/Orders</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Quotes/Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Bill To --></label>
+        <name>Bill_To_City_State_code_PDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To --></label>
+        <name>Bill_To_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To Name --></label>
+        <name>Bill_To_Name_PDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To --></label>
+        <name>Bill_To_Street_PDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color Vendor Count --></label>
+        <name>Color_Vendor_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Convert to Order --></label>
+        <name>Convert_to_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted to Order --></label>
+        <name>Converted_to_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Number --></label>
+        <name>Mobile_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- OrderID --></label>
+        <name>OrderID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Date --></label>
+        <name>Order_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price per Gallon --></label>
+        <name>Price_per_Gallon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pro Rewards # --></label>
+        <name>Pro_Rewards__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Name --></label>
+        <name>Project_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Order# --></label>
+        <name>Purchase_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Line Items --></label>
+        <name>Quote_Line_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote/Order Type --></label>
+        <name>Quote_Ordertype__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee - 1 Gallon --></label>
+        <name>Recycling_fee_for_1_Gallon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee - Over 1 Gallon --></label>
+        <name>Recycling_fee_for_5_Gallon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rep Email --></label>
+        <name>Rep_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rep Name --></label>
+        <name>Rep_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rep Phone --></label>
+        <name>Rep_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Delivery Date --></label>
+        <name>Requested_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent To HD --></label>
+        <name>Sent_To_HD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>Ship_To_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>Ship_To_City_State_Code_PDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>Ship_To_Country_PDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Name --></label>
+        <name>Ship_To_Name_PDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>Ship_To_Street_PDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Instructions --></label>
+        <name>Special_Instructions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Processing Instructions --></label>
+        <name>Special_Processing_Instructions__c</name>
+    </fields>
+    <fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Archived</masterLabel>
+            <translation><!-- Archived --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Review</masterLabel>
+            <translation><!-- Customer Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation><!-- In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Management Review</masterLabel>
+            <translation><!-- Management Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Review</masterLabel>
+            <translation><!-- Needs Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Presented</masterLabel>
+            <translation><!-- Presented --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Store # --></label>
+        <name>Store1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store No --></label>
+        <name>Store__c</name>
+        <relationshipLabel><!-- Strore# --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sub Total --></label>
+        <name>Sub_Total_Template__c</name>
+    </fields>
+    <fields>
+        <label><!-- THD Store --></label>
+        <name>THD_Store__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Quantity --></label>
+        <name>Total_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total State Recycling Fee --></label>
+        <name>Total_Recycling_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total $Saved --></label>
+        <name>Total_Saved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type Of Order --></label>
+        <name>Type_Of_Order__c</name>
+        <picklistValues>
+            <masterLabel>Direct to site</masterLabel>
+            <translation><!-- Direct to site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct to store</masterLabel>
+            <translation><!-- Direct to store --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 1 Gallon Qty --></label>
+        <name>X1_Gallon_Qty__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1 Gallon --></label>
+        <name>X1_Gallon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Over 1 Gallon --></label>
+        <name>X5_Gallon__c</name>
+    </fields>
+    <layouts>
+        <layout>Order Layout</layout>
+        <sections>
+            <label><!-- Order Details --></label>
+            <section>Order Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quote Layout</layout>
+        <sections>
+            <label><!-- Account Detail --></label>
+            <section>Account Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Order Details --></label>
+            <section>Order Details</section>
+        </sections>
+        <sections>
+            <label><!-- Totals --></label>
+            <section>Totals</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Order --></label>
+        <name>Order</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Quote --></label>
+        <name>Quote</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please check the phone number you entered.  It should contain 7 or 10 numbers --></errorMessage>
+        <name>Phone_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter Phone number or Email address. --></errorMessage>
+        <name>Phone_and_Email_Validation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill Ship to Name and Ship to Address if Type of Order is Direct to Site --></errorMessage>
+        <name>Ship_to_name_Ship_to_Address_to_fill</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Clone --></label>
+        <name>Clone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Clone_ToOrder --></label>
+        <name>Clone_ToOrder</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Convert_to_Order --></label>
+        <name>Convert_to_Order</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Create_PDF_for_Eco_Fee --></label>
+        <name>Create_PDF_for_Eco_Fee</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Save_PDF --></label>
+        <name>Save_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_To_HD --></label>
+        <name>Send_To_HD</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Introduce PPSSS to your customers.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>PPSSS Introduction - Scott Tilley</name>
+    <style>none</style>
+    <subject>New In-Store Services Available From Behr Paint &amp; Home Depot</subject>
+    <textOnly>New In-Store Services Available From Behr Paint &amp; Home Depot
+
+
+
+
+Dear {!if(Lead.FirstName=&quot;&quot;, Contact.FirstName,Lead.FirstName)},
+
+In our continued effort to offer outstanding service to our customers, Behr is excited to announce the addition of a new support position from your Behr Team &amp; The Home Depot.
+
+Scott Tilley now holds the position of Pro Paint Sales &amp; Service Specialist at The Mira Mesa Home Depot, Store 6679. Scott is a full time Behr Employee working within the store to support our Professional Behr Customers with their product &amp; service needs. Think of it as your Behr Paint Store within The Home Depot.
+
+In his role, Scott will be able to:
+
+- Take your orders by phone on his direct line.
+
+- Process your orders and have them available for pick up or delivery.
+
+- Schedule deliveries.
+
+- Color matching.
+
+- Capture &amp; record your color information by job.
+
+In addition, The Mira Mesa Home Depot offers:
+
+- Increased inventory levels to support your projects.
+
+- Expanded product offering including products such as DTM, Block Filler &amp; Dryfall.
+
+Scott will be available to service your needs Monday thru Friday from 7:00am through 4:00pm. His contact info is:
+
+Cell: (760) 415-3836
+
+Email: STilley@BehrPaint.com
+
+Home Depot Mira Mesa #6679
+
+10604 Westview Parkway
+
+San Diego, CA 92126
+
+Please don&apos;t hesitate to give Scott a call for your Behr Paint needs. We look forward to serving you!
+
+Sincerely,
+
+{!if(Contact.OwnerFullName=&quot;&quot;,Lead.OwnerFullName,Contact.OwnerFullName)}
+{!if(Contact.OwnerTitle=&quot;&quot;, Lead.OwnerTitle,Contact.OwnerTitle)}
+{!if(Contact.OwnerPhone=&quot;&quot;, Lead.OwnerPhone,Contact.OwnerPhone)}
+{!if(Contact.OwnerEmail=&quot;&quot;, Lead.OwnerEmail,Contact.OwnerEmail)}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>This is the default email invitation template for survey: Pro Sales Call Center</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>[Send using Timba Surveys] Pro Sales Call Center</name>
+    <style>none</style>
+    <subject>Please complete this PRO survey: Pro Sales Call Center</subject>
+    <textOnly>Pro sales team:
+	In the interests of making our jobs&apos; easier, we have worked with customer service to build an order placement center through which we could Email orders.  Though we are currently processing between 150 and 180 DTP orders per week, we are only running 2-3 orders through our pro sales call center every week.  In its current format, this program is obviously not what we are looking for.  We would like your input on a few questions regarding what we can do to make this program more user friendly.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

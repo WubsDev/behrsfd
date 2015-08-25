@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to be sent to RPSM after 2 hours if not approved</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Direct Onboarding RPSM Reminder</name>
+    <style>none</style>
+    <subject>Direct On boarding for &apos;{!Direct_Onboarding__c.Company_Name__c}&apos; is pending approval</subject>
+    <type>text</type>
+</EmailTemplate>

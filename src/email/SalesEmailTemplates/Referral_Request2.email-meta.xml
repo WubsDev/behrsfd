@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Request for Customer Referral</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Referral Request</name>
+    <style>none</style>
+    <subject>Help a Friend. Tell Them About BehrPro!</subject>
+    <type>custom</type>
+</EmailTemplate>

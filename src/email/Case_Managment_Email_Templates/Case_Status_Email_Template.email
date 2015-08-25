@@ -1,0 +1,3 @@
+The current status for your {!Case.RecordType}  is {!Case.Status}
+
+Link to Case Record: {!Case.Link}

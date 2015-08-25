@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+<table width="550" border="0" cellspacing="0" cellpadding="0" bgcolor="">
+	<tr>
+    	<td width="10">&nbsp;</td>
+    	<td width="530"></td>
+        <td width="10">&nbsp;</td>
+  	</tr>
+    
+<!-- Promo Image Here --> 
+	<tr>
+		<td colspan="3">  
+ 			<table width="550" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="top"><img src="http://www.behr.com/ibsemail/header_replace.jpg"   width="550" height="85" alt="Experience BehrPro&#8480; at IBS 2011. POWER UP."></td>
+				</tr>
+    			<tr>
+					<td valign="top">
+        				<table width="550" border="0" cellspacing="0" cellpadding="0">
+  							<tr>
+                			<!--Space-->
+    						<td width="28"></td>
+                    		<!--Left column-->
+   				  			<td width="294">
+                    			<table width="294" border="0" cellspacing="0" cellpadding="0">
+  									<tr>
+    									<td height="47" valign="top">
+                                			<font face="Verdana, Geneva, sans-serif" size="+1">
+                                			<b>CONFIRMATION</b>
+                                			</font>
+                                        </td>
+					  		  		</tr>
+  									<tr>
+    									<td><img src="http://www.behr.com/ibsemail/event_details.jpg" width="294" height="19" alt="EVENT DETAILS & INSTRUCTIONS"></td>
+  									</tr>
+  									<tr>
+   										<td height="51">
+                                			<font face="Verdana, Geneva, sans-serif" size="-2">
+                                			<B>International Builders’ Show  (Orlando)</B><BR>
+                                			January 12-15, 2011
+                             				</font>
+                                		</td>
+  									</tr>
+  									<tr>
+    									<td><img src="http://www.behr.com/ibsemail/Guest_info.jpg" width="294" height="19" alt="GUEST INFORMATION"></td>
+  									</tr>
+                            		<tr>
+    									<td height="10"></td>
+  									</tr>
+  									<tr>
+   							  			<td height="215">
+                              				<font face="Verdana, Geneva, sans-serif" size="-2">
+                                			<b>
+                           					{!Lead.FirstName} {!Lead.LastName}
+<br>
+                                			 {!Lead.Company}
+
+<br>
+                                			Gift: {!Lead.Gift_Name__c}
+<br>
+                                			</b>
+                                			</font>
+                                			<br>
+                                			<font face="Verdana, Geneva, sans-serif" size="-2" color="#e98f00">
+                                			<b>
+                                			Congratulations – you have successfully registered with BehrPro&#8480;. We look forward to meeting you at IBS 2011!
+                                			</b>
+                                			</font>
+                                			<br>
+                                			<br>
+                                			<font face="Verdana, Geneva, sans-serif" size="-2">
+                                			• Please print this page as a confirmation of your registration and bring it with you.
+                                			</font>
+                                			<br>
+                                			<br>
+                                			<font face="Verdana, Geneva, sans-serif" size="-2">
+                                			• Present it at the <b>BehrPro&#8480;</b> booth <b>W1943</b> to pick up your passes for the <b>BehrPro&#8480;</b> lounge and get your free gift.
+                                			</font>
+                                			<br>
+                                			<br>
+                                			<font face="Verdana, Geneva, sans-serif" size="-2">
+                                			• If you forget to bring this receipt, don’t worry. Just head to the registration desk at the <b>BehrPro&#8480;</b> lounge and we’ll find you on our guest list.
+                                			</font>
+                              			</td>
+  									</tr>
+                            		<tr><td height="30"></td></tr>
+								</table>
+                  			</td>
+                    		<!--Space-->
+    						<td width="19"></td>
+                    		<!--Right column-->
+    						<td width="180" valign="top">
+               	  				<table width="180" border="0" cellspacing="0" cellpadding="0" bgcolor="#ebebeb">
+    				  				<tr>
+    				    				<td height="17" colspan="3" valign="top"><img src="http://www.behr.com/ibsemail/spacer.gif" width="180" height="1"></td>
+   				    				</tr>
+    				  				<tr>
+    				    				<td width="17" valign="bottom"><img 
+src="http://www.behr.com/ibsemail/spacer.gif" width="17" height="1"></td>
+    				    				<td>
+                                		<font face="Verdana, Geneva, sans-serif" size="-2">
+                                		<strong>
+                                		BehrPro&#8480; Booth W1943 
+                                		<br>
+                                		West Concourse
+                                		</strong>
+                                		</font>
+                                		<br>
+                                		<br>
+                                		<font face="Verdana, Geneva, sans-serif" size="-2">
+                                		Wed-Fri:  9:30am - 5:00pm
+                                		<br>
+                                		Sat:  9:30am - 2:00pm
+                                		<br>
+                                		<br>
+                                		Lounge Hours
+										<br>
+                                		Wed-Fri:  10:00am - 4:00pm
+                                		<br>
+                                		<br>
+                                		Outdoor Exhibits
+										<br>
+                                		Wed-Fri:  8:30am - 5:00pm
+										<br>
+                                		Sat:  8:30am - 2:00pm
+                                		</font>    
+                            		</td>
+    				    			<td width="17" valign="bottom"><img 
+src="http://www.behr.com/ibsemail/spacer.gif" width="17" height="1"></td>
+  				    			</tr>
+    				  			<tr>
+    				    			<td valign="top"><img 
+src="http://www.behr.com/ibsemail/spacer.gif" width="17" height="1"></td>
+    				    			<td><img src="http://www.behr.com/ibsemail/dots_image.gif" width="146" height="38"></td>
+    				    			<td valign="top"><img
+src="http://www.behr.com/ibsemail/spacer.gif" width="17" height="1"></td>
+  				    			</tr>
+                            	<tr>
+    				    			<td valign="top"><img src=<http://www.behr.com/ibsemail/spacer.gif" width="17" height="1"></td>
+    				    			<td>
+                                		<font face="Verdana, Geneva, sans-serif" size="-2">
+                                		If you would like to contact us before the show,
+										<br>
+                                		Please email:
+                                		<br>
+                                		<a href="mailto:IBS@behr.com">IBS@behrpro.com</a>
+                                		</font>    
+                            		</td>
+    				    			<td valign="top"><img src="http://www.behr.com/ibsemail/spacer.gif" width="17" height="1"></td>
+  				    			</tr>
+    				  			<tr>
+    				    			<td height="36" colspan="3" valign="bottom"><img src="http://www.behr.com/ibsemail/spacer.gif" width="180" height="1"></td>
+   				    			</tr>
+  				  			</table>
+   						</td>
+                    	<!--Space-->
+    					<td width="29"></td>
+  					</tr>
+				</table>
+			</td>
+		</tr>
+    	<!--Map-->
+    	<tr>
+			<td valign="top">
+        		<table width="550" border="0" cellspacing="0" cellpadding="0">
+  					<tr>
+    					<td width="28"></td>
+    					<td><img src="http://www.behr.com/ibsemail/map_IBS_Floor.jpg" width="493" height="294" alt="MAP"></td>
+    					<td width="29"></td>
+  						</tr>
+						</table>
+					</td>
+				</tr>
+			</table>	
+		</td>
+	</tr>	
+  
+  <!-- Privacy Here -->   
+	<tr><td height="15" colspan="3"></td></tr> 
+  	<tr><td width="10">&nbsp;</td>
+    	<td><font size="1" face="Arial, Helvetica, sans-serif">
+        <p>If this email has been forwarded to you and you wish to subscribe, please <a href="mailto:subscribe@behrpro.com" title="Subscribe Here">Click Here</a>. <br />
+          <br />
+          
+          Click here for our <a href="http://www.behrpro.com/privacypolicy/" title="Privacy Policy"> Privacy Policy</a>. <br />
+          
+          <br />
+          
+          We recently updated our Privacy Policy. If you wish to change your preferences, please follow the directions in the Privacy Policy.<br />
+          
+          <br />
+          
+          &copy; 2010 Behr Process Corporation<br />
+          
+          <br />
+          
+          Behr Process Corporation<br />
+          3400 W. Segerstrom Avenue<br />
+          Santa Ana, CA 92704
+		</font></td>
+    	<td width="10">&nbsp;</td>
+    </tr>
+</table>
+</body>
+</html>

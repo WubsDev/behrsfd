@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Tyson_Trial_Customer__c</field>
+    </columns>
+    <columns>
+        <field>Account.Direct_Sale__c</field>
+    </columns>
+    <columns>
+        <field>USERS.NAME</field>
+    </columns>
+    <columns>
+        <field>Direct_To_Pro_Sales__c.Date_of_Purchase__c</field>
+    </columns>
+    <columns>
+        <field>Direct_To_Pro_Sales__c.PO_Number__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Direct_To_Pro_Sales__c.Purchase_Amount__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Report shows all POs for scoring the contest.</description>
+    <format>Summary</format>
+    <name>PSSB Contest Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Direct_To_Pro_Sales__c@Direct_To_Pro_Sales__c.Store_of_Purchase__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Direct_To_Pro_Sales__c.Date_of_Purchase__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <endDate>2013-12-31</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-09-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Will we see you at IBS next week?</title>
+<meta name="viewport" content="width=device-width" />
+<style type="text/css">
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 14px;
+}
+img {
+	border: none;
+}
+table {
+	border-collapse: collapse;
+}
+ @media only screen and (max-width:599px) {
+table[class=col] {
+	display: block !important;
+	width: 320px !important;
+}
+img[class=behrlogotop], img[class=imgvert] {
+	width: 84px!important;
+	height: auto!important;
+}
+img[class=imghd] {
+	width: auto!important;
+	height: 30px!important;
+}
+td[class=footer] { height:60px!important; }
+a[class=twitter] img, a[class=facebook] img {
+	padding-bottom: 4px!important;
+	height: 15px!important;
+	width: 15px!important;
+}
+td[class=top_banner] {padding:10px!important;}
+img[class=entertowinbutton] { padding-top:15px!important; padding-left: 20px!important; }
+}
+</style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; margin: 0;padding: 0;width: 100% !important;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust:none;">
+<table width="100%" border="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="center" valign="top"><table class="col" width="600" border="0" cellpadding="0" cellspacing="0" >
+          <tbody>
+            <tr>
+              <td class="w20" width="25"></td>
+              <td class="w560" height="15" width="550"></td>
+              <td class="w20" width="25"></td>
+            </tr>
+            <tr>
+              <td class="w20" width="25"></td>
+              <td class="w560" width="550"><table style="padding-top:20px;background-color:#ffffff;" class="col" width="100%" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td style="" class="logo_holder" valign="top" width="50%" align="left"><a href="http://www.behrpro.com/BehrPro/prohome"> <img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj5H&oid=00D700000008FyN&lastMod=1381299508000" alt="BEHR PRO Logo" width="138" height="57" class="behrlogotop" style="border:none;width:138px;height:57px;"></a></td>
+                      <td class="behrprocom" style="" valign="bottom" width="50%" align="right"></td>
+                    </tr>
+                    
+                                      </tbody>
+                </table></td>
+              <td class="w25" width="25"><br></td>
+            </tr>
+            <tr>
+              <td class="w25" width="25"><br></td>
+              <td width="550" align="left" valign="top" class="w560"><br>
+<p style="padding-bottom:2px;">Hi {!if(Lead.FirstName="", Contact.FirstName,Lead.FirstName)},</p>
+								<p style="padding-bottom:7px;">I want to invite you to stop by the BehrPro booth #C1047 if you'll be at the NAHB International Builder Show (IBS) next week. You don't want to miss the great tips, demos and giveaways at our booth if you are planning to be at the show.</p> 
+								</p><p style="padding-bottom:7px;">We also have a special 30-minute presentation I know {!if(Account.Name="", Lead.Company,Account.Name)} could benefit from, called BEHR Paint Essentials: How Raising the Spec Can Help Lower Costs. That's on Tuesday, so be sure to stop by Multifamily Central at 9am for that in room #N255 if you're around. 
+								</p><p style="padding-bottom:7px;">You can even schedule a 20-min. one-on-one version of this presentation at the booth and get a free power pack for your time. <a href="http://pro.behr.com/ibs2014appointment">Click to learn more or self-schedule an appointment online.</a>
+								</p><p style="padding-bottom:7px;" font size="+1"><strong>Not Registered? Enjoy the show on our dime! <a href="http://bit.ly/1gv8A4S">Claim your FREE 3-day Exhibits Only Pass.</strong></font></a> 
+						<p>							
+                   <a href="http://bit.ly/1gv8A4S"><img alt="Claim your FREE 3-day Exhibits Only Pass on Us!" src="http://img03.en25.com/EloquaImages/clients/BehrProcessCorporation/{6d2de6d3-7f7c-4064-ba87-2b61b04b5244}_BehrPro-IBS2014-Guest.png" height="61" ismap="ismap" width="470" align="center" border="none" hspace="40" vspace="5" /></a>
+								                
+								</p><p style="padding-bottom:7px;">Please give me a call at {!if(Contact.OwnerPhone="", Lead.OwnerPhone,Contact.OwnerPhone)} if you plan on coming by. We would love to see you at the show {!if(Lead.FirstName="", Contact.FirstName,Lead.FirstName)}.
+								</p><p>Sincerely,
+               <p>{!if(Contact.OwnerFullName="",Lead.OwnerFullName,Contact.OwnerFullName)}<br />
+                {!if(Contact.OwnerTitle="", Lead.OwnerTitle,Contact.OwnerTitle)}<br />
+                {!if(Contact.OwnerPhone="", Lead.OwnerPhone,Contact.OwnerPhone)}<br />
+                 {!if(Contact.OwnerEmail="", Lead.OwnerEmail,Contact.OwnerEmail)}</p>
+                <p><a href="http://www.behrpro.com"><img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj4s&oid=00D700000008FyN&lastMod=1381298465000" width="114" height="21" alt="behrpro.com" border="0" style="border:none;"></a></p>
+                                    </p></td>
+              <td class="w20" width="25"><br></td>
+            </tr>
+            <tr>
+              <td  class="w25">&nbsp;</td>
+              <td height="56" align="right" valign="middle" bgcolor="#000000" style="background-color:#000000;padding-right:10px;" class="footer"><a href="http://www.behr.com/Behr/home"><img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj52&oid=00D700000008FyN&lastMod=1381299174000" alt="BEHR Logo" style="border:none" height="37" width="106" class="imgvert"></a></a><a style="color:rgb(92, 92, 92);" href="http://www.kilz.com/"><img class="imgvert" src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj57&oid=00D700000008FyN&lastMod=1381299246000" alt="Kilz Logo" style="border:none" height="37" width="86"></a> <a style="color:rgb(92, 92, 92);" href="http://www.homedepot.com/"><img class="imghd" src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj5C&oid=00D700000008FyN&lastMod=1381299418000" alt="Home Depot Logo" style="border:none;" height="46" width="39"></a></td>
+              <td  class="w20">&nbsp;</td>
+            </tr>
+           
+          </tbody>
+        </table>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

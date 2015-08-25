@@ -1,0 +1,18 @@
+The Case "{!Case.CaseNumber}" for a {{!Case.Type_of_request__c} has been approved and is ready for you to begin processing.
+
+Created by: {!Case.CreatedBy}
+Requester:  {!Case.Requester__c}
+Account Name: {!Case.Account} 
+Contact Name: {!Case.Contact} 
+Estimated Spend: {!Case.Estimated_Spend_Amount__c} 
+YTD Sales : {!Case.YTD_Sales__c} 
+
+Case Type: {!Case.RecordType} 
+Date Need By: {!Case.Date_Needed_By__c} 
+Hot Rush: {!Case.Hot_Rush__c} 
+Hot Rush Reason: {!Case.Hot_Rush_Reason__c} 
+Ship To: {!Case.Ship_To__c} 
+
+Description:  {!Case.Description}
+
+Link to Case Record: {!Case.Link}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To be used by Color service to email drawdown information</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Draw down email out</name>
+    <style>none</style>
+    <subject>Draw down request for &quot;{!Account.Name}&quot;  Rep: {!Case.Requester__c}</subject>
+    <type>text</type>
+</EmailTemplate>

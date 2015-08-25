@@ -1,0 +1,13 @@
+*** NEW LEAD ASSIGNMENT NOTIFICATION *** 
+<br/><br/>
+
+Created Date: {!Lead.CreatedDate}<br/><br/>
+Lead Name: {!Lead.Name}<br/><br/>
+Company : {!Lead.Company}<br/><br/>
+Phone: {!Lead.Phone}<br/><br/>
+Email: {!Lead.Email}<br/><br/>
+Estimated Annual Spend: {!Lead.Estimated_Annual_Spend__c}<br/><br/>
+Previous Supplier: {!Lead.Previous_Supplier__c}<br/><br/>
+Rep Name: {!Lead.Re_Assigned_To__c}<br/><br/>
+Rep email: {!Lead.Instore_Rep_Email__c}<br/><br/>
+Additional Comments:  {!Lead.Additional_Comments__c}<br/><br/>

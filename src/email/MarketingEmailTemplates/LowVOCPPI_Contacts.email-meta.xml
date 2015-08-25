@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template to feature no to low VOC properties of Premium Plus Interior</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>LowVOCPPI_Contacts</name>
+    <style>none</style>
+    <subject>{!Contact.FirstName}, Did you know the benefits of BEHR Premium Plus Interior Paint?</subject>
+    <textOnly>Hi {!Contact.FirstName},
+
+Did you know we have zero and low VOC interior paints? They meet GREENGUARD Certified products which contribute to the creation of healthier interiors. Please call me at {!Contact.OwnerPhone} for more information on BEHR® and KILZ® products or professional services.
+Download the Technical Data sheets by clicking www.behrpro.com/bitactds and read about the complete features and benefits of BEHR Premium Plus® Interior Paint 
+
+Features include: 
+
+-  GREENGUARD Certified which meets strict emissions limits
+-   Low Odor formula allows the paint smell to dissipate faster
+-  100% Acrylic and Mildew Resistant finish
+-   Self-Priming performance 
+
+Go to www.behrpro.com/bitacbpservices to learn more about our service offering
+
+Sincerely, 
+{!Contact.OwnerFullName}
+{!Contact.OwnerTitle}
+{!Contact.OwnerPhone}
+{!Contact.OwnerEmail}
+
+You have opted-in to receive email newsletters from BehrPro. If you no longer wish to receive promotional notifications and news, please send us an email at unsubscribe@pronews.behrpro.com
+
+If this email has been forwarded to you and you wish to subscribe, please send us an email at subscribe@pronews.behrpro.com
+
+To read our Privacy Policy go to www.behrpro.com/privacypolicy
+
+We recently updated our Privacy Policy. If you wish to change your preferences, please follow the directions in the Privacy Policy.
+
+Trademarks are the property of their respective owners.
+
+©2012 Behr Process Corporation. All Rights Reserved.
+
+Behr Process Corporation
+3400 W. Segerstrom Avenue
+Santa Ana, CA 92704</textOnly>
+    <type>custom</type>
+</EmailTemplate>

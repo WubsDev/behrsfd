@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Actual Sales Update</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Actual Sales Updates</value>
+    </caseValues>
+    <fields>
+        <label><!-- Same Manager --></label>
+        <name>Acct_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Sales --></label>
+        <name>ActualSales__c</name>
+        <relationshipLabel><!-- Actual Sales Updates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Account --></label>
+        <name>New_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Opportunity --></label>
+        <name>New_Opportunity_Entry__c</name>
+        <relationshipLabel><!-- Actual Sales Updates --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- New Owner Email --></label>
+        <name>New_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Owner --></label>
+        <name>New_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- New RPSM --></label>
+        <name>New_RPSM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Account --></label>
+        <name>Old_Account_a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Opportunity --></label>
+        <name>Old_Opportunity_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Opportunity F --></label>
+        <name>Old_Opportunity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Owner Email --></label>
+        <name>Old_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old Owner --></label>
+        <name>Old_Owner_a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old RPSM Email --></label>
+        <name>Old_RPSM_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old RPSM F --></label>
+        <name>Old_RPSM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Old RPSM --></label>
+        <name>Old_RPSM_a__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Submitted</masterLabel>
+            <translation><!-- Not Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Account Update Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Account Ownership Change --></label>
+        <name>Account_Ownership_Change</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

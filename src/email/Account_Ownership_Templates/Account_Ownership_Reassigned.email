@@ -1,0 +1,7 @@
+Attention {!Ownership_Approval_Account__c.Old_Owner__c}
+
+Account {!Ownership_Approval_Account__c.Account__c} has been reassigned to {!Ownership_Approval_Account__c.New_Owner__c} by {!User.Name}
+
+Comments: {!ApprovalRequest.Comments}
+
+Please email smart@behr.com with any questions.

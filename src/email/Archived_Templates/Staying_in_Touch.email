@@ -1,0 +1,20 @@
+Hi {!if(Lead.FirstName="", Contact.FirstName,Lead.FirstName)},
+
+On behalf of BehrPro, I'm extremely pleased that we've been able to provide the services, solutions and products to successfully support {!if(Account.Name="", Lead.Company,Account.Name)} in 2013. In keeping with the holiday spirit of giving {!if(Lead.FirstName="", Contact.FirstName,Lead.FirstName)}, can you think of two friends or colleagues who also could benefit from working with me to help them:
+
+    Reduce their costs per turn with the right product solutions for commercial and residential projects (testimonial videos McKay Apartments, HCH Construction)
+
+    Save on capital expenditure projects and exterior repaints (tesimonial video AG Properties) or to
+
+    Take advantage of our free Web-Enabled Business program for registered BehrPro Paint Contractors?
+
+If so, please pass along my information or give me a call.
+
+Thank you again for your business, and I wish you a happy and successful 2014!
+
+All the best,
+
+{!if(Contact.OwnerFullName="",Lead.OwnerFullName,Contact.OwnerFullName)}
+{!if(Contact.OwnerTitle="", Lead.OwnerTitle,Contact.OwnerTitle)}
+{!if(Contact.OwnerPhone="", Lead.OwnerPhone,Contact.OwnerPhone)}
+{!if(Contact.OwnerEmail="", Lead.OwnerEmail,Contact.OwnerEmail)}

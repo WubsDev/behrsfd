@@ -1,0 +1,21 @@
+Account Name: {!Direct_Onboarding__c.Account_Name__c}
+Current Status: {!Direct_Onboarding__c.Status__c}
+Approved by: {!User.Name}
+Comments: {!ApprovalRequest.Comments}
+
+Approval Process.
+
+1. Pending RVP Approval - Waiting RVP to approve request
+
+2. Pending SVP Approval - Waiting SVP to approve request
+
+3. Pending Credit Review - Finance will be performing a credit check to determine payment terms
+
+4. Pending Account Setup - Finance has completed credit check and Sales Administration is setting up the Master Data in SAP
+
+5. Account Setup Complete - Master Data setup has been completed in SAP
+
+
+
+Link to Account Record: {!Direct_Onboarding__c.Account_Link__c}
+Link to Direct Onboarding Record: {!Direct_Onboarding__c.Link}

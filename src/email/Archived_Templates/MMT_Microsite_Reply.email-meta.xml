@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Reply letter for MMT microsite adds</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>MMT_2011</letterhead>
+    <name>MMT Microsite Reply</name>
+    <style>formalLetter</style>
+    <subject>Thank you for Registering</subject>
+    <type>html</type>
+</EmailTemplate>

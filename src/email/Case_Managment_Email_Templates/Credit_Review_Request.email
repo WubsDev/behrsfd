@@ -1,0 +1,2 @@
+There is a credit request for {!Case.Account}
+Here is a link to the record: {!Case.Link}

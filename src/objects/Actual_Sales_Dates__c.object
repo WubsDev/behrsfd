@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <customSettingsVisibility>Public</customSettingsVisibility>
+    <description>Contains fields for managing Start &amp; End for Actual Sales Reporting</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Month_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Month Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Year_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Year Start Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <label>Actual Sales Dates</label>
+</CustomObject>

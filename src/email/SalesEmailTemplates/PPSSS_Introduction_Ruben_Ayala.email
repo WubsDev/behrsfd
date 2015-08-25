@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<meta name="viewport" content="width=device-width" />
+<style type="text/css">
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 14px;
+}
+img {
+	border: none;
+}
+table {
+	border-collapse: collapse;
+}
+ @media only screen and (max-width:599px) {
+table[class=col] {
+	display: block !important;
+	width: 320px !important;
+}
+img[class=behrlogotop], img[class=imgvert] {
+	width: 84px!important;
+	height: auto!important;
+}
+img[class=imghd] {
+	width: auto!important;
+	height: 30px!important;
+}
+td[class=footer] { height:60px!important; }
+a[class=twitter] img, a[class=facebook] img {
+	padding-bottom: 4px!important;
+	height: 15px!important;
+	width: 15px!important;
+}
+td[class=top_banner] {padding:10px!important;}
+img[class=entertowinbutton] { padding-top:15px!important; padding-left: 20px!important; }
+}
+</style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; margin: 0;padding: 0;width: 100% !important;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust:none;">
+<table width="100%" border="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="center" valign="top"><table class="col" width="600" border="0" cellpadding="0" cellspacing="0" >
+          <tbody>
+            <tr>
+              <td class="w20" width="25"></td>
+              <td class="w560" height="15" width="550"></td>
+              <td class="w20" width="25"></td>
+            </tr>
+            <tr>
+              <td class="w20" width="25"></td>
+              <td class="w560" width="550"><table style="padding-top:20px;background-color:#ffffff;" class="col" width="100%" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td style="" class="logo_holder" valign="top" width="50%" align="left"><a href="http://www.behrpro.com/BehrPro/prohome"> <img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj5H&oid=00D700000008FyN&lastMod=1381299508000" alt="BEHR PRO Logo" width="138" height="57" class="behrlogotop" style="border:none;width:138px;height:57px;"></a></td>
+                      <td class="behrprocom" style="" valign="bottom" width="50%" align="right"><a class="twitter" href="https://twitter.com/BehrPro"><img src="http://img03.en25.com/EloquaImages/clients/BehrProcessCorporation/{972031d7-e82d-4103-ac22-e78435e599e2}_twittericon.png" width="22" height="22" alt="Visit us on Twitter" /></a>&nbsp;&nbsp; <a class="facebook" href="https://www.facebook.com/BehrPro"> <img src="http://img03.en25.com/EloquaImages/clients/BehrProcessCorporation/{079d8c8b-8355-448f-b8ba-c834de16c7e1}_facebookicon.png" width="22" height="22" alt="Visit BehrPro on Facebook" /></a>&nbsp;&nbsp; <a class="facebook" href="http://www.youtube.com/behrprotv"> <img src="http://img03.en25.com/EloquaImages/clients/BehrProcessCorporation/{23665776-e279-4392-8c67-3ab13a247710}_youtubeicon.png" width="22" height="22" alt="Check out BehrProTV" /></a></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="left" valign="top" bgcolor="#FFFFFF" class="" style="">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="left" valign="middle" bgcolor="#f8981d" class="top_banner" style="color:#000000;font-size:28px;font-weight:bold;padding:10px 20px;">New In-Store Services Available From Behr Paint & Home Depot</font></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              <td class="w25" width="25"><br></td>
+            </tr>
+            <tr>
+              <td class="w25" width="25"><br></td>
+              <td width="550" align="left" valign="top" class="w560"><br>
+                <p>Dear {!if(Lead.FirstName="", Contact.FirstName,Lead.FirstName)},</p>
+                <p>  In our continued effort to offer outstanding service to our customers, Behr is excited to announce the addition of a new support position from your Behr Team & The Home Depot. 
+
+<p>  Ruben Ayala now holds the position of Pro Paint Sales & Service Specialist at The Thomas Road Home Depot, Store 477. Ruben is a full time Behr Employee working within the store to support our Professional Behr Customers with their product & service needs. Think of it as your Behr Paint Store within The Home Depot. </p>
+
+<p>In his role, Ruben will be able to: </p>
+
+<p>- Take your orders by phone on his direct line. </p>
+<p>- Process your orders and have them available for pick up or delivery. </p>
+<p>- Schedule deliveries. </p>
+<p>- Color matching. </p>
+<p>- Capture & record your color information by job. </p>
+
+<p>In addition, The Thomas Road Home Depot offers: </p>
+
+<p>- Increased inventory levels to support your projects. </p>
+
+<p>- Expanded product offering including products such as DTM, Block Filler & Dryfall. </p>
+
+<p>Ruben will be available to service your needs Monday thru Friday from 7:00am through 4:00pm. His contact info is: </p>
+
+<p>Cell: (480) 521-2192
+<p>Email: RAyala@BehrPaint.com </p>
+<p>Home Depot Thomas Road #477 </p>
+<p>3609 E Thomas Rd</p>
+<p>Phoenix, AZ 85018 </p>
+
+<p>Please don't hesitate to give Ruben a call for your Behr Paint needs. We look forward to serving you! 
+</p>
+								
+                <p>Sincerely,<br /><br />               {!if(Contact.OwnerFullName="",Lead.OwnerFullName,Contact.OwnerFullName)}<br />
+                {!if(Contact.OwnerTitle="", Lead.OwnerTitle,Contact.OwnerTitle)}<br />
+                {!if(Contact.OwnerPhone="", Lead.OwnerPhone,Contact.OwnerPhone)}<br />
+                 {!if(Contact.OwnerEmail="", Lead.OwnerEmail,Contact.OwnerEmail)}</p>
+                <p><a href="http://www.behrpro.com"><img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj4s&oid=00D700000008FyN&lastMod=1381298465000" width="114" height="21" alt="behrpro.com" border="0" style="border:none;"></a></p>
+                                    </p></td>
+              <td class="w20" width="25"><br></td>
+            </tr>
+            <tr>
+              <td  class="w25">&nbsp;</td>
+              <td height="56" align="right" valign="middle" bgcolor="#000000" style="background-color:#000000;padding-right:10px;" class="footer"><a href="http://www.behr.com/Behr/home"><img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj52&oid=00D700000008FyN&lastMod=1381299174000" alt="BEHR Logo" style="border:none" height="37" width="106" class="imgvert"></a></a><a style="color:rgb(92, 92, 92);" href="http://www.kilz.com/"><img class="imgvert" src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj57&oid=00D700000008FyN&lastMod=1381299246000" alt="Kilz Logo" style="border:none" height="37" width="86"></a> <a style="color:rgb(92, 92, 92);" href="http://www.homedepot.com/"><img class="imghd" src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj5C&oid=00D700000008FyN&lastMod=1381299418000" alt="Home Depot Logo" style="border:none;" height="46" width="39"></a></td>
+              <td  class="w20">&nbsp;</td>
+            </tr>
+           
+          </tbody>
+        </table>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

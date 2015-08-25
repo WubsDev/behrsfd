@@ -1,0 +1,9 @@
+*** LEAD RE-ASSIGNMENT NOTIFICATION ***  
+
+The following lead has been re-assigned to you.
+Company: {!Lead.Company}
+Lead Name:  {!Lead.Name} 
+Primary Store#: {!Lead.Primary_Store__c}
+Additional Comments: {!Lead.Additional_Comments__c}
+
+Click on the link to access the lead directly:  {!Lead.Link}

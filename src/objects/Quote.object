@@ -1,0 +1,822 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CreatePdf</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailQuote</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewQuote</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SyncQuote</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>AccountId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Quotes/Orders</relationshipLabel>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Bill_To_City_State_code_PDF__c</fullName>
+        <externalId>false</externalId>
+        <formula>BillingCity + &quot;,&quot;+&quot; &quot;+ BillingState +&quot;,&quot;+&quot; &quot;+ BillingPostalCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bill To</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_To_Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>BillingCountry</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bill To</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_To_Name_PDF__c</fullName>
+        <externalId>false</externalId>
+        <formula>BillingName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bill To Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bill_To_Street_PDF__c</fullName>
+        <externalId>false</externalId>
+        <formula>BillingStreet</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bill To</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Category__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account__r.Tier_Level__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Category</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color_Vendor_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Color Vendor Count</label>
+        <summaryFilterItems>
+            <field>QuoteLineItem.Color_Vendor__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>QuoteLineItem.Color_Name_Code1__c</field>
+            <operation>equals</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Name1__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://na5.salesforce.com/&quot; &amp; Opportunity.Primary_Contact__c,  Opportunity.Primary_Contact__r.FirstName+&quot; &quot;+Opportunity.Primary_Contact__r.LastName)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.FirstName + &quot; &quot;+  Contact.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Convert_to_Order__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Convert to Order</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Converted_to_Order__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Converted to Order</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Created_By__c</fullName>
+        <externalId>false</externalId>
+        <formula>$User.FirstName +&quot; &quot; +  $User.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created By</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>Email Address</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Email</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Mobile_Number__c</fullName>
+        <description>Behr Rep Mobile number</description>
+        <externalId>false</externalId>
+        <label>Mobile Number</label>
+        <required>false</required>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.Id</formula>
+        <label>Opportunity Owner</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OrderID__c</fullName>
+        <externalId>false</externalId>
+        <label>OrderID</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <label>Order Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Phone</formula>
+        <label>Phone</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Price_per_Gallon__c</fullName>
+        <externalId>false</externalId>
+        <label>Price per Gallon</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Pro_Rewards__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Pro_Rewards_Account_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Pro Rewards #</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Purchase_Order__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchase Order#</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quote_Line_Items__c</fullName>
+        <externalId>false</externalId>
+        <label>Quote Line Items</label>
+        <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Quote_Ordertype__c</fullName>
+        <externalId>false</externalId>
+        <formula>$RecordType.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quote/Order Type</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Recycling_fee_for_1_Gallon__c</fullName>
+        <externalId>false</externalId>
+        <label>Fee - 1 Gallon</label>
+        <summarizedField>QuoteLineItem.Recycling_fee_for_1_Gallon__c</summarizedField>
+        <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Recycling_fee_for_5_Gallon__c</fullName>
+        <externalId>false</externalId>
+        <label>Fee - Over 1 Gallon</label>
+        <summarizedField>QuoteLineItem.Recycling_fee_for_5_Gallon__c</summarizedField>
+        <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Rep_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.Email</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rep Email</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rep_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.FirstName +&apos; &apos; +  CreatedBy.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rep Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rep_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Rep Phone</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requested_Delivery_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Delivery Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sent_To_HD__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sent To HD</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.Street__c +  BR() +
+Opportunity.City__c + &apos;,&apos; + &apos; &apos; + Opportunity.State__c + &apos; &apos; + Opportunity.Zipcode__c +  BR() +
+Opportunity.Country__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ship To</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_City_State_Code_PDF__c</fullName>
+        <externalId>false</externalId>
+        <formula>ShippingCity +&quot;,&quot;+&quot; &quot;+ ShippingState +&quot;,&quot;+&quot; &quot;+ ShippingPostalCode</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ship To</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Country_PDF__c</fullName>
+        <externalId>false</externalId>
+        <formula>ShippingCountry</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ship To</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Name_PDF__c</fullName>
+        <externalId>false</externalId>
+        <formula>ShippingName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ship To Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Street_PDF__c</fullName>
+        <externalId>false</externalId>
+        <formula>ShippingStreet</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ship To</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Special_Instructions__c</fullName>
+        <externalId>false</externalId>
+        <label>Special Instructions</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Special_Processing_Instructions__c</fullName>
+        <externalId>false</externalId>
+        <label>Special Processing Instructions</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Draft</fullName>
+                <allowEmail>true</allowEmail>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Needs Review</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>In Review</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Presented</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Accepted</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Denied</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Management Review</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Review</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Archived</fullName>
+                <allowEmail>true</allowEmail>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Store1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Store__r.Name  + &quot;-&quot; +  Store__r.Store_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Store #</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Store__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Store No</label>
+        <referenceTo>Home_Depot_Store__c</referenceTo>
+        <relationshipLabel>Strore#</relationshipLabel>
+        <relationshipName>Quotes</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sub_Total_Template__c</fullName>
+        <externalId>false</externalId>
+        <formula>TotalPrice - Total_Recycling_Fee__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sub Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>THD_Store__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;https://na5.salesforce.com/&quot;&amp; Opportunity.THD_Store__c, Opportunity.THD_Store__r.Name )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>THD Store</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Quantity</label>
+        <summarizedField>QuoteLineItem.Quantity</summarizedField>
+        <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Recycling_Fee__c</fullName>
+        <externalId>false</externalId>
+        <formula>Recycling_fee_for_1_Gallon__c  +  Recycling_fee_for_5_Gallon__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total State Recycling Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Saved__c</fullName>
+        <externalId>false</externalId>
+        <formula>Subtotal  -     TotalPrice</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total $Saved</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Type_Of_Order__c</fullName>
+        <externalId>false</externalId>
+        <label>Type Of Order</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Direct to store</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct to site</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>X1_Gallon_Qty__c</fullName>
+        <externalId>false</externalId>
+        <label>1 Gallon Qty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X1_Gallon__c</fullName>
+        <externalId>false</externalId>
+        <label>1 Gallon</label>
+        <summarizedField>QuoteLineItem.X1_Gallon__c</summarizedField>
+        <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>X5_Gallon__c</fullName>
+        <externalId>false</externalId>
+        <label>Over 1 Gallon</label>
+        <summarizedField>QuoteLineItem.X5_Gallon__c</summarizedField>
+        <summaryForeignKey>QuoteLineItem.QuoteId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <type>Summary</type>
+    </fields>
+    <recordTypes>
+        <fullName>Order</fullName>
+        <active>true</active>
+        <description>Provide users with the ability to place orders in Salesforce.These orders will then be distributed to other systems to allow easier order entry.</description>
+        <label>Order</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Customer Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Management Review</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Order__c</picklist>
+            <values>
+                <fullName>Direct to site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct to store</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Quote</fullName>
+        <active>true</active>
+        <label>Quote</label>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Archived</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Draft</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Management Review</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_Of_Order__c</picklist>
+            <values>
+                <fullName>Direct to site</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Direct to store</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>QUOTE.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Discount</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>GrandTotal</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QUOTE.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Discount</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>GrandTotal</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>00N70000002SO1m</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>QUOTE.PHONE</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>QUOTE.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Discount</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>GrandTotal</searchResultsAdditionalFields>
+    </searchLayouts>
+    <validationRules>
+        <fullName>Phone_Validation</fullName>
+        <active>false</active>
+        <description>Phone number should be in a specific format.</description>
+        <errorConditionFormula>!(REGEX( Phone , &quot;[0-9]{7}&quot;)|| REGEX(  Phone ,&quot;\\([0-9]{3}\\)\\s[0-9]{3}\\-[0-9]{4}&quot;)||ISBLANK(Phone))</errorConditionFormula>
+        <errorDisplayField>Phone</errorDisplayField>
+        <errorMessage>Please check the phone number you entered.  It should contain 7 or 10 numbers</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Phone_and_Email_Validation</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+Phone = NULL, 
+Email= NULL, 
+
+AND(
+OR(ISPICKVAL(Opportunity.StageName,&quot;Recommend&quot;), ISPICKVAL(Opportunity.StageName,&quot;Won/Satisfy&quot;)), 
+NOT(CreatedDate = LastModifiedDate ))
+
+)</errorConditionFormula>
+        <errorMessage>Please enter Phone number or Email address.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Ship_to_name_Ship_to_Address_to_fill</fullName>
+        <active>true</active>
+        <description>Ship to name and Ship to Address to be filled in if Type of Order is Direct to Site.</description>
+        <errorConditionFormula>ISPICKVAL( Type_Of_Order__c , &apos;Direct to site&apos;)  &amp;&amp;  (ISBLANK( ShippingPostalCode )  ||  ISBLANK(  ShippingState )  ||  ISBLANK( ShippingName)) &amp;&amp;  $RecordType.Name=&apos;Order&apos;</errorConditionFormula>
+        <errorMessage>Please fill Ship to Name and Ship to Address if Type of Order is Direct to Site</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Clone</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Clone</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/connection.js&quot;)}
+var qid=&quot;{!Quote.Id}&quot;;
+
+var myvar = sforce.apex.execute(&quot;BEHR_QuoteClone_US&quot;,&quot;cloneQuote&quot;, {q:qid});
+//window.location =&quot;https://cs1.salesforce.com/&quot;+myvar ;
+//window.location=&quot;/&quot;+myvar+&quot;/e?retURL=%2F&quot;+myvar ;
+window.location=&quot;/&quot;+myvar ;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Clone_ToOrder</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Clone</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)}
+
+var qid=&quot;{!Quote.Id}&quot;;
+
+var myvar = sforce.apex.execute(&quot;BEHR_QuotetoOrder_US&quot;,&quot;cloneQuotes&quot;, {qid:qid});
+
+window.location=&quot;/&quot;+ myvar;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Convert_to_Order</fullName>
+        <availability>online</availability>
+        <description>This button will create an Order from the Quote</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Convert to Order</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/19.0/connection.js&quot;)} 
+
+var qid=&quot;{!Quote.Id}&quot;; 
+
+if({!Quote.Quote_Line_Items__c} &lt; 1 ){
+alert(&quot;You must add Products to your Opportunity before you can create an order&quot;);
+}
+else if({!Quote.Color_Vendor_Count__c} &gt; 0 ){
+alert(&quot; You must add Color Vendor and Color Name to Quote Line items&quot;);
+}
+else if((&quot;{!Quote.Type_Of_Order__c}&quot; == &apos;Direct to site&apos;)&amp;&amp;( (&quot;{!Quote.ShippingPostalCode}&quot; == &apos;&apos;) || (&quot;{!Quote.ShippingStreet}&quot; == &apos;&apos;) ||(&quot;{!Quote.ShippingCountry}&quot; == &apos;&apos;) ||(&quot;{!Quote.ShippingCity}&quot; == &apos;&apos;) || (&quot;{!Quote.ShippingState }&quot; == &apos;&apos;) ||(&quot;{!Quote.ShippingName}&quot; == &apos;&apos;)) ){
+alert(&quot;Please provide Shipping address Details &quot;);
+}
+else{
+ var myvar = sforce.apex.execute(&quot;BEHR_QuotetoOrder_US&quot;,&quot;ConvertQuote&quot;, {qid:qid}); 
+ window.location=&quot;/&quot; +myvar ;  
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Create_PDF_for_Eco_Fee</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Preview Quote PDF</masterLabel>
+        <openType>newWindow</openType>
+        <page>Behr_Quote_PDF</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>Save_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Save PRO Quote PDF</masterLabel>
+        <openType>noSidebar</openType>
+        <page>Behr_Quote_PDF_Save</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>Send_To_HD</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send To HD</masterLabel>
+        <openType>sidebar</openType>
+        <page>SenttoHD</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

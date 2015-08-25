@@ -1,0 +1,132 @@
+<apex:page standardController="QuoteLineItem" extensions="Behr_CustomQuoteLineItemController">
+  <!-- Begin Default Content REMOVE THIS -->
+  <apex:form >
+ <!-- <apex:outputPanel rendered="{!normal}">
+  <apex:detail />
+  </apex:outputPanel>-->
+
+  <apex:pageBlock id="op" mode="maindetail" >
+  
+<apex:pageBlockSection columns="2" rendered="{!orderDisplay}">
+
+
+<!--<apex:pageBlockSectionItem rendered="{!colorNoint}">
+<apex:outputLabel value="Color Name/Code" />
+<apex:outputField value="{!qliobj.Color_Name_Code__c}"/>
+</apex:pageBlockSectionItem>-->
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Color Name/Code" />
+<apex:outputField value="{!qliobj.Color_Name_Code1__c}"/>
+</apex:pageBlockSectionItem>
+
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Use" />
+<apex:inputField value="{!QuoteLineItem.Use__c}"/>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Color Vendor" />
+<apex:outputField value="{!qliobj.Color_Vendor__c}">
+<apex:actionSupport event="onchange" status="actid" action="{!onchange1}" reRender="op" /> 
+</apex:outputField>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Sheen" />
+<apex:inputField value="{!QuoteLineItem.Sheen__c}"/>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel />
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Size" />
+<apex:inputField value="{!QuoteLineItem.Size__c}"/>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel />
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Base" />
+<apex:inputField value="{!QuoteLineItem.Base__c}"/>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel />
+</apex:pageBlockSectionItem>
+
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Vendor" />
+<apex:inputField value="{!QuoteLineItem.Vendor__c}"/>
+</apex:pageBlockSectionItem>
+
+
+
+<apex:outputPanel rendered="{!flag}" >
+<apex:dataTable value="{!qliobj}" var="qli" align="center" >
+    <apex:column headerValue="Colorant" style="vertical-align:middle;">
+        <apex:inputText value="{!qli.Colorant__c}" disabled="True"/>
+       <apex:inputText value="{!qli.Colorant1__c}" disabled="True"/>
+       <apex:inputText value="{!qli.Colorant2__c}" disabled="True"/>
+        <apex:inputText value="{!qli.Colorant3__c}" disabled="True"/>
+        <apex:inputText value="{!qli.Colorant4__c}" disabled="True"/>
+    </apex:column>
+    <apex:column headerValue="OZ" style="vertical-align:middle;">
+    <apex:inputText value="{!qli.OZ_1__c}" disabled="True"/>
+    <apex:inputText value="{!qli.OZ_2__c}" disabled="True"/>
+    <apex:inputText value="{!qli.OZ_3__c}" disabled="True"/>
+    <apex:inputText value="{!qli.OZ_4__c}" disabled="True"/>
+    <apex:inputText value="{!qli.OZ_5__c}" disabled="True"/>
+    </apex:column>
+    <apex:column headerValue="384ths">
+    <apex:inputText value="{!qli.X384ths_1__c}" disabled="True"/>
+    <apex:inputText value="{!qli.X384ths_2__c}" disabled="True"/>
+    <apex:inputText value="{!qli.X384ths_3__c}" disabled="True"/>
+    <apex:inputText value="{!qli.X384ths_4__c}" disabled="True"/>
+    <apex:inputText value="{!qli.X384ths_5__c}" disabled="True"/>
+    </apex:column>
+    
+</apex:dataTable>
+</apex:outputPanel>
+
+</apex:pageblockSection>
+
+
+<!--QuoteLineItem-->
+<apex:pageblockSection rendered="{!quoteDisplay}">
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="National Price" />
+<apex:inputField value="{!QuoteLineItem.ListPrice}"/>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Subtotal" />
+<apex:inputField value="{!QuoteLineItem.Subtotal}"/>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Total Price" />
+<apex:inputField value="{!QuoteLineItem.TotalPrice}"/>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Price Per Gallon" />
+<apex:inputField value="{!QuoteLineItem.Price_per_Gallon__c}"/>
+</apex:pageBlockSectionItem>
+
+
+</apex:pageblockSection>
+
+
+
+</apex:pageBlock>
+
+  </apex:form>
+</apex:page>

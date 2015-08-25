@@ -1,0 +1,41 @@
+The account "{!Direct_Onboarding__c.Account_Name__c}" has been submitted for approval.
+
+Date: {!Direct_Onboarding__c.CreatedDate}
+SAP Number: {!Direct_Onboarding__c.SAP_Number__c}
+Sales Rep servicing this customer: {!Direct_Onboarding__c.Account_Owner__c}
+Pimary Supplier (Non Behr): {!Direct_Onboarding__c.Primary_Supplier_Non_Behr__c}
+RPSM: {!Direct_Onboarding__c.Account_RPSM__c}
+Form completed by: {!Direct_Onboarding__c.CreatedBy}
+
+RVP Approved: {!User.Name} 
+
+RVP Comments: {!ApprovalRequest.Comments}
+
+
+
+QUALIFIER
+Customer's total annual spend (min. $40K to qualify): {!Direct_Onboarding__c.Projected_Behr_Capture_Amount__c}
+
+Estimated % Behr can capture: {!Direct_Onboarding__c.Projected_Behr_Capture_Percent__c}
+
+Is this opportunity tied to a planned project(s)?:  {!Direct_Onboarding__c.Project_Planned__c} 
+Start Date: {!Direct_Onboarding__c.Project_Start_Date__c}      
+$ Potential: {!Direct_Onboarding__c.Project_Potential_Amount__c}
+Do we have the capability to deliver to these locations (DTP facility within 100 miles)? :  {!Direct_Onboarding__c.Delivery_Capabilities__c}
+Does this project require a rebate? : {!Direct_Onboarding__c.Project_Rebate_Required__c}
+
+CUSTOMER
+Company Name: {!Direct_Onboarding__c.Company_Name__c}
+Primary Contact: {!Direct_Onboarding__c.Primary_Contact__c}
+Address (street address): {!Direct_Onboarding__c.Onboard_Address_Line_1__c}
+Address (City, State, Zip): {!Direct_Onboarding__c.Onboard_City__c}, {!Direct_Onboarding__c.Onboard_State__c}, {!Direct_Onboarding__c.Onboard_Postal__c}
+Phone: {!Direct_Onboarding__c.Phone__c}
+Description: {!Direct_Onboarding__c.Description__c}
+Market Segment: {!Direct_Onboarding__c.Market_Segment__c}
+Credit requirements/terms? Payment Terms? : {!Direct_Onboarding__c.Credit_Req_Terms__c} ,  {!Direct_Onboarding__c.Payment_Terms__c}
+
+This information is confirmed by: {!Direct_Onboarding__c.OwnerFullName} {!Direct_Onboarding__c.CreatedDate}
+
+
+Link to Account Record: {!Direct_Onboarding__c.Account_Link__c} 
+Link to Direct Onboarding Record: {!Direct_Onboarding__c.Link}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.TYTD_C_C_plus_DTP__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Estimated_Annual_Spend__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Account.of_Est_Annual_Spend__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>YTD Sales vs Est. Annual Spend.  Use this report to gauge estimates for the customer&apos;s annual spend.</description>
+    <filter>
+        <criteriaItems>
+            <column>User.RPSM_New__c</column>
+            <operator>equals</operator>
+            <value>John Wysor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>USERS.NAME</column>
+            <operator>notEqual</operator>
+            <value>Behr Instore Rep,John Wysor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.of_Est_Annual_Spend__c</column>
+            <operator>greaterOrEqual</operator>
+            <value>75</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>USERS.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>% of Est. Spend Captured - LA Team</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.of_Est_Annual_Spend__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

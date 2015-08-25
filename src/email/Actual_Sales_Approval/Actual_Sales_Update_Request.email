@@ -1,0 +1,33 @@
+A request to update the relationship of a sales records has been submitted by {!Ownership_Approval__c.CreatedBy}
+
+Supporting Information:
+PO {!Actual_Sales__c.Purchase_Order__c} or ID {!Actual_Sales__c.HD_cust_id__c}
+Requester Comments:  {!Ownership_Approval__c.Comments__c}
+Amount:  {!Ownership_Approval__c.Amount__c}
+Contact Name: {!Actual_Sales__c.Contact_Name__c}
+Phone:  {!Actual_Sales__c.Phone__c}
+Ordered by:  {!Actual_Sales__c.Ordered_By__c}
+
+Old Opportunity Name: {!Ownership_Approval__c.Old_Opportunity_Text__c}
+New Opportunity Name: {!Ownership_Approval__c.New_Opportunity_Entry__c}
+
+Old Account Name: {!Ownership_Approval__c.Old_Account_a__c}
+New Account Name: {!Ownership_Approval__c.New_Account__c}
+
+Old Owner:  {!Ownership_Approval__c.Old_Owner_a__c}
+New Owner:  {!Ownership_Approval__c.New_Owner__c}
+Link to Approval Details Link: {!Ownership_Approval__c.Link}
+
+Approval Information:
+
+Current Approval Status: {!Ownership_Approval__c.Status__c}
+Recent Comments: {!ApprovalRequest.Comments}
+
+Approval Process:
+
+Pending - The request has been sent to {!Ownership_Approval__c.Old_RPSM_a__c} for approval.
+Approved - The request had been approved and the actual sales record will be reflected under the new opportunity and account.
+
+Support Information:
+
+Please email smart@behr.com with any questions.

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectSharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <ownerRules>
+        <fullName>China_Payout_Share</fullName>
+        <sharedTo>
+            <group>China_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>China_Users</group>
+        </sharedFrom>
+        <accessLevel>Edit</accessLevel>
+        <name>China Payout Share</name>
+    </ownerRules>
+    <ownerRules>
+        <fullName>Us_Payout_Share</fullName>
+        <sharedTo>
+            <group>US_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>US_Users</group>
+        </sharedFrom>
+        <accessLevel>Edit</accessLevel>
+        <name>Us Payout Share</name>
+    </ownerRules>
+</CustomObjectSharingRules>

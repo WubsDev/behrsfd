@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Mass Email to MMT Leads with Email Addresses</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BehrPro_Letterhead</letterhead>
+    <name>Email to MMT Leads</name>
+    <style>formalLetter</style>
+    <subject>Behr/Kilz Professional Products and Services</subject>
+    <textOnly>Hello {!Lead.FirstName},
+
+First, we would like to thank you for taking the time to visit us at our Mobile Marketing Tour at THE HOME DEPOT USA. We hope you enjoyed the event and found it helpful and informative. If you have any questions or would like additional information, we offer the accompanying possibilities:
+ 
+1. Technical Information: 1 800 854 0133 ext 2.
+2. Online resources: www.behr.com, www.behrpro.com, espanol.behrpro.com, kilzpro-x.com
+3. To discuss your requirements for Projects, Products, Services (specifications, pricing, delivery, color matching, etc) you may telephone me directly at 1800 854 0133 x 2845 or Cell 714 914 9710.
+
+I look forward to hearing from you.  
+
+
+Best Regards,
+
+{!Lead.OwnerFullName}
+{!Receiving_User.MobilePhone}
+West Region Commercial Services
+Behr Process Corporation
+
+ 
+Corporate Office
+Behr Paint Corporation
+3400 Segerstrom Avenue
+Santa Ana, CA 92704
+(800) 854-0133</textOnly>
+    <type>html</type>
+</EmailTemplate>

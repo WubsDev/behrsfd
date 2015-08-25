@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>The line items on an order</description>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Color_Base__c</fullName>
+        <description>Used for SAP interface to retrieve the colorant used to create the formula.  Reference field COLOR_BASE</description>
+        <externalId>false</externalId>
+        <label>Color Base</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color_Brand__c</fullName>
+        <externalId>false</externalId>
+        <label>Color Brand</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color_Size__c</fullName>
+        <description>Used for SAP interface to retrieve the colorant used to create the formula.  Reference field COLOR_SIZE  gallon quart .5 gallon?</description>
+        <externalId>false</externalId>
+        <label>Color Size</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color_code__c</fullName>
+        <externalId>false</externalId>
+        <label>Color Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color_colorant_1__c</fullName>
+        <description>Used for SAP interface to retrieve the colorant used to create the formula.  Reference field COLOR_CLRNT1</description>
+        <externalId>false</externalId>
+        <label>Color colorant 1</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color_colorant_2__c</fullName>
+        <description>Used for SAP interface to retrieve the colorant used to create the formula.  Reference field COLOR_CLRNT2</description>
+        <externalId>false</externalId>
+        <label>Color colorant 2</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color_colorant_3__c</fullName>
+        <description>Used for SAP interface to retrieve the colorant used to create the formula.  Reference field COLOR_CLRNT3</description>
+        <externalId>false</externalId>
+        <label>Color colorant 3</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color_colorant_4__c</fullName>
+        <description>Used for SAP interface to retrieve the colorant used to create the formula.  Reference field COLOR_CLRNT4</description>
+        <externalId>false</externalId>
+        <label>Color colorant 4</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color_colorant_5__c</fullName>
+        <description>Used for SAP interface to retrieve the colorant used to create the formula.  Reference field COLOR_CLRNT5</description>
+        <externalId>false</externalId>
+        <label>Color colorant 5</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color_formula__c</fullName>
+        <externalId>false</externalId>
+        <label>Color Formula</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color_formula_in_one_field__c</fullName>
+        <externalId>false</externalId>
+        <formula>Color_colorant_1__c   &amp;  &quot; ; &quot; &amp;  Color_colorant_2__c  &amp;  &quot; ; &quot; &amp;Color_colorant_3__c  &amp;  &quot; ; &quot; &amp; Color_colorant_4__c  &amp;  &quot; ; &quot; &amp; Color_colorant_5__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Color formula in one field</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Color_name__c</fullName>
+        <externalId>false</externalId>
+        <label>Color Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Ref__c</fullName>
+        <description>Used for SAP interface to retrieve the colorant used to create the formula.  Reference field CUST_NUMBER</description>
+        <externalId>false</externalId>
+        <label>Customer Ref</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Direct_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(SAP_Order__r.Direct_order__c = True, Cost__c ,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Direct Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Direct__c</fullName>
+        <externalId>false</externalId>
+        <formula>SAP_Order__r.Direct_order__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Direct</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Est_Retail__c</fullName>
+        <externalId>false</externalId>
+        <formula>Retail2__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Est Retail</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Line #</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Material__c</fullName>
+        <description>Material ordered</description>
+        <externalId>false</externalId>
+        <label>Material</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Multiplier2__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(SAP_Order__r.Direct_order__c = True, 1,IF( SAP_Order__r.Order_date__c &lt;= DATE(2014,03,31), 1.35,1.18))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Multiplier formula</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Multiplier__c</fullName>
+        <externalId>false</externalId>
+        <label>Multiplier</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>National_Retail__c</fullName>
+        <description>National Retail to do retail down calculation</description>
+        <externalId>false</externalId>
+        <label>National Retail</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Acutal Sales Line Items</relationshipLabel>
+        <relationshipName>Actual_Sales_Line_Items</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <precision>18</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rejection_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Rejection Reason</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Retail2__c</fullName>
+        <externalId>false</externalId>
+        <label>Retail2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Retail__c</fullName>
+        <externalId>false</externalId>
+        <formula>If(ispickval(Status__c, &quot;Cancelled&quot;), 0,
+If( Direct__c = True,  Direct_Amount__c ,
+If( National_Retail__c &gt; 0, (( National_Retail__c -(National_Retail__c * 0.175))* Quantity__c ), 
+   Cost__c * Multiplier__c)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Retail</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SAP_Order__c</fullName>
+        <externalId>false</externalId>
+        <label>SAP Order</label>
+        <referenceTo>Actual_Sales__c</referenceTo>
+        <relationshipLabel>Acutal Sales Line Items</relationshipLabel>
+        <relationshipName>Line_Items</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Sales_Region__c</fullName>
+        <description>Used for SAP interface to retrieve the colorant used to create the formula.  Reference field CUST_REGIO</description>
+        <externalId>false</externalId>
+        <label>Sales Region</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>On Order</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shipped</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Credit hold</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Tinted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Tinted</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>external_id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>20</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>material_description__c</fullName>
+        <description>description of the material ordered</description>
+        <externalId>false</externalId>
+        <label>Material Description</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Actual Sales Line Item</label>
+    <nameField>
+        <label>Order Item Combo</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Actual Sales Line Items</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>SAP_Order__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Line__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Est_Retail__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SAP_Order__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Line__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Product__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Quantity__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Est_Retail__c</lookupPhoneDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

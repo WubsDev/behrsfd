@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+<table width="550" border="0" cellspacing="0" cellpadding="0" bgcolor="">
+	<tr>
+    	<td width="10">&nbsp;</td>
+    	<td width="530"></td>
+        <td width="10">&nbsp;</td>
+  	</tr>
+    
+<!-- Promo Image Here --> 
+	<tr>
+		<td colspan="3">  
+ 			<table width="550" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="top"><img src="http://www.behr.com/ibsemail/header_replace.jpg" width="550" height="85" alt="Experience BehrPro&#8480;"/></td>
+				</tr>
+    			<tr>
+					<td valign="top">
+        				<table width="550" border="0" cellspacing="0" cellpadding="0">
+  							<tr>
+                			<!--Space-->
+    						<td width="28" valign="top"><img src="images/spacer.gif" width="28" height="1" /></td>
+                    		<!--Left column-->
+		  			  		<td width="493">
+                    			<table width="493" border="0" cellspacing="0" cellpadding="0">
+  									<tr>
+    									<td height="38" valign="top">
+                                			<font face="Verdana, Geneva, sans-serif" size="+1">
+                                			<b>CONGRATULATIONS!</b></font></td>
+					  		  		</tr>
+  									<tr>
+   										<td height="51" valign="top">
+                                			<font face="Verdana, Geneva, sans-serif" size="-2">
+                                            <b>
+                                			You have successfully registered with BehrPro&#x2122;. Your free gift will ship in 2-3 weeks.
+                             				</b>
+                                            <br />
+                                            <br />
+                                            In the meantime, you can always reach us at <a href="mailto:IBS@behrpro.com">IBS@behrpro.com</a>
+                                            </font>
+                                		</td>
+  									</tr>
+                                    <tr><td height="75"></td></tr>
+								</table>
+                  			<td width="29" valign="top"><img src="images/spacer.gif" width="29" height="1" /></td>
+  				  			</table>
+   						</td>
+                    	<!--Space-->
+    					<td width="29"></td>
+  					</tr>
+				</table>
+			</td>
+		</tr>
+  
+  <!-- Privacy Here -->   
+	<tr><td height="15" colspan="3"></td></tr> 
+  	<tr><td width="10">&nbsp;</td>
+    	<td>
+        <font size="1" face="Arial, Helvetica, sans-serif">
+   	    If this email has been forwarded to you and you wish to subscribe, please <a href="mailto:subscribe@behrpro.com" title="Subscribe Here">Click Here</a>. <br />
+        <br />
+          
+      	Click here for our <a href="http://www.behrpro.com/privacypolicy/" title="Privacy Policy"> Privacy Policy</a>. <br />
+          
+        <br />
+          
+        We recently updated our Privacy Policy. If you wish to change your preferences, please follow the directions in the Privacy Policy.<br />
+          
+        <br />
+          
+        &copy; 2010 Behr Process Corporation<br />
+          
+        <br />
+          
+       	Behr Process Corporation<br />
+        3400 W. Segerstrom Avenue<br />
+        Santa Ana, CA 92704
+    	</font>
+    	</td>
+    	<td width="10">&nbsp;</td>
+    </tr>
+</table>
+</body>
+</html>

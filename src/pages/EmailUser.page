@@ -1,0 +1,16 @@
+<apex:page standardController="Case" extensions="SendMailWithAttachment" id="EmailUserPage" >
+<!-- This VF page will have a User Lookup field with which we will be sending the Credit Review form to the user-->
+    <apex:form id="EmailUserForm" >
+        <apex:pageBlock title="{!$Label.SendMail_Title1}" id="EmailUserPB">
+        <apex:PageMessages />
+            <apex:pageBlockSection id="EmailUserPBS1" >
+                <apex:inputField value="{!Case.Behr_Representative__c}" />
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons location="Bottom" id="EmailUserPButtons" >
+                <apex:commandButton value="{!$Label.SendMail_Action}" action="{!SendMail}"/>
+                <apex:commandButton value="{!$Label.SendMail_Cancel}" action="{!Cancel}"/>
+            </apex:pageBlockButtons>         
+        </apex:pageBlock>
+    </apex:form>  
+</apex:page>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>CONVERTED:SUM / RowCount</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Conversion Rate</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_92046018</developerName>
+        <masterLabel>Lead Source</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>LEAD_SOURCE</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Behr In-Store Rep</sourceValue>
+            </sourceValues>
+            <value>In Store</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>BehrPRO Rep</sourceValue>
+            </sourceValues>
+            <value>Pro Rep</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Home Depot</sourceValue>
+            </sourceValues>
+            <value>Home Depot</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Regional Event/Trade Show</sourceValue>
+            </sourceValues>
+            <value>Regional Event/Trade Show</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Marketing</sourceValue>
+            </sourceValues>
+            <value>Marketing</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Mktg-driven National Event/Trade Show</sourceValue>
+            </sourceValues>
+            <value>Mktng Trade Shows</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>CONVERTED</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_92046018</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_TOP</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Large</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>CONVERTED</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Program to Date Conversiona Rate</description>
+    <filter>
+        <criteriaItems>
+            <column>LEAD_OWNER</column>
+            <operator>notEqual</operator>
+            <value>Eliza Cruz,Behr Instore Rep,Data Administrator</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_92046018</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Lead Conversion Rate - PTD</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OpportunityLead</reportType>
+    <scope>allusers</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

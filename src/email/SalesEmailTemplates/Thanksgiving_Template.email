@@ -1,0 +1,6 @@
+<table height="400" width="550" cellpadding="5" border="0" cellspacing="5" >
+<tr height="400" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Hi {!if(Lead.FirstName="", Contact.FirstName,Lead.FirstName)},</p><p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;"><br></p><p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">I want to wish {!if(Account.Name="", Lead.Company,Account.Name)} a Happy Thanksgiving and extend you a sincere&nbsp;<b><i>thank you</i></b>&nbsp;for your business.</p><p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;"><br></p><p style="font-family: Arial, Helvetica, sans-serif; font-size: 14px;">Sincerely,<br><br>{!if(Contact.OwnerFullName="",Lead.OwnerFullName,Contact.OwnerFullName)}<br>{!if(Contact.OwnerTitle="", Lead.OwnerTitle,Contact.OwnerTitle)}<br>{!if(Contact.OwnerPhone="", Lead.OwnerPhone,Contact.OwnerPhone)}<br>{!if(Contact.OwnerEmail="", Lead.OwnerEmail,Contact.OwnerEmail)}</p>]]></td>
+</tr>
+</table>

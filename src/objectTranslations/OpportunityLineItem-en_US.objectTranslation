@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Tier Discount</value>
+        </caseValues>
+        <name>discount_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>National Price</value>
+        </caseValues>
+        <name>list_price_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Regional Price</value>
+        </caseValues>
+        <name>sales_price_opportunitylineitem</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Calculated Zone --></label>
+        <name>Calculated_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price per Gallon --></label>
+        <name>Price_per_Gallon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Unit Price --></label>
+        <name>Total_Unit_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected Zone --></label>
+        <name>Zone1__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Off Zone</masterLabel>
+            <translation><!-- Off Zone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Calc Zone --></label>
+        <name>Zone__c</name>
+    </fields>
+    <layouts>
+        <layout>Opportunity Product Layout</layout>
+        <sections>
+            <label><!-- Account Detail --></label>
+            <section>Account Detail</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage><!-- You must add a Contact to the Opportunity before proceeding --></errorMessage>
+        <name>Contact_as_Mandatory_when_Product_Exist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have created a &quot;Direct&quot; opportunity, you must select a Zone. --></errorMessage>
+        <name>Opportunity_Zone</name>
+    </validationRules>
+</CustomObjectTranslation>

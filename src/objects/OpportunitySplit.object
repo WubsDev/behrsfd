@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditOpportunitySplits</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Managed_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Managed_rollup__c  * SplitPercentage</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Managed Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Managed_rollup__c</fullName>
+        <description>amount managed</description>
+        <externalId>false</externalId>
+        <formula>Opportunity.Managed_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Managed rollup</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Amount_Rollup__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity.Actual_Purchase_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Purchase Amount Rollup</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Purchase_Amount_Rollup__c  *  SplitPercentage</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Purchase Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SplitOwnerId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SplitTypeId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <validationRules>
+        <fullName>Authorized_User</fullName>
+        <active>true</active>
+        <description>If the user is not an admin or level 3 (manager), throw an error when adding percentage amount other than 100.  Needs fixed, throwing error when lead converted</description>
+        <errorConditionFormula>and(not( ISNEW()), And(ISCHANGED(SplitPercentage), $Profile.Name = &quot;Standard User Level 2&quot;))</errorConditionFormula>
+        <errorMessage>You are not authorized to change the split amount.  Please contact your manager.</errorMessage>
+    </validationRules>
+</CustomObject>

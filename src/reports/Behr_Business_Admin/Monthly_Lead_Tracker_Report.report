@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Lead.case_safe_id__c</field>
+    </columns>
+    <columns>
+        <field>CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>Lead.Primary_Store__c</field>
+    </columns>
+    <columns>
+        <field>OWNER</field>
+    </columns>
+    <columns>
+        <field>COMPANY</field>
+    </columns>
+    <columns>
+        <field>PHONE</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <columns>
+        <field>CONVERTED</field>
+    </columns>
+    <columns>
+        <field>Lead.Market_Segment__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Behr_Rep_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Lead.Estimated_Monthly_Paint_Usage__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Monthly leads input from In Store to Pro Team</description>
+    <filter>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <criteriaItems>
+            <column>LEAD_SOURCE</column>
+            <operator>equals</operator>
+            <value>Behr In-Store Rep</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CREATED</column>
+            <operator>equals</operator>
+            <value>Data Administrator</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <name>Monthly Lead Tracker Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>LeadList</reportType>
+    <scope>org</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LASTMONTH</interval>
+    </timeFrameFilter>
+</Report>

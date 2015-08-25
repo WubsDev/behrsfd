@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Market_Segment__c</field>
+    </columns>
+    <columns>
+        <field>Account.Estimated_Annual_Spend__c</field>
+    </columns>
+    <columns>
+        <field>Account.Current_Supplier__c</field>
+    </columns>
+    <columns>
+        <field>Account.YTD_Total_DTP_orders__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>Prospects with Segment, Annual Spend and Competitor Info</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.TGP__c</column>
+            <operator>equals</operator>
+            <value>Prospect</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <name>TGP Prospects Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Direct_To_Pro_Sales__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

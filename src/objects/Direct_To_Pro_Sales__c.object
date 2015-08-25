@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Account Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Direct To Pro Sales</relationshipLabel>
+        <relationshipName>Direct_To_Pro_Sales</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Account_Updated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Account Updated</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Phone_HD_Store__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Contact Phone = HD Store</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contact_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Current_Year__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Current Year</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Purchase__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Purchase</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Delivery_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LYTD_formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>and( Date_of_Purchase__c &lt;= date(year($Setup.Current_Month_POS__c.Current_Month_POS__c)-1,month($Setup.Current_Month_POS__c.Current_Month_POS__c),day($Setup.Current_Month_POS__c.Current_Month_POS__c)),Date_of_Purchase__c &gt;=date(year( $Setup.Current_Month_POS__c.Start_Month__c )-1,month( $Setup.Current_Month_POS__c.Start_Month__c ),day( $Setup.Current_Month_POS__c.Start_Month__c )))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>LYTD formula</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LY_to_date__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Last Year same time frame as this year.  To be manually populated via crm fusion.  used as a rollup summary</description>
+        <externalId>false</externalId>
+        <label>LY to date</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_year_DTP_flag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Last year DTP flag</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Not_Direct__c</fullName>
+        <externalId>false</externalId>
+        <formula>isnumber( PO_Number__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Not Direct</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Notes_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes/Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Ordered_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Ordered By</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Owner_of_the_store__c</fullName>
+        <externalId>false</externalId>
+        <formula>Store_of_Purchase__r.OwnerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner of the store</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PO_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>PO Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pricing_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Pricing Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Direct to site</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Direct to store</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Will call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Purchase_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Purchase Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Roll_Year_Flag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>To be set via CRM fusion using batch jobs that run nightly and update the rolling year flag for the ordered by date if within this year.  This field then flows as a rollup summary on the account.</description>
+        <externalId>false</externalId>
+        <label>Roll Year Flag</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SAP_PO__c</fullName>
+        <description>SAP PO Number assigned at order create in our ECC system.</description>
+        <externalId>false</externalId>
+        <label>SAP PO #</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Add1__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Add1</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Add2__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Add2</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To City</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Country__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Country</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_State__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To State</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ship_To_Zip__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship To Zip</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Store_Number_Backend__c</fullName>
+        <externalId>false</externalId>
+        <label>Store Number Backend</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Store_of_Purchase__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Store of Purchase</label>
+        <referenceTo>Home_Depot_Store__c</referenceTo>
+        <relationshipLabel>Direct To Pro Sales</relationshipLabel>
+        <relationshipName>Direct_To_Pro_Sales</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TYTD_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>and( Date_of_Purchase__c &lt;= $Setup.Current_Month_POS__c.Current_Month_POS__c ,Date_of_Purchase__c &gt;= $Setup.Current_Month_POS__c.Start_Month__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TYTD Formula</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TYTD__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This year to date - last full month - as it pertains to cash and carry, as we get it after month end.</description>
+        <externalId>false</externalId>
+        <label>TYTD</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Tyson_Discount__c</fullName>
+        <description>Amount discounted on first orders with tyson coupon</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Tyson coupon discount amount</inlineHelpText>
+        <label>Tyson Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Tyson_Order__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>To know which orders are a tyson orders.  to be manually checked and fed to BI</description>
+        <externalId>false</externalId>
+        <label>Tyson Order</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>match_to_lead__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If a lead was found that matched a DTP sale, check this box</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If a lead was found that matched a DTP sale</inlineHelpText>
+        <label>match to lead</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>no_match__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>a search was done, and no match was found</inlineHelpText>
+        <label>no match</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <label>Direct To Pro Sales</label>
+    <listViews>
+        <fullName>BLT_3016</fullName>
+        <columns>NAME</columns>
+        <columns>Contact_Phone_HD_Store__c</columns>
+        <columns>PO_Number__c</columns>
+        <columns>Contact_Name__c</columns>
+        <columns>Ordered_By__c</columns>
+        <columns>Contact_Phone__c</columns>
+        <columns>Date_of_Purchase__c</columns>
+        <columns>Purchase_Amount__c</columns>
+        <columns>Delivery_Date__c</columns>
+        <columns>Store_of_Purchase__c</columns>
+        <columns>Account_Name__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Account_Updated__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Name__c</field>
+            <operation>contains</operation>
+            <value>BLT HOMES - Kansas City 3016</value>
+        </filters>
+        <filters>
+            <field>Current_Year__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>Store_of_Purchase__c</field>
+            <operation>notEqual</operation>
+            <value>3016</value>
+        </filters>
+        <label>BLT 3016</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>IT_DEV</role>
+            <role>SystemAdministrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Generic_Account</fullName>
+        <columns>NAME</columns>
+        <columns>SAP_PO__c</columns>
+        <columns>Contact_Phone_HD_Store__c</columns>
+        <columns>PO_Number__c</columns>
+        <columns>Contact_Name__c</columns>
+        <columns>Ordered_By__c</columns>
+        <columns>Contact_Phone__c</columns>
+        <columns>Date_of_Purchase__c</columns>
+        <columns>Purchase_Amount__c</columns>
+        <columns>Store_of_Purchase__c</columns>
+        <columns>Delivery_Date__c</columns>
+        <columns>Account_Name__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Account_Updated__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Name__c</field>
+            <operation>contains</operation>
+            <value>Generic Account</value>
+        </filters>
+        <label>Generic Account</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>IT_DEV</role>
+            <role>SystemAdministrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Generic_Account_New</fullName>
+        <columns>Contact_Phone_HD_Store__c</columns>
+        <columns>PO_Number__c</columns>
+        <columns>Contact_Name__c</columns>
+        <columns>Ordered_By__c</columns>
+        <columns>Contact_Phone__c</columns>
+        <columns>Date_of_Purchase__c</columns>
+        <columns>Delivery_Date__c</columns>
+        <columns>Purchase_Amount__c</columns>
+        <columns>Store_of_Purchase__c</columns>
+        <columns>Account_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Generic Account</value>
+        </filters>
+        <filters>
+            <field>no_match__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Generic Account Not reviewed</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>IT_DEV</role>
+            <role>SystemAdministrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Generic_Account_Nov</fullName>
+        <columns>Account_Name__c</columns>
+        <columns>Contact_Phone_HD_Store__c</columns>
+        <columns>PO_Number__c</columns>
+        <columns>Contact_Name__c</columns>
+        <columns>Ordered_By__c</columns>
+        <columns>Contact_Phone__c</columns>
+        <columns>Date_of_Purchase__c</columns>
+        <columns>Delivery_Date__c</columns>
+        <columns>Purchase_Amount__c</columns>
+        <columns>Store_of_Purchase__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Generic Account</value>
+        </filters>
+        <filters>
+            <field>Delivery_Date__c</field>
+            <operation>greaterThan</operation>
+            <value>11/1/2012</value>
+        </filters>
+        <label>Generic Account Nov</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>IT_DEV</role>
+            <role>SystemAdministrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Generic_Account_hd</fullName>
+        <columns>Contact_Phone_HD_Store__c</columns>
+        <columns>PO_Number__c</columns>
+        <columns>Contact_Name__c</columns>
+        <columns>Ordered_By__c</columns>
+        <columns>Contact_Phone__c</columns>
+        <columns>Date_of_Purchase__c</columns>
+        <columns>Delivery_Date__c</columns>
+        <columns>Purchase_Amount__c</columns>
+        <columns>Store_of_Purchase__c</columns>
+        <columns>Account_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Generic Account</value>
+        </filters>
+        <filters>
+            <field>Contact_Name__c</field>
+            <operation>startsWith</operation>
+            <value>Home</value>
+        </filters>
+        <label>Generic Account with hd as contact</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>IT_DEV</role>
+            <role>SystemAdministrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Generic_Account_old</fullName>
+        <columns>Contact_Phone_HD_Store__c</columns>
+        <columns>PO_Number__c</columns>
+        <columns>Contact_Name__c</columns>
+        <columns>Ordered_By__c</columns>
+        <columns>Contact_Phone__c</columns>
+        <columns>Date_of_Purchase__c</columns>
+        <columns>Delivery_Date__c</columns>
+        <columns>Purchase_Amount__c</columns>
+        <columns>Store_of_Purchase__c</columns>
+        <columns>Account_Name__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Name__c</field>
+            <operation>equals</operation>
+            <value>Generic Account dtp</value>
+        </filters>
+        <filters>
+            <field>Delivery_Date__c</field>
+            <operation>lessOrEqual</operation>
+            <value>12/31/2012</value>
+        </filters>
+        <label>Generic Account old</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>IT_DEV</role>
+            <role>SystemAdministrator</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>UNITED_RENOVATIONS</fullName>
+        <columns>Contact_Phone_HD_Store__c</columns>
+        <columns>PO_Number__c</columns>
+        <columns>Contact_Name__c</columns>
+        <columns>Ordered_By__c</columns>
+        <columns>Contact_Phone__c</columns>
+        <columns>Date_of_Purchase__c</columns>
+        <columns>Purchase_Amount__c</columns>
+        <columns>Delivery_Date__c</columns>
+        <columns>Store_of_Purchase__c</columns>
+        <columns>Account_Name__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Account_Updated__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account_Name__c</field>
+            <operation>contains</operation>
+            <value>UNITED RENOVATIONS</value>
+        </filters>
+        <filters>
+            <field>Current_Year__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>UNITED RENOVATIONS</label>
+        <language>en_US</language>
+        <sharedTo>
+            <role>IT_DEV</role>
+            <role>SystemAdministrator</role>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>DTP-{000000000}</displayFormat>
+        <label>DTP#</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Direct To Pro Sales</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Notes_Comments__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Date_of_Purchase__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Purchase_Amount__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Store_of_Purchase__c</customTabListAdditionalFields>
+        <listViewButtons>Mass_Update</listViewButtons>
+        <lookupDialogsAdditionalFields>PO_Number__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Date_of_Purchase__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Pricing_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Purchase_Amount__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Store_of_Purchase__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SAP_PO__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>Account_Name__c</lookupFilterFields>
+        <lookupFilterFields>Contact_Name__c</lookupFilterFields>
+        <lookupFilterFields>Contact_Phone__c</lookupFilterFields>
+        <lookupFilterFields>Contact_Phone_HD_Store__c</lookupFilterFields>
+        <lookupFilterFields>PO_Number__c</lookupFilterFields>
+        <lookupFilterFields>SAP_PO__c</lookupFilterFields>
+        <lookupPhoneDialogsAdditionalFields>PO_Number__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Date_of_Purchase__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Pricing_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Purchase_Amount__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SAP_PO__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>PO_Number__c</searchFilterFields>
+        <searchFilterFields>Date_of_Purchase__c</searchFilterFields>
+        <searchFilterFields>Pricing_Type__c</searchFilterFields>
+        <searchFilterFields>Purchase_Amount__c</searchFilterFields>
+        <searchFilterFields>CREATEDBY_USER</searchFilterFields>
+        <searchFilterFields>CREATED_DATE</searchFilterFields>
+        <searchFilterFields>LAST_UPDATE</searchFilterFields>
+        <searchFilterFields>Store_of_Purchase__c</searchFilterFields>
+        <searchFilterFields>SAP_PO__c</searchFilterFields>
+        <searchResultsAdditionalFields>Account_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PO_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Ordered_By__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Date_of_Purchase__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Purchase_Amount__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Store_of_Purchase__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SAP_PO__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>Mass_Update</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Mass Update</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/20.0/apex.js&quot;)} 
+
+var records = {!GETRECORDIDS($ObjectType.Direct_To_Pro_Sales__c)}; 
+var strIDs=&apos;&apos;; 
+if (records[0] == null) 
+{ 
+alert(&apos;Please select a record&apos;); 
+} 
+else 
+{ 
+for (var n=0; n&lt;records.length; n++) 
+{ 
+if(strIDs == &apos;&apos;) 
+strIDs = records[n]; 
+else 
+strIDs = strIDs + &quot;,&quot; + records[n] ; 
+}
+window.location.href = &apos;/apex/MassManager__MassUpdate?selectedRecords=&apos;+strIDs + &apos;&amp;selectedObject=Direct_To_Pro_Sales__c&amp;retURL=&apos;+ window.location.href;
+}</url>
+    </webLinks>
+</CustomObject>

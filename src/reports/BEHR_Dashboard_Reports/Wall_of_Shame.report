@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <currency>USD</currency>
+    <description>Not logged on in past 7 days</description>
+    <filter>
+        <criteriaItems>
+            <column>LAST_LOGIN</column>
+            <operator>notEqual</operator>
+            <value>LAST_N_DAYS:7</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>PROFILE</column>
+            <operator>notEqual</operator>
+            <value>Chatter Free User,Chatter Moderator UserChina Users,IT DEV</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ROLE</column>
+            <operator>notEqual</operator>
+            <value>System Administrator,China Users,IT DEV</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>USERNAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Wall of Shame</name>
+    <params>
+        <name>active</name>
+        <value>active</value>
+    </params>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User</reportType>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>LAST_LOGIN</dateColumn>
+        <interval>INTERVAL_LAST120</interval>
+    </timeFrameFilter>
+</Report>

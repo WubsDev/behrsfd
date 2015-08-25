@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Behr Pro line of products</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BEHR PRO LINE</name>
+    <style>none</style>
+    <subject>Behr Pro line of products</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Actual_Sales_email_reminder_not_submitted</fullName>
+        <description>Actual Sales email reminder not submitted</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Actual_Sales_Approval/Records_not_submitted_actsales</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_New_Owner_of_Approval</fullName>
+        <description>Notify New Owner of Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <field>New_Owner_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Actual_Sales_Approval/Actual_Sales_Update_Approved</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_New_Owner_of_Rejection</fullName>
+        <description>Notify New Owner of Rejection</description>
+        <protected>false</protected>
+        <recipients>
+            <field>New_Owner_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Actual_Sales_Approval/Actual_Sales_Update_Rejected</template>
+    </alerts>
+    <alerts>
+        <fullName>Notify_Old_Owner_of_Approval</fullName>
+        <description>Notify Old Owner of Approval</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Old_Owner_Email__c</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>Actual_Sales_Approval/Actual_Sales_Update_Reassigned</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Actual_Sales_Status_Pending</fullName>
+        <field>Status__c</field>
+        <literalValue>Pending</literalValue>
+        <name>Actual Sales Status Pending</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actual_Sales_change</fullName>
+        <field>Approved_Opportunity_ID__c</field>
+        <formula>New_Opportunity_Entry__c</formula>
+        <name>Actual Sales change</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <targetObject>ActualSales__c</targetObject>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actual_Sales_update_RPSM</fullName>
+        <description>update old rpsm at creation</description>
+        <field>Old_RPSM_a__c</field>
+        <formula>ActualSales__r.Account_Name__r.Owner.RPSM_New__r.FirstName &amp; &quot; &quot; &amp; 
+ActualSales__r.Account_Name__r.Owner.RPSM_New__r.LastName</formula>
+        <name>Actual Sales update RPSM</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actual_Sales_update_account</fullName>
+        <field>Old_Account_a__c</field>
+        <formula>ActualSales__r.Account_Name__r.Name</formula>
+        <name>Actual Sales update account</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actual_Sales_update_opportunity</fullName>
+        <field>Old_Opportunity_Text__c</field>
+        <formula>ActualSales__r.Opportunity__r.Name</formula>
+        <name>Actual Sales update opportunity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Actual_Sales_update_owner</fullName>
+        <description>Actual Sales update owner to first value</description>
+        <field>Old_Owner_a__c</field>
+        <formula>ActualSales__r.Account_Name__r.Owner.FirstName  &amp;  &quot; &quot; &amp; ActualSales__r.Account_Name__r.Owner.LastName</formula>
+        <name>Actual Sales update owner</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>New_Owner_Email</fullName>
+        <field>New_Owner_Email__c</field>
+        <formula>New_Opportunity_Entry__r.Owner.Email</formula>
+        <name>New Owner Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Old_Owner_Email</fullName>
+        <description>populate orginal owner</description>
+        <field>Old_Owner_Email__c</field>
+        <formula>ActualSales__r.Account_Name__r.Owner.Email</formula>
+        <name>Old Owner Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Old_Owner_RPSM_Email</fullName>
+        <field>Old_RPSM_Email__c</field>
+        <name>Old Owner RPSM Email</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Reject_status</fullName>
+        <field>Status__c</field>
+        <literalValue>Rejected</literalValue>
+        <name>Reject status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_status</fullName>
+        <field>Status__c</field>
+        <literalValue>Approved</literalValue>
+        <name>Update status</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>true</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Act Sales update email reminder</fullName>
+        <active>true</active>
+        <criteriaItems>
+            <field>Ownership_Approval__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Not Submitted</value>
+        </criteriaItems>
+        <description>Actual sales update email if not submitted</description>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Actual_Sales_email_reminder_not_submitted</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>2</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Actual_Sales_email_reminder_not_submitted</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>3</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Actual_Sales_email_reminder_not_submitted</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>4</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Actual_Sales_email_reminder_not_submitted</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>16</timeLength>
+            <workflowTimeTriggerUnit>Hours</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Actual_Sales_email_reminder_not_submitted</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>5</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Actual_Sales_email_reminder_not_submitted</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>6</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Actual_Sales_email_reminder_not_submitted</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>7</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+        <workflowTimeTriggers>
+            <actions>
+                <name>Actual_Sales_email_reminder_not_submitted</name>
+                <type>Alert</type>
+            </actions>
+            <timeLength>8</timeLength>
+            <workflowTimeTriggerUnit>Days</workflowTimeTriggerUnit>
+        </workflowTimeTriggers>
+    </rules>
+    <rules>
+        <fullName>Actual Sales Update Requested</fullName>
+        <actions>
+            <name>Actual_Sales_update_RPSM</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Actual_Sales_update_account</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Actual_Sales_update_opportunity</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Actual_Sales_update_owner</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>New_Owner_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Old_Owner_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <actions>
+            <name>Old_Owner_RPSM_Email</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>User.IsActive</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <description>email</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <rules>
+        <fullName>Actual Sales approved</fullName>
+        <actions>
+            <name>Actual_Sales_change</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Ownership_Approval__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </criteriaItems>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+</Workflow>

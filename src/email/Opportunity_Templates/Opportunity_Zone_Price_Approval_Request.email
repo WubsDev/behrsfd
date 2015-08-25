@@ -1,0 +1,18 @@
+A zone pricing approval has been requested by {!Opportunity.OwnerFullName}
+
+Supporting Information:
+
+Opportunity Name: {!Opportunity.Name}
+Account Name:  {!Opportunity.Account}
+Opportunity Contact:  {!Opportunity.Primary_Contact__c}
+Opportunity Amount:  {!Opportunity.Amount}
+Opportunity Stage:  {!Opportunity.StageName}
+Project Start Date:  {!Opportunity.Start_Date_of_Project__c}
+Account Zone:  {!Account.Zone__c}
+Lowest Requested Zone for items: {!Opportunity.Zone_item_max__c}
+Description:  {!Opportunity.Description}
+
+Current Approval Status: {!Opportunity.Approval_Status__c}
+
+
+Link to Opportunity Record:  {!Opportunity.Link}

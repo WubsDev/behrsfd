@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify Record owner that the Account is setup in SAP</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Direct Onboarding Setup Complete</name>
+    <style>none</style>
+    <subject>{!Direct_Onboarding__c.Account_Name__c} setup is complete in SAP</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContactSharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <ownerRules>
+        <fullName>China_Contact_Sharing</fullName>
+        <sharedTo>
+            <group>China_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>China_Users</group>
+        </sharedFrom>
+        <contactAccessLevel>Edit</contactAccessLevel>
+        <name>China Contact Sharing</name>
+    </ownerRules>
+    <ownerRules>
+        <fullName>US_Contact_Sharing</fullName>
+        <sharedTo>
+            <group>US_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>US_Users</group>
+        </sharedFrom>
+        <contactAccessLevel>Edit</contactAccessLevel>
+        <name>US Contact Sharing</name>
+    </ownerRules>
+</ContactSharingRules>

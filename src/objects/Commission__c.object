@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>To Capture % of Sale for Opty with Multiple Reps</description>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Commissions</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Behr_Liquid_Contribution__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Behr_Liquid_Sales__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Behr Liquid Sales Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Bid_Oppty_s_Contribution__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Value_Bid_Opportunities__c *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bid Oppty&apos;s Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>C_C_Sales_Contribution__c</fullName>
+        <externalId>false</externalId>
+        <formula>Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>C&amp;C Sales Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>DTP_Sales_Contribution__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.YTD_Total_DTP_orders__c   *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DTP Sales (YTD) Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>DTP_YTD_Direct_To_Store_Contribution__c</fullName>
+        <externalId>false</externalId>
+        <formula>Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DTP (YTD) Direct To Store Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>DTP_YTD_Will_Call_Contribution__c</fullName>
+        <externalId>false</externalId>
+        <formula>Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DTP (YTD) Will Call Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>DTP__c</fullName>
+        <externalId>false</externalId>
+        <formula>Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DTP (YTD) Direct to Site Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Is_Active__c</fullName>
+        <externalId>false</externalId>
+        <formula>Sales_Team_Member__r.UserRole.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Active</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipName>Commissions</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Percent_of_Sale__c</fullName>
+        <externalId>false</externalId>
+        <label>Percent of Sale</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Potential_Oppty_s_Contribution__c</fullName>
+        <externalId>false</externalId>
+        <formula>Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Potential Oppty&apos;s Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SO_Sales_Contribution__c</fullName>
+        <externalId>false</externalId>
+        <formula>Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SO Sales Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Amount  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Opportunity Amount Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Team_Member__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Team Member</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Commissions</relationshipName>
+        <required>false</required>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TGP_Mid_Year_Contribution__c</fullName>
+        <externalId>false</externalId>
+        <formula>Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Est.potential Mid Year Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TGP_Start_Contribution__c</fullName>
+        <externalId>false</externalId>
+        <formula>Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Est.potential start Contributiion</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Behr_SO_Sales_April__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Behr_SO_Sales_April__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Behr SO Sales April</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Behr_SO_Sales_August__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Behr_SO_Sales_August__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Behr SO Sales August</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Behr_SO_Sales_December__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Behr_SO_Sales_December__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Behr SO Sales December</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Behr_SO_Sales_February__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Behr_SO_Sales_February__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Behr SO Sales February</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Behr_SO_Sales_January__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Behr_SO_Sales_January__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Behr SO Sales January</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Behr_SO_Sales_July__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Behr_SO_Sales_July__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Behr SO Sales July</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Behr_SO_Sales_June__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Behr_SO_Sales_June__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Behr SO Sales June</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Behr_SO_Sales_March__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Behr_SO_Sales_March__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Behr SO Sales March</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Behr_SO_Sales_May__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Behr_SO_Sales_May__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Behr SO Sales May</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Behr_SO_Sales_November__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Behr_SO_Sales_November__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Behr SO Sales November</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Behr_SO_Sales_October__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Behr_SO_Sales_October__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Behr SO Sales October</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Behr_SO_Sales_September__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Behr_SO_Sales_September__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Behr SO Sales September</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cash_Carry_Sales_April__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Cash_Carry_Sales_April__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cash &amp; Carry Sales April</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cash_Carry_Sales_August__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Cash_Carry_Sales_August__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cash &amp; Carry Sales August</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cash_Carry_Sales_December__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Cash_Carry_Sales_December__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cash &amp; Carry Sales December</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cash_Carry_Sales_February__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Cash_Carry_Sales_February__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cash &amp; Carry Sales February</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cash_Carry_Sales_January__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Cash_Carry_Sales_January__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cash &amp; Carry Sales January</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cash_Carry_Sales_July__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Cash_Carry_Sales_July__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cash &amp; Carry Sales July</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cash_Carry_Sales_June__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Cash_Carry_Sales_June__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cash &amp; Carry Sales June</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cash_Carry_Sales_March__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Cash_Carry_Sales_March__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cash &amp; Carry Sales March</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cash_Carry_Sales_May__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Cash_Carry_Sales_May__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cash &amp; Carry Sales May</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cash_Carry_Sales_November__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Cash_Carry_Sales_November__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cash &amp; Carry Sales November</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cash_Carry_Sales_October__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Cash_Carry_Sales_October__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cash &amp; Carry Sales October</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cash_Carry_Sales_September__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Cash_Carry_Sales_September__c  *  Percent_of_Sale__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cash &amp; Carry Sales September</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <label>Shared Revenue</label>
+    <nameField>
+        <displayFormat>CN-{000000}</displayFormat>
+        <label>Shared Revenue Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Shared Revenues</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>PercentOfSale_Rollup</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(IsNew(),  (  Percent_of_Sale__c  )  &gt; 1.0,  (  PRIORVALUE(Percent_of_Sale__c)  +  Percent_of_Sale__c  )  &gt; 1.0)</errorConditionFormula>
+        <errorMessage>&quot;The Sum of Percent Sale Contribution exceeds 100.Please modify the Percent Sale so that total Percent is 100&quot;</errorMessage>
+    </validationRules>
+</CustomObject>

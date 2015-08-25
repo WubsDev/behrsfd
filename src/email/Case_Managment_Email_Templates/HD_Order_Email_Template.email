@@ -1,0 +1,229 @@
+<messaging:emailTemplate subject="New Order {!relatedTo.QuoteNumber}" relatedToType="Quote" recipientType="User">
+  <messaging:htmlEmailBody >
+    <html>
+    <head>
+    <style>
+    table,td,th{border-style: groove;  border-collapse: collapse;}
+    </style>
+    </head>
+        <body>
+        <apex:outputText > HD Solutions Team,</apex:outputText><br/><br/>
+        <apex:outputText > Please see attached DTP order and confirm order number once completed.  Payment can be collected from {!(relatedTo.Opportunity.Primary_Contact__r.FirstName+" "+relatedTo.Opportunity.Primary_Contact__r.LastName)} at {!relatedTo.Phone}. </apex:outputText><br/><br/>      
+        <apex:outputText > Please contact me with any questions regarding this order at {!relatedTo.Rep_Phone__c}.</apex:outputText>
+        </body>
+    </html>
+</messaging:htmlEmailBody>
+  <messaging:attachment renderAs="PDF" filename="Direct To Pro Order">
+    
+       <html>
+      <body>
+                    
+        <table width="100%" style="font-family:'Arial Unicode MS';">
+            <tr>
+                <td width= "20%"></td>
+                <td width= "50%" style="font-size: 20px; font-weight: bold; text-align: center; padding-left:50px; color: #606060; font-family:'Arial Unicode MS'">New Order {!relatedTo.QuoteNumber}</td>
+                <td width= "50%"></td>
+            </tr>
+            <tr>
+                <td width="20%"><apex:image url="{!$Resource.Behr_logo2}" width="150" height="70" /></td>
+                <td width="50%"></td>
+                <td width="50%"></td>
+            </tr>
+        </table>               
+    <!-- This is for General Information --> 
+    <h3 style="border:11px; font-family:'Arial Unicode MS'; font-size:11pt; background: #CCCCCC;
+               border-width: 1; display: block">General Information</h3>     
+          <table border="0" columns="2" style="font-size:10pt; font-family:'Arial Unicode MS'">
+            
+            <tr style="border: solid #CCCCCC; border-width: 1">
+               <td style="padding-left: 5px;">Rep Name</td>
+               <td style="padding-left: 5px;">: {!relatedTo.Rep_Name__c}</td>
+            </tr>
+            <tr style="border: solid #CCCCCC; border-width: 1">
+               <td style="padding-left: 5px;">Rep Phone</td>
+               <td style="padding-left: 5px;">: {!relatedTo.Rep_Phone__c}</td>
+            </tr>
+            <tr style="border: solid #CCCCCC; border-width: 1">
+               <td style="padding-left: 5px;">Rep Email</td>
+               <td style="padding-left: 5px;">: {!relatedTo.Rep_Email__c}</td>
+            </tr>  
+          </table>
+          
+    <!-- This is for Contact Information -->
+
+
+       <h3 style="border:11px; font-size:11pt; font-family:'Arial Unicode MS'; background: #CCCCCC;
+               border-width: 1; display: block">Contact Information</h3>      
+          <table border="0" columns="2" style="font-size:10pt; font-family:'Arial Unicode MS'" >
+            
+            <tr>
+               <td style="padding-left: 5px;">Order Date</td>
+               <td style="padding-left: 5px;">: {!relatedTo.Order_Date__c}</td>
+            </tr>   
+            <tr style="border: solid #CCCCCC; border-width: 1">   
+               <td style="padding-left: 5px;">Type Of Order</td>
+               <td style="padding-left: 5px;">: {!relatedTo.Type_Of_Order__c}</td>
+            </tr>   
+            <tr style="border: solid #CCCCCC; border-width: 1">   
+               <td style="padding-left: 5px;">Store #</td>
+               <td style="padding-left: 5px;">: {!relatedTo.Opportunity.THD_Store__r.Name}</td>
+            </tr>  
+          </table>
+          
+     <!-- This is for Address Information -->  
+        
+       <h3 style="border:11px; font-family:'Arial Unicode MS'; font-size:11pt; background: #CCCCCC;
+               border-width: 1; display: block">Address Information</h3> 
+        <apex:panelgrid columns="2" width="100%">
+            
+                <apex:panelgrid style="font-family:'Arial Unicode MS'; font-size:10pt;" columns="2">
+                   <table border="0" style=" font-size:10pt; font-family:'Arial Unicode MS'" >
+                         <tr style="border: solid #CCCCCC; border-width: 1">
+                                       <td>Account Name</td>
+                                       <td>: {!relatedTo.Account.name}</td>
+                                </tr>
+                        <tr style="border: solid #CCCCCC; border-width: 1">
+                                       <td>Pro Rewards #</td>
+                                       <td>: {!relatedTo.Pro_Rewards__c}</td>
+                                </tr>
+                        <tr style="border: solid #CCCCCC; border-width: 1">
+                                       <td>Project Name</td>
+                                       <td>: {!relatedTo.Project_Name__c}</td>
+                                </tr>
+                        <tr style="border: solid #CCCCCC; border-width: 1">
+                                       <td>Contact Name</td>
+                                       <td>: {!relatedTo.Opportunity.Primary_Contact__r.Name}</td>
+                                </tr>
+                        <tr style="border: solid #CCCCCC; border-width: 1">
+                                       <td>Phone</td>
+                                       <td>: {!relatedTo.Phone}</td>
+                                </tr>
+                        <tr style="border: solid #CCCCCC; border-width: 1">
+                                   <td>Email</td>
+                                   <td>: {!relatedTo.Email}</td>
+                        </tr>
+                    </table>
+                
+                </apex:panelgrid>
+            
+            
+                <apex:panelgrid style="font-family:'Arial Unicode MS'; font-size:10pt; " columns="2" title="Ship To Address" rendered="{!IF(relatedTo.Type_Of_Order__c == 'Direct to site',TRUE,FALSE)}">
+                    
+                    <table border="0" style=" font-size:10pt; font-family:'Arial Unicode MS'" >
+                        <tr style="border: solid #CCCCCC; border-width: 1">
+                                       <td>Ship To Name</td>
+                                       <td>:</td>
+                                       <td style="padding-left: 5px;">{!relatedTo.Ship_To_Name_PDF__c}</td>
+                        </tr>
+                        <tr style="border: solid #CCCCCC; border-width: 1">
+                                       <td>Ship To</td>
+                                       <td>:</td>
+                                       <td style="padding-left: 5px;">{!relatedTo.ShippingStreet}</td>
+                        </tr>
+                        <tr style="border: solid #CCCCCC; border-width: 1">
+                                       <td></td>
+                                       <td></td>
+                                       <td style="padding-left: 5px;">{!relatedTo.ShippingCity}, {!relatedTo.ShippingState}, {!relatedTo.ShippingPostalCode}</td>
+                        </tr>
+                        <tr style="border: solid #CCCCCC; border-width: 1">
+                                       <td></td>
+                                       <td></td>
+                                       <td style="padding-left: 5px;">{!relatedTo.ShippingCountry}</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>                        
+                    </table>
+                </apex:panelgrid>
+            
+        </apex:panelgrid>
+ 
+      
+     <!-- This is for Related List Information -->
+       <h3 style="border:11px; font-family:'Arial Unicode MS'; font-size:11pt; background: #CCCCCC;
+               border-width: 1; display: block">Quote LineItems</h3> 
+          
+          <table border="0" style="border:1px solid #CCCCCC; font-size:10pt; font-family:'Arial Unicode MS'; border-width: 1; border-collapse:collapse" width="100%">
+               
+              
+              
+            <tr style="border: 1px solid black"> 
+               <th style="border:1px solid white; font-face: arial; background: #CCCCCC;
+               border-width: 1;  text-align: center">Vendor</th>
+               <th style="border:1px solid white; font-face: arial; background: #CCCCCC;
+               border-width: 1;  text-align: center">Use</th>
+               <th style="border:1px solid white; font-face: arial; background: #CCCCCC;
+               border-width: 1;  text-align: center">Sheen</th>
+               <th style="border:1px solid white; font-face: arial; background: #CCCCCC;
+               border-width: 1;  text-align: center">Base</th>
+               <th style="border:1px solid white; font-face: arial; background: #CCCCCC;
+               border-width: 1;  text-align: center">Product</th>
+               <th style="border:1px solid white; font-face: arial; background: #CCCCCC;
+               border-width: 1;  text-align: center">Product ID</th>
+               <th style="border:1px solid white; font-face: arial; background: #CCCCCC;
+               border-width: 1;  text-align: center">Color Vendor</th>
+               <th style="border:1px solid white; font-face: arial; background: #CCCCCC;
+               border-width: 1;  text-align: center">Color Name/Code</th>
+               <th style="border:1px solid white; font-face: arial; background: #CCCCCC;
+               border-width: 1;  text-align: center">Size</th>
+               <th style="border:1px solid white; font-face: arial; background: #CCCCCC;
+               border-width: 1;  text-align: center">Quantity</th>
+            </tr>
+            <apex:repeat var="ql" value="{!relatedTo.QuoteLineItems}">
+              <tr style="border: 1px solid black">
+                <td style="background:#efefef; border: 1px solid white">{!ql.Vendor__c}</td>
+                <td style="background:#efefef; border: 1px solid white">{!ql.Use__c}</td>
+                <td style="background:#efefef; border: 1px solid white">{!ql.Sheen__c}</td>
+                <td style="background:#efefef; border: 1px solid white">{!ql.Base__c}</td>
+                <td style="background:#efefef; border: 1px solid white">{!ql.Product__c}</td>
+                <td style="background:#efefef; border: 1px solid white">{!ql.Product_ID__c}</td>
+                <td style="background:#efefef; border: 1px solid white">{!ql.Color_Vendor__c}</td>
+                <td style="background:#efefef; border: 1px solid white">{!ql.Color_Name_Code1__c}</td>
+                <td style="background:#efefef; border: 1px solid white">{!ql.Size__c}</td>
+                <td style="background:#efefef; border: 1px solid white">{!ql.Quantity}</td>
+              </tr>
+            </apex:repeat>
+            <br/>                  
+          </table>
+          
+     <!-- This is for Special Instruction -->     
+          <h3 style="border:11px; font-family:'Arial Unicode MS'; font-size:11pt; background: #CCCCCC;
+               border-width: 1; display: block">Special Instructions</h3> 
+          <table border="0" Columns="2" >
+               
+             <tr style="font-family:'Arial Unicode MS'; font-size:10pt; border: solid #CCCCCC; border-width: 1">  
+               <td style="padding-left: 5px;">Special Instructions</td>
+               <td style="padding-left: 5px;">: {!relatedTo.Special_Instructions__c}</td>
+             </tr>  
+             <tr style="font-family:'Arial Unicode MS'; font-size:10pt; border: solid #CCCCCC; border-width: 1">  
+               <td style="padding-left: 5px;">Requested Delivery Date</td>
+               <td style="padding-left: 5px;">: {!relatedTo.Requested_Delivery_Date__c}</td>               
+            </tr> 
+          </table>
+          
+      <!-- This is for Footer Section --> 
+    <h3 style="border:11px; font-family:'Arial Unicode MS'; font-size:11pt; background: #CCCCCC;
+               border-width: 1; display: block">Additional Information</h3>    
+          <table border="0" Columns="4">
+               
+            <tr style="border: solid #CCCCCC; font-size:10pt; font-family:'Arial Unicode MS'; border-width: 1">   
+               <td style="padding-left: 5px;">Quote Name</td>
+               <td style="padding-left: 5px;">: {!relatedTo.Name}</td> 
+               <td style="padding-left: 5cm; text-align: center; font-size:10pt">Created By</td>
+               <td style="padding-left: 5px;">: {!relatedTo.CreatedBy.name}</td>              
+            </tr> 
+          </table>
+                    
+          <p />
+      </body>
+    </html>
+    
+</messaging:attachment>  
+</messaging:emailTemplate>

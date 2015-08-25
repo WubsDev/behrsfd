@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Influencer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Influencers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Influenced By --></label>
+        <name>InfluencedBy__c</name>
+        <relationshipLabel><!-- Influencers (Influenced By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Influenced Account --></label>
+        <name>Influenced__c</name>
+        <relationshipLabel><!-- Influencers --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Influencer Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Scheme To Color</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Scheme To Colors</value>
+    </caseValues>
+    <fields>
+        <label><!-- Color --></label>
+        <name>Color__c</name>
+        <relationshipLabel><!-- Scheme To Colors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Placement --></label>
+        <name>Placement__c</name>
+        <picklistValues>
+            <masterLabel>Accent</masterLabel>
+            <translation><!-- Accent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core</masterLabel>
+            <translation><!-- Core --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Door</masterLabel>
+            <translation><!-- Door --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail</masterLabel>
+            <translation><!-- Rail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trim</masterLabel>
+            <translation><!-- Trim --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scheme --></label>
+        <name>Scheme__c</name>
+        <relationshipLabel><!-- Scheme To Colors --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Scheme To Color Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Picka0uS0000006freoIAA --></label>
+        <name>Picka0uS0000006freoIAA</name>
+    </webLinks>
+</CustomObjectTranslation>

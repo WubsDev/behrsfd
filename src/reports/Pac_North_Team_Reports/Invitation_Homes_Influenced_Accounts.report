@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>(Account.CC_plus_DTP__c:SUM-Account.LYTD_C_C_plus_DTP__c:SUM)/Account.LYTD_C_C_plus_DTP__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>YOY Comp %</masterLabel>
+        <scale>1</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account$Estimated_Annual_Spend__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account$YTD_Total_DTP_orders__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account$CC_plus_DTP__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account$LY_C_C_plus_DTP__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account$LYTD_C_C_plus_DTP__c</field>
+    </columns>
+    <currency>USD</currency>
+    <description>All Accounts influenced by Invitation Homes</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Account.Influencers__r$InfluencedBy__c</column>
+            <operator>equals</operator>
+            <value>Invitation Homes Corporate (Influencer)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Influencers__r$InfluencedBy__c</column>
+            <operator>equals</operator>
+            <value>Invitation Homes</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Influencers__r$Influenced__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Invitation Homes Influenced Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Influencers__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

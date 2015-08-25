@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>North Atlantic Team Reports</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <role>Behr_Pro_Rep_North_Atlantic</role>
+        <role>PRSVP</role>
+        <role>Pro_Sales</role>
+        <role>Pro_Sales_VP_Central</role>
+        <role>Pro_Sales_VP_East</role>
+        <role>Pro_Sales_VP_West</role>
+        <role>ROM_RPSM_North_Atlantic</role>
+        <role>SystemAdministrator</role>
+    </sharedTo>
+</ReportFolder>

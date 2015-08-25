@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Color Services For BehrPro Customers</title>
+<style type="text/css"> 
+body {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+ 
+.dropshadow {
+	-moz-box-shadow: 5px 5px 5px #d3d3d3;
+	-webkit-box-shadow: 5px 5px 5px #d3d3d3;
+	box-shadow: 5px 5px 5px #d3d3d3;
+} 	
+ 
+</style>
+</head>
+ 
+<body>
+<font style="font-family: Arial; font-size: 10pt;">
+<table width="550" border="0" align="center" cellpadding="0" cellspacing="0" class="dropshadow">
+  		<tr>
+    <td><img src="https://na5.salesforce.com/servlet/servlet.ImageServer?oid=00D700000008FyN&id=01570000001PyLH" width="550" height="86" border="0" usemap="#Map" alt="" /></td>
+  </tr>
+  <tr>
+	
+	
+	</tr>
+	<tr>
+	
+	</tr>
+</table>
+   
+<table width="550" border="0" align="center" cellpadding="0" cellspacing="0">    
+		<tr><td height="15" colspan="3"></td></tr> 
+  		<tr>
+       	  <td width="10">&nbsp;</td>
+    		<td>
+				
+					<tr>
+					<p>
+<p></br>
+	Hi {!Contact.FirstName}	<P>
+	Thank you for for visting BehrPro at the 2013 Federación Mexicana de Fútbol Asociación event in Phoenix. Here is an overview of some of the color services we can offer {!Account.Name}. Please call me at {!Account.OwnerPhone} for info on BEHR&reg and KILZ&reg products or professional color services.
+	
+		
+<h4>Let Us Help You Simplify The Color Process 
+<img alt="colorservices-sm (55K)" src="https://na5.salesforce.com/servlet/servlet.ImageServer?oid=00D700000008FyN&id=01570000001QTmq"  height="167" width="167" vspace="5" hspace="5" align="right"/>
+ 
+</br><a href="http://www.behrpro.com/fmfcolorservices
+"> Download PDF Brochure</a></H4>
+<ul>
+<li><strong>Expert Color Recommendations</strong> 
+	</li><li>	<strong>Custom Color Renderings</strong>
+				</li><li><strong>Pinpoint Color Matching</strong> 
+				</li><li><strong>Drawdown Samples</strong> 
+							</li><li><strong>Other Customized Color Support Tools</strong> 
+</ul>
+	<h4>Help Your Customers Make Color Decisions Faster</H4>
+<a href="http://www.behrpro.com/fmfcolorsmartmobile
+"><img alt="Download Behr ColorSmart App for Mobile (57K)" src="https://na5.salesforce.com/servlet/servlet.ImageServer?oid=00D700000008FyN&id=01570000001QTmb" align="left height="312" width="550" border="none" vspace=0 hspace=0/></a>
+
+Download our ColorSmart by BEHR&#0153; app directly from <a href="http://www.behrpro.com/fmfcolorsmartmobile
+">Behr.com/ColorSmartMobile</a> on your
+
+ iPhone&reg;,
+ 
+iPod touch&reg;
+ 
+, iPad&reg;
+ 
+ or Android&#0153; mobile device, or view the Web version at <a href="http://www.behrpro.com/fmfexplorecolornow
+">Behr.com/ExploreColorNow</a>.
+<p>
+	Sincerely, </br>
+	</br>{!Account.OwnerFullName}
+	</br>{!Account.OwnerTitle}
+	</br>{!Account.OwnerPhone}
+</br>{!Account.OwnerEmail}
+	</tr>
+	
+	
+            </br><font size="1" color="#4b4b4b"face="Arial, Helvetica, sans-serif">
+        	<p>You have opted-in to receive email newsletters from BehrPro. If you no longer wish to receive promotional notifications and news, please <a href="mailto:unsubscribe@pronews.behrpro.com" title="Unsubscribe Here"> Click Here</a>.<br /> 
+       		<br/>
+            If this email has been forwarded to you and you wish to subscribe, please <a href="mailto:subscribe@pronews.behrpro.com" title="Subscribe Here">Click Here</a>.<br />
+            <br />
+            To read our Privacy Policy, please <a href="http://www.behrpro.com/privacypolicy/" title="Privacy Policy">Click Here</a>.<br />
+            <br />
+            We recently updated our Privacy Policy. If you wish to change your preferences, please follow the directions in the Privacy Policy.<br />
+            <br />
+          	Trademarks are the property of their respective owners.<br />
+   	  	  	<br />
+            &copy;2013 Behr Process Corporation. All Rights Reserved.<br />
+            <br />
+            Behr Process Corporation<br />
+          	3400 W. Segerstrom Avenue<br />
+          	Santa Ana, CA 92704</p>
+			</font>
+          </td>
+    		<td width="10">&nbsp;</td>
+    	</tr>
+</table>
+ 
+<!--header-->
+<map name="Map" id="Map">
+	<area shape="rect" coords="26,27,174,79" href="http://www.behrpro.com/BehrPro" target="_blank" title="BehrPro" alt="BehrPro" />
+  	<area shape="rect" coords="470,30,496,54" href="http://www.facebook.com/#!/BehrPro?fref=ts" target="_blank" title="Find us on Facebook" alt="Find us on Facebook" />
+  	<area shape="rect" coords="501,30,523,53" href="https://twitter.com/BehrPro" target="_blank" title="Find us on Twitter" alt="Find us on Twitter" />
+</map>
+ 
+</html>

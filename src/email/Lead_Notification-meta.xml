@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Lead Notification</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <group>Enrique_and_Ryan</group>
+        <group>Sales_Admin</group>
+        <role>SystemAdministrator</role>
+    </sharedTo>
+</EmailFolder>

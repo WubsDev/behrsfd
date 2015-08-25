@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Quote$Name</field>
+    </columns>
+    <columns>
+        <field>Quote$Id</field>
+    </columns>
+    <columns>
+        <field>Quote$Phone</field>
+    </columns>
+    <columns>
+        <field>Quote$Email_Address__c</field>
+    </columns>
+    <columns>
+        <field>Quote$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Quote$Created_By__c</field>
+    </columns>
+    <columns>
+        <field>Quote$LastModifiedDate</field>
+    </columns>
+    <currency>USD</currency>
+    <format>Tabular</format>
+    <name>Quote Record Type Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Quote_Order_Records__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Quote$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

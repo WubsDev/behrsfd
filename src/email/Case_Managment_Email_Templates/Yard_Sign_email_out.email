@@ -1,0 +1,23 @@
+Please process the following request.  
+
+Case {!Case.CaseNumber}
+Created by: {!Case.CreatedBy}
+Requester:  {!Case.Requester__c}
+Account Name: {!Account.Name}
+Est Annual Spend:  {!Case.Estimated_Spend_Amount__c}
+Rolling Year Sales:  {!Case.Rolling_Year_Sales__c}
+Contact Name: {!Case.Contact}
+Description:  {!Case.Description}
+
+Date Need By: {!Case.Date_Needed_By__c} 
+Hot Rush: {!Case.Hot_Rush__c} 
+Hot Rush Reason: {!Case.Hot_Rush_Reason__c} 
+Ship To: {!Case.Ship_To__c} 
+{!Case.Ship_To_Street__c}
+{!Case.Ship_To_City__c}, {!Case.Ship_To_State__c}  {!Case.Ship_To_Zip__c}
+
+# of printed copies: {!Case.Quantity__c}
+Sign Name:  {!Case.Sign_Name__c}
+Sign Phone: {!Case.Sign_Phone__c}
+Special Tag line: {!Case.Special_Tag_Line__c}
+License No. {!Case.License_No__c}

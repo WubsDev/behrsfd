@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Tyson Promo Dash</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <role>PRSVP</role>
+        <role>ProMarketingUser</role>
+        <role>ProMktgAdministrator</role>
+        <role>Pro_Sales</role>
+        <role>Pro_Sales_VP_Central</role>
+        <role>Pro_Sales_VP_East</role>
+        <role>Pro_Sales_VP_West</role>
+        <role>SystemAdministrator</role>
+    </sharedTo>
+</DashboardFolder>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>THD Sales</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>THD Sales</value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount --></label>
+        <name>Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Year --></label>
+        <name>Current_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Loaded --></label>
+        <name>Date_Loaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- HD Cust ID --></label>
+        <name>HD_Cust_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- LYTD formula --></label>
+        <name>LYTD_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- LY C &amp; C --></label>
+        <name>LY_C_C__c</name>
+    </fields>
+    <fields>
+        <label><!-- LY To date --></label>
+        <name>LY_To_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month_Year --></label>
+        <name>Month_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- POS Order Type --></label>
+        <name>POS_Order_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cash &amp; Carry</masterLabel>
+            <translation><!-- Cash &amp; Carry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Behr</masterLabel>
+            <translation><!-- Non-Behr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Order</masterLabel>
+            <translation><!-- Special Order --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Roll Year Flag --></label>
+        <name>Roll_Year_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- SFDC Account # --></label>
+        <name>SFDC_Account_ID__c</name>
+        <relationshipLabel><!-- THD Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Store --></label>
+        <name>Store__c</name>
+        <relationshipLabel><!-- THD Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TYTD --></label>
+        <name>TYTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- TYTD formula --></label>
+        <name>TYTD_formula__c</name>
+    </fields>
+    <layouts>
+        <layout>THD Sales Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

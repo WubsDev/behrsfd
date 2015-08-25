@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Add</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fieldSets>
+        <fullName>price_list</fullName>
+        <description>price list</description>
+        <displayedFields>
+            <field>Brand__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Product_Line__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>ProductCode</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Base__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>PRODUCT__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>price list</label>
+    </fieldSets>
+    <fields>
+        <fullName>Base_Type__c</fullName>
+        <description>Oil or Water based?</description>
+        <externalId>false</externalId>
+        <label>Base Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Oil</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Water</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Base__c</fullName>
+        <externalId>false</externalId>
+        <label>Base</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Brand__c</fullName>
+        <externalId>false</externalId>
+        <label>Brand</label>
+        <picklist>
+            <controllingField>Family</controllingField>
+            <picklistValues>
+                <fullName>Behr</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kilz</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Bronze__c</fullName>
+        <externalId>false</externalId>
+        <label>Bronze</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Bronze_price__c</fullName>
+        <externalId>false</externalId>
+        <formula>National_Retail__c - ( National_Retail__c *  Bronze__c  )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Bronze price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Class__c</fullName>
+        <description>HD Class assignment</description>
+        <externalId>false</externalId>
+        <label>Class</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Colorant_Base_Premix_Color__c</fullName>
+        <externalId>false</externalId>
+        <label>Colorant Base/Premix Color</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Accent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Black</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cape Cod Gray</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cedar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cedar Tone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Clear</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dark</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deep</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Faux Glaze</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gray</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Linen White</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>N/A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Natural Clear</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Natural Color</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Navajo White</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Off White</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pastel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pinto White</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Plaster</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Red</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Redwood</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Silver Gray</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Slate Gray</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stripper</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Swiss Coffee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tan</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tint Base</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>UPW</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>White</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wood Prep</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Competition__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Competition</label>
+        <referenceTo>Competition__c</referenceTo>
+        <relationshipLabel>Products</relationshipLabel>
+        <relationshipName>Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Current_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Family</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Exterior Paint</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exterior Primer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exterior Stains/Water Sealers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Interior/Exterior</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Interior Paint</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Interior Primer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Special Orders</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Textures</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Water Proofers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Formula_Type__c</fullName>
+        <description>Vehicle</description>
+        <externalId>false</externalId>
+        <label>Formula Type</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Gold_Price__c</fullName>
+        <description>Price to pull in if the tier is gold</description>
+        <externalId>false</externalId>
+        <formula>National_Retail__c-( National_Retail__c  *  Gold__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Gold Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Gold__c</fullName>
+        <externalId>false</externalId>
+        <label>Gold</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>LVOC__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>LVOC</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Margin__c</fullName>
+        <externalId>false</externalId>
+        <label>Margin</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Material__c</fullName>
+        <externalId>false</externalId>
+        <label>Material #</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>National_Retail__c</fullName>
+        <description>To allow for a national retail at the product level</description>
+        <externalId>false</externalId>
+        <label>National Retail</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>PRODUCT__c</fullName>
+        <externalId>false</externalId>
+        <label>PRODUCT</label>
+        <length>250</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Part_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Part Number</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Line__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Line</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Behr</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Behr Elastomeric</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Behr Premium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Behr Pro</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kilz</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Premium Plus</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Premium Plus Ultra</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Premium Plus with Style</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Premium Select</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PRO-X</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_SKU__c</fullName>
+        <description>Product SKU</description>
+        <externalId>false</externalId>
+        <label>Product SKU</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Additives</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Behr Primers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ceiling Paint</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cleaners</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concrete Coatings</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deck/Toners</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eggshell</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exterior</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exterior Clears/Spar/Specialty</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exterior Semi-Transparent Stain</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exterior Solid Stain</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Faux Specialty</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flat/Matte</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flat Enamel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gloss</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gloss Oil</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Kilz Primers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Masonry/Stucco</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PRO-X</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Ready-Mix</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Removers/Solvents</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Semi Gloss</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Specialty</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Water Sealers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_UPC__c</fullName>
+        <externalId>false</externalId>
+        <label>Product UPC</label>
+        <length>12</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Retail_Cost_per_GL__c</fullName>
+        <externalId>false</externalId>
+        <label>Retail Cost per GL</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Retail__c</fullName>
+        <description>Retail cost</description>
+        <externalId>false</externalId>
+        <label>Retail</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>S_O_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>S/O Cost</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>S_O_Cost_per_GL__c</fullName>
+        <externalId>false</externalId>
+        <label>S/O Cost per GL</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sheen__c</fullName>
+        <externalId>false</externalId>
+        <label>Sheen</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Barn</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Basement</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Basement/Masonry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concrete/Masonry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dead Flat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deck</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deck/Fence/Siding</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Decorative</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Eggshell</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Elastomeric</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Epoxy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fence</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flat</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flat/Matte</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flat Enamel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gloss</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gloss Enamel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gloss Porch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Log Home</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Porch</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Primer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Primers 02</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Roof</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Satin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Semi Gloss</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Semi Transparent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Semi Transparent Deck</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Solid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Solid Deck</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transparent</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Silver__c</fullName>
+        <externalId>false</externalId>
+        <label>Silver</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Silver_price__c</fullName>
+        <externalId>false</externalId>
+        <formula>National_Retail__c  - ( National_Retail__c * Silver__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Silver price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Size__c</fullName>
+        <description>Gallonage</description>
+        <externalId>false</externalId>
+        <label>Size</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Class__c</fullName>
+        <description>HD Sub-class assignment</description>
+        <externalId>false</externalId>
+        <label>Sub-Class</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_1_Cost_per_GL__c</fullName>
+        <externalId>false</externalId>
+        <label>Tier 1 Cost per GL</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_1__c</fullName>
+        <description>Tier 1 Cost (125-249 gallon purchase) = 10% discount off shelf price</description>
+        <externalId>false</externalId>
+        <label>Tier 1</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_2_Cost_per_GL__c</fullName>
+        <externalId>false</externalId>
+        <label>Tier 2 Cost per GL</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_2__c</fullName>
+        <description>Tier 2 Cost (250-499 gallon purchase) = 15% discount off shelf price</description>
+        <externalId>false</externalId>
+        <label>Tier 2</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_3_Cost_per_GL__c</fullName>
+        <externalId>false</externalId>
+        <label>Tier 3 Cost per GL</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Tier_3__c</fullName>
+        <description>Tier 3 Cost (500+ gallon purchase) = 20% discount off shelf price</description>
+        <externalId>false</externalId>
+        <label>Tier 3</label>
+        <length>8</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Unit_Of_Measurement__c</fullName>
+        <externalId>false</externalId>
+        <label>Unit Of Measurement</label>
+        <length>18</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Use__c</fullName>
+        <externalId>false</externalId>
+        <label>Use</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Interior Paint</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exterior Paint</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Interior/Exterior</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exterior Stains/Water Sealers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Water Proofers</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Textures</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Special Orders</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Interior</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Vendor_Number__c</fullName>
+        <description>Behr vendor number</description>
+        <externalId>false</externalId>
+        <label>Vendor Number</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor_SKU__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor SKU</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor__c</fullName>
+        <externalId>false</externalId>
+        <label>Vendor</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zone1__c</fullName>
+        <externalId>false</externalId>
+        <label>Zone 1</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zone2__c</fullName>
+        <description>Value for products in zone 2</description>
+        <externalId>false</externalId>
+        <label>Zone 2</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zone3__c</fullName>
+        <externalId>false</externalId>
+        <label>Zone 3</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zone4__c</fullName>
+        <externalId>false</externalId>
+        <label>Zone 4</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zone5__c</fullName>
+        <externalId>false</externalId>
+        <label>Zone 5</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zone6__c</fullName>
+        <externalId>false</externalId>
+        <label>Zone 6</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zone7__c</fullName>
+        <externalId>false</externalId>
+        <label>Zone 7</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllACTIVEProducts</fullName>
+        <columns>PRODUCT2.NAME</columns>
+        <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+        <columns>PRODUCT2.DESCRIPTION</columns>
+        <columns>PRODUCT2.CREATED_DATE</columns>
+        <columns>Size__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>PRODUCT2.ACTIVE</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All ACTIVE Products</label>
+        <language>en_US</language>
+    </listViews>
+    <searchLayouts>
+        <customTabListAdditionalFields>PRODUCT2.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Base__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Size__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>National_Retail__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Gold_Price__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Silver_price__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Bronze_price__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>National_Retail__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Gold_Price__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Silver_price__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Bronze_price__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Zone1__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Zone2__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Zone3__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Zone4__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>National_Retail__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Gold_Price__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Silver_price__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Bronze_price__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Zone1__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Zone2__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Zone3__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Zone4__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.CUSTOMER_PRODUCT_ID</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Retail__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PRODUCT2.FAMILY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Vendor__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Use__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Sheen__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Bronze__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Silver__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Gold__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <webLinks>
+        <fullName>Inventory_Lookup</fullName>
+        <availability>online</availability>
+        <description>Inventory lookup in SAP based on material selected</description>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Inventory Lookup</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>var jitterbiturl = &apos;https://devintegration.behr.com:46909&apos;;//dev
+//var jitterbiturl = &apos;https://qaintegration.behr.com:46909&apos;; //qa
+//var jitterbiturl= &apos;https://integration.behr.com:46909&apos;; //prod
+
+var prodcode = &apos;{!Product2.ProductCode}&apos;; 
+var urlname = jitterbiturl+&quot;/getInventoryAvail?ProductId=&quot;+ prodcode; 
+{!REQUIRESCRIPT(&quot;//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js&quot;)}
+{!REQUIRESCRIPT(&quot;//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js&quot;)}
+
+try{
+	  jQuery(function() {
+
+			jQuery.ajax(
+				 {
+				   type: &quot;GET&quot;,
+				   url: urlname,
+				   success:
+					  function(response){
+						/*Append the jQuery CSS CDN Link to the Head tag.*/
+							jQuery(&apos;head&apos;).append(&apos;&lt;link rel=&quot;stylesheet&quot; href=&quot;//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/start/jquery-ui.css&quot; type=&quot;text/css&quot; /&gt;&apos;);
+							
+							/*Create the HTML(DIV Tag) for the Dialog.*/
+							
+							var items = parseXml(response);
+							var html = &apos;&lt;div id=&quot;dialog&quot; title=&quot;Plant to Available Qty&quot;&gt;&apos;;
+							html = html+&apos;&lt;style&gt;#dialog table {border-collapse: collapse;border: 1;} #dialog table, #dialog td, #dialog th {border: 1px solid black;} #dialog table {margin-left: 60px;margin-top: 20px;} #dialog th{text-align: center;} #dialog td:last-child {text-align: right;} .ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {float: none;} .ui-dialog .ui-dialog-buttonpane {text-align: center;} .oddrowcolor{background-color:#d4e3e5;} .evenrowcolor{background-color:#c3dde0;}&lt;/style&gt;&apos;;
+						   
+							html = html+&apos;&lt;table id=&quot;alternatecolor&quot;&gt;&apos;;
+							html = html+&apos;&lt;tr&gt;&lt;th&gt;    Plant    &lt;/th&gt;&apos;;
+							html = html+&apos;&lt;th&gt;    Qty   &lt;/th&gt;&lt;/tr&gt;&apos;;
+							for (var i=0; i&lt;items.length; i++) {
+							 html = html+&quot;&lt;tr&gt;&lt;td&gt;&quot;+items[i].plant+&quot;&lt;/td&gt;&quot;;
+							 html = html+&quot;&lt;td&gt;&quot; + items[i].qty + &quot;&lt;/td&gt;&lt;/tr&gt;&quot;;
+							}
+							html = html+&apos;&lt;/table&gt;&apos;;
+							html = html+&apos;&lt;/div&gt;&apos;;
+
+							 /*Check if the Dialog(DIV Tag) already exists if not then Append the same to the Body tag.*/
+							if(!jQuery(&apos;[id=dialog]&apos;).size()){
+							  jQuery(&apos;body&apos;).append(html);
+							}
+
+altRows(&apos;alternatecolor&apos;);  
+							
+							/*Open the jQuery Dialog.*/ 
+							jQuery( &quot;#dialog&quot; ).dialog({
+							  autoOpen: true,
+							  modal: true,
+							  show: {
+								effect: &quot;easings&quot;,
+								duration: 1000
+							  },
+							  hide: {
+								effect: &quot;easings&quot;,
+								duration: 1000
+							  },
+							  buttons: {
+								&quot;OK&quot;: function() {
+								  jQuery( this ).dialog( &quot;close&quot; );
+								}
+							  }
+							});
+					  },
+				   error:
+					  function(response){
+						alert(&quot;Ajax Failed to Connect : - &quot;+ response);
+					  }
+				  }
+			);		
+	  }); 
+}catch(e){
+	alert(&apos;Network Communication Failure : &apos; + e);
+}
+
+function parseXml(xml) {
+    var items = [];
+    $(xml).find(&quot;OUT_AVAIL&quot;).each(function() {
+        items.push({
+            plant: $(this).find(&quot;ZPLANT&quot;).text(), 
+            qty: numberWithCommas($(this).find(&quot;ZQTYAVAIL&quot;).text())
+        });
+    });
+    return items;
+}
+function numberWithCommas(x) {
+    //return x;
+    return x.toString().replace(/\B(?=(?:\d{3})+(?!\d))/g, &quot;,&quot;);
+}
+function altRows(id){
+	if(document.getElementsByTagName){  
+		
+		var table = document.getElementById(id);  
+		var rows = table.getElementsByTagName(&quot;tr&quot;); 
+		 
+		for(i = 0; i &lt; rows.length; i++){          
+			if(i % 2 == 0){
+				rows[i].className = &quot;evenrowcolor&quot;;
+			}else{
+				rows[i].className = &quot;oddrowcolor&quot;;
+			}      
+		}
+	}
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Edit</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Mass Edit</masterLabel>
+        <openType>sidebar</openType>
+        <page>MassEditProduct</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>Mass_Update</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Mass Update</masterLabel>
+        <openType>sidebar</openType>
+        <page>MassUpdateProduct2</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+</CustomObject>

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>GET MORE CUSTOMERS</title>
+<style type="text/css"> 
+body {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+ 
+.dropshadow {
+	-moz-box-shadow: 5px 5px 5px #d3d3d3;
+	-webkit-box-shadow: 5px 5px 5px #d3d3d3;
+	box-shadow: 5px 5px 5px #d3d3d3;
+} 	
+ 
+</style>
+</head>
+
+<body>
+<table width="550" border="0" align="center" cellpadding="0" cellspacing="0" class="dropshadow">
+  		<tr>
+    <td><img src="https://na5.salesforce.com/servlet/servlet.ImageServer?oid=00D700000008FyN&id=01570000001PyLH" width="550" height="86" border="0" usemap="#Map" alt="" /></td>
+  </tr>
+  <tr>
+    <td><img src="https://na5.salesforce.com/servlet/servlet.ImageServer?oid=00D700000008FyN&id=01570000001PyLW" width="550" height="303" border="0" alt="GET MORE CUSTOMERS BehrPro(SM) is proud to connect you with a new, customer-friendly tool to help jump start your business with homeowners." /></td>
+  </tr>
+  <tr>
+    <td><img src="https://na5.salesforce.com/servlet/servlet.ImageServer?oid=00D700000008FyN&id=01570000001PyLb"  width="550" height="648" border="0" usemap="#Map2" alt="A BETTER WAY TO FIND YOUR NEXT JOB 
+Redbeacon is currently accepting applications from qualified home service professionals
+Contact Redbeacon with any questions 1-855-RBEACON (723-2266)
+ 
+How Redbeacon works
+ 
+Qualified Job Requests
+Redbeacon connects experienced pros like yourself with real-time job requests from qualified customers-people who are looking for a pro with your exact skill set.
+ 
+Immediate Notifications
+Project specs-often including site photos, videos and voice memos – go straight to your inbox or mobile phone, allowing you to respond quickly and accurately, wherever you may be.
+ 
+Grow Your Business
+Redbeacon makes it easy to market yourself on the web. Simply build your Redbeacon profile with pictures, licensing information, and even reviews from other sites. Then customers searching for the services you offer can find you fast-driving real job requests right to your inbox." /></td>
+  </tr>
+  <tr>
+    <td><img src="https://na5.salesforce.com/servlet/servlet.ImageServer?oid=00D700000008FyN&id=01570000001PyLl"width="550" height="20" border="0" alt="While we are proud to refer you to Redbeacon, BehrPro and Redbeacon are not affiliated." /></td>
+  		</tr>
+</table>
+   
+<table width="550" border="0" align="center" cellpadding="0" cellspacing="0">    
+		<tr><td height="15" colspan="3"></td></tr> 
+  		<tr>
+       	  <td width="10">&nbsp;</td>
+    		<td>
+            <font size="1" color="#4b4b4b"face="Arial, Helvetica, sans-serif">
+        	<p>You have opted-in to receive email newsletters from BehrPro. If you no longer wish to receive promotional notifications and news, please unsubscribe at <a href="mailto:unsubscribe@pronews.behrpro.com" title="Unsubscribe Here">unsubscribe@pronews.behrpro.com</a>.<br /> 
+       		<br/>
+            If this email has been forwarded to you and you wish to subscribe, please send an email to <a href="mailto:subscribe@pronews.behrpro.com" title="Subscribe Here">subscribe@pronews.behrpro.com</a>.<br />
+            <br />
+            To read our Privacy Policy, please <a href="http://www.behrpro.com/privacypolicy/" title="Privacy Policy">Click Here</a>.<br />
+            <br />
+            We recently updated our Privacy Policy. If you wish to change your preferences, please follow the directions on the Privacy Policy.<br />
+            <br />
+          	Home Depot is a registered trademark of Homer TLC, Inc.<br />
+   	  	  	<br />
+            &copy;2013 Behr Process Corporation. All Rights Reserved.<br />
+            <br />
+            Behr Process Corporation<br />
+          	3400 W. Segerstrom Avenue<br />
+          	Santa Ana, CA 92704</p>
+			</font>
+          </td>
+    		<td width="10">&nbsp;</td>
+    	</tr>
+</table>
+ 
+<!--header-->
+<map name="Map" id="Map">
+	<area shape="rect" coords="26,27,174,79" href="http://www.behrpro.com/Redbeacon/BehrPro" target="_blank" title="BehrPro" alt="BehrPro" />
+  	<area shape="rect" coords="470,30,496,54" href="http://www.behrpro.com/Redbeacon/FB" target="_blank" title="Find us on Facebook" alt="Find us on Facebook" />
+  	<area shape="rect" coords="501,30,523,53" href="http://www.behrpro.com/Redbeacon/Twitter" target="_blank" title="Find us on Twitter" alt="Find us on Twitter" />
+</map>
+ 
+<!--Red Beacon-->
+<map name="Map2" id="Map2">
+  	<area shape="rect" coords="265,124,498,184" href="http://www.behrpro.com/Redbeacon" target="_blank" title="GET STARTED NOW" alt="GET STARTED NOW" />
+</map>
+ 
+<!--BehrPro-->
+<map name="Map3" id="Map3">
+	<area shape="rect" coords="16,84,234,133" href="http://www.behrpro.com/Redbeacon/Schedule" target="_blank" title="SEE TOUR MAP & DATES" alt="SEE TOUR MAP & DATES" />
+  	<area shape="rect" coords="10,148,130,256" href="http://www.behrpro.com/Redbeacon/MMT" target="_blank" title="BehrPro EXPERIENCE TOUR" alt="BehrPro EXPERIENCE TOUR" />
+</map>
+</body>
+</html>

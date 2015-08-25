@@ -1,0 +1,11 @@
+Account ownership change was requested by {!Ownership_Approval_Account__c.New_Owner__c}
+
+Supporting Information:
+
+Account Name:  {!Ownership_Approval_Account__c.Account__c}
+Current Owner: {!Ownership_Approval_Account__c.Account__c}
+New Owner: {!Ownership_Approval_Account__c.New_Owner__c}
+Account Actual Sales: {!Account.Rolling_Year_CC_plus_DTP__c}
+
+Link to Account Record: {!Account.Link} 
+Link to Approval Detail Record: {!Ownership_Approval_Account__c.Link}

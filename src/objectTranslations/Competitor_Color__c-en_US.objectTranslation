@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Competitor Color</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Competitor Color</value>
+    </caseValues>
+    <fields>
+        <label><!-- Color Brand --></label>
+        <name>Color_Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color Hex --></label>
+        <name>Color_Hex__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color Name --></label>
+        <name>Color_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color Code --></label>
+        <name>Color_code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>Color_picture__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <picklistValues>
+            <masterLabel>Accent</masterLabel>
+            <translation><!-- Accent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balcony</masterLabel>
+            <translation><!-- Balcony --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Body</masterLabel>
+            <translation><!-- Body --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Door</masterLabel>
+            <translation><!-- Door --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fence</masterLabel>
+            <translation><!-- Fence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Garage</masterLabel>
+            <translation><!-- Garage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Railings</masterLabel>
+            <translation><!-- Railings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trim</masterLabel>
+            <translation><!-- Trim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walkway</masterLabel>
+            <translation><!-- Walkway --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Competitor Color --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>Source__c</name>
+    </fields>
+    <layouts>
+        <layout>Color and base</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Color only</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Color And Base --></label>
+        <name>Color_and_base</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Color Only --></label>
+        <name>Color_only</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

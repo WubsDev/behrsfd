@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>TGP_Terriory_Budgets</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Behr_Kilz_Annual_Potential__c</fullName>
+        <externalId>false</externalId>
+        <label>Behr/Kilz Annual Potential</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Carryout_Sales__c</fullName>
+        <externalId>false</externalId>
+        <label>Carryout Sales</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>DTP_Sales__c</fullName>
+        <externalId>false</externalId>
+        <label>DTP Sales</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Current_Annual_Paint_Spend__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Current Annual Paint Spend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Strategy_You_Will_Follow__c</fullName>
+        <externalId>false</externalId>
+        <label>Strategy You Will Follow</label>
+        <length>32768</length>
+        <trackHistory>true</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>TGP_Start__c</fullName>
+        <externalId>false</externalId>
+        <label>TGP (Start) $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TGP_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>TGP Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>TGP_mid_year__c</fullName>
+        <externalId>false</externalId>
+        <label>TGP (mid-Year) $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Target_Date_for_Acquisition__c</fullName>
+        <externalId>false</externalId>
+        <label>Target Date for Acquisition</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Total_Sales__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Sales</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Territory_Budget__c</fullName>
+        <externalId>false</externalId>
+        <formula>TGP_Start__c +  TGP_mid_year__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Territory Budget $</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Year__c</fullName>
+        <externalId>false</externalId>
+        <label>Year</label>
+        <picklist>
+            <picklistValues>
+                <fullName>2012</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2012 - Midyear</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2013</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2013 - Midyear</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2014</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2014 - Midyear</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2015</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2015 - Midyear</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2016</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2016 - Midyear</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2017</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2017 - Midyear</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2018</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2018 - Midyear</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2019</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2019 - Midyear</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2020</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2020 - Midyear</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>of_Total_Paint_Spend__c</fullName>
+        <externalId>false</externalId>
+        <label>% of Total Paint Spend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>to_Budget__c</fullName>
+        <externalId>false</externalId>
+        <label>% to Budget</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <type>Percent</type>
+    </fields>
+    <label>Territory Growth Plan</label>
+    <nameField>
+        <displayFormat>TGP-{00000}</displayFormat>
+        <label>TGP</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Territory Growth Plans</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Territory_Growth_Plan</fullName>
+        <active>true</active>
+        <description>Territory Growth Plan record type</description>
+        <label>Territory Growth Plan</label>
+        <picklistValues>
+            <picklist>TGP_Type__c</picklist>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Year__c</picklist>
+            <values>
+                <fullName>2012</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2012 - Midyear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2013</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2013 - Midyear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2014</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2014 - Midyear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2015</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2015 - Midyear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2016 - Midyear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2017</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2017 - Midyear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2018</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2018 - Midyear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2019 - Midyear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2020 - Midyear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Account__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Year__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>OBJECT_ID</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Year__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>TGP_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Year__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Account__c</searchFilterFields>
+        <searchFilterFields>TGP_Type__c</searchFilterFields>
+        <searchFilterFields>Year__c</searchFilterFields>
+        <searchResultsAdditionalFields>OBJECT_ID</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Year__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Carryout_total_spend</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND ( ISPICKVAL( TGP_Type__c, &quot;Customer&quot;), ISBLANK(of_Total_Paint_Spend__c))</errorConditionFormula>
+        <errorDisplayField>of_Total_Paint_Spend__c</errorDisplayField>
+        <errorMessage>Field is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Customer_Carryout</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND ( ISPICKVAL( TGP_Type__c, &quot;Customer&quot;), ISBLANK(Carryout_Sales__c))</errorConditionFormula>
+        <errorDisplayField>Carryout_Sales__c</errorDisplayField>
+        <errorMessage>Field is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Customer_DTP</fullName>
+        <active>true</active>
+        <description>make mandatory field based on type equal to customer</description>
+        <errorConditionFormula>AND ( ISPICKVAL( TGP_Type__c, &quot;Customer&quot;), ISBLANK(DTP_Sales__c))</errorConditionFormula>
+        <errorDisplayField>DTP_Sales__c</errorDisplayField>
+        <errorMessage>Field is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>customer_budget</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND ( ISPICKVAL( TGP_Type__c, &quot;Customer&quot;), ISBLANK(to_Budget__c))</errorConditionFormula>
+        <errorDisplayField>to_Budget__c</errorDisplayField>
+        <errorMessage>Field is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>prospect_Behr_pot</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND ( ISPICKVAL( TGP_Type__c, &quot;Prospect&quot;), ISBLANK(Estimated_Current_Annual_Paint_Spend__c))</errorConditionFormula>
+        <errorDisplayField>Behr_Kilz_Annual_Potential__c</errorDisplayField>
+        <errorMessage>Field is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>prospect_est_an</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND ( ISPICKVAL( TGP_Type__c, &quot;Prospect&quot;), ISBLANK(Estimated_Current_Annual_Paint_Spend__c))</errorConditionFormula>
+        <errorDisplayField>Estimated_Current_Annual_Paint_Spend__c</errorDisplayField>
+        <errorMessage>Field is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>prospect_strategy</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND ( ISPICKVAL( TGP_Type__c, &quot;Prospect&quot;), ISBLANK(Strategy_You_Will_Follow__c))</errorConditionFormula>
+        <errorDisplayField>Strategy_You_Will_Follow__c</errorDisplayField>
+        <errorMessage>Field is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>prospect_target</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND ( ISPICKVAL( TGP_Type__c, &quot;Prospect&quot;), ISBLANK(Target_Date_for_Acquisition__c))</errorConditionFormula>
+        <errorDisplayField>Target_Date_for_Acquisition__c</errorDisplayField>
+        <errorMessage>Field is required</errorMessage>
+    </validationRules>
+</CustomObject>

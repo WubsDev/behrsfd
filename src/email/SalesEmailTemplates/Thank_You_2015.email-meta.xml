@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Thank You letter to the customer for their business in 2015</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Thank You 2015</name>
+    <style>none</style>
+    <subject>Thank You For Your Business in 2015!</subject>
+    <type>custom</type>
+</EmailTemplate>

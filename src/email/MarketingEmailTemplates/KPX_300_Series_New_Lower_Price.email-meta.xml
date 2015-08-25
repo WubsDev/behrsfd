@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>KPX 300 Series Paint New Lower Price</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>KPX 300 Series - New Lower Price</name>
+    <style>none</style>
+    <subject>Kilz Pro-X 300 Series Paint - New Lower Price</subject>
+    <textOnly>Hi {!if(Lead.FirstName=&quot;&quot;, Contact.FirstName,Lead.FirstName)},
+
+I wanted you to be among the first to know about the New Lower Price for Kilz Pro-X® 300 Series Paint. Now, you can put even more money in your pocket.
+
+Maximum hide KILZ PRO-X 300 Series Paint is a versatile formula optimized for spray, roll, brush and superior touch-ups. I know what this kind of performance and cost savings can mean to a business like {!if(Account.Name=&quot;&quot;, Lead.Company,Account.Name)}. Here&apos;s one of the customers who recently shared their Pro-X success stories with us: http://youtu.be/-rP901k9Zw8
+
+Kilz Pro-X TDS &amp; MSDS sheets: http://www.kilz.com/pro-x/v/index.jsp?vgnextoid=394d5ecb9b799310VgnVCM100000176310acRCRD
+
+Contact me any time at {!if(Contact.OwnerPhone=&quot;&quot;, Lead.OwnerPhone,Contact.OwnerPhone)} to talk specifics about KPX-300 for your projects, {!if(Lead.FirstName=&quot;&quot;, Contact.FirstName,Lead.FirstName)} -- or any BEHR® or Kilz® products.
+
+Sincerely,
+
+{!if(Contact.OwnerFullName=&quot;&quot;,Lead.OwnerFullName,Contact.OwnerFullName)}
+{!if(Contact.OwnerTitle=&quot;&quot;, Lead.OwnerTitle,Contact.OwnerTitle)}
+{!if(Contact.OwnerPhone=&quot;&quot;, Lead.OwnerPhone,Contact.OwnerPhone)}
+{!if(Contact.OwnerEmail=&quot;&quot;, Lead.OwnerEmail,Contact.OwnerEmail)}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

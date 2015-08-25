@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>FK_CUSTENT_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Direct_To_Pro_Sales__c.PO_Number__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Direct_To_Pro_Sales__c.Contact_Name__c</field>
+    </columns>
+    <columns>
+        <field>Direct_To_Pro_Sales__c.Ordered_By__c</field>
+    </columns>
+    <columns>
+        <field>Direct_To_Pro_Sales__c.Pricing_Type__c</field>
+    </columns>
+    <columns>
+        <field>Direct_To_Pro_Sales__c.Purchase_Amount__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>ACCOUNT.NAME</column>
+            <operator>equals</operator>
+            <value>DTP Unassigned</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_CUSTENT_OWNER_NAME</column>
+            <operator>equals</operator>
+            <value>Miguel Amadeo,Issa Botto,Greg Goodwin,Francisco Hernandez,Abel Loredo,Luis Martinez,James Massinello,JC Nunez,Michael Sampson,Jason Shipley</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Unassigned DTP Orders - South Altantic</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountCustomEntity$Direct_To_Pro_Sales__c@Direct_To_Pro_Sales__c.Store_of_Purchase__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>FK_CUSTENT_OWNER_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Direct_To_Pro_Sales__c.Date_of_Purchase__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

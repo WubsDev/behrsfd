@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>THD Stores</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>THD Stores</value>
+    </caseValues>
+    <fields>
+        <label><!-- Behr Store Rep --></label>
+        <name>Behr_Store_Rep__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- HD Store Number Backend --></label>
+        <name>HD_Store_Number_Backend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manual Assignment --></label>
+        <name>Manual_Assignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market Name --></label>
+        <name>Market_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market Number --></label>
+        <name>Market_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ops Division --></label>
+        <name>Ops_Division__c</name>
+        <picklistValues>
+            <masterLabel>North</masterLabel>
+            <translation><!-- North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Manager --></label>
+        <name>Ops_Manager__c</name>
+        <picklistValues>
+            <masterLabel>Arek Anysz</masterLabel>
+            <translation><!-- Arek Anysz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colin Woods</masterLabel>
+            <translation><!-- Colin Woods --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cris Maune</masterLabel>
+            <translation><!-- Cris Maune --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Hance</masterLabel>
+            <translation><!-- David Hance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Felix Rodriquez</masterLabel>
+            <translation><!-- Felix Rodriquez --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gary Bauman</masterLabel>
+            <translation><!-- Gary Bauman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geoffrey Timm</masterLabel>
+            <translation><!-- Geoffrey Timm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gerald Bump</masterLabel>
+            <translation><!-- Gerald Bump --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glenn Longval</masterLabel>
+            <translation><!-- Glenn Longval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>James Belloli</masterLabel>
+            <translation><!-- James Belloli --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeff Wolf</masterLabel>
+            <translation><!-- Jeff Wolf --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jim Varney</masterLabel>
+            <translation><!-- Jim Varney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Joe Sorrentino</masterLabel>
+            <translation><!-- Joe Sorrentino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>John Hitchler</masterLabel>
+            <translation><!-- John Hitchler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jordan Showers</masterLabel>
+            <translation><!-- Jordan Showers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Josh Hill</masterLabel>
+            <translation><!-- Josh Hill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Josh Richardson</masterLabel>
+            <translation><!-- Josh Richardson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lane Daniel</masterLabel>
+            <translation><!-- Lane Daniel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mark Mosley</masterLabel>
+            <translation><!-- Mark Mosley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matt Andrews</masterLabel>
+            <translation><!-- Matt Andrews --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matt McNeff</masterLabel>
+            <translation><!-- Matt McNeff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matt Spooner</masterLabel>
+            <translation><!-- Matt Spooner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matthew Knight</masterLabel>
+            <translation><!-- Matthew Knight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Furnari</masterLabel>
+            <translation><!-- Michael Furnari --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mike Vecchi</masterLabel>
+            <translation><!-- Mike Vecchi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paul Adinolfi</masterLabel>
+            <translation><!-- Paul Adinolfi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ramsey Carter</masterLabel>
+            <translation><!-- Ramsey Carter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Raymond Crafts</masterLabel>
+            <translation><!-- Raymond Crafts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rich Beak</masterLabel>
+            <translation><!-- Rich Beak --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richard Romine</masterLabel>
+            <translation><!-- Richard Romine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robert Kracker</masterLabel>
+            <translation><!-- Robert Kracker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robert Landtiser</masterLabel>
+            <translation><!-- Robert Landtiser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scott Rud</masterLabel>
+            <translation><!-- Scott Rud --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steven Ward</masterLabel>
+            <translation><!-- Steven Ward --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tim Bescherer</masterLabel>
+            <translation><!-- Tim Bescherer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tom Tolkinen</masterLabel>
+            <translation><!-- Tom Tolkinen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tony Verkoelen</masterLabel>
+            <translation><!-- Tony Verkoelen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>William Farrell</masterLabel>
+            <translation><!-- William Farrell --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ops VP --></label>
+        <name>Ops_VP__c</name>
+        <picklistValues>
+            <masterLabel>Jason Weeks</masterLabel>
+            <translation><!-- Jason Weeks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kevin Call</masterLabel>
+            <translation><!-- Kevin Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kirk Billingsley</masterLabel>
+            <translation><!-- Kirk Billingsley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lance Sparkman</masterLabel>
+            <translation><!-- Lance Sparkman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Pugliese</masterLabel>
+            <translation><!-- Michael Pugliese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mike Tooley</masterLabel>
+            <translation><!-- Mike Tooley --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PRO Division --></label>
+        <name>PRO_Division__c</name>
+        <picklistValues>
+            <masterLabel>PRO EAST</masterLabel>
+            <translation><!-- PRO EAST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRO WEST</masterLabel>
+            <translation><!-- PRO WEST --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pro Rep Email --></label>
+        <name>Pro_Rep_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pro Rep ID --></label>
+        <name>Pro_Rep_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pro VP --></label>
+        <name>Pro_VP__c</name>
+        <picklistValues>
+            <masterLabel>John Seidensticker</masterLabel>
+            <translation><!-- John Seidensticker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mark Faber</masterLabel>
+            <translation><!-- Mark Faber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matt Waszkowski</masterLabel>
+            <translation><!-- Matt Waszkowski --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RPSM --></label>
+        <name>RPSM__c</name>
+        <picklistValues>
+            <masterLabel>Abe Suleiman</masterLabel>
+            <translation><!-- Abe Suleiman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bill Mahoney</masterLabel>
+            <translation><!-- Bill Mahoney --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brandon Jones</masterLabel>
+            <translation><!-- Brandon Jones --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brian Emmert</masterLabel>
+            <translation><!-- Brian Emmert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dermot McGuire</masterLabel>
+            <translation><!-- Dermot McGuire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greg Goodwin</masterLabel>
+            <translation><!-- Greg Goodwin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>John Wysor</masterLabel>
+            <translation><!-- John Wysor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Luke Markes</masterLabel>
+            <translation><!-- Luke Markes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not assigned</masterLabel>
+            <translation><!-- Not assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Randy Rivers</masterLabel>
+            <translation><!-- Randy Rivers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spyros Zorbas</masterLabel>
+            <translation><!-- Spyros Zorbas --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SAP Store Label --></label>
+        <name>SAP_Store_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales VP --></label>
+        <name>Sales_VP__c</name>
+        <picklistValues>
+            <masterLabel>Geoff Timm</masterLabel>
+            <translation><!-- Geoff Timm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jason Weeks</masterLabel>
+            <translation><!-- Jason Weeks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kevin Call</masterLabel>
+            <translation><!-- Kevin Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Pugliese</masterLabel>
+            <translation><!-- Michael Pugliese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mike Tooley</masterLabel>
+            <translation><!-- Mike Tooley --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scott Rud</masterLabel>
+            <translation><!-- Scott Rud --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Name --></label>
+        <name>Store_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Phone --></label>
+        <name>Store_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Rep Email --></label>
+        <name>Store_Rep_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Address --></label>
+        <name>Street_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- THD DM --></label>
+        <name>THD_DM__c</name>
+    </fields>
+    <fields>
+        <label><!-- THD RMM --></label>
+        <name>THD_RMM__c</name>
+    </fields>
+    <fields>
+        <label><!-- THD Region --></label>
+        <name>THD_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- THD Territory --></label>
+        <name>THD_Territory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>Zip_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- store phone clean --></label>
+        <name>store_phone_clean__c</name>
+    </fields>
+    <layouts>
+        <layout>Home Depot Store Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>HD Store Number</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

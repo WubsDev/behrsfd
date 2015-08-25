@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BEHR_ColorServiceCreated_EmailTemplate_US</name>
+    <style>none</style>
+    <subject>New Color Service has been created with Project no# {!01I700000007UqI.Name}</subject>
+    <textOnly>Hi,
+For your information, a new Color Service has been created with Project no# {!01I700000007UqI.Name} , color name -{!01I700000007UqI.00N70000002T9JA} and type - {!01I700000007UqI.00N70000002SzkA}.   Thanks,
+{!01I700000007UqI.OwnerFirstName}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

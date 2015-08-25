@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>To an Instore letting them know of a possible duplicate</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Behr_Lead Notification Duplicate</name>
+    <style>none</style>
+    <subject>WTL Duplicate Submission -  &quot;{!Lead.Company}&quot;</subject>
+    <type>custom</type>
+</EmailTemplate>

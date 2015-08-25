@@ -1,0 +1,24 @@
+{!Today}
+
+Dear {!NullValue(Contact.FirstName, "Sir or Madam")},
+
+Join us and see how we make your business our business.
+
+* Learn about new products and service offerings
+* Demo Behr and Kilz products for yourself 
+* Enroll in the Home Depot's Pro Rewards paint program
+
+Look for us on June 5th, 2014 at:   7:00am - 4:00pm
+
+Store#     4605
+Address   2815 Merrilee Drive
+                Fairfax, VA  22031
+
+Phone number   703-205-1245
+Fax number       703-205-1243
+
+Sincerely,
+
+{!User.FullName}
+{!Organization.Name}
+{!User.Email}

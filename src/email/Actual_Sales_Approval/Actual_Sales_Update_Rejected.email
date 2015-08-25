@@ -1,0 +1,6 @@
+Your request to move PO {!Actual_Sales__c.Purchase_Order__c} from  {!Ownership_Approval__c.Old_Account_a__c} to {!Ownership_Approval__c.New_Account__c} has been rejected by {!User.Name}.
+
+Comments:
+{!ApprovalRequest.Comments}
+
+Please email smart@behr.com with any questions.

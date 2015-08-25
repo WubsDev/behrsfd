@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LeadSharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <ownerRules>
+        <fullName>ID_Dev_Lead_Sharing</fullName>
+        <sharedTo>
+            <role>IT_DEV</role>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+        <leadAccessLevel>Edit</leadAccessLevel>
+        <name>ID-Dev Lead Sharing</name>
+    </ownerRules>
+    <ownerRules>
+        <fullName>NAM</fullName>
+        <sharedTo>
+            <roleAndSubordinates>PRSVP</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <role>NAM_Manager</role>
+        </sharedFrom>
+        <leadAccessLevel>Read</leadAccessLevel>
+        <name>NAM</name>
+    </ownerRules>
+    <ownerRules>
+        <fullName>NAM2</fullName>
+        <sharedTo>
+            <roleAndSubordinates>NAM_VP</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>PRSVP</roleAndSubordinates>
+        </sharedFrom>
+        <leadAccessLevel>Read</leadAccessLevel>
+        <name>NAM2</name>
+    </ownerRules>
+    <ownerRules>
+        <fullName>RPSM</fullName>
+        <sharedTo>
+            <group>Managers</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>US_Users</group>
+        </sharedFrom>
+        <leadAccessLevel>Edit</leadAccessLevel>
+        <name>RPSM</name>
+    </ownerRules>
+</LeadSharingRules>

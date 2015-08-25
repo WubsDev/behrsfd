@@ -1,0 +1,25 @@
+<!-- begin code -->
+<html>
+<head>
+<script src="/soap/ajax/8.0/connection.js"></script>
+<script src="/desktop/desktopApi.js"></script>
+
+<script>
+function init() {
+
+var desktop = new DesktopApi();
+if (desktop.desktopPageWindow)
+{
+window.parent.location.href = "/{!Case.Id}/s?save=1&notifyContact=0&cas7=Closed&isdtp=mn&nooverride=1&retURL=/{!Case.Id}";
+} else {
+window.parent.location.href = "/{!Case.Id}/s?save=1&notifyContact=0&cas7=Closed&nooverride=1&retURL=/{!Case.Id}";
+}
+}
+</script>
+</head>
+<body onload="init()">
+<p>&nbsp;</p>
+</body>
+</html>
+
+<!-- end code -->

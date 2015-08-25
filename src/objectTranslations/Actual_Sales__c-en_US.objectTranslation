@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Actual Sales</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Actual Sales</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Actual Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approved Opportunity ID --></label>
+        <name>Approved_Opportunity_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill To --></label>
+        <name>Bill_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC Rollling Year Formula --></label>
+        <name>CC_Rollling_Year_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone = HD Store --></label>
+        <name>Contact_Phone_HD_Store__c</name>
+    </fields>
+    <fields>
+        <label><!-- DTP Rollling Year Formula --></label>
+        <name>DTP_Rollling_Year_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Date --></label>
+        <name>Delivery_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Order --></label>
+        <name>Direct_order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est. Retail --></label>
+        <name>Est_Retail__c</name>
+    </fields>
+    <fields>
+        <label><!-- HD Cust ID --></label>
+        <name>HD_cust_id__c</name>
+        <relationshipLabel><!-- Actual Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Has Parent --></label>
+        <name>Has_Parent__c</name>
+    </fields>
+    <fields>
+        <label><!-- LMTD Currency DTP --></label>
+        <name>LMTD_Currency_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- LMTD Currency CC --></label>
+        <name>LMTD_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- LMTD Formula DTP --></label>
+        <name>LMTD_Formula_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- LMTD Formula CC --></label>
+        <name>LMTD_Formula_POS__c</name>
+    </fields>
+    <fields>
+        <label><!-- LYMTD --></label>
+        <name>LMTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- LYTD Currency DTP --></label>
+        <name>LYTD_Currency_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- LYTD Currency CC --></label>
+        <name>LYTD_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- LYTD Formula DTP --></label>
+        <name>LYTD_Formula_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- LYTD Formula CC --></label>
+        <name>LYTD_Formula_POS__c</name>
+    </fields>
+    <fields>
+        <label><!-- LYTD --></label>
+        <name>LYTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- LY Currency DTP --></label>
+        <name>LY_Currency_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- LY Currency CC --></label>
+        <name>LY_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- LY Formula DTP --></label>
+        <name>LY_Formula_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- LY Formula CC --></label>
+        <name>LY_Formula_POS__c</name>
+    </fields>
+    <fields>
+        <label><!-- LY --></label>
+        <name>LY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managed Amount --></label>
+        <name>Managed_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managed Sale Amount --></label>
+        <name>Managed_Sale_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes/Comments --></label>
+        <name>Notes_comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Actual Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity change Check --></label>
+        <name>Opportunity_change_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Date --></label>
+        <name>Order_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ordered By --></label>
+        <name>Ordered_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- POS Amount CC --></label>
+        <name>POS_amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Account Name --></label>
+        <name>Parent_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payer --></label>
+        <name>Payer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone # --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Amount --></label>
+        <name>Purchase_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchase Order --></label>
+        <name>Purchase_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rolling Year --></label>
+        <name>Rolling_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rolling year Currency DTP --></label>
+        <name>Rolling_year_Currency_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rolling year Currency CC --></label>
+        <name>Rolling_year_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Order --></label>
+        <name>SAP_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sale Type --></label>
+        <name>Sale_Type__c</name>
+        <picklistValues>
+            <masterLabel>Carryout</masterLabel>
+            <translation><!-- Carryout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DTP</masterLabel>
+            <translation><!-- DTP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct</masterLabel>
+            <translation><!-- Direct --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ship to Add 1 --></label>
+        <name>Ship_to_Add_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to City --></label>
+        <name>Ship_to_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to --></label>
+        <name>Ship_to__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Add 2 --></label>
+        <name>Ship_to_add_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to State --></label>
+        <name>Ship_to_state__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Zip --></label>
+        <name>Ship_to_zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sold to --></label>
+        <name>Sold_to__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Credit hold</masterLabel>
+            <translation><!-- Credit hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Order</masterLabel>
+            <translation><!-- On Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shipped</masterLabel>
+            <translation><!-- Shipped --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Store of Purchase --></label>
+        <name>Store_of_Purchase__c</name>
+        <relationshipLabel><!-- Actual Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TMTD Currency DTP --></label>
+        <name>TMTD_Currency_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- TMTD Currency CC --></label>
+        <name>TMTD_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- TMTD Formula DTP --></label>
+        <name>TMTD_Formula_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- TMTD Formula CC --></label>
+        <name>TMTD_Formula_POS__c</name>
+    </fields>
+    <fields>
+        <label><!-- TYMTD --></label>
+        <name>TMTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- TYTD Currency DTP --></label>
+        <name>TYTD_Currency_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- TYTD Currency CC --></label>
+        <name>TYTD_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- TYTD Formula DTP --></label>
+        <name>TYTD_Formula_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- TYTD Formula CC --></label>
+        <name>TYTD_Formula_POS__c</name>
+    </fields>
+    <fields>
+        <label><!-- TYTD --></label>
+        <name>TYTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- TY Currency DTP --></label>
+        <name>TY_Currency_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- TY Currency CC --></label>
+        <name>TY_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- TY Formula DTP --></label>
+        <name>TY_Formula_DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- TY Formula CC --></label>
+        <name>TY_Formula_POS__c</name>
+    </fields>
+    <fields>
+        <label><!-- TY --></label>
+        <name>TY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tyson Code --></label>
+        <name>Tyson_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tyson Discount --></label>
+        <name>Tyson_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Date --></label>
+        <name>Update_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- managed check --></label>
+        <name>managed_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship to Country --></label>
+        <name>ship_to_country__c</name>
+    </fields>
+    <layouts>
+        <layout>DTP Order Layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Reporting Fields --></label>
+            <section>Reporting Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>POS page layout</layout>
+        <sections>
+            <label><!-- Comments --></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Reporting Fields --></label>
+            <section>Reporting Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- DTP Orders --></label>
+        <name>DTP_Orders</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- POS Sales --></label>
+        <name>POS_Sales</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Opportunity cannot be changed directly --></errorMessage>
+        <name>Opportunity_change_rule</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+</CustomObjectTranslation>

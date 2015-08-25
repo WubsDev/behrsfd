@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Scheme</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Schemes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Schemes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Schemes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Color Name --></label>
+        <name>Color_Name__c</name>
+        <relationshipLabel><!-- Schemes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Color Number --></label>
+        <name>Color_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color Placement --></label>
+        <name>Color_Placement__c</name>
+        <picklistValues>
+            <masterLabel>Accent</masterLabel>
+            <translation><!-- Accent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core</masterLabel>
+            <translation><!-- Core --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Door</masterLabel>
+            <translation><!-- Door --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rail</masterLabel>
+            <translation><!-- Rail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trim</masterLabel>
+            <translation><!-- Trim --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Custom Links --></label>
+        <name>Custom_Links__c</name>
+    </fields>
+    <fields>
+        <label><!-- EFB Upload --></label>
+        <name>EFB_Upload__c</name>
+    </fields>
+    <fields>
+        <label><!-- # EFB Requests --></label>
+        <name>EFB_requests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Elevation --></label>
+        <name>Elevation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Formula Needed --></label>
+        <name>Formula_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interior/Exterior --></label>
+        <name>InteriorExterior__c</name>
+        <picklistValues>
+            <masterLabel>Exterior</masterLabel>
+            <translation><!-- Exterior --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior</masterLabel>
+            <translation><!-- Interior --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer__c</name>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Origin --></label>
+        <name>Origin__c</name>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Picture Angle --></label>
+        <name>Picture_Angle__c</name>
+        <picklistValues>
+            <masterLabel>Accessories</masterLabel>
+            <translation><!-- Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corner</masterLabel>
+            <translation><!-- Corner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Front</masterLabel>
+            <translation><!-- Front --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Garage</masterLabel>
+            <translation><!-- Garage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rear</masterLabel>
+            <translation><!-- Rear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Side</masterLabel>
+            <translation><!-- Side --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Specialty</masterLabel>
+            <translation><!-- Specialty --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>Product_Line__c</name>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scheme --></label>
+        <name>Scheme__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sheen --></label>
+        <name>Sheen__c</name>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Exterior - Commercial</masterLabel>
+            <translation><!-- Exterior - Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exterior - PM</masterLabel>
+            <translation><!-- Exterior - PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exterior - Residential</masterLabel>
+            <translation><!-- Exterior - Residential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior - Commercial</masterLabel>
+            <translation><!-- Interior - Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior - PM</masterLabel>
+            <translation><!-- Interior - PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior - Residential</masterLabel>
+            <translation><!-- Interior - Residential --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Web Email --></label>
+        <name>WebEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Color Formula Requests --></label>
+        <name>of_color_formula_requests__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Colors --></label>
+        <name>of_colors__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Draw Downs --></label>
+        <name>of_draw_downs__c</name>
+    </fields>
+    <layouts>
+        <layout>Board or Book scheme layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Digital Rendering Scheme Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Draw Down Scheme layout</layout>
+        <sections>
+            <label><!-- Related Links --></label>
+            <section>Related Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Book/Board Scheme --></label>
+        <name>Book_Board_Scheme</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Digital Rendering Scheme --></label>
+        <name>Digital_Rendering_Scheme</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Draw Down Scheme --></label>
+        <name>Draw_Down_Scheme</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Book_Board --></label>
+        <name>Book_Board</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Digital_Rendering --></label>
+        <name>Digital_Rendering</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Draw_Downs --></label>
+        <name>Draw_Downs</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Scheme_BB --></label>
+        <name>New_Scheme_BB</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Scheme_DD --></label>
+        <name>New_Scheme_DD</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Scheme_DR --></label>
+        <name>New_Scheme_DR</name>
+    </webLinks>
+</CustomObjectTranslation>

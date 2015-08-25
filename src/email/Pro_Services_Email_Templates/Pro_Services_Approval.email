@@ -1,0 +1,15 @@
+The Case "{!Case.CaseNumber} " has been submitted for approval
+Date:  {!TODAY()}
+Sales Rep servicing this customer: {!User.Manager}
+RPSM: {!User.RPSM_New__c}
+Form completed by:  {!Case.CreatedBy}
+
+CUSTOMER
+Company Name: {!Case.Company_Name__c}
+Primary Contact: {!Case.Contact}
+Phone: {!Case.ContactPhone}
+Description: {!Case.Description}
+Credit requirements/terms? Payment Terms? :{!Case.Approved_Credit_Terms__c}
+This information is confirmed by: {!Case.OwnerFullName}{!Case.CreatedDate}
+
+Link to Case Record: {!Case.Link}

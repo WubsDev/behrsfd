@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Advertisements</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <role>IT_DEV</role>
+        <role>ProMarketingUser</role>
+        <role>ProMktgAdministrator</role>
+        <role>WellHomeLeadAdministration</role>
+        <roleAndSubordinates>IT_DEV</roleAndSubordinates>
+        <roleAndSubordinates>ProMarketingUser</roleAndSubordinates>
+        <roleAndSubordinates>ProMktgAdministrator</roleAndSubordinates>
+        <roleAndSubordinates>WellHomeLeadAdministration</roleAndSubordinates>
+    </sharedTo>
+</ReportFolder>

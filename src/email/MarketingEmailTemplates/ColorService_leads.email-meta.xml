@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Email template for Color Service email</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>ColorService_leads</name>
+    <style>none</style>
+    <subject>Color Services for BehrPro Customers</subject>
+    <textOnly>Color Services For BehrPro Customers
+
+
+Hi {!Lead.FirstName},
+
+Thank you again for your time recently at the BITAC® event. Here is an overview of some of the color services we can offer {!Lead.Company}. Please call me at {!Lead.OwnerPhone} for info on BEHR® and KILZ® products or professional color services.
+
+Let Us Help You Simplify The Color Process   Download PDF Brochure at www.behrpro.com/bitaccolorservices
+
+Expert Color Recommendations
+Custom Color Renderings
+Pinpoint Color Matching
+Drawdown Samples
+Other Customized Color Support Tools
+
+Help Your Customers Make Color Decisions Faster  Download our ColorSmart by BEHR app directly from www.Behr.com/BitacColorSmartMobile on your  iPhone®  ,
+iPod touch®  , iPad®  or Android mobile device, or view the Web version at www.Behr.com/BitacExploreColorNow.
+
+Sincerely, 
+{!Lead.OwnerFullName}
+{!Lead.OwnerTitle} 
+{!Lead.OwnerPhone} 
+{!Lead.OwnerEmail}
+
+You have opted-in to receive email newsletters from BehrPro. If you no longer wish to receive promotional notifications and news, please send us an email at unsubscribe@pronews.behrpro.com
+
+If this email has been forwarded to you and you wish to subscribe, please send us an email at subscribe@pronews.behrpro.com
+
+To read our Privacy Policy go to www.behrpro.com/privacypolicy
+
+We recently updated our Privacy Policy. If you wish to change your preferences, please follow the directions in the Privacy Policy.
+
+Trademarks are the property of their respective owners.
+
+©2012 Behr Process Corporation. All Rights Reserved.
+
+Behr Process Corporation
+3400 W. Segerstrom Avenue
+Santa Ana, CA 92704</textOnly>
+    <type>custom</type>
+</EmailTemplate>

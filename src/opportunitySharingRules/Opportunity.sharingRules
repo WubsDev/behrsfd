@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpportunitySharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <ownerRules>
+        <fullName>China_Opportunity_Sharing</fullName>
+        <sharedTo>
+            <group>China_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>China_Users</group>
+        </sharedFrom>
+        <name>China Opportunity Sharing</name>
+        <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    </ownerRules>
+    <ownerRules>
+        <fullName>Us_Opportunity_Sharing</fullName>
+        <sharedTo>
+            <group>US_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>US_Users</group>
+        </sharedFrom>
+        <name>Us Opportunity Sharing</name>
+        <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    </ownerRules>
+</OpportunitySharingRules>

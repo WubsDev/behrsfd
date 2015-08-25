@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>IBS Personalized Invite to Register and Come to Booth &amp; Presentation</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Will we see you at IBS next week?</name>
+    <style>none</style>
+    <subject>{!if(Lead.FirstName=&quot;&quot;, Contact.FirstName,Lead.FirstName)} - Will we see you at IBS? Free expo pass if you want it.</subject>
+    <textOnly>Hi {!if(Lead.FirstName=&quot;&quot;, Contact.FirstName,Lead.FirstName)},
+
+I want to invite you to stop by the BehrPro booth #C1047 if you&apos;ll be at the NAHB International Builder Show (IBS) next week. You don&apos;t want to miss the great tips, demos and giveaways at our booth if you are planning to be at the show.
+
+We also have a special 30-minute presentation I know {!if(Account.Name=&quot;&quot;, Lead.Company,Account.Name)} could benefit from, called BEHR Paint Essentials: How Raising the Spec Can Help Lower Costs. That&apos;s on Tuesday, so be sure to stop by Multifamily Central at 9am for that in room #N255 if you&apos;re around.
+
+You can even schedule a 20-min. one-on-one version of this presentation at the booth and get a free power pack for your time. Learn more or self-schedule an appointment online: http://pro.behr.com/ibs2014appointment
+
+**Not Registered?** Enjoy the show on our dime! Claim your FREE 3-day Exhibits Only Pass here: http://bit.ly/1gv8A4S
+
+Please give me a call at {!if(Contact.OwnerPhone=&quot;&quot;, Lead.OwnerPhone,Contact.OwnerPhone)} if you plan on coming by. We would love to see you at the show {!if(Lead.FirstName=&quot;&quot;, Contact.FirstName,Lead.FirstName)}.
+
+Sincerely,
+
+{!if(Contact.OwnerFullName=&quot;&quot;,Lead.OwnerFullName,Contact.OwnerFullName)}
+{!if(Contact.OwnerTitle=&quot;&quot;, Lead.OwnerTitle,Contact.OwnerTitle)}
+{!if(Contact.OwnerPhone=&quot;&quot;, Lead.OwnerPhone,Contact.OwnerPhone)}
+{!if(Contact.OwnerEmail=&quot;&quot;, Lead.OwnerEmail,Contact.OwnerEmail)}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

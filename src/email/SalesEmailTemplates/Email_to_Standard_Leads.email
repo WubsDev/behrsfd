@@ -1,0 +1,42 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<br>]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="1" aEditID="c1r2" >
+<![CDATA[Hello {!Lead.FirstName},
+<br>
+<br>My name is {!Lead.OwnerFullName}. I am the manufacturer representative for Behr/Kilz 
+Paint and Primers.  Since 1947, Behr has been a trusted name in quality and 
+durability, providing our professional customer with a wide selection of
+ paints, primers, and stains. We offer a range of services geared 
+towards our professional clientele, including:
+<br>
+<br>   •	Free Direct-to-Jobsite delivery with your order
+<br>   •	Guaranteed order fulfillment in no more than 72hrs
+<br>   •	Factory tinting for accurate and consistent color matching
+<br>   •	Regular pricing discounts based on anticipated annual volumes
+<br>   •	and much more.....
+<br>
+<br>Our goal is to save you and your business time and money while 
+providing world class products. Please feel free to contact me anytime 
+to further discuss all our products and services available to your 
+business. 
+<br>
+<br>
+<br>Respectfully,
+<br>
+<br>
+{!Lead.OwnerFullName}<br>{!Receiving_User.MobilePhone}<br>Behr/Kilz Paints and Primers 
+<br>Professional Products &amp; Services<br><br>&nbsp;<a href="http://www.behrpro.com/" target="_BLANK"><br></a>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="1" aEditID="c1r3" >
+<![CDATA[Corporate Office
+<br>Behr Paint Corporation
+<br>3400 Segerstrom Avenue
+<br>Santa Ana, CA 92704
+<br>(800) 854-0133<br><br><a href="http://www.behrpro.com/" target="_BLANK">www.BehrPro.com</a>&nbsp;]]></td>
+</tr>
+</table>

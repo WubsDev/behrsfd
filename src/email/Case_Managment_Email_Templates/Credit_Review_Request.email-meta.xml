@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template to provide Finance with the credit check form</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Credit Review Request</name>
+    <style>none</style>
+    <subject>There is a credit request for {!Case.Account}</subject>
+    <type>text</type>
+</EmailTemplate>

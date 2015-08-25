@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.case_safe_id__c</field>
+    </columns>
+    <columns>
+        <field>Account.DTP_TY1__c</field>
+    </columns>
+    <columns>
+        <field>Account.CC_TY1__c</field>
+    </columns>
+    <columns>
+        <field>Account.Total_Actuals_TY__c</field>
+    </columns>
+    <columns>
+        <field>Account.DTP_LY1__c</field>
+    </columns>
+    <columns>
+        <field>Account.CC_LY1__c</field>
+    </columns>
+    <columns>
+        <field>Account.LYTD_C_C_plus_DTP__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.Lead_Source__c</column>
+            <operator>equals</operator>
+            <value>Behr In-Store Rep</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>WTL Historicals</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <endDate>2015-06-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2013-01-01</startDate>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <customSettingsVisibility>Protected</customSettingsVisibility>
+    <description>A list of users/queues that will be assigned if there is no zip code found or if the user of the zip code is inactive.</description>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Is_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Whether or not the assignment is active and should be used when assigning leads.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Whether or not the assignment is active and should be used when assigning leads.</inlineHelpText>
+        <label>Is Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Unassigned Zip Code List</label>
+</CustomObject>

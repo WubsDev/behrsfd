@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Actual Sales Dates</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Actual Sales Dates</value>
+    </caseValues>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month Start Date --></label>
+        <name>Month_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Start Date --></label>
+        <name>Year_Start_Date__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

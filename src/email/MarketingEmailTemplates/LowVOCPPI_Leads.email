@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Color Services For BehrPro Customers</title>
+<style type="text/css"> 
+body {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+ 
+.dropshadow {
+	-moz-box-shadow: 5px 5px 5px #d3d3d3;
+	-webkit-box-shadow: 5px 5px 5px #d3d3d3;
+	box-shadow: 5px 5px 5px #d3d3d3;
+} 	
+ 
+</style>
+</head>
+ 
+<body>
+<font style="font-family: Arial; font-size: 10pt;">
+<table width="550" border="0" align="center" cellpadding="0" cellspacing="0" class="dropshadow">
+  		<tr>
+    <td><img src="https://na5.salesforce.com/servlet/servlet.ImageServer?oid=00D700000008FyN&id=01570000001PyLH" width="550" height="86" border="0" usemap="#Map" alt="" /></td>
+  </tr>
+  <tr>
+	
+	
+	</tr>
+	<tr>
+	
+	</tr>
+</table>
+   
+<table width="550" border="0" align="center" cellpadding="0" cellspacing="0">    
+		<tr><td height="15" colspan="3"></td></tr> 
+  		<tr>
+       	  <td width="10">&nbsp;</td>
+    		<td>
+				
+					<tr>
+					<p>
+<p></br>
+	Hi {!Lead.FirstName},
+	<P>
+	Did you know we have zero and low VOC interior paints? They meet GREENGUARD Certified products which contribute to the creation of healthier interiors. Please call me at {!Lead.OwnerPhone} for more information on BEHR&reg and KILZ&reg products or professional services.
+	
+	
+<h4>Features and Benefits of BEHR Premium Plus&reg Interior Paint
+</br><a href="http://www.behrpro.com/bitactds"> Download Technical Data Sheets</a></H4>
+	
+		
+<ul>
+<li><strong>GREENGUARD Certified which meets strict emissions limits</strong> 
+</li><li><strong>Low Odor formula allows the paint smell to dissipate faster</strong> 
+</li><li>	<strong>100% Acrylic and Mildew Resistant finish</strong> 
+				</li><li><strong>Self-Priming performance</strong> 
+				
+			</ul>
+ 
+<a href="http://behrpro.com/bitacbpservices"><img alt="Behr Premium Plus Interior Products" src="https://na5.salesforce.com/servlet/servlet.ImageServer?oid=00D700000008FyN&id=01570000001Qr4h" " align="left height="343" width="515" border="none" vspace="0" hspace="0"></a>
+</br>Go to <a href="http://behrpro.com/bitacbpservices">behrpro.com/bpservices</a> to learn more about our service offering.
+
+<p>
+	Sincerely, </br>
+	</br>{!Lead.OwnerFullName}
+	</br>{!Lead.OwnerTitle}
+	</br>{!Lead.OwnerPhone}	
+</br><a href="{!Lead.OwnerEmail}">{!Lead.OwnerEmail}</a>
+	</tr>
+	
+	
+            </br><font size="1" color="#4b4b4b"face="Arial, Helvetica, sans-serif">
+        	<p>You have opted-in to receive email newsletters from BehrPro. If you no longer wish to receive promotional notifications and news, please <a href="mailto:unsubscribe@pronews.behrpro.com" title="Unsubscribe Here"> Click Here</a>.<br /> 
+       		<br/>
+            If this email has been forwarded to you and you wish to subscribe, please <a href="mailto:subscribe@pronews.behrpro.com" title="Subscribe Here">Click Here</a>.<br />
+            <br />
+            To read our Privacy Policy, please <a href="http://www.behrpro.com/privacypolicy/" title="Privacy Policy">Click Here</a>.<br />
+            <br />
+            We recently updated our Privacy Policy. If you wish to change your preferences, please follow the directions in the Privacy Policy.<br />
+            <br />
+          	Trademarks are the property of their respective owners.<br />
+   	  	  	<br />
+            &copy;2012 Behr Process Corporation. All Rights Reserved.<br />
+            <br />
+            Behr Process Corporation<br />
+          	3400 W. Segerstrom Avenue<br />
+          	Santa Ana, CA 92704</p>
+			</font>
+          </td>
+    		<td width="10">&nbsp;</td>
+    	</tr>
+</table>
+ 
+<!--header-->
+<map name="Map" id="Map">
+	<area shape="rect" coords="26,27,174,79" href="http://www.behrpro.com/BehrPro" target="_blank" title="BehrPro" alt="BehrPro" />
+  	<area shape="rect" coords="470,30,496,54" href="http://www.facebook.com/#!/BehrPro?fref=ts" target="_blank" title="Find us on Facebook" alt="Find us on Facebook" />
+  	<area shape="rect" coords="501,30,523,53" href="https://twitter.com/BehrPro" target="_blank" title="Find us on Twitter" alt="Find us on Twitter" />
+</map>
+ 
+</html>

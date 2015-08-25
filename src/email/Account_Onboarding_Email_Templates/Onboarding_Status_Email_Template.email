@@ -1,0 +1,22 @@
+The direct account approval request for "{!Direct_Onboarding__c.Account_Name__c}" has been changed to "{!Direct_Onboarding__c.Status__c}" 
+
+Approve/Reject comments: {!ApprovalRequest.Comments} 
+
+Approval Process. 
+Depending on Requested Zone for approval, Step 1 is the cooresponding approver: 
+Zone 1- 3 is approved by RPSM 
+Zone 4 is approved by RVP 
+Zone 5-7 or below is approved by SVP 
+
+
+1. Pending Sales Approval - Waiting RPSM/RVP/SVP to approve request 
+
+2. Pending Credit Review - Finance will be performing a credit check to determine payment terms
+ 
+3. Pending Account Setup - Finance has completed credit check and Sales Administration is setting up the Master Data in SAP 
+
+4. Account Setup Complete - Master Data setup has been completed in SAP 
+
+
+
+Link to Account Record: {!Direct_Onboarding__c.Link}

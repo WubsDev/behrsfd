@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object will provide the ability for a PSR to request ownership changes at the account level.  A PSR will also be able to request approval for Actual Sales that are currently associated to the wrong opportunity to be moved to the correct opportunity</description>
+    <enableActivities>false</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Acct_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (New_Opportunity_Entry__r.Owner.RPSM_New__c  =  ActualSales__r.Account_Name__r.Owner.RPSM_New__c, &apos;True&apos;,&apos;False&apos;)</formula>
+        <label>Same Manager</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ActualSales__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Sales</label>
+        <referenceTo>Actual_Sales__c</referenceTo>
+        <relationshipName>Ownership_Approvals</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>ActualSales__r.Purchase_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>New_Account__c</fullName>
+        <externalId>false</externalId>
+        <formula>New_Opportunity_Entry__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>New Account</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_Opportunity_Entry__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>New Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Actual Sales Updates</relationshipLabel>
+        <relationshipName>Ownership_Approvals</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>New_Owner_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>New Owner Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>New_Opportunity_Entry__r.Owner.FirstName &amp;&quot; &quot;&amp;
+New_Opportunity_Entry__r.Owner.LastName</formula>
+        <label>New Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>New_RPSM__c</fullName>
+        <externalId>false</externalId>
+        <formula>New_Opportunity_Entry__r.Owner.RPSM_New__r.FirstName &amp;&quot; &quot;&amp;
+New_Opportunity_Entry__r.Owner.RPSM_New__r.LastName</formula>
+        <label>New RPSM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Old_Account_a__c</fullName>
+        <description>Old account used to be populated at creation to have a static old account</description>
+        <externalId>false</externalId>
+        <label>Old Account</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Old_Opportunity_Text__c</fullName>
+        <externalId>false</externalId>
+        <label>Old Opportunity</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Old_Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <formula>ActualSales__r.Opportunity__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Old Opportunity F</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Old_Owner_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Old Owner Email</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Old_Owner_a__c</fullName>
+        <description>used for a static of the old owner</description>
+        <externalId>false</externalId>
+        <label>Old Owner</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Old_RPSM_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Old RPSM Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Old_RPSM__c</fullName>
+        <externalId>false</externalId>
+        <formula>ActualSales__r.Account_Name__r.Owner.RPSM_New__r.FirstName &amp; &quot; &quot; &amp; 
+ActualSales__r.Account_Name__r.Owner.RPSM_New__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Old RPSM F</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Old_RPSM_a__c</fullName>
+        <description>static RPSM</description>
+        <externalId>false</externalId>
+        <label>Old RPSM</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <label>Actual Sales Update</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>New_Account__c</columns>
+        <columns>Old_Account_a__c</columns>
+        <columns>New_Opportunity_Entry__c</columns>
+        <columns>Old_Opportunity_Text__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_Comp</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Status__c</columns>
+        <columns>New_Account__c</columns>
+        <columns>Old_Account_a__c</columns>
+        <columns>New_Opportunity_Entry__c</columns>
+        <columns>Old_Opportunity_Text__c</columns>
+        <columns>ActualSales__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </filters>
+        <label>All - Completed</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_In_Progress</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>New_Account__c</columns>
+        <columns>Old_Account_a__c</columns>
+        <columns>New_Opportunity_Entry__c</columns>
+        <columns>Old_Opportunity_Text__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>notEqual</operation>
+            <value>Not Submitted,Approved,Rejected</value>
+        </filters>
+        <label>All - In Progress</label>
+        <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>All_rejected</fullName>
+        <columns>NAME</columns>
+        <columns>Status__c</columns>
+        <columns>New_Account__c</columns>
+        <columns>Old_Account_a__c</columns>
+        <columns>New_Opportunity_Entry__c</columns>
+        <columns>Old_Opportunity_Text__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Rejected</value>
+        </filters>
+        <label>All - Rejected</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>OA-{0000}</displayFormat>
+        <label>ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Actual Sales Updates</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Account_Ownership_Change</fullName>
+        <active>true</active>
+        <description>Account ownership change request.  This will be validated by the RPSM of the current owner</description>
+        <label>Account Ownership Change</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Submitted</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Status__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+</CustomObject>

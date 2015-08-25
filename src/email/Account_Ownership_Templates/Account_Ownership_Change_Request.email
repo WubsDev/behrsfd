@@ -1,0 +1,24 @@
+A request for an Account ownership change was requested by {!Ownership_Approval_Account__c.New_Owner__c}
+
+Supporting Information:
+
+Comment: {!Ownership_Approval_Account__c.Comments__c}
+Account Name:  {!Ownership_Approval_Account__c.Account__c}
+Current Owner: {!Ownership_Approval_Account__c.Old_Owner__c}
+New Owner: {!Ownership_Approval_Account__c.New_Owner__c}
+Account Actual Sales (Rolling 12 months): {!Account.Rolling_Year_CC_plus_DTP__c}
+Link to Account Record: {!Account.Link} 
+Link to Approval Detail Record: {!Ownership_Approval_Account__c.Link}
+
+Approval Information:
+
+Current Approval Status: {!Ownership_Approval_Account__c.Approval_Status__c}
+Recent Comments: {!ApprovalRequest.Comments}
+
+Approval Process:
+
+Pending RPSM Approval - The request has been sent to {!Ownership_Approval_Account__c.Old_Owner_RPSM__c} for approval.
+Approved - The request has been approved and the account owner has been changed.
+
+Support Information:
+Please email smart@behr.com with any questions.

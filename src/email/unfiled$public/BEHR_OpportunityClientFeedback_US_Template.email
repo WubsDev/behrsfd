@@ -1,0 +1,14 @@
+Hello {!Contact.Name},
+
+The Opportunity for {!Account.Name} has been {!Opportunity.StageName}.
+
+Please find the details below,
+
+Behr REp Name :  {!Opportunity.Behr_Rep_Name__c}
+
+Behr Rep Email :  {!Opportunity.Behr_Rep_Email__c}
+
+Behr Rep Contact : {!Opportunity.Behr_Rep_Contact_Number__c}
+
+
+Thanks,

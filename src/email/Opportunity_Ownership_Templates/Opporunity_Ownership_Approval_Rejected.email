@@ -1,0 +1,5 @@
+Your request for ownership of {!Opportunity.Name} has been rejected by {!User.Name}
+
+Comments: {!ApprovalRequest.Comments}
+
+Please email smart@behr.com with any questions.

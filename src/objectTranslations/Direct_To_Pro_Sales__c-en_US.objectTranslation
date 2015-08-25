@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Direct To Pro Sales</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Direct To Pro Sales</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Direct To Pro Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Updated --></label>
+        <name>Account_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone = HD Store --></label>
+        <name>Contact_Phone_HD_Store__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Phone --></label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Year --></label>
+        <name>Current_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Purchase --></label>
+        <name>Date_of_Purchase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Date --></label>
+        <name>Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- LYTD formula --></label>
+        <name>LYTD_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- LY to date --></label>
+        <name>LY_to_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last year DTP flag --></label>
+        <name>Last_year_DTP_flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not Direct --></label>
+        <name>Not_Direct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes/Comments --></label>
+        <name>Notes_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ordered By --></label>
+        <name>Ordered_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner of the store --></label>
+        <name>Owner_of_the_store__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Number --></label>
+        <name>PO_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pricing Type --></label>
+        <name>Pricing_Type__c</name>
+        <picklistValues>
+            <masterLabel>Direct to site</masterLabel>
+            <translation><!-- Direct to site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Direct to store</masterLabel>
+            <translation><!-- Direct to store --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Will call</masterLabel>
+            <translation><!-- Will call --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchase Amount --></label>
+        <name>Purchase_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roll Year Flag --></label>
+        <name>Roll_Year_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP PO # --></label>
+        <name>SAP_PO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Add1 --></label>
+        <name>Ship_To_Add1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Add2 --></label>
+        <name>Ship_To_Add2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To City --></label>
+        <name>Ship_To_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Country --></label>
+        <name>Ship_To_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To State --></label>
+        <name>Ship_To_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Zip --></label>
+        <name>Ship_To_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Number Backend --></label>
+        <name>Store_Number_Backend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store of Purchase --></label>
+        <name>Store_of_Purchase__c</name>
+        <relationshipLabel><!-- Direct To Pro Sales --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TYTD Formula --></label>
+        <name>TYTD_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- TYTD --></label>
+        <name>TYTD__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tyson coupon discount amount --></help>
+        <label><!-- Tyson Discount --></label>
+        <name>Tyson_Discount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tyson Order --></label>
+        <name>Tyson_Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- If a lead was found that matched a DTP sale --></help>
+        <label><!-- match to lead --></label>
+        <name>match_to_lead__c</name>
+    </fields>
+    <fields>
+        <help><!-- a search was done, and no match was found --></help>
+        <label><!-- no match --></label>
+        <name>no_match__c</name>
+    </fields>
+    <layouts>
+        <layout>Direct To Pro Sales Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,35 @@
+<p>Dear {!if(Lead.FirstName="", Contact.FirstName,Lead.FirstName)},</p> 
+
+In our continued effort to offer outstanding service to our customers, Behr is excited to announce the addition of a new support position from your Behr Team & The Home Depot. 
+
+Ray Pando now holds the position of Pro Paint Sales & Service Specialist at The Oakwood Plaza Home Depot, Store 6310. Ray is a full time Behr Employee working within the store to support our Professional Behr Customers with their product & service needs. Think of it as your Behr Paint Store within The Home Depot.
+
+In his role, Ray will be able to: 
+
+-Take your orders by phone on his direct line. 
+-Process your orders and have them available for pick up or delivery. 
+-Schedule deliveries. 
+-Color matching. 
+-Capture & record your color information by job. 
+
+In addition, The Oakwood Plaza Home Depot offers: 
+
+-Increased inventory levels to support your projects. 
+-Expanded product offering including products such as DTM, Block Filler & Dryfall. 
+
+Ray will be available to service your needs Monday thru Friday from 7:00am thru 4:00pm. His contact info is: 
+
+Ray Pando 
+(954) 459-0214 (Cell) 
+RPando@BehrPaint.com 
+Home Depot Oakwood Plaza 6310 
+3401 Oakwood Blvd 
+Hollywood, Florida 33020 
+
+Please don't hesitate to give Ray a call for your Behr Paint needs. We look forward to serving you! 
+
+<p>Sincerely,<br /><br />               {!if(Contact.OwnerFullName="",Lead.OwnerFullName,Contact.OwnerFullName)}<br />
+                {!if(Contact.OwnerTitle="", Lead.OwnerTitle,Contact.OwnerTitle)}<br />
+                {!if(Contact.OwnerPhone="", Lead.OwnerPhone,Contact.OwnerPhone)}<br />
+                 {!if(Contact.OwnerEmail="", Lead.OwnerEmail,Contact.OwnerEmail)}</p>
+                <p><a href="http://www.behrpro.com"><img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj4s&oid=00D700000008FyN&lastMod=1381298465000" width="114" height="21" alt="behrpro.com" border="0" style="border:none;"></a></p>

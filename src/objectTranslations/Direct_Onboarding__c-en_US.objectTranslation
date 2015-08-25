@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Direct Onboarding</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Direct Onboardings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Link --></label>
+        <name>Account_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+        <relationshipLabel><!-- Direct Onboardings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Owner --></label>
+        <name>Account_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account RPSM --></label>
+        <name>Account_RPSM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Shop Zone --></label>
+        <name>Approved_Account_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Name --></label>
+        <name>Company_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Price 1 --></label>
+        <name>Competitor_Price_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Price 2 --></label>
+        <name>Competitor_Price_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Product Name 1 --></label>
+        <name>Competitor_Product_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Product Name 2 --></label>
+        <name>Competitor_Product_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Limit Amount --></label>
+        <name>Credit_Limit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Credit Required --></label>
+        <name>Credit_Req_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Joint Check</masterLabel>
+            <translation><!-- Joint Check --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NTO</masterLabel>
+            <translation><!-- NTO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terms</masterLabel>
+            <translation><!-- Terms --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Supplier --></label>
+        <name>Current_Supplier__c</name>
+    </fields>
+    <fields>
+        <help><!-- Do we have the capabilities to deliver to their location from our DTP? --></help>
+        <label><!-- Is This Account w/in 75Mi of a DC? --></label>
+        <name>Delivery_Capabilities__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Annual Revenue --></label>
+        <name>Estimated_Annual_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geographic Coverage --></label>
+        <name>Geographic_Coverage__c</name>
+        <picklistValues>
+            <masterLabel>Local</masterLabel>
+            <translation><!-- Local --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional</masterLabel>
+            <translation><!-- Regional --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Related to Price Adjustments --></help>
+        <label><!-- Lead Time For Price Adjustments --></label>
+        <name>Lead_Time__c</name>
+        <picklistValues>
+            <masterLabel>0 Days</masterLabel>
+            <translation><!-- 0 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30 Days</masterLabel>
+            <translation><!-- 30 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60 Days</masterLabel>
+            <translation><!-- 60 Days --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of locations by Project --></label>
+        <name>Locations_by_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market Segment --></label>
+        <name>Market_Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Market Sub Segment --></label>
+        <name>Market_Sub_Segment__c</name>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is This a Masco Subsidiary --></label>
+        <name>Masco_Subsidiary__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Max Zone --></label>
+        <name>Max_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Need Credit App --></label>
+        <name>Need_Credit_App__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of years in Business --></label>
+        <name>No_Yr_in_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- OEM Explanation --></label>
+        <name>OEM_Explanation__c</name>
+    </fields>
+    <fields>
+        <label><!-- OEM Opportunity --></label>
+        <name>OEM_Opportunity__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Off zone calculation 1 --></label>
+        <name>Off_zone_calculation_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Off zone calculation 2 --></label>
+        <name>Off_zone_calculation_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Onboard_Address_Line_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Line 2 --></label>
+        <name>Onboard_Address_Line_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>Onboard_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>Onboard_Postal__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>Onboard_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order Frequency --></label>
+        <name>Order_Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Payment Terms --></label>
+        <name>Payment_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Cash in advance</masterLabel>
+            <translation><!-- Cash in advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation><!-- Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Competitor 1 --></label>
+        <name>Primary_Competitor1__c</name>
+        <picklistValues>
+            <masterLabel>Benjamin Moore</masterLabel>
+            <translation><!-- Benjamin Moore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comex (Frazee/Kwal/Color Wheel/Parker)</masterLabel>
+            <translation><!-- Comex (Frazee/Kwal/Color Wheel/Parker) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dunn Edwards</masterLabel>
+            <translation><!-- Dunn Edwards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glidden</masterLabel>
+            <translation><!-- Glidden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kelly Moore</masterLabel>
+            <translation><!-- Kelly Moore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPG (Olympic/Pittsburgh/Porter)</masterLabel>
+            <translation><!-- PPG (Olympic/Pittsburgh/Porter) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sherwin-Williams</masterLabel>
+            <translation><!-- Sherwin-Williams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valspar</masterLabel>
+            <translation><!-- Valspar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vista</masterLabel>
+            <translation><!-- Vista --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Competitor 2 --></label>
+        <name>Primary_Competitor_2__c</name>
+        <picklistValues>
+            <masterLabel>Benjamin Moore</masterLabel>
+            <translation><!-- Benjamin Moore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comex (Frazee/Kwal/Color Wheel/Parker)</masterLabel>
+            <translation><!-- Comex (Frazee/Kwal/Color Wheel/Parker) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dunn Edwards</masterLabel>
+            <translation><!-- Dunn Edwards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glidden</masterLabel>
+            <translation><!-- Glidden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kelly Moore</masterLabel>
+            <translation><!-- Kelly Moore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPG (Olympic/Pittsburgh/Porter)</masterLabel>
+            <translation><!-- PPG (Olympic/Pittsburgh/Porter) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sherwin-Williams</masterLabel>
+            <translation><!-- Sherwin-Williams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valspar</masterLabel>
+            <translation><!-- Valspar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vista</masterLabel>
+            <translation><!-- Vista --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>Primary_Contact__c</name>
+        <relationshipLabel><!-- Direct Onboardings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Supplier (Non Behr) --></label>
+        <name>Primary_Supplier_Non_Behr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prod 1 zone calc --></label>
+        <name>Prod_1_zone_calc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prod_2_zone_calc --></label>
+        <name>Prod_2_zone_calc__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate only if off zone pricing is needed --></help>
+        <label><!-- Crossover Product 1 Off Zone --></label>
+        <name>Product_1_Off_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crossover Product 1 Price --></label>
+        <name>Product_1_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crossover Product 1 Zone --></label>
+        <name>Product_1_Zone__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Off Zone</masterLabel>
+            <translation><!-- Off Zone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Behr/Kilz Crossover Product 1 --></label>
+        <name>Product_1__c</name>
+        <relationshipLabel><!-- Direct Onboardings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- How often is this product used? --></help>
+        <label><!-- Competitor % used 1 --></label>
+        <name>Product_1_used__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populate only if off zone pricing is needed --></help>
+        <label><!-- Crossover Product 2 Off Zone --></label>
+        <name>Product_2_Off_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crossover Product 2 Zone --></label>
+        <name>Product_2_Zone__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Off Zone</masterLabel>
+            <translation><!-- Off Zone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Behr/Kilz Crossover Product 2 --></label>
+        <name>Product_2__c</name>
+        <relationshipLabel><!-- Direct Onboardings (Product 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Crossover Product 2 price --></label>
+        <name>Product_2_price__c</name>
+    </fields>
+    <fields>
+        <help><!-- How often is this product used? --></help>
+        <label><!-- Competitor % used 2 --></label>
+        <name>Product_2_used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Planned --></label>
+        <name>Project_Planned__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Potential Amount --></label>
+        <name>Project_Potential_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Rebate Rate % --></label>
+        <name>Project_Rate_Per__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Rebate Required --></label>
+        <name>Project_Rebate_Required__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Projected 1st Purchase Date --></label>
+        <name>Project_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Behr Capture Amount --></label>
+        <name>Projected_Behr_Capture_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Behr Estimated Capture % --></label>
+        <name>Projected_Behr_Capture_Percent__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPSM --></label>
+        <name>RPSM__c</name>
+        <relationshipLabel><!-- Direct Onboardings (RPSM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RVP Approved --></label>
+        <name>RVP_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- RVP --></label>
+        <name>RVP_User__c</name>
+        <relationshipLabel><!-- Direct Onboardings (RVP) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requested Shop Zone --></label>
+        <name>Requested_Shop_Zone__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SVP --></label>
+        <name>SVP_User__c</name>
+        <relationshipLabel><!-- Direct Onboardings (SVP) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales approved date --></label>
+        <name>Sales_approved_date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size of Business --></label>
+        <name>Size_of_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Date --></label>
+        <name>Source_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please attach a competitor invoice or quote (if selected) to the &apos;notes &amp; attachments&apos; section&apos; once this page is saved. --></help>
+        <label><!-- How did you receive pricing information --></label>
+        <name>Source_of_information__c</name>
+        <picklistValues>
+            <masterLabel>Invoice</masterLabel>
+            <translation><!-- Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verbal</masterLabel>
+            <translation><!-- Verbal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Account Setup Complete</masterLabel>
+            <translation><!-- Account Setup Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Submitted</masterLabel>
+            <translation><!-- Not Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Account Setup</masterLabel>
+            <translation><!-- Pending Account Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Credit Review</masterLabel>
+            <translation><!-- Pending Credit Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending RPSM Approval</masterLabel>
+            <translation><!-- Pending RPSM Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending RVP Approval</masterLabel>
+            <translation><!-- Pending RVP Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending SVP Approval</masterLabel>
+            <translation><!-- Pending SVP Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected by Finance</masterLabel>
+            <translation><!-- Rejected by Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected by RPSM</masterLabel>
+            <translation><!-- Rejected by RPSM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected by RVP</masterLabel>
+            <translation><!-- Rejected by RVP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected by SVP</masterLabel>
+            <translation><!-- Rejected by SVP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submit date --></label>
+        <name>Submit_date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Explanation for Credit Terms Outside of Guidelines --></help>
+        <label><!-- Requested Payment Terms - Other --></label>
+        <name>Terms_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of comp items --></label>
+        <name>of_comp_items__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Onboarding Layout</layout>
+        <sections>
+            <label><!-- Administrator Only --></label>
+            <section>Administrator Only</section>
+        </sections>
+        <sections>
+            <label><!-- Competitive Product 1 --></label>
+            <section>Competitive Product 1</section>
+        </sections>
+        <sections>
+            <label><!-- Competitive Product 2 --></label>
+            <section>Competitive Product 2</section>
+        </sections>
+        <sections>
+            <label><!-- Competitor Information --></label>
+            <section>Competitor Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Qualifier One Column --></label>
+            <section>Qualifier One Column</section>
+        </sections>
+        <sections>
+            <label><!-- terms other --></label>
+            <section>terms other</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must select &quot;Off Zone&quot; if you want to populate off zone pricing.  Please update Product Zone field to &quot;Off Zone&quot; to continue. --></errorMessage>
+        <name>Account_Onboarding_off_zone_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have selected &quot;Off Zone&quot; pricing, please populate the off zone amount. --></errorMessage>
+        <name>Account_Onboarding_off_zone_2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Fill in the Project Rate Percentage --></errorMessage>
+        <name>Project_Rebate_Required_Validation</name>
+    </validationRules>
+</CustomObjectTranslation>

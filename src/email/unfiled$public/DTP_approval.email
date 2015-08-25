@@ -1,0 +1,27 @@
+DTP Approval requested by {!DTP_update__c.CreatedBy}
+{!DTP_update__c.Link}
+
+Old account Name: {!Direct_To_Pro_Sales__c.Account_Name__c}
+
+New account Name:  {!DTP_update__c.New_Account__c}
+
+Amount:  {!Direct_To_Pro_Sales__c.Purchase_Amount__c}
+
+Contact Name: {!Direct_To_Pro_Sales__c.Contact_Name__c}
+
+Phone:  {!Direct_To_Pro_Sales__c.Contact_Phone__c}
+
+Ordered by:  {!Direct_To_Pro_Sales__c.Ordered_By__c}
+
+PO #:  {!Direct_To_Pro_Sales__c.PO_Number__c}
+
+Old Owner:  {!DTP_update__c.Old_Owner__c}
+
+New Owner:  {!DTP_update__c.New_Owner__c}
+
+Old RPSM:  {!DTP_update__c.Old_RPSM__c}
+
+New RPSM:  {!DTP_update__c.New_RPSM__c}
+
+
+Request Comments:  {!DTP_update__c.Comments__c}

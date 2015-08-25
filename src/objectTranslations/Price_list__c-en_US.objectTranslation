@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Price List</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Price List</value>
+    </caseValues>
+    <fields>
+        <label><!-- HD Tier --></label>
+        <name>HD_Tier__c</name>
+        <picklistValues>
+            <masterLabel>Bronz</masterLabel>
+            <translation><!-- Bronz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gold</masterLabel>
+            <translation><!-- Gold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Silver</masterLabel>
+            <translation><!-- Silver --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Code --></label>
+        <name>Product_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Price List --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Regional Price --></label>
+        <name>Regional_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>lead__c</name>
+        <relationshipLabel><!-- Price List --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Pick list Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Create_PDF --></label>
+        <name>Create_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka0d70000003e8vKAAQ --></label>
+        <name>Picka0d70000003e8vKAAQ</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka0fV0000001Qg4KIAS --></label>
+        <name>Picka0fV0000001Qg4KIAS</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka1BQ0000001z3IGMAY --></label>
+        <name>Picka1BQ0000001z3IGMAY</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>LA Team Dashboards</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <role>Behr_Pro_Rep_West_3</role>
+        <role>PRSVP</role>
+        <role>Pro_Sales</role>
+        <role>Pro_Sales_VP_Central</role>
+        <role>Pro_Sales_VP_East</role>
+        <role>Pro_Sales_VP_West</role>
+        <role>ROM_RPSM_West_3</role>
+        <role>SystemAdministrator</role>
+    </sharedTo>
+</DashboardFolder>

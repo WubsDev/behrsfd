@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Color Selection</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Color Selection</value>
+    </caseValues>
+    <fields>
+        <label><!-- Color Formula needed --></label>
+        <name>Color_Formula_needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color text --></label>
+        <name>Color_text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>Competitor_Color__c</name>
+        <relationshipLabel><!-- Color Selection --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Do you need this custom color uploaded into EFB? --></help>
+        <label><!-- EFB --></label>
+        <name>EFB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other placement --></label>
+        <name>Other_placement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Placement --></label>
+        <name>Placement__c</name>
+        <picklistValues>
+            <masterLabel>Accent</masterLabel>
+            <translation><!-- Accent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Balcony</masterLabel>
+            <translation><!-- Balcony --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Body</masterLabel>
+            <translation><!-- Body --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Door</masterLabel>
+            <translation><!-- Door --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fence</masterLabel>
+            <translation><!-- Fence --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Garage</masterLabel>
+            <translation><!-- Garage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Railings</masterLabel>
+            <translation><!-- Railings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trim</masterLabel>
+            <translation><!-- Trim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Walkway</masterLabel>
+            <translation><!-- Walkway --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Color Selection --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scheme --></label>
+        <name>Scheme__c</name>
+        <relationshipLabel><!-- Color Selection --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Draw Down Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>adhesive</masterLabel>
+            <translation><!-- adhesive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>mini-chip</masterLabel>
+            <translation><!-- mini-chip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>regular</masterLabel>
+            <translation><!-- regular --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>zebra</masterLabel>
+            <translation><!-- zebra --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of location --></label>
+        <name>Type_of_location__c</name>
+        <picklistValues>
+            <masterLabel>Exterior - Commercial</masterLabel>
+            <translation><!-- Exterior - Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exterior - PM</masterLabel>
+            <translation><!-- Exterior - PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exterior - Residential</masterLabel>
+            <translation><!-- Exterior - Residential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior - Commercial</masterLabel>
+            <translation><!-- Interior - Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior - PM</masterLabel>
+            <translation><!-- Interior - PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior - Residential</masterLabel>
+            <translation><!-- Interior - Residential --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # of draw downs --></label>
+        <name>of_draw_downs__c</name>
+    </fields>
+    <layouts>
+        <layout>Colors Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Picka0d70000003e8uvAAA --></label>
+        <name>Picka0d70000003e8uvAAA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka0d70000003e8v0AAA --></label>
+        <name>Picka0d70000003e8v0AAA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka0d70000003e8v5AAA --></label>
+        <name>Picka0d70000003e8v5AAA</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka0fV0000001Qg3gIAC --></label>
+        <name>Picka0fV0000001Qg3gIAC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka0fV0000001Qg3lIAC --></label>
+        <name>Picka0fV0000001Qg3lIAC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka0fV0000001Qg3qIAC --></label>
+        <name>Picka0fV0000001Qg3qIAC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka1BQ0000001z3EsMAI --></label>
+        <name>Picka1BQ0000001z3EsMAI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka1BQ0000001z3ExMAI --></label>
+        <name>Picka1BQ0000001z3ExMAI</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka1BQ0000001z3F2MAI --></label>
+        <name>Picka1BQ0000001z3F2MAI</name>
+    </webLinks>
+</CustomObjectTranslation>

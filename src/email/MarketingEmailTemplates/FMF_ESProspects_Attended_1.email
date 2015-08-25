@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Color Services For BehrPro Customers</title>
+<style type="text/css"> 
+body {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+ 
+.dropshadow {
+	-moz-box-shadow: 5px 5px 5px #d3d3d3;
+	-webkit-box-shadow: 5px 5px 5px #d3d3d3;
+	box-shadow: 5px 5px 5px #d3d3d3;
+} 	
+ 
+</style>
+</head>
+ 
+<body>
+<font style="font-family: Arial; font-size: 10pt;">
+<table width="550" border="0" align="center" cellpadding="0" cellspacing="0" class="dropshadow">
+  		<tr>
+    <td><img src="https://na5.salesforce.com/servlet/servlet.ImageServer?oid=00D700000008FyN&id=01570000001PyLH" width="550" height="86" border="0" usemap="#Map" alt="" /></td>
+  </tr>
+  <tr>
+	
+	
+	</tr>
+	<tr>
+	
+	</tr>
+</table>
+   
+<table width="550" border="0" align="center" cellpadding="0" cellspacing="0">    
+		<tr><td height="15" colspan="3"></td></tr> 
+  		<tr>
+       	  <td width="10">&nbsp;</td>
+    		<td>
+				
+					<tr>
+					<p>
+<p></br>
+	Hola  {!Lead.FirstName},
+	<P>
+	&#161;Muchas gracias por asistir el evento de BehrPro y de la Selecci&oacute;n Mexicana de Futbol 2013 en Phoenix&#33;
+	Por favor ll&aacute;meme al 623-889-1384
+ para que pueda darle m&aacute;s informaci&oacute;n sobre los productos o servicios profesionales de BEHR&reg y KILZ&reg.
+	
+		
+<h4>Descubra c&oacute;mo Behr puede ayudarle a hacer crecer su negocio </H4>
+ 
+<ul>
+<li><strong>Aprenda m&aacute;s sobre los productos BEHR&reg y KILZ&reg</strong> 
+</li><li>	<strong>Entrega gratis al sitio del trabajo*</strong> 
+				</li><li><strong>Ahorre dinero con los precios por volumen </strong> 
+				</li><li><strong>Aprenda sobre el entintado en la f&aacute;brica de Behr</strong>
+				</li><li><strong>Aprenda sobre el alcance nacional de Behr </strong>
+				
+				<p>*Donde est&eacute; disponible 
+			</ul> 
+<a href="http://espanol.behrpro.com/BPservices"><img alt="Nationwide Reach Sales Team" src="https://na5.salesforce.com/servlet/servlet.ImageServer?oid=00D700000008FyN&id=01570000001Qn8a"   align="left height="343" width="515" border="none" vspace="0" hspace="0"></a>
+</br>Visite <a href="http://espanol.behrpro.com/BPservices">espanol.behrpro.com/bpservices</a> para mayor informaci&oacute;n sobre nuestra oferta de servicios.
+<br><br>
+	<br>
+
+	Sincerely, 
+	</br>Carlos Figueroa
+	</br>Behr Sales West
+	</br>623-889-1384
+</br><a href="cfigueroa@behrpaint.com">cfigueroa@behrpaint.com</a>
+	</tr>
+	
+	
+            </br><font size="1" color="#4b4b4b"face="Arial, Helvetica, sans-serif">
+        	<p>Ha optado por recibir boletines por correo electr&oacute;nico de BehrPro. Si usted ya no desea recibir notificaciones de promociones y noticias, por favor <a href="mailto:unsubscribe@pronews.behrpro.com" title="Unsubscribe Here"> Haga Clic Agu&iacute;</a>.<br /> 
+       		<br/>
+            Si este mensaje ha sido enviado a usted y desea suscribirse, por favor <a href="mailto:subscribe@pronews.behrpro.com" title="Subscribe Here">Haga Clic Agu&iacute;</a>.<br />
+            <br />
+            Para leer nuestra Pol&iacute;tica de Privacidad, por favor <a href="http://www.behrpro.com/privacypolicy/" title="Privacy Policy">Haga Clic Agu&iacute;</a>.<br />
+            <br />
+            Recientemente hemos actualizado nuestra pol&iacute;tica de privacidad.  Si desea cambiar sus preferencias, por favor, siga las instrucciones de la Pol&iacute;tica de Privacidad.<br />
+            <br />
+          	Las marcas comerciales son propiedad de sus respectivos propietarios. <br />
+   	  	  	<br />
+            &copy;2013 Behr Process Corporation. Todos los Derechos Reservados.<br />
+            <br />
+            Behr Process Corporation<br />
+          	3400 W. Segerstrom Avenue<br />
+          	Santa Ana, CA 92704</p>
+			</font>
+          </td>
+    		<td width="10">&nbsp;</td>
+    	</tr>
+</table> 
+<!--header-->
+<map name="Map" id="Map">
+	<area shape="rect" coords="26,27,174,79" href="http://www.behrpro.com/BehrPro" target="_blank" title="BehrPro" alt="BehrPro" />
+  	<area shape="rect" coords="470,30,496,54" href="http://www.facebook.com/#!/BehrPro?fref=ts" target="_blank" title="Find us on Facebook" alt="Find us on Facebook" />
+  	<area shape="rect" coords="501,30,523,53" href="https://twitter.com/BehrPro" target="_blank" title="Find us on Twitter" alt="Find us on Twitter" />
+</map>
+ 
+</html>

@@ -1,0 +1,6 @@
+Your request for ownership of {!Ownership_Approval_Account__c.Account__c} has been rejected by {!User.Name}
+
+Comments: {!ApprovalRequest.Comments}
+
+
+Please email smart@behr.com with any questions.

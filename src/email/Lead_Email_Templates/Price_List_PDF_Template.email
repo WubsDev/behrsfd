@@ -1,0 +1,8 @@
+Hello {!Lead.FirstName},
+
+I have attached the current pricing for the items we discussed earlier.  Please review the information and let me know if you have any questions.  I will talk to you soon.
+
+Sincerely,
+{!Lead.OwnerFirstName} {!Lead.OwnerLastName}
+{!Lead.OwnerPhone}
+{!Lead.OwnerEmail}

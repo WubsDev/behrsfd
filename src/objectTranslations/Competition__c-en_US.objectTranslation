@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Competition</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Competitions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comp Product Text --></label>
+        <name>Comp_Product_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor % Used --></label>
+        <name>Competitor_Percentage_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Price --></label>
+        <name>Competitor_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Product --></label>
+        <name>Competitor_Product_2__c</name>
+        <relationshipLabel><!-- Competitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Competitor --></label>
+        <name>Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Benjamin Moore</masterLabel>
+            <translation><!-- Benjamin Moore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comex(Frazee/Kwal/Color Wheel/Parker)</masterLabel>
+            <translation><!-- Comex(Frazee/Kwal/Color Wheel/Parker) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dunn Edwards</masterLabel>
+            <translation><!-- Dunn Edwards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glidden</masterLabel>
+            <translation><!-- Glidden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kelly Moore</masterLabel>
+            <translation><!-- Kelly Moore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPG (Olympic/Pittsburgh/Porter)</masterLabel>
+            <translation><!-- PPG (Olympic/Pittsburgh/Porter) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sherwin-Williams</masterLabel>
+            <translation><!-- Sherwin-Williams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valspar</masterLabel>
+            <translation><!-- Valspar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vista</masterLabel>
+            <translation><!-- Vista --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Direct Onboarding --></label>
+        <name>Direct_Onboarding__c</name>
+        <relationshipLabel><!-- Competitive Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Off Zone --></label>
+        <name>Off_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Competitions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recommended Est Volume --></label>
+        <name>Recommended_Est_Volume__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recommended Sheen --></label>
+        <name>Recommended_Sheen__c</name>
+        <picklistValues>
+            <masterLabel>Flatte/Matte</masterLabel>
+            <translation><!-- Flatte/Matte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High Gloss</masterLabel>
+            <translation><!-- High Gloss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Semi Gloss</masterLabel>
+            <translation><!-- Semi Gloss --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved Zone Price --></label>
+        <name>Recommended_Zone_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Zone --></label>
+        <name>Recommended_Zone__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Off zone</masterLabel>
+            <translation><!-- Off zone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source Date --></label>
+        <name>Source_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Information --></label>
+        <name>Source_Information__c</name>
+        <picklistValues>
+            <masterLabel>Invoice</masterLabel>
+            <translation><!-- Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verbal</masterLabel>
+            <translation><!-- Verbal --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Competition Layout</layout>
+        <sections>
+            <label><!-- Competitive Information --></label>
+            <section>Competitive Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Picka0d70000003e8xKAAQ --></label>
+        <name>Picka0d70000003e8xKAAQ</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka0fV0000001Qg4yIAC --></label>
+        <name>Picka0fV0000001Qg4yIAC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka1BQ0000001z3FHMAY --></label>
+        <name>Picka1BQ0000001z3FHMAY</name>
+    </webLinks>
+</CustomObjectTranslation>

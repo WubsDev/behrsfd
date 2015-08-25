@@ -1,0 +1,112 @@
+<apex:page standardController="QuoteLineitem" extensions="OrderLineitemController" action="{!nullValue(redirect.url, urlFor($Action.QuoteLineitem.Edit, QuoteLineitem.id, null, false))}">
+  <apex:form >
+ <!-- <apex:outputPanel rendered="{!normal}">
+  <apex:detail />
+  </apex:outputPanel>-->
+
+  <apex:pageBlock >
+  <apex:pageBlockButtons >
+  <apex:commandButton action="{!Save}" value="Save"/>
+   <apex:commandButton action="{!cancel}" value="Cancel"/>
+  
+  
+  </apex:pageBlockButtons>
+<apex:pageBlockSection columns="2" >
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Product Name" />
+
+
+<apex:outputText value="{!Product}"> </apex:outputText>
+
+
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Quote Name" />
+
+
+<apex:outputField value="{!QuoteLineItem.QuoteId}"/>
+
+
+
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="National Price" />
+
+
+<apex:inputField value="{!QuoteLineItem.ListPrice}"/>
+
+
+
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Regional Price" />
+
+
+<apex:inputField value="{!QuoteLineItem.UnitPrice}"/>
+
+
+
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Quantity" />
+
+
+<apex:inputField value="{!QuoteLineItem.Quantity}"/>
+
+
+
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Subtotal" />
+
+
+<apex:inputField value="{!QuoteLineItem.Subtotal}"/>
+
+
+
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Tier Discount" />
+
+
+<apex:inputField value="{!QuoteLineItem.Discount}"/>
+
+
+
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Total Price" />
+
+
+<apex:inputField value="{!QuoteLineItem.TotalPrice}"/>
+
+
+
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Price Per Gallon" />
+
+
+<apex:inputField value="{!QuoteLineItem.Price_per_Gallon__c}"/>
+
+
+
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Your Price" />
+
+
+<apex:inputField value="{!QuoteLineItem.Your_Price__c}"/>
+
+
+
+</apex:pageBlockSectionItem>
+
+</apex:pageblockSection>
+</apex:pageBlock>
+  
+  
+  </apex:form>
+</apex:page>

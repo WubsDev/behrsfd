@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Territory Growth Plan</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Territory Growth Plans</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Territory Growth Plans --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Behr/Kilz Annual Potential --></label>
+        <name>Behr_Kilz_Annual_Potential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Carryout Sales --></label>
+        <name>Carryout_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- DTP Sales --></label>
+        <name>DTP_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Current Annual Paint Spend --></label>
+        <name>Estimated_Current_Annual_Paint_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strategy You Will Follow --></label>
+        <name>Strategy_You_Will_Follow__c</name>
+    </fields>
+    <fields>
+        <label><!-- TGP (Start) $ --></label>
+        <name>TGP_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- TGP Type --></label>
+        <name>TGP_Type__c</name>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TGP (mid-Year) $ --></label>
+        <name>TGP_mid_year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Date for Acquisition --></label>
+        <name>Target_Date_for_Acquisition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Sales --></label>
+        <name>Total_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Territory Budget $ --></label>
+        <name>Total_Territory_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+        <picklistValues>
+            <masterLabel>2012</masterLabel>
+            <translation><!-- 2012 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2012 - Midyear</masterLabel>
+            <translation><!-- 2012 - Midyear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2013</masterLabel>
+            <translation><!-- 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2013 - Midyear</masterLabel>
+            <translation><!-- 2013 - Midyear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2014</masterLabel>
+            <translation><!-- 2014 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2014 - Midyear</masterLabel>
+            <translation><!-- 2014 - Midyear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2015</masterLabel>
+            <translation><!-- 2015 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2015 - Midyear</masterLabel>
+            <translation><!-- 2015 - Midyear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016</masterLabel>
+            <translation><!-- 2016 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2016 - Midyear</masterLabel>
+            <translation><!-- 2016 - Midyear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2017</masterLabel>
+            <translation><!-- 2017 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2017 - Midyear</masterLabel>
+            <translation><!-- 2017 - Midyear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2018</masterLabel>
+            <translation><!-- 2018 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2018 - Midyear</masterLabel>
+            <translation><!-- 2018 - Midyear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2019</masterLabel>
+            <translation><!-- 2019 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2019 - Midyear</masterLabel>
+            <translation><!-- 2019 - Midyear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2020</masterLabel>
+            <translation><!-- 2020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2020 - Midyear</masterLabel>
+            <translation><!-- 2020 - Midyear --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- % of Total Paint Spend --></label>
+        <name>of_Total_Paint_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- % to Budget --></label>
+        <name>to_Budget__c</name>
+    </fields>
+    <layouts>
+        <layout>Territory Growth Plan Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer TGP Information --></label>
+            <section>Customer TGP Information</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect TGP Information --></label>
+            <section>Prospect TGP Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Territory Growth Plan --></label>
+        <name>Territory_Growth_Plan</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Field is required --></errorMessage>
+        <name>Carryout_total_spend</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field is required --></errorMessage>
+        <name>Customer_Carryout</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field is required --></errorMessage>
+        <name>Customer_DTP</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field is required --></errorMessage>
+        <name>customer_budget</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field is required --></errorMessage>
+        <name>prospect_Behr_pot</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field is required --></errorMessage>
+        <name>prospect_est_an</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field is required --></errorMessage>
+        <name>prospect_strategy</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Field is required --></errorMessage>
+        <name>prospect_target</name>
+    </validationRules>
+</CustomObjectTranslation>

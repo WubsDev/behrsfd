@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BEHR PRO - KILZ PRO-X</title>
+<meta name="viewport" content="width=device-width" />
+<style type="text/css">
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 14px;
+}
+img {
+	border: none;
+}
+table {
+	border-collapse: collapse;
+}
+ @media only screen and (max-width:599px) {
+table[class=col] {
+	display: block !important;
+	width: 320px !important;
+}
+img[class=behrlogotop], img[class=imgvert] {
+	width: 84px!important;
+	height: auto!important;
+}
+img[class=imghd] {
+	width: auto!important;
+	height: 30px!important;
+}
+td[class=footer] { height:60px!important; }
+a[class=twitter] img, a[class=facebook] img {
+	padding-bottom: 4px!important;
+	height: 15px!important;
+	width: 15px!important;
+}
+td[class=top_banner] {padding:10px!important;}
+img[class=entertowinbutton] { padding-top:15px!important; padding-left: 20px!important; }
+}
+</style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; margin: 0;padding: 0;width: 100% !important;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust:none;">
+<table width="100%" border="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="center" valign="top"><table class="col" width="600" border="0" cellpadding="0" cellspacing="0" >
+          <tbody>
+            <tr>
+              <td class="w20" width="25"></td>
+              <td class="w560" height="15" width="550"></td>
+              <td class="w20" width="25"></td>
+            </tr>
+            <tr>
+              <td class="w20" width="25"></td>
+              <td class="w560" width="550"><table style="padding-top:20px;background-color:#ffffff;" class="col" width="100%" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td style="" class="logo_holder" valign="top" width="50%" align="left"><a href="http://www.behrpro.com/BehrPro/prohome"> <img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj5H&oid=00D700000008FyN&lastMod=1381299508000" alt="BEHR PRO Logo" width="138" height="57" class="behrlogotop" style="border:none;width:138px;height:57px;"></a></td>
+                      <td class="behrprocom" style="" valign="bottom" width="50%" align="right"><a class="twitter" href="https://twitter.com/BehrPro"> <img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj5M&oid=00D700000008FyN&lastMod=1381299653000" alt="Twitter" style="border:none;width:22px;height:22px;" height="22" width="22"></a>&nbsp;&nbsp; <a class="facebook" href="https://www.facebook.com/BehrPro"> <img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj5R&oid=00D700000008FyN&lastMod=1381299716000" alt="Facebook" style="border:none;" height="22" width="22"></a>&nbsp;&nbsp; <a class="facebook" href="http://www.youtube.com/playlist?list=PLJ0tgDvXhy37cL7uWITby0ob5B1bmU3J1"> <img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj5W&oid=00D700000008FyN&lastMod=1381299783000" alt="Youtube" style="border:none;padding-left:4px;width:22px;height:22px;" height="21" width="21"></a></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="left" valign="top" bgcolor="#FFFFFF" class="" style="">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="left" valign="middle" bgcolor="#000000" class="top_banner" style="color:#ffffff;font-size:24px;font-weight:bold;padding:10px 20px;"><a href="http://pro.behr.com/kpxsweeps_enter_to_win"><img class="entertowinbutton" src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj4x&oid=00D700000008FyN&lastMod=1381298973000" align="right" border="0" style="float:right;border:none" alt="enter to win"></a><span style="color:#a30e22;">WIN</span> PAINT FOR A YEAR</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              <td class="w25" width="25"><br></td>
+            </tr>
+            <tr>
+              <td class="w25" width="25"><br></td>
+              <td width="550" align="left" valign="top" class="w560"><br>
+                <p>Hi {!Lead.FirstName},</p>
+                <p>I wanted to give you a heads up about a great new promotion BehrPro is offering professional customers like you &#8211; a chance to win a year of paint*! If you win, you'll get a year's supply of our new KILZ PRO-X<sup>&reg;</sup> 100 advanced high-hide commercial grade paint. </p>
+                <p>Here are just a few of the ways KILZ PRO-X 100 series can help you finish jobs faster:<br />
+                </p>
+                <ul>
+                  <li>Increased wet and dry hide gives you better coverage</li>
+                  <li>Better consistency for easy spray, brush and roll with superior finish </li>
+                  <li>Excellent touch up means a quick final prep for walk through</li>
+                </ul>
+                <p>Entering to win is simple, just <a href="http://pro.behr.com/kpxsweeps_enter_to_win" style="color:#a30e22;">click here</a>. </p>
+                <p><strong><span style="font-size:18px;color:#a30e22;">Sweepstakes Dates</span><br />
+                  Now &#8211; December 31, 2013** </strong></p>
+                <p>If you have any questions, don't hesitate to get in touch or find the answers at <a style="color:#a30e22;" href="http://pro.behr.com/kpxsweeps">pro.behr.com/kpxsweeps</a>.</p>
+                <p>Sincerely,<br />
+                  {!Lead.OwnerFullName}<br />
+                  {!Lead.OwnerTitle}<br />
+                  {!Lead.OwnerPhone}<br />
+                  {!Lead.OwnerEmail}</p>
+                <p><a href="http://www.behrpro.com"><img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj4s&oid=00D700000008FyN&lastMod=1381298465000" width="114" height="21" alt="behrpro.com" border="0" style="border:none;"></a></p>
+                <p style="font-size:10px;border-top:1px solid #000000;padding-top:15px;">*No purchase necessary to enter or win. Limit 1,500 gallons. Prize covers all BEHR&reg; &amp; KILZ&reg; product lines.  See official contest rules for details.<br>
+                  <br>
+                  ** Promotion Period: This KILZ Pro-X Win Paint for a Year Sweepstakes begins at 12:01 A.M. Pacific Time on August 23, 2013 and ends 11:59 P.M. Pacific Time on December 31, 2013.<br>
+                  <br>
+                  <br>
+                </p></td>
+              <td class="w20" width="25"><br></td>
+            </tr>
+            <tr>
+              <td  class="w25">&nbsp;</td>
+              <td height="76" align="right" valign="middle" bgcolor="#000000" style="background-color:#000000;padding-right:10px;" class="footer"><a href="http://www.behr.com/Behr/home"><img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj52&oid=00D700000008FyN&lastMod=1381299174000" alt="BEHR Logo" style="border:none" height="37" width="106" class="imgvert"></a></a><a style="color:rgb(92, 92, 92);" href="http://www.kilz.com/"><img class="imgvert" src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj57&oid=00D700000008FyN&lastMod=1381299246000" alt="Kilz Logo" style="border:none" height="37" width="86"></a> <a style="color:rgb(92, 92, 92);" href="http://www.homedepot.com/"><img class="imghd" src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj5C&oid=00D700000008FyN&lastMod=1381299418000" alt="Home Depot Logo" style="border:none;" height="46" width="39"></a></td>
+              <td  class="w20">&nbsp;</td>
+            </tr>
+            <tr>
+              <td  class="w25">&nbsp;</td>
+              <td align="center"><br>
+                <br>
+                <font size="1" color="#4b4b4b"face="Arial, Helvetica, sans-serif">
+                <p>You have opted-in to receive email newsletters from BehrPro. If you no longer wish to receive promotional notifications and news, please <a href="mailto:unsubscribe@pronews.behrpro.com" title="Unsubscribe Here"> Click Here</a>.<br />
+                  <br/>
+                  If this email has been forwarded to you and you wish to subscribe, please <a href="mailto:subscribe@pronews.behrpro.com" title="Subscribe Here">Click Here</a>.<br />
+                  <br />
+                  To read our Privacy Policy, please <a href="http://www.behrpro.com/privacypolicy/" title="Privacy Policy">Click Here</a>.<br />
+                  <br />
+                  We recently updated our Privacy Policy. If you wish to change your preferences, please follow the directions in the Privacy Policy.<br />
+                  <br />
+                  Trademarks are the property of their respective owners.<br />
+                  <br />
+                  &copy;2013 Behr Process Corporation. All Rights Reserved.<br />
+                  <br />
+                  Behr Process Corporation<br />
+                  3400 W. Segerstrom Avenue<br />
+                  Santa Ana, CA 92704</p>
+                </font></td>
+              <td  class="w25">&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

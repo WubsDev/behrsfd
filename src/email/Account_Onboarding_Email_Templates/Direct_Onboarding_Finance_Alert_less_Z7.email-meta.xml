@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to be sent to Finance if max zone is less than 7</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Direct Onboarding Finance Alert less Z7</name>
+    <style>none</style>
+    <subject>Direct On boarding for &apos;{!Direct_Onboarding__c.Company_Name__c}&apos; Off price is less than zone 7</subject>
+    <type>text</type>
+</EmailTemplate>

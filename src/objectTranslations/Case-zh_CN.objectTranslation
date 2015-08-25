@@ -1,0 +1,2157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Contact --></label>
+        <name>Account_Contact__c</name>
+        <relationshipLabel><!-- Cases (Account Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Account_Email__c</name>
+    </fields>
+    <fields>
+        <label>施工过程是否加水</label>
+        <name>Added_water_to_the_paint__c</name>
+        <picklistValues>
+            <masterLabel>Don&apos;t Know</masterLabel>
+            <translation>不知道</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>没有</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>有</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Additional Instructions --></label>
+        <name>Additional_Instructions__c</name>
+    </fields>
+    <fields>
+        <label>非产品的现金赔偿</label>
+        <name>Additional_Monetory_Refund__c</name>
+        <picklistValues>
+            <masterLabel>Body Injury</masterLabel>
+            <translation>人身伤害</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Labor</masterLabel>
+            <translation>劳力</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property Damage</masterLabel>
+            <translation>财物损伤</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Additional Services Needed --></label>
+        <name>Additional_Services_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Account Setup Complete</masterLabel>
+            <translation><!-- Account Setup Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Submitted</masterLabel>
+            <translation><!-- Not Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Account Setup</masterLabel>
+            <translation><!-- Pending Account Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved Payment Terms --></label>
+        <name>Approved_Credit_Terms__c</name>
+        <picklistValues>
+            <masterLabel>Cash in Advance</masterLabel>
+            <translation><!-- Cash in Advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 30</masterLabel>
+            <translation><!-- Net 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 45</masterLabel>
+            <translation><!-- Net 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Net 60</masterLabel>
+            <translation><!-- Net 60 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Architect --></label>
+        <name>Architect__c</name>
+        <relationshipLabel><!-- Cases (Architect) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Architectural Considerations --></label>
+        <name>Architectural_Considerations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Are There Color Renderings On The Board --></label>
+        <name>Are_There_Color_Renderings_On_The_Board__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>将此案例升级给</label>
+        <name>Assign_Case_to__c</name>
+        <picklistValues>
+            <masterLabel>Accounting (returns)</masterLabel>
+            <translation>财务部（赔偿及退换）</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inspector</masterLabel>
+            <translation>工程检验员</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation>市场部</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QC</masterLabel>
+            <translation>质检部</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation>销售部</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supervisor</masterLabel>
+            <translation>上级主管</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Avg. # Of Colors Per Scheme --></label>
+        <name>Avg_of_colors_per_scheme__c</name>
+    </fields>
+    <fields>
+        <label>产品批号</label>
+        <name>Batch_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Behr Color Name --></label>
+        <name>Behr_Color_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Behr Representative --></label>
+        <name>Behr_Representative__c</name>
+        <relationshipLabel><!-- Cases (Behr Representative) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Bond Company --></label>
+        <name>Bond_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bond Company phone # --></label>
+        <name>Bond_Company_phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bond # --></label>
+        <name>Bond__c</name>
+    </fields>
+    <fields>
+        <label><!-- City, State, Zip --></label>
+        <name>City_State_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color Approved By --></label>
+        <name>Color_Approved_By__c</name>
+        <relationshipLabel><!-- Cases (Color Approved By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Color Board Type --></label>
+        <name>Color_Board_Type__c</name>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>With Chips</masterLabel>
+            <translation><!-- With Chips --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Color Book/Board Type --></label>
+        <name>Color_BookBoard_Type__c</name>
+        <picklistValues>
+            <masterLabel>Close Out Book</masterLabel>
+            <translation><!-- Close Out Book --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color Board</masterLabel>
+            <translation><!-- Color Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color Book</masterLabel>
+            <translation><!-- Color Book --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color Submittal</masterLabel>
+            <translation><!-- Color Submittal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>所使用颜色</label>
+        <name>Color_Chosen__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reds: apple, burgandy
+Oranges: rust, terracotta, apricot
+Violets
+Greens: spring, olive, forest
+Yellows: gold, honey, wheat, bronze
+Blues: aqua, blue, sky blue --></help>
+        <label><!-- Color Family Preference --></label>
+        <name>Color_Family_Preference__c</name>
+        <picklistValues>
+            <masterLabel>Blues: aqua, blue, sky blue</masterLabel>
+            <translation><!-- Blues: aqua, blue, sky blue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greens: spring, olive, forest</masterLabel>
+            <translation><!-- Greens: spring, olive, forest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oranges: rust, terracotta, sienna, apric</masterLabel>
+            <translation><!-- Oranges: rust, terracotta, sienna, apric --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reds: apple, burgandy</masterLabel>
+            <translation><!-- Reds: apple, burgandy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Violets</masterLabel>
+            <translation><!-- Violets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellows: gold, honey, wheat, bronze</masterLabel>
+            <translation><!-- Yellows: gold, honey, wheat, bronze --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Color Family --></label>
+        <name>Color_Family__c</name>
+        <picklistValues>
+            <masterLabel>Blues</masterLabel>
+            <translation><!-- Blues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greens</masterLabel>
+            <translation><!-- Greens --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oranges</masterLabel>
+            <translation><!-- Oranges --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reds</masterLabel>
+            <translation><!-- Reds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Violets</masterLabel>
+            <translation><!-- Violets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellows</masterLabel>
+            <translation><!-- Yellows --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Color Formulas Needed --></label>
+        <name>Color_Formulas_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color Lab Activation Request Submitted --></label>
+        <name>Color_Lab_Activation_Request_Submitted__c</name>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Color Rendering Services Needed --></label>
+        <name>Color_Rendering_Services_Needed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Color Services Request Attached(NonBehr) --></label>
+        <name>Color_Services_Request_Attached_NonBehr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color Services Request Attached --></label>
+        <name>Color_Services_Request_Attached__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor&apos;s Color Numbers --></label>
+        <name>Competitor_Color_Numbers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor&apos;s Color Samples --></label>
+        <name>Competitor_Color_Samples__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor&apos;s Color Names --></label>
+        <name>Competitors_Color_Names__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact # On Yard Sign --></label>
+        <name>Contact_No_On_Yard_Sign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By Region --></label>
+        <name>Created_By_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created User Check --></label>
+        <name>Created_user_check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Logo --></label>
+        <name>Customer_Logo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Description --></label>
+        <name>Data_Quality_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Score --></label>
+        <name>Data_Quality_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does Not Include Ship Time --></help>
+        <label><!-- Date Needed By --></label>
+        <name>Date_Needed_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does Not Include Ship Time --></help>
+        <label><!-- Delivery ETA --></label>
+        <name>Delivery_ETA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct Onboarding --></label>
+        <name>Direct_Onboarding__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dry Sample Description --></label>
+        <name>Dry_Sample_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Spend --></label>
+        <name>Estimated_Spend_Amount__c</name>
+    </fields>
+    <fields>
+        <label>是否在涂刷后两周内接水或湿气</label>
+        <name>Exposed_to_moisture_2_Weeks__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation>否</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation>是</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Colors To Avoid (exterior) --></label>
+        <name>Ext_Colors_To_Avoid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Color Scheme (exterior) --></label>
+        <name>Ext_Preferred_Color_Scheme__c</name>
+        <picklistValues>
+            <masterLabel>Dark</masterLabel>
+            <translation><!-- Dark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Light</masterLabel>
+            <translation><!-- Light --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium Tone</masterLabel>
+            <translation><!-- Medium Tone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Favorite Colors To Include --></label>
+        <name>Favorite_Colors_To_Include__c</name>
+    </fields>
+    <fields>
+        <label><!-- GC Address --></label>
+        <name>GC_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- GC City --></label>
+        <name>GC_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- GC Country --></label>
+        <name>GC_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- GC State --></label>
+        <name>GC_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- GC Zip --></label>
+        <name>GC_Zip__c</name>
+    </fields>
+    <fields>
+        <label>估算月使用量</label>
+        <name>Gallon__c</name>
+        <picklistValues>
+            <masterLabel>51-124 Gallons</masterLabel>
+            <translation><!-- 51-124 Gallons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;50 Gallons</masterLabel>
+            <translation><!-- &lt;50 Gallons --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;125 Gallons</masterLabel>
+            <translation><!-- &gt;125 Gallons --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- General Contractor = GC --></help>
+        <label><!-- General Contractor --></label>
+        <name>General_Contractor__c</name>
+    </fields>
+    <fields>
+        <label>普通说明</label>
+        <name>General_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Guidelines Number --></label>
+        <name>Guidelines_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- HOA Color Rendering Needed --></label>
+        <name>HOA_Color_Rendering_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- HOA --></label>
+        <name>HOA__c</name>
+    </fields>
+    <fields>
+        <label>此顾客是否联系过经销商</label>
+        <name>Has_the_Customer_Contacted_the_Dealer__c</name>
+    </fields>
+    <fields>
+        <label>此顾客是否购买产品</label>
+        <name>Has_the_Customer_Purchased_the_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Highlighted Features --></label>
+        <name>Highlighted_Features__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hot Rush Reason --></label>
+        <name>Hot_Rush_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hot Rush --></label>
+        <name>Hot_Rush__c</name>
+    </fields>
+    <fields>
+        <label><!-- How Many Sets --></label>
+        <name>How_Many_Sets__c</name>
+    </fields>
+    <fields>
+        <label>涂刷前是如何处理施工表面的</label>
+        <name>How_is_the_surface_prepared__c</name>
+    </fields>
+    <fields>
+        <label>层与层之间相隔时间（小时）</label>
+        <name>How_long_between_coats_in_hrs__c</name>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation>12小时内</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>24 and over</masterLabel>
+            <translation>24小时及以上</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation>4小时内</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;1</masterLabel>
+            <translation>1小时内</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>涂刷了几层</label>
+        <name>How_many_coats_applied__c</name>
+    </fields>
+    <fields>
+        <label>产品用量</label>
+        <name>How_much_product_was_applied__c</name>
+    </fields>
+    <fields>
+        <label>加了多少水</label>
+        <name>How_much_water_was_added__c</name>
+    </fields>
+    <fields>
+        <label>如有其他事项请提及</label>
+        <name>If_Other_Please_Mention__c</name>
+    </fields>
+    <fields>
+        <label>如选择其它，请填写涂刷表面材质</label>
+        <name>If_Painted_Substrate_Other__c</name>
+    </fields>
+    <fields>
+        <label>询问主题</label>
+        <name>Inquiry_Topic__c</name>
+        <picklistValues>
+            <masterLabel>Application</masterLabel>
+            <translation>涂刷</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color</masterLabel>
+            <translation>颜色</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consumer Survey</masterLabel>
+            <translation>客户调查问卷</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feedback</masterLabel>
+            <translation>反馈</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Painter Survey</masterLabel>
+            <translation>油工调查问卷</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation>产品信息</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store Retail</masterLabel>
+            <translation>零售店</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade</masterLabel>
+            <translation>产品代理</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warranty Registration</masterLabel>
+            <translation>质保卡注册</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>审查阶段</label>
+        <name>Inspection_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>完成</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Follow up Trip</masterLabel>
+            <translation>跟进考察</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>审理中</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>审查时间</label>
+        <name>Inspection_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Colors To Avoid (interior) --></label>
+        <name>Int_Colors_To_Avoid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Color Scheme (interior) --></label>
+        <name>Int_Preferred_Color_Scheme__c</name>
+        <picklistValues>
+            <masterLabel>Bright</masterLabel>
+            <translation><!-- Bright --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dark</masterLabel>
+            <translation><!-- Dark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Light</masterLabel>
+            <translation><!-- Light --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium Tone</masterLabel>
+            <translation><!-- Medium Tone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neutral</masterLabel>
+            <translation><!-- Neutral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Whites</masterLabel>
+            <translation><!-- Whites --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is Property Mgmt Close Out Book (Behr) --></label>
+        <name>Is_Property_Mgmt_Close_Out_Book_Behr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is this the owner? --></label>
+        <name>Is_this_the_owner__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>投诉类型</label>
+        <name>Issue_Type__c</name>
+        <picklistValues>
+            <masterLabel>Alkali Burn</masterLabel>
+            <translation>返碱</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bleed (Water, Nicotine, Smoke)</masterLabel>
+            <translation>水渍、烟渍由墙体渗出到漆膜表面</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blocking</masterLabel>
+            <translation>阻压</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blotchy</masterLabel>
+            <translation>污渍</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brush/Roller Marks</masterLabel>
+            <translation>表面留下刷痕</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bubbling/Blistering</masterLabel>
+            <translation>漆膜表面呈现水泡或因水泡引起的脱皮</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burnishing/Scuffing</masterLabel>
+            <translation>磨损、划痕</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chalky</masterLabel>
+            <translation>粉化</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemical Reaction</masterLabel>
+            <translation>化学反应</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color not matching</masterLabel>
+            <translation>颜色不对应</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deep Base Issue</masterLabel>
+            <translation>深色基漆问题</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drying too Quickly</masterLabel>
+            <translation>风干过快</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Efflorescence</masterLabel>
+            <translation>石灰盐泛出</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fading/Color Retention</masterLabel>
+            <translation>掉色</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flashing</masterLabel>
+            <translation>光泽不匀</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Odor</masterLabel>
+            <translation>涂刷后有怪味</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Over Diluted</masterLabel>
+            <translation>过度稀释</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paint tacky</masterLabel>
+            <translation>漆膜发粘</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pealing</masterLabel>
+            <translation>掉皮</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Information</masterLabel>
+            <translation>产品信息</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project</masterLabel>
+            <translation>施工</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refund</masterLabel>
+            <translation>金额偿还</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sagging</masterLabel>
+            <translation>流挂</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrinkle/Cracking</masterLabel>
+            <translation>漆膜起皱，破裂</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Job Length --></label>
+        <name>Job_Length__c</name>
+    </fields>
+    <fields>
+        <help><!-- Job # from FileMaker that is also used in ProofHQ --></help>
+        <label><!-- Job Number --></label>
+        <name>Job_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Start Date --></label>
+        <name>Job_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Lot # --></label>
+        <name>Legal_Lot__c</name>
+    </fields>
+    <fields>
+        <label><!-- License No. --></label>
+        <name>License_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lighting In Room --></label>
+        <name>Lighting_In_Room__c</name>
+        <picklistValues>
+            <masterLabel>Floor Lamps</masterLabel>
+            <translation><!-- Floor Lamps --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hanging Pendants</masterLabel>
+            <translation><!-- Hanging Pendants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Natural Daylight</masterLabel>
+            <translation><!-- Natural Daylight --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overhead Fluorescent</masterLabel>
+            <translation><!-- Overhead Fluorescent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spotlights</masterLabel>
+            <translation><!-- Spotlights --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task Lighting</masterLabel>
+            <translation><!-- Task Lighting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name On Yard Sign --></label>
+        <name>Name_On_Yard_Sign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Neutral Or Bright Colors --></label>
+        <name>Neutral_Or_Bright_Colors__c</name>
+        <picklistValues>
+            <masterLabel>Bright</masterLabel>
+            <translation><!-- Bright --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neutral</masterLabel>
+            <translation><!-- Neutral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- # Of Dry Samples --></label>
+        <name>No_Of_Dry_Samples__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Wet Samples --></label>
+        <name>No_Of_Wet_Samples__c</name>
+    </fields>
+    <fields>
+        <label><!-- No. Of Yard Signs --></label>
+        <name>No_Of_Yard_Signs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Behr Color Formula --></label>
+        <name>Non_Behr_Color_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Behr Color Name --></label>
+        <name>Non_Behr_Color_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Property Mgmt Close Out Book(NonBehr) --></label>
+        <name>Non_Behr_Is_Property_Mgmt_Close_Out_Book__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Amount --></label>
+        <name>Opportunity_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Type --></label>
+        <name>Opportunity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Job</masterLabel>
+            <translation><!-- Job --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shop Ship to</masterLabel>
+            <translation><!-- Shop Ship to --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <name>Origin</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation>邮件</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email to Case</masterLabel>
+            <translation><!-- Email to Case --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail</masterLabel>
+            <translation>信件</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>无</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation>电话</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store</masterLabel>
+            <translation>门店</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Survey</masterLabel>
+            <translation>调查问卷</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warranty Card</masterLabel>
+            <translation>质保卡</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation>网络</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other Building Colors To Consider --></label>
+        <name>Other_Building_Colors_To_Consider__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Colors --></label>
+        <name>Other_Colors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>Owner__c</name>
+        <relationshipLabel><!-- Cases (Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PN Address --></label>
+        <name>PN_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- PN City --></label>
+        <name>PN_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- PN Country --></label>
+        <name>PN_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- PN State --></label>
+        <name>PN_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- PN Zip --></label>
+        <name>PN_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Address --></label>
+        <name>PO_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO City --></label>
+        <name>PO_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Country --></label>
+        <name>PO_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO State --></label>
+        <name>PO_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Zip --></label>
+        <name>PO_Zip__c</name>
+    </fields>
+    <fields>
+        <label>漆桶内的涂料是否存在异样</label>
+        <name>Paint_is_bad_in_the_can__c</name>
+        <picklistValues>
+            <masterLabel>Cheesy</masterLabel>
+            <translation>豆腐脑状</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foreign Material</masterLabel>
+            <translation>夹杂物</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Foul odor</masterLabel>
+            <translation>异味</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jelly</masterLabel>
+            <translation>凝固</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lumpy</masterLabel>
+            <translation>结块状</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skinning</masterLabel>
+            <translation>结皮状</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Too thick</masterLabel>
+            <translation>太粘稠</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watery</masterLabel>
+            <translation>太稀</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Painted By --></label>
+        <name>Painted_By__c</name>
+        <picklistValues>
+            <masterLabel>By Contractor</masterLabel>
+            <translation><!-- By Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>By Owner</masterLabel>
+            <translation><!-- By Owner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>施工表面材质</label>
+        <name>Painted_Substrate__c</name>
+        <picklistValues>
+            <masterLabel>Concrete</masterLabel>
+            <translation>混凝土</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drywall</masterLabel>
+            <translation>干墙</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Metal</masterLabel>
+            <translation>金属</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation>其它</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plaster</masterLabel>
+            <translation>石膏板</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plastic</masterLabel>
+            <translation>塑料</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previously Painted</masterLabel>
+            <translation>涂刷过的表面</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regular Putty</masterLabel>
+            <translation>普通腻子</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wallpaper</masterLabel>
+            <translation>壁纸</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Water Resistant Putty</masterLabel>
+            <translation>防水腻子</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wood</masterLabel>
+            <translation>木头</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Photos Of Property To Emulate --></label>
+        <name>Photos_Of_Property_To_Emulate__c</name>
+    </fields>
+    <fields>
+        <name>Priority</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation>高</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation>低</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation>中</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pro Rep Phone # --></label>
+        <name>Pro_Rep_phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pro Rewards Card --></label>
+        <name>Pro_Rewards_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pro Rewards Card back --></label>
+        <name>Pro_Rewards_Card_back__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pro Rewards Phone # --></label>
+        <name>Pro_Rewards_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pro Rewards Tier --></label>
+        <name>Pro_Rewards_Tier__c</name>
+    </fields>
+    <fields>
+        <label>出厂质量问题</label>
+        <name>Product_Defected__c</name>
+    </fields>
+    <fields>
+        <label>产品系列</label>
+        <name>Product_Family__c</name>
+    </fields>
+    <fields>
+        <label>产品退换协议</label>
+        <name>Product_Refund_Agreement__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation>不同意</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation>同意</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>产品</label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Product Family --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Location (Region) --></label>
+        <name>Project_Location__c</name>
+    </fields>
+    <fields>
+        <help><!-- Project Name = PN --></help>
+        <label><!-- Project Name --></label>
+        <name>Project_Name__c</name>
+    </fields>
+    <fields>
+        <label>施工面积（平米）</label>
+        <name>Project_Size_in_Sq_meter__c</name>
+    </fields>
+    <fields>
+        <label>施工面积（平方尺）</label>
+        <name>Project_Size_in_sq_ft__c</name>
+    </fields>
+    <fields>
+        <help><!-- Property Name = PN --></help>
+        <label><!-- Property Name --></label>
+        <name>Property_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Property Owner = PO --></help>
+        <label><!-- Property Owner --></label>
+        <name>Property_Owner__c</name>
+    </fields>
+    <fields>
+        <label>购买日期</label>
+        <name>Purchase_Date__c</name>
+    </fields>
+    <fields>
+        <label>小票号</label>
+        <name>Purchase_Receipt_Number__c</name>
+    </fields>
+    <fields>
+        <label>购买数量</label>
+        <name>Purchased_QTY__c</name>
+    </fields>
+    <fields>
+        <label>购买型号</label>
+        <name>Purchased_QTY_size__c</name>
+        <picklistValues>
+            <masterLabel>5G</masterLabel>
+            <translation>5加仑</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GL</masterLabel>
+            <translation>加仑</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>QT</masterLabel>
+            <translation>夸脱</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purpose And Function Of Space --></label>
+        <name>Purpose_And_Function_Of_Space__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Printed Copies --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPSM --></label>
+        <name>RPSM_user__c</name>
+        <relationshipLabel><!-- Cases (RPSM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <name>Reason</name>
+        <picklistValues>
+            <masterLabel>Account Completed</masterLabel>
+            <translation><!-- Account Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Account Denied</masterLabel>
+            <translation><!-- Account Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F.Y.I.</masterLabel>
+            <translation><!-- F.Y.I. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Problem</masterLabel>
+            <translation><!-- Problem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question</masterLabel>
+            <translation><!-- Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Cancelled</masterLabel>
+            <translation><!-- Request Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request denied</masterLabel>
+            <translation><!-- Request denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request fulfilled</masterLabel>
+            <translation><!-- Request fulfilled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>相关店号</label>
+        <name>Related_Store_Name__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>相关零售店</label>
+        <name>Related_Store__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rendering Type --></label>
+        <name>Rendering_Type__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital</masterLabel>
+            <translation><!-- Digital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print</masterLabel>
+            <translation><!-- Print --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requester --></label>
+        <name>Requester__c</name>
+        <relationshipLabel><!-- Cases (Requester) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rolling Year Sales --></label>
+        <name>Rolling_Year_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Account # --></label>
+        <name>SAP_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP shop account --></label>
+        <name>SAP_shop_account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Invoices To --></label>
+        <name>Send_Invoices_To__c</name>
+    </fields>
+    <fields>
+        <help><!-- &quot;Day 0 begins when the complete request is submitted to Color Services by 2 p.m. PST (business days only). For requests that are submitted after 2 p.m. PST, day 0 begins the next business day.&quot; --></help>
+        <label><!-- Service Guidelines --></label>
+        <name>Service_Guidelines__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the address to use when shipping the sample. --></help>
+        <label><!-- Ship Sample To: --></label>
+        <name>Ship_Sample_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To City --></label>
+        <name>Ship_To_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Country --></label>
+        <name>Ship_To_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To State --></label>
+        <name>Ship_To_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Street --></label>
+        <name>Ship_To_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To Zip --></label>
+        <name>Ship_To_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>Ship_To__c</name>
+        <picklistValues>
+            <masterLabel>Ship to Customer</masterLabel>
+            <translation><!-- Ship to Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ship to Rep</masterLabel>
+            <translation><!-- Ship to Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Will Call</masterLabel>
+            <translation><!-- Will Call --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sign Name --></label>
+        <name>Sign_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sign Phone # --></label>
+        <name>Sign_Phone__c</name>
+    </fields>
+    <fields>
+        <label>现场已施工</label>
+        <name>Site_Is_Painted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Tag Line --></label>
+        <name>Special_Tag_Line__c</name>
+    </fields>
+    <fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Escalated</masterLabel>
+            <translation>已升级</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Approved</masterLabel>
+            <translation><!-- Finance Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance Rejected</masterLabel>
+            <translation><!-- Finance Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation>处理中</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Administrator Review</masterLabel>
+            <translation><!-- Sales Administrator Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>施工表面状况</label>
+        <name>Substrate_Condition_Other__c</name>
+    </fields>
+    <fields>
+        <label>施工表面状况</label>
+        <name>Substrate_Condition__c</name>
+        <picklistValues>
+            <masterLabel>Glossy</masterLabel>
+            <translation>光亮</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>其它</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rough</masterLabel>
+            <translation>其它</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smooth</masterLabel>
+            <translation>平滑</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Textured</masterLabel>
+            <translation>纹理</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>给客户的建议</label>
+        <name>Suggestion_Given_to_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary Page --></label>
+        <name>Summary_Page__c</name>
+    </fields>
+    <fields>
+        <label>施工温度</label>
+        <name>Temperature_during_application__c</name>
+        <picklistValues>
+            <masterLabel>10 - 30</masterLabel>
+            <translation><!-- 10 - 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;10</masterLabel>
+            <translation><!-- &lt;10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;30</masterLabel>
+            <translation><!-- &gt;30 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Title Page --></label>
+        <name>Title_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # Of Color Formula Requests --></label>
+        <name>Total_of_Color_Formula_requests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # Of EFB Requests --></label>
+        <name>Total_of_EFB_requests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # Of Draw Downs --></label>
+        <name>Total_of_drawdowns__c</name>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Color Services</masterLabel>
+            <translation><!-- Color Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitive</masterLabel>
+            <translation><!-- Competitive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finance</masterLabel>
+            <translation><!-- Finance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Operation</masterLabel>
+            <translation><!-- Operation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pro Services</masterLabel>
+            <translation><!-- Pro Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product</masterLabel>
+            <translation><!-- Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales</masterLabel>
+            <translation><!-- Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation><!-- Software --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type Of Paper --></label>
+        <name>Type_Of_Paper__c</name>
+        <picklistValues>
+            <masterLabel>Card Stock</masterLabel>
+            <translation><!-- Card Stock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glossy Paper</masterLabel>
+            <translation><!-- Glossy Paper --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type Of Request --></label>
+        <name>Type_of_request__c</name>
+        <picklistValues>
+            <masterLabel>Pro Rewards Card</masterLabel>
+            <translation><!-- Pro Rewards Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yard Sign</masterLabel>
+            <translation><!-- Yard Sign --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>US_Product__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wet Sample Description --></label>
+        <name>Wet_Sample_Description__c</name>
+    </fields>
+    <fields>
+        <label>涂刷使用的工具</label>
+        <name>What_applicator_was_used__c</name>
+    </fields>
+    <fields>
+        <label>涂刷前是否使用清洁产品</label>
+        <name>What_cleaner_was_used__c</name>
+    </fields>
+    <fields>
+        <label>何时发现问题</label>
+        <name>When_was_issued_detected__c</name>
+    </fields>
+    <fields>
+        <label>施工时间</label>
+        <name>When_was_paint_applied__c</name>
+    </fields>
+    <fields>
+        <label>施工人员</label>
+        <name>Who_Applied_the_Paint__c</name>
+        <picklistValues>
+            <masterLabel>DIY</masterLabel>
+            <translation>自己动手</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deco Firm</masterLabel>
+            <translation>装修公司</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual Painter</masterLabel>
+            <translation>散油工</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>其它</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Painting Crew</masterLabel>
+            <translation>油工队</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- YTD Sales --></label>
+        <name>YTD_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yard Sign 1 --></label>
+        <name>Yard_Sign_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yard Sign 2 --></label>
+        <name>Yard_Sign_2__c</name>
+    </fields>
+    <fields>
+        <label>颜色编号</label>
+        <name>color_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Cards --></label>
+        <name>of_Cards__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Color Books --></label>
+        <name>of_Color_Books__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Of Schemes --></label>
+        <name>of_schemes__c</name>
+    </fields>
+    <fields>
+        <label><!-- sortl --></label>
+        <name>sortl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # Of Colors --></label>
+        <name>total_of_colors__c</name>
+    </fields>
+    <layouts>
+        <layout>Behr Color Book/Board Layout</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Administrator Only --></label>
+            <section>Administrator Only</section>
+        </sections>
+        <sections>
+            <label><!-- Color Book / Board Details --></label>
+            <section>Color Book / Board Details</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Pro Services --></label>
+            <section>Pro Services</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- Report Links --></label>
+            <section>Report Links</section>
+        </sections>
+        <sections>
+            <label><!-- Service Guidelines --></label>
+            <section>Service Guidelines</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping information --></label>
+            <section>Shipping information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Behr Color Formula Case Layout</layout>
+        <sections>
+            <label><!-- Acount Details --></label>
+            <section>Acount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Administrator Only --></label>
+            <section>Administrator Only</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Pro Services --></label>
+            <section>Pro Services</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- Report Links --></label>
+            <section>Report Links</section>
+        </sections>
+        <sections>
+            <label><!-- Service Guidelines --></label>
+            <section>Service Guidelines</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Behr Color Matching Case Layout</layout>
+        <sections>
+            <label><!-- Acount Details --></label>
+            <section>Acount Details</section>
+        </sections>
+        <sections>
+            <label><!-- Administrator Only --></label>
+            <section>Administrator Only</section>
+        </sections>
+        <sections>
+            <label><!-- Color Matching Details --></label>
+            <section>Color Matching Details</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Pro Services --></label>
+            <section>Pro Services</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- Report Links --></label>
+            <section>Report Links</section>
+        </sections>
+        <sections>
+            <label><!-- Service Guidelines --></label>
+            <section>Service Guidelines</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Behr Color Recommendation Case Layout</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Administrator Only --></label>
+            <section>Administrator Only</section>
+        </sections>
+        <sections>
+            <label><!-- Color Rendering Details --></label>
+            <section>Color Rendering Details</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Exterior Project Details --></label>
+            <section>Exterior Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- Interior Project Details --></label>
+            <section>Interior Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pro Services --></label>
+            <section>Pro Services</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- Report Links --></label>
+            <section>Report Links</section>
+        </sections>
+        <sections>
+            <label><!-- Service Guidelines --></label>
+            <section>Service Guidelines</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Information --></label>
+            <section>Shipping Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Behr Credit Review Case Layout</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Administrator Only --></label>
+            <section>Administrator Only</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Finance --></label>
+            <section>Finance</section>
+        </sections>
+        <sections>
+            <label><!-- Report Links --></label>
+            <section>Report Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Behr Digital Renderings Layout</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Administrator Only --></label>
+            <section>Administrator Only</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Digital Rendering --></label>
+            <section>Digital Rendering</section>
+        </sections>
+        <sections>
+            <label><!-- Pro Services --></label>
+            <section>Pro Services</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- Report Links --></label>
+            <section>Report Links</section>
+        </sections>
+        <sections>
+            <label><!-- Service Guidelines --></label>
+            <section>Service Guidelines</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Information --></label>
+            <section>Shipping Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Behr Draw Downs Layout</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Administrator Only --></label>
+            <section>Administrator Only</section>
+        </sections>
+        <sections>
+            <label><!-- Descrption --></label>
+            <section>Descrption</section>
+        </sections>
+        <sections>
+            <label><!-- Pro Services --></label>
+            <section>Pro Services</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- Report Links --></label>
+            <section>Report Links</section>
+        </sections>
+        <sections>
+            <label><!-- Service Guidelines --></label>
+            <section>Service Guidelines</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Information --></label>
+            <section>Shipping Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Behr Job Sheet Layout</layout>
+        <sections>
+            <label><!-- Administrator Only --></label>
+            <section>Administrator Only</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Finance --></label>
+            <section>Finance</section>
+        </sections>
+        <sections>
+            <label><!-- Job Information --></label>
+            <section>Job Information</section>
+        </sections>
+        <sections>
+            <label><!-- Report Links --></label>
+            <section>Report Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Behr Specification Case Layout</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Administrator Only --></label>
+            <section>Administrator Only</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Pro Services --></label>
+            <section>Pro Services</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- Report Links --></label>
+            <section>Report Links</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Behr Yard Sign / Pro Rewards Card Case Layout</layout>
+        <sections>
+            <label><!-- Account Details --></label>
+            <section>Account Details</section>
+        </sections>
+        <sections>
+            <label><!-- Administrator Only --></label>
+            <section>Administrator Only</section>
+        </sections>
+        <sections>
+            <label><!-- Description --></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label><!-- Pro Rewards Card Details --></label>
+            <section>Pro Rewards Card Details</section>
+        </sections>
+        <sections>
+            <label><!-- Pro Services --></label>
+            <section>Pro Services</section>
+        </sections>
+        <sections>
+            <label><!-- Project Details --></label>
+            <section>Project Details</section>
+        </sections>
+        <sections>
+            <label><!-- Report Links --></label>
+            <section>Report Links</section>
+        </sections>
+        <sections>
+            <label><!-- Samples --></label>
+            <section>Samples</section>
+        </sections>
+        <sections>
+            <label><!-- Service Guidelines --></label>
+            <section>Service Guidelines</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Information --></label>
+            <section>Shipping Information</section>
+        </sections>
+        <sections>
+            <label><!-- Yard Sign Details --></label>
+            <section>Yard Sign Details</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Case Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>China Inquiry Case Layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>China Issue Case layout</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>现场检验记录</label>
+            <section>Field Inspection Record</section>
+        </sections>
+        <sections>
+            <label>项目信息</label>
+            <section>Project Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- NewChildCase --></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Color Recommendation --></label>
+        <name>Behr_Case_Color_Recommendation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Yard Sign / Pro Rewards Card --></label>
+        <name>Behr_Case_Yard_Sign</name>
+    </recordTypes>
+    <recordTypes>
+        <label>询问案例</label>
+        <name>China_Inquiry_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <label>投诉案例</label>
+        <name>China_Issue_Case</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Color Book/Board --></label>
+        <name>Color_Book_Board</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Color Formula --></label>
+        <name>Color_Formula</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Color Matching --></label>
+        <name>Color_Matching</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Credit Review --></label>
+        <name>Credit_Review</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Digital Renderings --></label>
+        <name>Digital_Renderings</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Draw Downs --></label>
+        <name>Draw_Downs</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Job Sheet --></label>
+        <name>Job_Sheet</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Specification --></label>
+        <name>Specification</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- US Case --></label>
+        <name>US_Case</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- The owner is required. --></errorMessage>
+        <name>Case_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not authorized to change the case status. --></errorMessage>
+        <name>Case_status_change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Date needed by&apos; cannot be less than 5 days from the service requested date --></errorMessage>
+        <name>Close_Out_Book_Date_Needed_By</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Date needed by&apos; cannot be less than 14 days from the service requested date --></errorMessage>
+        <name>Color_Board_Date_Needed_By</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Date needed by&apos; cannot be less than 4 days from the service requested date. --></errorMessage>
+        <name>Color_Book_Date_Needed_By</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Date needed by&apos; cannot be less than 1 day from the service requested date. --></errorMessage>
+        <name>Color_Formula_Date_Needed_By</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Date needed by&apos; cannot be less than 3 days from the service requested date. --></errorMessage>
+        <name>Color_Matching_Date_Needed_By</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Date needed by&apos; cannot be less than 2 days from the service requested date. --></errorMessage>
+        <name>Color_Reccomendation_Date_Needed_By</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Date needed by&apos; cannot be less than 5 days from the service requested date --></errorMessage>
+        <name>Color_Submittal_Date_Needed_By</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Date needed by&apos; cannot be less than 3 days from the service requested date. --></errorMessage>
+        <name>Digital_Rendering_Date_Needed_By</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Date needed by&apos; cannot be less than 3 days from the service requested date. --></errorMessage>
+        <name>Draw_Down_Date_Needed_By</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a value --></errorMessage>
+        <name>HOA_service_rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the hot rush reason. --></errorMessage>
+        <name>Hot_Rush_Reason_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please specify other colors. --></errorMessage>
+        <name>Other_Colors_Validation_Rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Date needed by&apos; cannot be less than 14 days from the service requested date. --></errorMessage>
+        <name>Pro_Rewards_Card_Date_Needed_by</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Do not enter data in the Yard Sign Details section when requesting a Pro Rewards Card. --></errorMessage>
+        <name>Pro_Rewards_Card_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Do not enter data in the Pro Rewards Card Details section when requesting a Yard Sign. --></errorMessage>
+        <name>Yard_Sign_Fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Date needed by&apos; cannot be less than 21 days from the service requested date. --></errorMessage>
+        <name>Yard_sign_Date_Needed_by</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Close_Case_China --></label>
+        <name>Close_Case_China</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Color_Book_Report --></label>
+        <name>Color_Book_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Color_Formula_Report --></label>
+        <name>Color_Formula_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Digital_Rendering_report --></label>
+        <name>Digital_Rendering_report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Draw_down_report --></label>
+        <name>Draw_down_report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Case --></label>
+        <name>New_Case</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SAP_account_Sync --></label>
+        <name>SAP_account_Sync</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_Email --></label>
+        <name>Send_Email</name>
+    </webLinks>
+</CustomObjectTranslation>

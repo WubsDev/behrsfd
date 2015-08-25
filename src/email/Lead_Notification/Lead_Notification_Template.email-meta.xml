@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>BEhr_Lead Notification Template_US</name>
+    <style>none</style>
+    <subject>The Lead &quot;{!Lead.Company}&quot; has been assigned to you</subject>
+    <type>custom</type>
+</EmailTemplate>

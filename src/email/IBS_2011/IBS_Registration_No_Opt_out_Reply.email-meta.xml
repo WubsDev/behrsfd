@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>IBS Registration web to lead No Opt-out reply template</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>IBS Registration No Opt-out Reply</name>
+    <style>none</style>
+    <subject>Congratulations! Your IBS Registration has been received.</subject>
+    <type>custom</type>
+</EmailTemplate>

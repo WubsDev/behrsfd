@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Email template for customer attended for FMF</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FMF_Customers Attended_1</name>
+    <style>none</style>
+    <subject>Great to see you again, {!Contact.FirstName}</subject>
+    <textOnly>Hi {!Contact.FirstName}, 
+
+Thank you for for visting BehrPro at the 2013 Federación Mexicana de Fútbol Asociación event in Phoenix.  Here is an overview of some of the color services we can offer {!Account.Contact_Name__c}. Please call me at {!Account.OwnerPhone} for info on BEHR® and KILZ® products or professional color services.
+
+Let Us Help You Simplify The Color Process. Download PDF Brochure at www.behrpro.com/fmfcolorservices
+
+Expert Color Recommendations
+Custom Color Renderings
+Pinpoint Color Matching
+Drawdown Samples
+Other Customized Color Support Tools
+
+Help Your Customers Make Color Decisions Faster  Download our ColorSmart by BEHRapp directly from www.behrpro.com/fmfcolorsmartmobile on your  iPhone®, iPod touch®  , iPad®  or Android mobile device, or view the Web version at www.behrpro.com/fmfexplorecolornow
+
+Sincerely, 
+{!Account.OwnerFullName}
+{!Account.OwnerTitle}
+{!Account.OwnerPhone}
+{!Account.OwnerEmail}
+
+You have opted-in to receive email newsletters from BehrPro. If you no longer wish to receive promotional notifications and news, please send us an email at unsubscribe@pronews.behrpro.com
+
+If this email has been forwarded to you and you wish to subscribe, please send us an email at subscribe@pronews.behrpro.com
+
+To read our Privacy Policy go to www.behrpro.com/privacypolicy
+
+We recently updated our Privacy Policy. If you wish to change your preferences, please follow the directions in the Privacy Policy.
+
+Trademarks are the property of their respective owners.
+
+©2013 Behr Process Corporation. All Rights Reserved.
+
+Behr Process Corporation
+3400 W. Segerstrom Avenue
+Santa Ana, CA 92704</textOnly>
+    <type>custom</type>
+</EmailTemplate>

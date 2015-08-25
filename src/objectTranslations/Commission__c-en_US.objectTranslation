@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Shared Revenue</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Shared Revenues</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Shared Revenues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Behr Liquid Sales Contribution --></label>
+        <name>Behr_Liquid_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bid Oppty&apos;s Contribution --></label>
+        <name>Bid_Oppty_s_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- C&amp;C Sales Contribution --></label>
+        <name>C_C_Sales_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- DTP Sales (YTD) Contribution --></label>
+        <name>DTP_Sales_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- DTP (YTD) Direct To Store Contribution --></label>
+        <name>DTP_YTD_Direct_To_Store_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- DTP (YTD) Will Call Contribution --></label>
+        <name>DTP_YTD_Will_Call_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- DTP (YTD) Direct to Site Contribution --></label>
+        <name>DTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Active --></label>
+        <name>Is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Shared Revenues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Percent of Sale --></label>
+        <name>Percent_of_Sale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Oppty&apos;s Contribution --></label>
+        <name>Potential_Oppty_s_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- SO Sales Contribution --></label>
+        <name>SO_Sales_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Amount Contribution --></label>
+        <name>Sales_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Team Member --></label>
+        <name>Sales_Team_Member__c</name>
+        <relationshipLabel><!-- Shared Revenues --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Est.potential Mid Year Contribution --></label>
+        <name>TGP_Mid_Year_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est.potential start Contributiion --></label>
+        <name>TGP_Start_Contribution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Behr SO Sales April --></label>
+        <name>Total_Behr_SO_Sales_April__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Behr SO Sales August --></label>
+        <name>Total_Behr_SO_Sales_August__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Behr SO Sales December --></label>
+        <name>Total_Behr_SO_Sales_December__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Behr SO Sales February --></label>
+        <name>Total_Behr_SO_Sales_February__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Behr SO Sales January --></label>
+        <name>Total_Behr_SO_Sales_January__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Behr SO Sales July --></label>
+        <name>Total_Behr_SO_Sales_July__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Behr SO Sales June --></label>
+        <name>Total_Behr_SO_Sales_June__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Behr SO Sales March --></label>
+        <name>Total_Behr_SO_Sales_March__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Behr SO Sales May --></label>
+        <name>Total_Behr_SO_Sales_May__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Behr SO Sales November --></label>
+        <name>Total_Behr_SO_Sales_November__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Behr SO Sales October --></label>
+        <name>Total_Behr_SO_Sales_October__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Behr SO Sales September --></label>
+        <name>Total_Behr_SO_Sales_September__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash &amp; Carry Sales April --></label>
+        <name>Total_Cash_Carry_Sales_April__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash &amp; Carry Sales August --></label>
+        <name>Total_Cash_Carry_Sales_August__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash &amp; Carry Sales December --></label>
+        <name>Total_Cash_Carry_Sales_December__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash &amp; Carry Sales February --></label>
+        <name>Total_Cash_Carry_Sales_February__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash &amp; Carry Sales January --></label>
+        <name>Total_Cash_Carry_Sales_January__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash &amp; Carry Sales July --></label>
+        <name>Total_Cash_Carry_Sales_July__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash &amp; Carry Sales June --></label>
+        <name>Total_Cash_Carry_Sales_June__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash &amp; Carry Sales March --></label>
+        <name>Total_Cash_Carry_Sales_March__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash &amp; Carry Sales May --></label>
+        <name>Total_Cash_Carry_Sales_May__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash &amp; Carry Sales November --></label>
+        <name>Total_Cash_Carry_Sales_November__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash &amp; Carry Sales October --></label>
+        <name>Total_Cash_Carry_Sales_October__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cash &amp; Carry Sales September --></label>
+        <name>Total_Cash_Carry_Sales_September__c</name>
+    </fields>
+    <layouts>
+        <layout>Commission Layout</layout>
+        <sections>
+            <label><!-- Account Level Contributions --></label>
+            <section>Account Level Contributions</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Level Contributions --></label>
+            <section>Opportunity Level Contributions</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- &quot;The Sum of Percent Sale Contribution exceeds 100.Please modify the Percent Sale so that total Percent is 100&quot; --></errorMessage>
+        <name>PercentOfSale_Rollup</name>
+    </validationRules>
+</CustomObjectTranslation>

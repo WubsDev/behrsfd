@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CaseSharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <ownerRules>
+        <fullName>China_Case_Sharing</fullName>
+        <sharedTo>
+            <group>China_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>China_Users</group>
+        </sharedFrom>
+        <caseAccessLevel>Edit</caseAccessLevel>
+        <name>China Case Sharing</name>
+    </ownerRules>
+    <ownerRules>
+        <fullName>US_Case_Sharring</fullName>
+        <sharedTo>
+            <group>US_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>US_Users</group>
+        </sharedFrom>
+        <caseAccessLevel>Edit</caseAccessLevel>
+        <name>US Case Sharring</name>
+    </ownerRules>
+</CaseSharingRules>

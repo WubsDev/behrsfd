@@ -1,0 +1,113 @@
+<apex:page standardController="Lead" extensions="Behr_LeadPDF_Controller"  showHeader="true" standardStylesheets="true">
+
+
+  <html>
+      <head>
+       <style type="text/css">
+           .collapseBor {
+                border-collapse: collapse;
+            }
+            
+            .border {
+                border: 1px solid black;
+            }             
+       </style>
+      </head>
+<body>
+<apex:form >
+         <apex:pageBlock rendered="{!err=true}" >
+         
+       <apex:pageMessages />
+       <apex:pageBlockButtons location="bottom">
+        <apex:commandButton action="{!Cancel}" value="Cancel"/>
+       </apex:pageBlockButtons>
+         </apex:pageBlock>
+   <apex:pageBlock rendered="{!err=false}">
+<table width="100%" style="font-family:'Arial Unicode MS';">
+    <tr>
+        <td width= "20%"></td>
+        <td width= "50%"></td>
+        <td width= "50%" style="font-size: 13px;" Align="right">Confidential Pricing by Behr</td>
+    </tr>
+    <tr>
+        <td width="20%"><apex:image url="{!$Resource.Behr_logo2}" width="150" height="70" /></td>
+        <td width="50%" style="font-size: 20px; font-weight: bold; padding-left: 50px;" Align="center">PRICING SHEET</td>
+        <td width="50%"></td>
+    </tr>
+</table>
+
+  
+   <br></br>
+   <br></br>
+
+   
+    <apex:pageBlockTable style="font-family:'Arial Unicode MS';" value="{!Lead}" var="l">
+      <apex:column >
+         <apex:outputField value="{!Lead.Name}"/>
+         <br></br>
+         <br></br>
+         <apex:outputField value="{!Lead.Company}"/>
+         <br></br>
+         <apex:outputField value="{!Lead.Street}"/> ,
+         <apex:outputField value="{!Lead.City}"/> - 
+         <apex:outputField value="{!Lead.PostalCode}"/><br></br> 
+         <apex:outputField value="{!Lead.State}"/> ,
+         <apex:outputField value="{!Lead.Country}"/> 
+      </apex:column>
+    </apex:pageBlockTable>
+    <apex:pageBlockTable style="font-family:'Arial Unicode MS';" value="{!us}" var="u">
+      <apex:column >
+         <br></br>
+         <apex:outputText >For questions contact:</apex:outputText><br></br>
+         <br></br>
+         <apex:outputText value="{!u.Name}"/>
+         <br></br>
+         <apex:outputText value="{!u.Email}"/><br></br>
+         <apex:outputText value="{!u.Phone}"/>
+         <br></br>
+         <br></br>
+      </apex:column>
+    </apex:pageBlockTable>
+  
+   
+   <table cellpadding="5" width="100%" style = "font-family:'Arial Unicode MS'; font-size: 14px; border-collapse: collapse;">
+     <tr>
+       <th width="20%" style="border: 1px solid white; font-size: 16px; background: #FF8000; text-align: center;">Product Code</th>
+       <th width="70%" style="border: 1px solid white; font-size: 16px; background: #FF8000; text-align: center;">Product Description</th>
+       <th width="30%" style="border: 1px solid white; font-size: 16px; background: #FF8000; text-align: center;">Price</th>
+     </tr>
+   
+   <apex:repeat value="{!priceList}" var="PL">
+    
+     <tr>
+       <td width="20%" style="background:#efefef; border: 1px solid white; font-face: arial;">{!PL.Product_Code__c }</td>
+       <td width="70%" style="background:#efefef; border: 1px solid white; font-face: arial;">{!PL.Product__r.Name}</td>
+       <td width="30%" style="background:#efefef; border: 1px solid white; font-face: arial;">{!PL.Price__c}</td>
+     </tr>
+     </apex:repeat>
+    </table>
+<br></br> 
+         <br></br>
+         <br></br>
+         <br></br> 
+         <br></br>
+         <br></br>
+
+   <table border="0" width="100%" style="font-size:10pt;font-family:'Arial Unicode MS';color:gray;" >
+        <tr>
+            <td>NOTE: This quote applies only to you and expires 30 days from the date of issuance.  You can accept this quote by placing an order or by signing this quote and returning it to Behr Process Corporation.  Behr Process Corporation may withdraw this quote at any time prior to your acceptance.  This quote and all sales are subject to the Standard Sales Terms and Conditions as in effect from time to time, which are incorporated herein by reference and are available at www.behr.com or by requesting a copy from us at 714-545-7101.</td>
+        </tr>
+    </table>
+   
+    <apex:pageBlockButtons location="bottom">
+        <apex:commandButton action="{!savePdf}" value="Send mail & attach" />
+        <apex:commandButton action="{!Cancel}" value="Cancel"/>
+      </apex:pageBlockButtons>
+      
+  
+</apex:pageBlock>   
+</apex:form>
+ 
+</body>
+</html> 
+ </apex:page>

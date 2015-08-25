@@ -1,0 +1,18 @@
+The Case "{!Case.CaseNumber}" is ready to be worked on.
+
+Requester:  {!Case.Requester__c}
+Account Name: {!Case.Account}
+Contact Name: {!Case.Contact}
+Opportunity Name: {!Case.Opportunity__c}
+Estimated Spend: {!Case.Estimated_Spend_Amount__c}
+YTD Sales : {!Case.YTD_Sales__c}
+
+Case Type: {!Case.RecordType}
+Date Need By: {!Case.Date_Needed_By__c}
+Hot Rush: {!Case.Hot_Rush__c}
+Hot Rush Reason: {!Case.Hot_Rush_Reason__c}
+Ship To: {!Case.Ship_To__c}
+
+Date: {!TODAY()}
+
+Link to Case Record: {!Case.Link}

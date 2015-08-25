@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account ID --></label>
+        <name>Account_ID__c</name>
+    </fields>
+    <fields>
+        <label>城市</label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Full Name --></label>
+        <name>Contact_Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact me Now --></label>
+        <name>Contact_me_Now__c</name>
+    </fields>
+    <fields>
+        <label>国家</label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Description --></label>
+        <name>Data_Quality_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Score --></label>
+        <name>Data_Quality_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- DupeBlocker Insert Action --></label>
+        <name>DupeBlocker_Insert_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- DupeBlocker Update Action --></label>
+        <name>DupeBlocker_Update_Action__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Buy Signals --></label>
+        <name>EDP1__BuySignals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Activity Date --></label>
+        <name>EDP1__MostRecentActivityDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Buy Signal Date --></label>
+        <name>EDP1__MostRecentBuySignalDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Inbound Activity --></label>
+        <name>EDP1__TotalInboundActivity__c</name>
+    </fields>
+    <fields>
+        <label>学历</label>
+        <name>Education__c</name>
+        <picklistValues>
+            <masterLabel>Associate  Degree</masterLabel>
+            <translation>专科毕业</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>College</masterLabel>
+            <translation>大学</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctorial</masterLabel>
+            <translation>博士</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>High School</masterLabel>
+            <translation>高中毕业</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master</masterLabel>
+            <translation>研究生</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Eloqua Lead Rating --></label>
+        <name>Eloqua_Lead_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Opt In --></label>
+        <name>Email_Opt_In__c</name>
+    </fields>
+    <fields>
+        <label>家庭结构</label>
+        <name>Family_Composition__c</name>
+    </fields>
+    <fields>
+        <label>性别</label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>Female</masterLabel>
+            <translation>女</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Male</masterLabel>
+            <translation>男</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Hear About Behr --></label>
+        <name>Hear_About_Behr__c</name>
+    </fields>
+    <fields>
+        <label>高频联系人</label>
+        <name>HiTouchContact__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBS 2011 Gift Name --></label>
+        <name>IBS_2011_Gift_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- IBS Source --></label>
+        <name>IBS_Source__c</name>
+    </fields>
+    <fields>
+        <label>询问内容</label>
+        <name>Inquire_about__c</name>
+        <picklistValues>
+            <masterLabel>Feedback</masterLabel>
+            <translation>意见反馈</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issue</masterLabel>
+            <translation>投诉</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>其它</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product General</masterLabel>
+            <translation>产品信息</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotion</masterLabel>
+            <translation>促销信息</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store locator</masterLabel>
+            <translation>寻找门店</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interested In --></label>
+        <name>Interested_In__c</name>
+        <picklistValues>
+            <masterLabel>Exterior Paint</masterLabel>
+            <translation><!-- Exterior Paint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faux Finishes</masterLabel>
+            <translation><!-- Faux Finishes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Floor Coatings</masterLabel>
+            <translation><!-- Floor Coatings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior Paint</masterLabel>
+            <translation><!-- Interior Paint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stains</masterLabel>
+            <translation><!-- Stains --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Behr In-Store Rep</masterLabel>
+            <translation><!-- Behr In-Store Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Behr PPSSS</masterLabel>
+            <translation><!-- Behr PPSSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BehrPRO Rep</masterLabel>
+            <translation><!-- BehrPRO Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Depot</masterLabel>
+            <translation><!-- Home Depot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mktg-driven National Event/Trade Show</masterLabel>
+            <translation><!-- Mktg-driven National Event/Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAM</masterLabel>
+            <translation><!-- NAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAM</masterLabel>
+            <translation><!-- RAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Event/Trade Show</masterLabel>
+            <translation><!-- Regional Event/Trade Show --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Score --></label>
+        <name>Lead_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source-Most Recent --></label>
+        <name>Lead_Source_Most_Recent__c</name>
+        <picklistValues>
+            <masterLabel>ARCAT</masterLabel>
+            <translation><!-- ARCAT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Behr In-Store Rep</masterLabel>
+            <translation><!-- Behr In-Store Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BehrPRO Rep</masterLabel>
+            <translation><!-- BehrPRO Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BehrPro Website</masterLabel>
+            <translation><!-- BehrPro Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COPA</masterLabel>
+            <translation><!-- COPA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash &amp; Carry Pilot</masterLabel>
+            <translation><!-- Cash &amp; Carry Pilot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold Call - Job Site</masterLabel>
+            <translation><!-- Cold Call - Job Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold Call- THD In Store</masterLabel>
+            <translation><!-- Cold Call- THD In Store --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor Trade Show</masterLabel>
+            <translation><!-- Contractor Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Recommendation</masterLabel>
+            <translation><!-- Customer Recommendation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DTP Drivers</masterLabel>
+            <translation><!-- DTP Drivers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dodge Report</masterLabel>
+            <translation><!-- Dodge Report --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EVO Mkt Solutions</masterLabel>
+            <translation><!-- EVO Mkt Solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FMF Event</masterLabel>
+            <translation><!-- FMF Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Services InstallCompanies Mobile Marketing Tour 2013</masterLabel>
+            <translation><!-- Home Services InstallCompanies Mobile Marketing Tour 2013 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiview PDCA Banner</masterLabel>
+            <translation><!-- Multiview PDCA Banner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAHRO</masterLabel>
+            <translation><!-- NAHRO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National Organization</masterLabel>
+            <translation><!-- National Organization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased List</masterLabel>
+            <translation><!-- Purchased List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store Carryout</masterLabel>
+            <translation><!-- Store Carryout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store Carryout THD</masterLabel>
+            <translation><!-- Store Carryout THD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THD National Account Trade Shows</masterLabel>
+            <translation><!-- THD National Account Trade Shows --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THD PAR</masterLabel>
+            <translation><!-- THD PAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THD PASA</masterLabel>
+            <translation><!-- THD PASA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THD PPSS</masterLabel>
+            <translation><!-- THD PPSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THD Pro Blitz</masterLabel>
+            <translation><!-- THD Pro Blitz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Association</masterLabel>
+            <translation><!-- Trade Association --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Magazine Publication</masterLabel>
+            <translation><!-- Trade Magazine Publication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tyson Trial Program</masterLabel>
+            <translation><!-- Tyson Trial Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US Communities</masterLabel>
+            <translation><!-- US Communities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web to Lead</masterLabel>
+            <translation><!-- Web to Lead --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Like to Receive Behr News &amp; Offers --></label>
+        <name>Like_to_Receive_Behr_News_Offers__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>婚姻状况</label>
+        <name>Marital_Status__c</name>
+        <picklistValues>
+            <masterLabel>Married</masterLabel>
+            <translation>已婚</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation>单身</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>员工人数</label>
+        <name>No_of_Employee__c</name>
+    </fields>
+    <fields>
+        <label>职业</label>
+        <name>Occupation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Lead Source Description --></label>
+        <name>Other_Lead_Source_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Position/Title --></label>
+        <name>Position_Title__c</name>
+        <picklistValues>
+            <masterLabel>Administration</masterLabel>
+            <translation><!-- Administration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Architect, Designer, Engineer</masterLabel>
+            <translation><!-- Architect, Designer, Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction Management</masterLabel>
+            <translation><!-- Construction Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estimating</masterLabel>
+            <translation><!-- Estimating --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information &amp; Technology</masterLabel>
+            <translation><!-- Information &amp; Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner, Principal or Partner</masterLabel>
+            <translation><!-- Owner, Principal or Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>President &amp; CEO</masterLabel>
+            <translation><!-- President &amp; CEO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchasing</masterLabel>
+            <translation><!-- Purchasing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales &amp; Marketing</masterLabel>
+            <translation><!-- Sales &amp; Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VP/General Manager</masterLabel>
+            <translation><!-- VP/General Manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>职位</label>
+        <name>Postition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Method of Contact --></label>
+        <name>Preferred_Method_of_Contact__c</name>
+        <picklistValues>
+            <masterLabel>E-Mail</masterLabel>
+            <translation><!-- E-Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail</masterLabel>
+            <translation><!-- Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Occupation --></label>
+        <name>Primary_Occupation__c</name>
+        <picklistValues>
+            <masterLabel>Accounting</masterLabel>
+            <translation><!-- Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Architecture, Planner, Designer, Engineer</masterLabel>
+            <translation><!-- Architecture, Planner, Designer, Engineer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Building Materials/Lumber</masterLabel>
+            <translation><!-- Building Materials/Lumber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial Building</masterLabel>
+            <translation><!-- Commercial Building --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Computer Products/Services</masterLabel>
+            <translation><!-- Computer Products/Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concrete Work</masterLabel>
+            <translation><!-- Concrete Work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical Work</masterLabel>
+            <translation><!-- Electrical Work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Engineering</masterLabel>
+            <translation><!-- Engineering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Services</masterLabel>
+            <translation><!-- Financial Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Floor Coverings</masterLabel>
+            <translation><!-- Floor Coverings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Contracting</masterLabel>
+            <translation><!-- General Contracting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home &amp; Building Manufacture (Panelized &amp; Log)</masterLabel>
+            <translation><!-- Home &amp; Building Manufacture (Panelized &amp; Log) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industry Consultant</masterLabel>
+            <translation><!-- Industry Consultant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance and Title Companies</masterLabel>
+            <translation><!-- Insurance and Title Companies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International Exporter - Wholesale</masterLabel>
+            <translation><!-- International Exporter - Wholesale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Land Development</masterLabel>
+            <translation><!-- Land Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal Services</masterLabel>
+            <translation><!-- Legal Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing of Modular/Panelized/Log Homes</masterLabel>
+            <translation><!-- Manufacturing of Modular/Panelized/Log Homes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Masonry/Stone Work/Tile/Plaster Work</masterLabel>
+            <translation><!-- Masonry/Stone Work/Tile/Plaster Work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multifamily Development - Affordable Rental</masterLabel>
+            <translation><!-- Multifamily Development - Affordable Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multifamily Development - Condo/Coop Units</masterLabel>
+            <translation><!-- Multifamily Development - Condo/Coop Units --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multifamily Development - Market Rate Rental</masterLabel>
+            <translation><!-- Multifamily Development - Market Rate Rental --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multifamily General Contracting</masterLabel>
+            <translation><!-- Multifamily General Contracting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Wholesale Dealership</masterLabel>
+            <translation><!-- Other Wholesale Dealership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paint/Wall Coverings</masterLabel>
+            <translation><!-- Paint/Wall Coverings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planner/Designer</masterLabel>
+            <translation><!-- Planner/Designer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plumbing/HVAC/Insulation</masterLabel>
+            <translation><!-- Plumbing/HVAC/Insulation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Manufacture and/or Representative</masterLabel>
+            <translation><!-- Product Manufacture and/or Representative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Property Management</masterLabel>
+            <translation><!-- Property Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate/Investing/Appraisals</masterLabel>
+            <translation><!-- Real Estate/Investing/Appraisals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remodeling - Commercial</masterLabel>
+            <translation><!-- Remodeling - Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remodeling - Green Residential</masterLabel>
+            <translation><!-- Remodeling - Green Residential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remodeling - Residential</masterLabel>
+            <translation><!-- Remodeling - Residential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Dealership/Distributors</masterLabel>
+            <translation><!-- Retail Dealership/Distributors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Roofing/Siding/Sheet Metal Work</masterLabel>
+            <translation><!-- Roofing/Siding/Sheet Metal Work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales/Marketing, Advertising/Market Research (PR)</masterLabel>
+            <translation><!-- Sales/Marketing, Advertising/Market Research (PR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Family - Custom Building</masterLabel>
+            <translation><!-- Single Family - Custom Building --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Family - General Contracting</masterLabel>
+            <translation><!-- Single Family - General Contracting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Family - Green Building</masterLabel>
+            <translation><!-- Single Family - Green Building --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Family - Spec/Tract Building</masterLabel>
+            <translation><!-- Single Family - Spec/Tract Building --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subcontractor and/or Specialty Trade Contractors</masterLabel>
+            <translation><!-- Subcontractor and/or Specialty Trade Contractors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wholesale Dealers/Distributors</masterLabel>
+            <translation><!-- Wholesale Dealers/Distributors --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Product Interest --></label>
+        <name>Primary_Product_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Concrete &amp; Masonry Waterproofers and Sealers</masterLabel>
+            <translation><!-- Concrete &amp; Masonry Waterproofers and Sealers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exterior Paint and Primers</masterLabel>
+            <translation><!-- Exterior Paint and Primers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exterior Specialty Coatings</masterLabel>
+            <translation><!-- Exterior Specialty Coatings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exterior Specialty Paint and Primers</masterLabel>
+            <translation><!-- Exterior Specialty Paint and Primers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Faux &amp; Decorative Finishes</masterLabel>
+            <translation><!-- Faux &amp; Decorative Finishes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior Paint and Primers</masterLabel>
+            <translation><!-- Interior Paint and Primers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior Specialty Coatings</masterLabel>
+            <translation><!-- Interior Specialty Coatings --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interior Specialty Paints and Primers</masterLabel>
+            <translation><!-- Interior Specialty Paints and Primers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wood Stains &amp; Waterproofers</masterLabel>
+            <translation><!-- Wood Stains &amp; Waterproofers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Store --></label>
+        <name>Primary_Store__c</name>
+    </fields>
+    <fields>
+        <label><!-- Purchased Behr? --></label>
+        <name>Purchased_Behr__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Register at Show Village --></label>
+        <name>Register_at_Show_Village__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registered At Booth --></label>
+        <name>Registered_At_Booth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registerred at Lounge --></label>
+        <name>Registerred_at_Lounge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Decision Maker</masterLabel>
+            <translation><!-- Decision Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencer</masterLabel>
+            <translation><!-- Influencer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neither/Other</masterLabel>
+            <translation><!-- Neither/Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>SAP 客户编号</label>
+        <name>SAP_Store_No__c</name>
+    </fields>
+    <fields>
+        <label>备用电子邮件</label>
+        <name>Secondary_email__c</name>
+    </fields>
+    <fields>
+        <label>备用电话</label>
+        <name>Secondary_phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services Requested --></label>
+        <name>Services_Requested__c</name>
+        <picklistValues>
+            <masterLabel>Color Services</masterLabel>
+            <translation><!-- Color Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Consultation</masterLabel>
+            <translation><!-- Consultation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivery/Factory Tinting</masterLabel>
+            <translation><!-- Delivery/Factory Tinting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Express Store Service</masterLabel>
+            <translation><!-- Express Store Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Site Visits</masterLabel>
+            <translation><!-- Job Site Visits --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Job Specification</masterLabel>
+            <translation><!-- Job Specification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None Requested</masterLabel>
+            <translation><!-- None Requested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Services(s) Not Listed</masterLabel>
+            <translation><!-- Other Services(s) Not Listed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing</masterLabel>
+            <translation><!-- Pricing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Information</masterLabel>
+            <translation><!-- Product Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terms/Credit</masterLabel>
+            <translation><!-- Terms/Credit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>零售店面积</label>
+        <name>Size_of_store__c</name>
+    </fields>
+    <fields>
+        <label>社交网站帐户名</label>
+        <name>Social_Network_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label>社交网站帐户名</label>
+        <name>Social_Network_Account__c</name>
+        <picklistValues>
+            <masterLabel>QQ</masterLabel>
+            <translation><!-- QQ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RenRen</masterLabel>
+            <translation>人人</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weibo</masterLabel>
+            <translation>微薄</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>省份</label>
+        <name>State_Province__c</name>
+        <picklistValues>
+            <masterLabel>Anhui</masterLabel>
+            <translation>安徽</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beijing</masterLabel>
+            <translation>北京</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chongqing</masterLabel>
+            <translation>重庆</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fujian</masterLabel>
+            <translation>福建</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gansu</masterLabel>
+            <translation>甘肃</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guangdong</masterLabel>
+            <translation>广东</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guangxi</masterLabel>
+            <translation>广西</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guizhou</masterLabel>
+            <translation>贵州</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hainan</masterLabel>
+            <translation>海南</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hebei</masterLabel>
+            <translation>河北</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heilongjiang</masterLabel>
+            <translation>黑龙江</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Henan</masterLabel>
+            <translation>河南</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hubei</masterLabel>
+            <translation>湖北</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hunan</masterLabel>
+            <translation>湖南</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jiangsu</masterLabel>
+            <translation>江苏</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jiangxi</masterLabel>
+            <translation>江西</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jilin</masterLabel>
+            <translation>吉林</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liaoning</masterLabel>
+            <translation>辽宁</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nei Mongol</masterLabel>
+            <translation>内蒙古</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ningxia</masterLabel>
+            <translation>宁夏</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qinghai</masterLabel>
+            <translation>青海</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shaanxi</masterLabel>
+            <translation>陕西</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shandong</masterLabel>
+            <translation>山东</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shanghai</masterLabel>
+            <translation>上海</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shanxi</masterLabel>
+            <translation>山西</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sichuan</masterLabel>
+            <translation>四川</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tianjin</masterLabel>
+            <translation>天津</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tibet</masterLabel>
+            <translation>西藏</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Xinjiang</masterLabel>
+            <translation>新疆</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yunnan</masterLabel>
+            <translation>云南</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zhejiang</masterLabel>
+            <translation>浙江</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>零售店名称</label>
+        <name>Store_Name__c</name>
+    </fields>
+    <fields>
+        <label>零售店编号</label>
+        <name>Store_Number__c</name>
+    </fields>
+    <fields>
+        <label>地址</label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Lead Source --></label>
+        <name>Sub_Lead_Source__c</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate</masterLabel>
+            <translation><!-- Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BehrPro Website</masterLabel>
+            <translation><!-- BehrPro Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold Call</masterLabel>
+            <translation><!-- Cold Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor Trade Show</masterLabel>
+            <translation><!-- Contractor Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Referral</masterLabel>
+            <translation><!-- Customer Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DTP Driver</masterLabel>
+            <translation><!-- DTP Driver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMT</masterLabel>
+            <translation><!-- MMT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAR</masterLabel>
+            <translation><!-- PAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PASA</masterLabel>
+            <translation><!-- PASA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPSS</masterLabel>
+            <translation><!-- PPSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous Customer</masterLabel>
+            <translation><!-- Previous Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pro Rep Referral</masterLabel>
+            <translation><!-- Pro Rep Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased List</masterLabel>
+            <translation><!-- Purchased List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>See Trade Association/Affiliation</masterLabel>
+            <translation><!-- See Trade Association/Affiliation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store Walk In</masterLabel>
+            <translation><!-- Store Walk In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THD Pro Blitz</masterLabel>
+            <translation><!-- THD Pro Blitz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Magazine Publication</masterLabel>
+            <translation><!-- Trade Magazine Publication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web to Lead</masterLabel>
+            <translation><!-- Web to Lead --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Will be attending IBS 2011 --></label>
+        <name>Will_be_attending_IBS_2011__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>邮编</label>
+        <name>Zip_Postal_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>China Contact</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>空格</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Consumer</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Eloqua --></label>
+            <section>Eloqua</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Eloqua --></label>
+            <section>Eloqua</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Dealer Store</layout>
+        <sections>
+            <label>自定义链接</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>空格</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label>联系人</label>
+        <name>China_Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label>下属门店</label>
+        <name>Dealer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- US Contact --></label>
+        <name>US_Contact</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please enter either First Name and phone or email --></errorMessage>
+        <name>BEHR_Acct_FirstNameOrPhoneOrEmailReqd_US</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Delete --></label>
+        <name>MassManager__Mass_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit_Standard_Fields --></label>
+        <name>MassManager__Mass_Edit_Standard_Fields</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>MassManager__Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Re_subscribe_in_ExactTarget --></label>
+        <name>Re_subscribe_in_ExactTarget</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendExactTargetEmail --></label>
+        <name>SendExactTargetEmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+</CustomObjectTranslation>

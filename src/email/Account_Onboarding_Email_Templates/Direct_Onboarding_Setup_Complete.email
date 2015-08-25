@@ -1,0 +1,15 @@
+Account Name:{!Direct_Onboarding__c.Account_Name__c}
+SAP Number: {!SAP_Account_Number__c}
+
+
+Please email Customer Service directly when placing PRO Direct customer orders. 
+
+Email Address- propaint@mascocoatings.com   <CC: DC Pro Direct Facility>
+
+Customer Service Hours:
+M-F  6:30 AM – 5:30 PM- All time zones
+
+**Denver Super Center phone coverage to place orders 7:30 AM -4 PM MST**
+
+Link to Account Record: {!Direct_Onboarding__c.Account_Link__c} 
+Link to Direct Onboarding Record: {!Direct_Onboarding__c.Link}

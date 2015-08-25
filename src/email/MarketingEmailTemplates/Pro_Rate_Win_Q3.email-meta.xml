@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Rate Behr &amp; Kilz Products for a Chance to Win $250 THD Gift Card</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Pro Rate &amp; Win Q3</name>
+    <style>none</style>
+    <subject>Rate Behr &amp; Kilz Products for a Chance to Win $250 Home Depot Gift Card</subject>
+    <textOnly>{!Contact.FirstName},
+
+I just wanted to let you know we have a sweepstakes going on right now for our customers who use BEHR® and KILZ® products. Share your product feedback by submitting a review between July 17 and Aug 14 and you can enter for a chance to win a $250 Home Depot® gift card.
+
+Visit http://www.behr.com/pro/ratings-and-reviews to enter.
+
+Contact me if you need more information on our Primers and Paints, or have any questions.
+
+See you on the Job Site!
+
+Respectfully,
+
+Respectfully,
+{!Account.OwnerFullName}
+Professional Sales &amp; Services
+{!Account.OwnerPhone}
+{!Account.OwnerEmail}
+http://www.behrpro.com
+
+
+To enter, you must be at least 21 years of age, have read and agree to the  official sweepstakes rules and wish to participate. Rules can be viewed at http://www.behr.com/pro/sweepstakes-official-rules.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

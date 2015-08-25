@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Behr and KILZ Rate and Win $250 Home Depot Gift Card Sweepstakes</title>
+<meta name="viewport" content="width=device-width" />
+<style type="text/css">
+body {
+font-family: Arial, Helvetica, sans-serif;
+color: #000000;
+font-size: 14px;
+}
+img {
+border: none;
+}
+table {
+border-collapse: collapse;
+}
+@media only screen and (max-width:599px) {
+table[class=col] {
+display: block !important;
+width: 320px !important;
+}
+img[class=behrlogotop], img[class=imgvert] {
+width: 84px!important;
+height: auto!important;
+}
+img[class=imghd] {
+width: auto!important;
+height: 30px!important;
+}
+td[class=footer] { height:60px!important; }
+a[class=twitter] img, a[class=facebook] img {
+padding-bottom: 4px!important;
+height: 15px!important;
+width: 15px!important;
+}
+td[class=top_banner] {padding:10px!important;}
+img[class=entertowinbutton] { padding-top:15px!important; padding-left: 20px!important; }
+}
+</style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; margin: 0;padding: 0;width: 100% !important;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust:none;">
+<table width="100%" border="0" cellspacing="0">
+<tbody>
+<tr>
+<td align="center" valign="top"><table class="col" width="600" border="0" cellpadding="0" cellspacing="0" >
+<tbody>
+<tr>
+<td class="w20" width="25"></td>
+<td class="w560" height="15" width="550"></td>
+<td class="w20" width="25"></td>
+</tr>
+<tr>
+<td class="w20" width="25"></td>
+<td class="w560" width="550"><table style="padding-top:20px;background-color:#ffffff;" class="col" width="100%" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="" class="logo_holder" valign="top" width="50%" align="left"><a href="http://www.behrpro.com/BehrPro/prohome"> <img src="http://img03.en25.com/EloquaImages/clients/BehrProcessCorporation/{eedc1797-380a-4316-9c77-df9181d38200}_behr-kilz-logo.jpg" alt="BEHRPRO Kilz Logos" class="behrlogotop" style="border:none;width:196px;height:39px;"></a></td>
+
+</tr>
+<tr>
+<td colspan="2" align="left" valign="top" bgcolor="#FFFFFF" class="" style="">&nbsp;</td>
+</tr>
+
+</tbody>
+</table></td>
+<td class="w25" width="25"><br></td>
+</tr>
+<tr>
+<td class="w25" width="25"><br></td>
+<td width="550" align="left" valign="top" class="w560"><br>
+<p>{!Contact.FirstName},</p>
+
+<p>I just wanted to let you know we have a sweepstakes going on right now for our customers who use BEHR<sup>&reg;</sup> and KILZ<sup>&reg;</sup> products. Share your product feedback by submitting a review between July 17 and Aug 14 and you can enter for a chance to win a $250 Home Depot<sup>&reg;</sup> gift card.</p>
+<p><a href="http://www.behr.com/pro/ratings-and-reviews"><img src="http://img03.en25.com/EloquaImages/clients/BehrProcessCorporation/{74750cbd-12f8-4c9b-ba30-4efe4868665b}_rate-and-win-pro-image-2.jpg" width="550" Height="339"border="none" align="center"></a></p>
+
+<p><a href="http://www.behr.com/pro/ratings-and-reviews">Click here to enter for a chance to win</a>
+
+</p><p>Contact me if you need more information on our Primers and Paints, or have any questions.
+
+</p><p>See you on the Job Site!
+
+<p>Respectfully,<br /><br />
+{!Account.OwnerFullName}<br />
+Professional Sales & Services<br />
+{!Account.OwnerPhone}<br />
+{!Account.OwnerEmail}</p>
+<p><a href="http://www.behrpro.com"><img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj4s&oid=00D700000008FyN&lastMod=1381298465000" width="114" height="21" alt="behrpro.com" border="0" style="border:none;"></a></p>
+<p><font style size="-6"> To enter, you must be at least 21 years of age, have read and agree to the <a href="http://www.behr.com/pro/sweepstakes-official-rules"> official sweepstakes rules</a> and wish to participate.
+</font><p> </p></td>
+<td class="w20" width="25"><br></td>
+</tr>
+<tr>
+<td class="w25">&nbsp;</td>
+<td height="56" align="right" valign="middle" style=";padding-right:10px;" class="footer">&nbsp;<a href="http://www.behr.com/pro/special-offers-rebates"><img src="http://img03.en25.com/EloquaImages/clients/BehrProcessCorporation/{2fa8b65a-7652-44ad-9e55-791412a39c3d}_rate-and-win-pro-footer.jpg" height="46" Width="550" border="none" align="center"></a></td>
+<td class="w20">&nbsp;</td>
+</tr>
+
+</tbody>
+</table>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

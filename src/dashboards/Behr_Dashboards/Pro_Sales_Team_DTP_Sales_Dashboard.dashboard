@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dashboard xmlns="http://soap.sforce.com/2006/04/metadata">
+    <backgroundEndColor>#DDDDDD</backgroundEndColor>
+    <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
+    <backgroundStartColor>#BBBBBB</backgroundStartColor>
+    <dashboardType>SpecifiedUser</dashboardType>
+    <description>BehrPRO Sales Metrics</description>
+    <leftSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>USERS.NAME</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <aggregateType>Sum</aggregateType>
+                <column>Direct_To_Pro_Sales__c.Purchase_Amount__c</column>
+                <showTotal>true</showTotal>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <footer>Reports Tab; PRO SUMMARY Folder</footer>
+            <header>MTD DTP Sales Totals</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>BEHR_Dashboard_Reports/MTD_DTP_Sales_by_Rep_DASH</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <title>DTP Sales by Rep - Current Month</title>
+        </components>
+    </leftSection>
+    <middleSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>USERS.NAME</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <aggregateType>Sum</aggregateType>
+                <column>Direct_To_Pro_Sales__c.Purchase_Amount__c</column>
+                <showTotal>true</showTotal>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>MTD DTP Sales Totals</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>BEHR_Dashboard_Reports/Previous_MTD_DTP_Sales_by_Rep_DASH</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <title>DTP Sales by Rep - Previous Month</title>
+        </components>
+    </middleSection>
+    <rightSection>
+        <columnSize>Wide</columnSize>
+        <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <componentType>Table</componentType>
+            <dashboardTableColumn>
+                <column>USERS.NAME</column>
+            </dashboardTableColumn>
+            <dashboardTableColumn>
+                <column>FORMULA1</column>
+                <showTotal>true</showTotal>
+                <sortBy>RowValueDescending</sortBy>
+            </dashboardTableColumn>
+            <displayUnits>Integer</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <header>DTP Sales YTD Totals</header>
+            <indicatorHighColor>#54C254</indicatorHighColor>
+            <indicatorLowColor>#C25454</indicatorLowColor>
+            <indicatorMiddleColor>#C2C254</indicatorMiddleColor>
+            <report>BEHR_Dashboard_Reports/YTD_DTP_Sales_by_Rep_DASH</report>
+            <showPicturesOnTables>false</showPicturesOnTables>
+            <title>DTP Sales by Rep - YTD Total</title>
+        </components>
+    </rightSection>
+    <runningUser>rolivieri@behr.com</runningUser>
+    <textColor>#000000</textColor>
+    <title>Pro Sales Team DTP Sales Dashboard</title>
+    <titleColor>#000000</titleColor>
+    <titleSize>14</titleSize>
+</Dashboard>

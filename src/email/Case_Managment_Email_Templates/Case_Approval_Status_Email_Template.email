@@ -1,0 +1,3 @@
+The current status for your {!Case.RecordType}  is {!Case.Approval_Status__c}
+
+Link to Case Record: {!Case.Link}

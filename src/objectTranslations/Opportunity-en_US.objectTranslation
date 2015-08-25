@@ -1,0 +1,1133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Forecast Amount</value>
+        </caseValues>
+        <name>amount_opportunity</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Status</value>
+        </caseValues>
+        <name>stage_opportunity</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Actual Purchase Amount --></label>
+        <name>Actual_Purchase_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- All Time Direct Sales --></label>
+        <name>All_Time_Direct_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Submitted</masterLabel>
+            <translation><!-- Not Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Approval</masterLabel>
+            <translation><!-- Pending Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending RPSM Approval</masterLabel>
+            <translation><!-- Pending RPSM Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending RVP Approval</masterLabel>
+            <translation><!-- Pending RVP Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending SVP Approval</masterLabel>
+            <translation><!-- Pending SVP Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Avoid Stage Backtrack 1 --></label>
+        <name>Avoid_Stage_Backtrack_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Won Date --></label>
+        <name>Behr_Closed_won_date_US__c</name>
+    </fields>
+    <fields>
+        <help><!-- Phone number customer can reach you --></help>
+        <label><!-- Behr Rep Contact Number --></label>
+        <name>Behr_Rep_Contact_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Behr Rep Email --></label>
+        <name>Behr_Rep_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Behr Rep Name --></label>
+        <name>Behr_Rep_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC LYTD --></label>
+        <name>CC_LYTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC LY --></label>
+        <name>CC_LY__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC Rolling Year --></label>
+        <name>CC_Rolling_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC TYTD --></label>
+        <name>CC_TYTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- CC TY --></label>
+        <name>CC_TY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitors --></label>
+        <name>Competitors__c</name>
+        <picklistValues>
+            <masterLabel>Benjamin Moore</masterLabel>
+            <translation><!-- Benjamin Moore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comex</masterLabel>
+            <translation><!-- Comex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dunn-Edwards</masterLabel>
+            <translation><!-- Dunn-Edwards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glidden (PRO)</masterLabel>
+            <translation><!-- Glidden (PRO) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glidden (THD)</masterLabel>
+            <translation><!-- Glidden (THD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICI</masterLabel>
+            <translation><!-- ICI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kelly Moore</masterLabel>
+            <translation><!-- Kelly Moore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kilz</masterLabel>
+            <translation><!-- Kilz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPG</masterLabel>
+            <translation><!-- PPG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sherwin Williams</masterLabel>
+            <translation><!-- Sherwin Williams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vista</masterLabel>
+            <translation><!-- Vista --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Count Opportunity Product --></label>
+        <name>Count_Opportunity_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country_Picklist__c</name>
+        <picklistValues>
+            <masterLabel>Canada</masterLabel>
+            <translation><!-- Canada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mexico</masterLabel>
+            <translation><!-- Mexico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United States</masterLabel>
+            <translation><!-- United States --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Competitor --></label>
+        <name>DB_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation><!-- Competitor A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation><!-- Competitor B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation><!-- Competitor C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DTP LYTD --></label>
+        <name>DTP_LYTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- DTP LY --></label>
+        <name>DTP_LY__c</name>
+    </fields>
+    <fields>
+        <label><!-- DTP Rolling Year --></label>
+        <name>DTP_Rolling_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- DTP TYTD --></label>
+        <name>DTP_TYTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- DTP TY --></label>
+        <name>DTP_TY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Description --></label>
+        <name>Data_Quality_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Quality Score --></label>
+        <name>Data_Quality_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct LYTD --></label>
+        <name>Direct_LYTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Direct TYTD --></label>
+        <name>Direct_TYTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exterior Paint --></label>
+        <name>Exterior_Paint__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Sale Date --></label>
+        <name>First_Sale_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Floor Coatings --></label>
+        <name>Floor_Coatings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interior Paint --></label>
+        <name>Interior_Paint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Sale Date --></label>
+        <name>Last_Sale_Date__c</name>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Behr In-Store Rep</masterLabel>
+            <translation><!-- Behr In-Store Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Behr PPSSS</masterLabel>
+            <translation><!-- Behr PPSSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BehrPRO Rep</masterLabel>
+            <translation><!-- BehrPRO Rep --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Depot</masterLabel>
+            <translation><!-- Home Depot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mktg-driven National Event/Trade Show</masterLabel>
+            <translation><!-- Mktg-driven National Event/Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NAM</masterLabel>
+            <translation><!-- NAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RAM</masterLabel>
+            <translation><!-- RAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Event/Trade Show</masterLabel>
+            <translation><!-- Regional Event/Trade Show --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Managed Amount --></label>
+        <name>Managed_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Id --></label>
+        <name>Opportunity_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Lost Reason --></label>
+        <name>Opportunity_Lost_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Product Performance</masterLabel>
+            <translation><!-- Product Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THD Service</masterLabel>
+            <translation><!-- THD Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THD Value Prop does not fit</masterLabel>
+            <translation><!-- THD Value Prop does not fit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THD does not carry right product</masterLabel>
+            <translation><!-- THD does not carry right product --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Type --></label>
+        <name>Opportunity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Bid</masterLabel>
+            <translation><!-- Bid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Potential</masterLabel>
+            <translation><!-- Potential --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- P2P 2015 Qualified --></label>
+        <name>P2P_2015_Qualified__c</name>
+    </fields>
+    <fields>
+        <label><!-- PriceBook2Id --></label>
+        <name>PEN__PriceBook2Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Account Name --></label>
+        <name>Parent_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price Per Gallon --></label>
+        <name>Price_per_Gallon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>Primary_Contact__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primer --></label>
+        <name>Primer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pro Rewards Account Number --></label>
+        <name>Pro_Rewards_Account_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Description --></label>
+        <name>Project_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Timeline --></label>
+        <name>Project_Timeline__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Ship to Account # --></label>
+        <name>SAP_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAP Shop Account # --></label>
+        <name>SAP_Shop_Account__c</name>
+    </fields>
+    <fields>
+        <name>StageName</name>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation><!-- Closed Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Won</masterLabel>
+            <translation><!-- Closed Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Educate</masterLabel>
+            <translation><!-- Educate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Educate/Recommend</masterLabel>
+            <translation><!-- Educate/Recommend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Explore</masterLabel>
+            <translation><!-- Explore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Position/Prepare</masterLabel>
+            <translation><!-- Position/Prepare --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price Quote – Bid Room</masterLabel>
+            <translation><!-- Price Quote – Bid Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing / Quoting</masterLabel>
+            <translation><!-- Pricing / Quoting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualifying</masterLabel>
+            <translation><!-- Qualifying --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recommend</masterLabel>
+            <translation><!-- Recommend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Won/Satisfy</masterLabel>
+            <translation><!-- Won/Satisfy --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stains --></label>
+        <name>Stains__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date of Project --></label>
+        <name>Start_Date_of_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State_Picklist__c</name>
+        <picklistValues>
+            <masterLabel>Aguascalientes</masterLabel>
+            <translation><!-- Aguascalientes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alabama</masterLabel>
+            <translation><!-- Alabama --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alaska</masterLabel>
+            <translation><!-- Alaska --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alberta</masterLabel>
+            <translation><!-- Alberta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>American Samoa</masterLabel>
+            <translation><!-- American Samoa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arizona</masterLabel>
+            <translation><!-- Arizona --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arkansas</masterLabel>
+            <translation><!-- Arkansas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armed Forces Americas</masterLabel>
+            <translation><!-- Armed Forces Americas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armed Forces Europe</masterLabel>
+            <translation><!-- Armed Forces Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armed Forces Pacific</masterLabel>
+            <translation><!-- Armed Forces Pacific --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baja California</masterLabel>
+            <translation><!-- Baja California --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baja California Sur</masterLabel>
+            <translation><!-- Baja California Sur --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>British Columbia</masterLabel>
+            <translation><!-- British Columbia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>California</masterLabel>
+            <translation><!-- California --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Campeche</masterLabel>
+            <translation><!-- Campeche --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chiapas</masterLabel>
+            <translation><!-- Chiapas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chihuahua</masterLabel>
+            <translation><!-- Chihuahua --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coahuila</masterLabel>
+            <translation><!-- Coahuila --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colima</masterLabel>
+            <translation><!-- Colima --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colorado</masterLabel>
+            <translation><!-- Colorado --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Connecticut</masterLabel>
+            <translation><!-- Connecticut --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delaware</masterLabel>
+            <translation><!-- Delaware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>District of Columbia</masterLabel>
+            <translation><!-- District of Columbia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Durango</masterLabel>
+            <translation><!-- Durango --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Federal District</masterLabel>
+            <translation><!-- Federal District --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Federated Micronesia</masterLabel>
+            <translation><!-- Federated Micronesia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Florida</masterLabel>
+            <translation><!-- Florida --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Georgia</masterLabel>
+            <translation><!-- Georgia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guam</masterLabel>
+            <translation><!-- Guam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guanajuato</masterLabel>
+            <translation><!-- Guanajuato --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guerrero</masterLabel>
+            <translation><!-- Guerrero --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hawaii</masterLabel>
+            <translation><!-- Hawaii --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hidalgo</masterLabel>
+            <translation><!-- Hidalgo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Idaho</masterLabel>
+            <translation><!-- Idaho --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illinois</masterLabel>
+            <translation><!-- Illinois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indiana</masterLabel>
+            <translation><!-- Indiana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iowa</masterLabel>
+            <translation><!-- Iowa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jalisco</masterLabel>
+            <translation><!-- Jalisco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kansas</masterLabel>
+            <translation><!-- Kansas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kentucky</masterLabel>
+            <translation><!-- Kentucky --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Louisiana</masterLabel>
+            <translation><!-- Louisiana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maine</masterLabel>
+            <translation><!-- Maine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manitoba</masterLabel>
+            <translation><!-- Manitoba --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marshall Islands</masterLabel>
+            <translation><!-- Marshall Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maryland</masterLabel>
+            <translation><!-- Maryland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Massachusetts</masterLabel>
+            <translation><!-- Massachusetts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mexico State</masterLabel>
+            <translation><!-- Mexico State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michigan</masterLabel>
+            <translation><!-- Michigan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michoacán</masterLabel>
+            <translation><!-- Michoacán --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minnesota</masterLabel>
+            <translation><!-- Minnesota --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mississippi</masterLabel>
+            <translation><!-- Mississippi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missouri</masterLabel>
+            <translation><!-- Missouri --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Montana</masterLabel>
+            <translation><!-- Montana --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Morelos</masterLabel>
+            <translation><!-- Morelos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nayarit</masterLabel>
+            <translation><!-- Nayarit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nebraska</masterLabel>
+            <translation><!-- Nebraska --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nevada</masterLabel>
+            <translation><!-- Nevada --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Brunswick</masterLabel>
+            <translation><!-- New Brunswick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Hampshire</masterLabel>
+            <translation><!-- New Hampshire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Jersey</masterLabel>
+            <translation><!-- New Jersey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Mexico</masterLabel>
+            <translation><!-- New Mexico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New York</masterLabel>
+            <translation><!-- New York --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newfoundland and Labrador</masterLabel>
+            <translation><!-- Newfoundland and Labrador --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Carolina</masterLabel>
+            <translation><!-- North Carolina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Dakota</masterLabel>
+            <translation><!-- North Dakota --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northern Mariana Islands</masterLabel>
+            <translation><!-- Northern Mariana Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northwest Territories</masterLabel>
+            <translation><!-- Northwest Territories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nova Scotia</masterLabel>
+            <translation><!-- Nova Scotia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nuevo León</masterLabel>
+            <translation><!-- Nuevo León --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nunavut</masterLabel>
+            <translation><!-- Nunavut --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oaxaca</masterLabel>
+            <translation><!-- Oaxaca --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ohio</masterLabel>
+            <translation><!-- Ohio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oklahoma</masterLabel>
+            <translation><!-- Oklahoma --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ontario</masterLabel>
+            <translation><!-- Ontario --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Oregon</masterLabel>
+            <translation><!-- Oregon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Palau</masterLabel>
+            <translation><!-- Palau --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pennsylvania</masterLabel>
+            <translation><!-- Pennsylvania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prince Edward Island</masterLabel>
+            <translation><!-- Prince Edward Island --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puebla</masterLabel>
+            <translation><!-- Puebla --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Puerto Rico</masterLabel>
+            <translation><!-- Puerto Rico --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quebec</masterLabel>
+            <translation><!-- Quebec --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Querétaro</masterLabel>
+            <translation><!-- Querétaro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quintana Roo</masterLabel>
+            <translation><!-- Quintana Roo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rhode Island</masterLabel>
+            <translation><!-- Rhode Island --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>San Luis Potosí</masterLabel>
+            <translation><!-- San Luis Potosí --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saskatchewan</masterLabel>
+            <translation><!-- Saskatchewan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sinaloa</masterLabel>
+            <translation><!-- Sinaloa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sonora</masterLabel>
+            <translation><!-- Sonora --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Carolina</masterLabel>
+            <translation><!-- South Carolina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Dakota</masterLabel>
+            <translation><!-- South Dakota --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tabasco</masterLabel>
+            <translation><!-- Tabasco --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tamaulipas</masterLabel>
+            <translation><!-- Tamaulipas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tennessee</masterLabel>
+            <translation><!-- Tennessee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Texas</masterLabel>
+            <translation><!-- Texas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tlaxcala</masterLabel>
+            <translation><!-- Tlaxcala --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>US Virgin Islands</masterLabel>
+            <translation><!-- US Virgin Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>United States Minor Outlying Islands</masterLabel>
+            <translation><!-- United States Minor Outlying Islands --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utah</masterLabel>
+            <translation><!-- Utah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veracruz</masterLabel>
+            <translation><!-- Veracruz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vermont</masterLabel>
+            <translation><!-- Vermont --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Virginia</masterLabel>
+            <translation><!-- Virginia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Washington</masterLabel>
+            <translation><!-- Washington --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West Virginia</masterLabel>
+            <translation><!-- West Virginia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wisconsin</masterLabel>
+            <translation><!-- Wisconsin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wyoming</masterLabel>
+            <translation><!-- Wyoming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yucatán</masterLabel>
+            <translation><!-- Yucatán --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yukon Territories</masterLabel>
+            <translation><!-- Yukon Territories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Zacatecas</masterLabel>
+            <translation><!-- Zacatecas --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub-Lead Source --></label>
+        <name>Sub_Lead_Source__c</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Associate</masterLabel>
+            <translation><!-- Associate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BehrPro Website</masterLabel>
+            <translation><!-- BehrPro Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cold Call</masterLabel>
+            <translation><!-- Cold Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor Trade Show</masterLabel>
+            <translation><!-- Contractor Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Referral</masterLabel>
+            <translation><!-- Customer Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DTP Driver</masterLabel>
+            <translation><!-- DTP Driver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MMT</masterLabel>
+            <translation><!-- MMT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PAR</masterLabel>
+            <translation><!-- PAR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PASA</masterLabel>
+            <translation><!-- PASA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPSS</masterLabel>
+            <translation><!-- PPSS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous Customer</masterLabel>
+            <translation><!-- Previous Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pro Rep Referral</masterLabel>
+            <translation><!-- Pro Rep Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased List</masterLabel>
+            <translation><!-- Purchased List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>See Trade Association/Affiliation</masterLabel>
+            <translation><!-- See Trade Association/Affiliation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store Walk In</masterLabel>
+            <translation><!-- Store Walk In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THD Pro Blitz</masterLabel>
+            <translation><!-- THD Pro Blitz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Magazine Publication</masterLabel>
+            <translation><!-- Trade Magazine Publication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web to Lead</masterLabel>
+            <translation><!-- Web to Lead --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- THD Store --></label>
+        <name>THD_Store__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Actuals LYTD --></label>
+        <name>Total_Actuals_LYTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Actuals LY --></label>
+        <name>Total_Actuals_LY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Actuals Rolling Year --></label>
+        <name>Total_Actuals_Rolling_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Actuals TYTD --></label>
+        <name>Total_Actuals_TYTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Actuals TY --></label>
+        <name>Total_Actuals_TY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total DTP Sales --></label>
+        <name>Total_DTP_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total POS Sales --></label>
+        <name>Total_POS_Sales__c</name>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Direct</masterLabel>
+            <translation><!-- Direct --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Existing Business</masterLabel>
+            <translation><!-- Existing Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Business</masterLabel>
+            <translation><!-- New Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>THD</masterLabel>
+            <translation><!-- THD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zipcode --></label>
+        <name>Zipcode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Zone Max --></label>
+        <name>Zone_item_max__c</name>
+    </fields>
+    <fields>
+        <label><!-- case safe id --></label>
+        <name>case_safe_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of quotes --></label>
+        <name>of_quotes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Zone --></label>
+        <name>zone_account__c</name>
+    </fields>
+    <layouts>
+        <layout>Behr_Opportunity Layout</layout>
+        <sections>
+            <label><!-- Actual Sales --></label>
+            <section>Actual Sales</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Project Description --></label>
+            <section>Project Description</section>
+        </sections>
+        <sections>
+            <label><!-- Shipping Address --></label>
+            <section>Shipping Address</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Opportunity (Auto) --></label>
+        <name>Opportunity_Auto</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Opportunity For Quote --></label>
+        <name>Opportunity_For_Quote</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- All opportunities that have been lost must have a competitors. --></errorMessage>
+        <name>BEHR_Lost_Oppty_Closed_Competitors_US</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Contact is required When Opportunity Product exist --></errorMessage>
+        <name>Contact_Check_rule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All opportunities that have been lost must have a reason. --></errorMessage>
+        <name>Lost_Oppty_Closed_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity should be Position/Prepare when created. --></errorMessage>
+        <name>Opportunity_Stage_Default</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Mass_Delete --></label>
+        <name>MassManager__Mass_Delete</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit_Standard_Fields --></label>
+        <name>MassManager__Mass_Edit_Standard_Fields</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>MassManager__Mass_Update</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Edit --></label>
+        <name>Mass_Edit</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Mass_Update --></label>
+        <name>Mass_Update</name>
+    </webLinks>
+</CustomObjectTranslation>

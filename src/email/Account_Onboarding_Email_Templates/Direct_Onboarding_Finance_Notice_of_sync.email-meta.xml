@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template notifying finance that sap sync has been done and they can add credit information</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Direct Onboarding Finance Notice of sync</name>
+    <style>none</style>
+    <subject>Direct Account Request for {!Direct_Onboarding__c.Account_Name__c} has been created in SAP</subject>
+    <type>text</type>
+</EmailTemplate>

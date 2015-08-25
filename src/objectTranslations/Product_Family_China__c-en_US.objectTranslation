@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Product Family(China)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Products Family(China)</value>
+    </caseValues>
+    <fields>
+        <label><!-- Product Line(Chinese) --></label>
+        <name>Product_Line_Chinese__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line(English) --></label>
+        <name>Product_Line_English__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name(Chinese) --></label>
+        <name>Product_Name_Chinese__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name(English) --></label>
+        <name>Product_Name_English__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product# --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sheen(Chinese) --></label>
+        <name>Sheen_Chinese__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sheen(English) --></label>
+        <name>Sheen_English__c</name>
+    </fields>
+    <layouts>
+        <layout>Product Family(China) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

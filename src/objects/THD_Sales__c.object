@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Current_Year__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Current Year</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_Loaded__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <label>Date Loaded</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>HD_Cust_ID__c</fullName>
+        <externalId>true</externalId>
+        <label>HD Cust ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LYTD_formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>and(Month_Year__c &lt;= date(year($Setup.Current_Month_POS__c.Current_Month_POS__c)-1,month($Setup.Current_Month_POS__c.Current_Month_POS__c),day( $Setup.Current_Month_POS__c.Start_Month__c )),Month_Year__c &gt;=date(year( $Setup.Current_Month_POS__c.Start_Month__c )-1,month( $Setup.Current_Month_POS__c.Start_Month__c ),day( $Setup.Current_Month_POS__c.Start_Month__c )))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>LYTD formula</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LY_C_C__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Last year C &amp; C to be manually updated at year end via crm fusion.  This field is used as the rollup summary trigger to be displayed on the account</description>
+        <externalId>false</externalId>
+        <label>LY C &amp; C</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LY_To_date__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Last year same time frame as this year.  To be populated manually via crm fusion.</description>
+        <externalId>false</externalId>
+        <label>LY To date</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Month_Year__c</fullName>
+        <description>This filed will rpimarily indicate the month/year. The day value is irrelevant.</description>
+        <externalId>false</externalId>
+        <label>Month_Year</label>
+        <required>true</required>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>POS_Order_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>POS Order Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Cash &amp; Carry</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Special Order</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Non-Behr</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Roll_Year_Flag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This will be set via crm fusion on a daily basis.  This is a rollup summary indicator that will display on the account</description>
+        <externalId>false</externalId>
+        <label>Roll Year Flag</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SFDC_Account_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>SFDC Account #</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>THD Sales</relationshipLabel>
+        <relationshipName>THD_Sales</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Store__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Store</label>
+        <referenceTo>Home_Depot_Store__c</referenceTo>
+        <relationshipLabel>THD Sales</relationshipLabel>
+        <relationshipName>THD_Sales</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TYTD__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>TYTD</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TYTD_formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>and(  Month_Year__c  &lt;= $Setup.Current_Month_POS__c.Current_Month_POS__c ,Month_Year__c  &gt;= $Setup.Current_Month_POS__c.Start_Month__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>TYTD formula</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <label>THD Sales</label>
+    <nameField>
+        <displayFormat>THD#{000000000}</displayFormat>
+        <label>THD#</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>THD Sales</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Amount__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>HD_Cust_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>POS_Order_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Month_Year__c</lookupDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

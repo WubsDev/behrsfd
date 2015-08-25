@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KILZ Rate for Paint Sweepstakes</title>
+<meta name="viewport" content="width=device-width" />
+<style type="text/css">
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 14px;
+}
+img {
+	border: none;
+}
+table {
+	border-collapse: collapse;
+}
+ @media only screen and (max-width:599px) {
+table[class=col] {
+	display: block !important;
+	width: 320px !important;
+}
+img[class=behrlogotop], img[class=imgvert] {
+	width: 84px!important;
+	height: auto!important;
+}
+img[class=imghd] {
+	width: auto!important;
+	height: 30px!important;
+}
+td[class=footer] { height:60px!important; }
+a[class=twitter] img, a[class=facebook] img {
+	padding-bottom: 4px!important;
+	height: 15px!important;
+	width: 15px!important;
+}
+td[class=top_banner] {padding:10px!important;}
+img[class=entertowinbutton] { padding-top:15px!important; padding-left: 20px!important; }
+}
+</style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; margin: 0;padding: 0;width: 100% !important;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust:none;">
+<table width="100%" border="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="center" valign="top"><table class="col" width="600" border="0" cellpadding="0" cellspacing="0" >
+          <tbody>
+            <tr>
+              <td class="w20" width="25"></td>
+              <td class="w560" height="15" width="550"></td>
+              <td class="w20" width="25"></td>
+            </tr>
+            <tr>
+              <td class="w20" width="25"></td>
+              <td class="w560" width="550"><table style="padding-top:20px;background-color:#ffffff;" class="col" width="100%" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td style="" class="logo_holder" valign="top" width="50%" align="left"><a href="http://www.behrpro.com/BehrPro/prohome"> <img src="http://img03.en25.com/EloquaImages/clients/BehrProcessCorporation/{eedc1797-380a-4316-9c77-df9181d38200}_behr-kilz-logo.jpg" alt="BEHRPRO Kilz Logos" class="behrlogotop" style="border:none;width:196px;height:39px;"></a></td>
+ 
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="left" valign="top" bgcolor="#FFFFFF" class="" style="">&nbsp;</td>
+                    </tr>
+                   
+                  </tbody>
+                </table></td>
+              <td class="w25" width="25"><br></td>
+            </tr>
+            <tr>
+              <td class="w25" width="25"><br></td>
+              <td width="550" align="left" valign="top" class="w560"><br>
+                <p>{!if(Lead.FirstName="", Contact.FirstName,Lead.FirstName)},</p>
+                
+								 <p>I just wanted to let you know we have a sweepstakes going on right now for our customers who use KILZ PRO-X<font size="-6"><sup>&#174;</sup></font>. Share your experience for a chance to win $500 worth of <i>KILZ PRO-X</i> paint. Now thru March 31st, just go to the below link, select a <i>KILZ PRO-X</i> product you've used from the list, click Write a Review and fill in all required fields.</p>
+
+<p><a href="http://www.kilz.com/pro-x/v/index.jsp?vgnextoid=5f80235f75b3d310VgnVCM100000176310acRCRD&WT.mc_id=kpx_rr_sfemail">Click here to enter for a chance to win</a>
+
+</p><p>Contact me if you need more information on our Primers and <i>KILZ PRO-X</i> Paints, or have any questions.
+
+</p><p>See you on the Job Site!
+
+<p>Respectfully,<br /><br />
+                 {!if(Contact.OwnerFullName="",Lead.OwnerFullName,Contact.OwnerFullName)}<br />
+                {!if(Contact.OwnerTitle="", Lead.OwnerTitle,Contact.OwnerTitle)}<br />
+                {!if(Contact.OwnerPhone="", Lead.OwnerPhone,Contact.OwnerPhone)}<br />
+                 {!if(Contact.OwnerEmail="", Lead.OwnerEmail,Contact.OwnerEmail)}</p>
+                <p><a href="http://www.behrpro.com"><img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj4s&oid=00D700000008FyN&lastMod=1381298465000" width="114" height="21" alt="behrpro.com" border="0" style="border:none;"></a></p>
+<p><font style size="-6"> To enter, you must be at least 21 years of age, have read and agree to the <a href="http://www.kilz.com/pro-x/v/index.jsp?vgnextoid=66bc9c51c6e04410VgnVCM100000176310acRCRD&WT.mc_id=kpx_rr_sfemail"> official sweepstakes rules</a> and wish to participate. Visit our <i>KILZ PRO-X</i> Paint <a href="http://www.kilz.com/pro-x/v/index.jsp?vgnextoid=5f80235f75b3d310VgnVCM100000176310acRCRD&WT.mc_id=kpx_rr_sfemail">Ratings &amp; Reviews page</a> for more information.
+                  </font><p> </p></td>
+              <td class="w20" width="25"><br></td>
+            </tr>
+            <tr>
+              <td  class="w25">&nbsp;</td>
+              <td height="56" align="right" valign="middle" bgcolor="#000000" style="background-color:#000000;padding-right:10px;" class="footer"><a href="http://www.behr.com/Behr/home"><img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj52&oid=00D700000008FyN&lastMod=1381299174000" alt="BEHR Logo" style="border:none" height="37" width="106" class="imgvert"></a></a><a style="color:rgb(92, 92, 92);" href="http://www.kilz.com/"><img class="imgvert" src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj57&oid=00D700000008FyN&lastMod=1381299246000" alt="Kilz Logo" style="border:none" height="37" width="86"></a> <a style="color:rgb(92, 92, 92);" href="http://www.homedepot.com/"><img class="imghd" src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj5C&oid=00D700000008FyN&lastMod=1381299418000" alt="Home Depot Logo" style="border:none;" height="46" width="39"></a></td>
+              <td  class="w20">&nbsp;</td>
+            </tr>
+           
+          </tbody>
+        </table>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

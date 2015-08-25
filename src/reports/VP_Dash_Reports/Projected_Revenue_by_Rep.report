@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>User.Jan_YOS__c:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Tenure (In Yrs)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>User.Revenue_Assumptions__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Based on YOS</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Revenue Assumption</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Account.TYTD_C_C_plus_DTP__c:SUM/User.Revenue_Assumptions__c:SUM</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Sales to Rev Assumption</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Account.Annualized_Total_Revenue__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Annualized Revenue</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Account.TYTD_C_C_plus_DTP__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA5</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>YTD Sales</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_63245338</developerName>
+        <masterLabel>RPSM</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>User.RPSM_New__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Dermot McGuire</sourceValue>
+            </sourceValues>
+            <value>Dermot McGuire</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Brian Emmert</sourceValue>
+            </sourceValues>
+            <value>Brian Emmert</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Spyros Zorbas</sourceValue>
+            </sourceValues>
+            <value>Spyros Zorbas</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bill Mahoney</sourceValue>
+            </sourceValues>
+            <value>Bill Mahoney</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Randy Rivers</sourceValue>
+            </sourceValues>
+            <value>Randy Rivers</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Abe Suleiman</sourceValue>
+            </sourceValues>
+            <value>Abe Suleiman</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Greg Goodwin</sourceValue>
+            </sourceValues>
+            <value>Greg Goodwin</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>John Wysor</sourceValue>
+            </sourceValues>
+            <value>John Wysor</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Luke Markes</sourceValue>
+            </sourceValues>
+            <value>Luke Markes</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Ronn Day</sourceValue>
+            </sourceValues>
+            <value>Ronn Day</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Brandon Jones</sourceValue>
+            </sourceValues>
+            <value>Brandon Jones</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA2</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA4</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA5</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_63245338</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>USERS.NAME</column>
+            <operator>notEqual</operator>
+            <value>behr instore rep,data administrator,shannon gancy,ryan olivieri,matt waszkowski</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>RECORDTYPE</column>
+            <operator>equals</operator>
+            <value>Account.US_Record_Type,Account.Influencer_Account</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_63245338</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>USERS.NAME</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Projected Revenue by Rep</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

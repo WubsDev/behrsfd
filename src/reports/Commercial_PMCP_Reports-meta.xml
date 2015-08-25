@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReportFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>Commercial PMCP Reports</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <group>Enrique_and_Ryan</group>
+        <group>PRVPMFaber</group>
+        <group>PRVPMWaszkowski</group>
+        <role>Pro_Sales</role>
+    </sharedTo>
+</ReportFolder>

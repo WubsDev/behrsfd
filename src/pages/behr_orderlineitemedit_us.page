@@ -1,0 +1,121 @@
+<apex:page standardController="QuoteLineItem" extensions="Behr_orderLineItemEdit" action="{!redirect}">
+ <apex:form >
+ <!-- <apex:outputPanel rendered="{!normal}">
+  <apex:detail />
+  </apex:outputPanel>-->
+<apex:pagemessages ></apex:pagemessages>
+  <apex:pageBlock id="op" >
+  <apex:pageBlockButtons >
+  <apex:commandButton action="{!Save1}" value="  Save  "/>
+   <apex:commandButton action="{!Cancel}" value="Cancel"/>
+  
+  
+  </apex:pageBlockButtons>
+<apex:pageBlockSection columns="2" >
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Order Name" />
+<apex:outputField value="{!qliobj.QuoteId}"/>
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Size" />
+<apex:inputField value="{!QuoteLineItem.Size__c}"/>
+</apex:pageBlockSectionItem>
+<apex:pageBlockSectionItem >
+
+<apex:outputLabel value="Product Name" />
+<apex:outputText value="{!Product}"/> 
+
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Use" />
+<apex:inputField value="{!QuoteLineItem.Use__c}"/>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Quantity" />
+<apex:inputField value="{!qliobj.Quantity}"/>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Base" />
+<apex:inputField value="{!QuoteLineItem.Base__c}"/>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Color Vendor" />
+<apex:inputField value="{!qliobj.Color_Vendor__c}">
+<apex:actionSupport event="onchange" status="actid" action="{!onchange1}" reRender="op" /> 
+</apex:inputField>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Sheen" />
+<apex:inputField value="{!QuoteLineItem.Sheen__c}"/>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem rendered="{!disableInput}" >
+
+<apex:outputLabel value="Color Name/Code" />
+ 
+<apex:inputField value="{!qliobj.Color_Name_Code__c}" id="oppNameInput"/>
+
+ 
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem rendered="{!dummydisableInput}" >
+
+<apex:outputLabel />
+
+</apex:pageBlockSectionItem>
+
+
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="Vendor" />
+<apex:inputField value="{!QuoteLineItem.Vendor__c}"/>
+</apex:pageBlockSectionItem>
+
+
+
+<apex:outputPanel rendered="{!flag}" >
+<apex:dataTable value="{!qliobj}" var="qli" align="center" >
+    <apex:column headerValue="Colorant" style="vertical-align:middle;" >
+        <apex:inputField value="{!qli.Colorant__c}" /><br/>
+       <apex:inputField value="{!qli.Colorant1__c}" /><br/>
+       <apex:inputField value="{!qli.Colorant2__c}" /><br/>
+        <apex:inputField value="{!qli.Colorant3__c}" /><br/>
+        <apex:inputField value="{!qli.Colorant4__c}" /><br/>
+    </apex:column>
+    <apex:column headerValue="OZ" style="vertical-align:middle;">
+    <apex:inputField value="{!qli.OZ_1__c}" /><br/>
+    <apex:inputField value="{!qli.OZ_2__c}" /><br/>
+    <apex:inputField value="{!qli.OZ_3__c}" /><br/>
+    <apex:inputField value="{!qli.OZ_4__c}" /><br/>
+    <apex:inputField value="{!qli.OZ_5__c}" /><br/>
+    </apex:column>
+    <apex:column headerValue="384th" style="vertical-align:middle;">
+    <apex:inputField value="{!qli.X384ths_1__c}" /><br/>
+    <apex:inputField value="{!qli.X384ths_2__c}" /><br/>
+    <apex:inputField value="{!qli.X384ths_3__c}" /><br/>
+    <apex:inputField value="{!qli.X384ths_4__c}" /><br/>
+    <apex:inputField value="{!qli.X384ths_5__c}" /><br/>
+    </apex:column>
+    
+</apex:dataTable>
+</apex:outputPanel>
+
+</apex:pageblockSection>
+</apex:pageBlock>
+
+
+
+
+
+
+  
+
+  
+  </apex:form>
+</apex:page>

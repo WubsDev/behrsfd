@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Email template for Prospects attended for FMF</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>FMF_ESProspects Attended_1</name>
+    <style>none</style>
+    <subject>Mucho gusto {!Lead.FirstName}</subject>
+    <textOnly>Hola {!Lead.FirstName},
+
+¡Muchas gracias por asistir el evento de BehrPro y de la Selección Mexicana de Futbol 2013 en Phoenix! Por favor llámeme al 623-889-1384 para que pueda darle más información sobre los productos o servicios profesionales de BEHR® y KILZ®. 
+
+Descubra cómo Behr puede ayudarle a hacer crecer su negocio 
+
+•    Aprenda más sobre los productos BEHR® y KILZ® 
+•    Entrega gratis al sitio del trabajo* 
+•    Ahorre dinero con los precios por volumen 
+•    Aprenda sobre el entintado en la fábrica de Behr 
+•    Aprenda sobre el alcance nacional de Behr 
+   
+      *Donde esté disponible 
+
+Visite www.espanol.behrpro.com/bpservices para mayor información sobre nuestra oferta de servicios. 
+Sinceramente,
+
+
+Sincerely, 
+Carlos Figueroa
+Behr Sales West
+623-889-1384
+cfigueroa@behrpaint.com
+
+
+Ha optado por recibir boletines por correo electrónico de BehrPro. Si usted ya no desea recibir notificaciones de promociones y noticias, por favor unsubscribe@pronews.behrpro.com
+
+Si este mensaje ha sido enviado a usted y desea suscribirse, por favor subscribe@pronews.behrpro.com
+
+Para leer nuestra Política de Privacidad, por favor www.behrpro.com/privacypolicy
+
+Recientemente hemos actualizado nuestra política de privacidad. Si desea cambiar sus preferencias, por favor, siga las instrucciones de la Política de Privacidad.
+
+
+Las marcas comerciales son propiedad de sus respectivos propietarios. 
+
+©2013 Behr Process Corporation. Todos los Derechos Reservados.
+
+Behr Process Corporation
+3400 W. Segerstrom Avenue
+Santa Ana, CA 92704</textOnly>
+    <type>custom</type>
+</EmailTemplate>

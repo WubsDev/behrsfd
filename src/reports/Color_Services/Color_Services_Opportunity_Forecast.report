@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.Cases__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.Cases__r$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.Cases__r$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.Cases__r$Created_By_Region__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities$Amount</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities$Total_Actuals_TYTD__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities$Total_Actuals_LYTD__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Average</aggregateTypes>
+        <field>Account$TYTD_vs_LYTD__c</field>
+    </columns>
+    <currency>USD</currency>
+    <filter>
+        <criteriaItems>
+            <column>Account.Opportunities.Cases__r$Status</column>
+            <operator>equals</operator>
+            <value>Open,In Progress,Approved</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Opportunities.Cases__r$Owner</column>
+            <operator>equals</operator>
+            <value>Pro Services</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <name>Color Services Opportunity Forecast</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Opportunites_and_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.Opportunities$Total_Actuals_TYTD__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account.Opportunities.Cases__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURY</interval>
+    </timeFrameFilter>
+</Report>

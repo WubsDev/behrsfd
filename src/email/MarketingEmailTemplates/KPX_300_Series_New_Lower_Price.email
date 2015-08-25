@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kilz Pro-X 300 New Low Price</title>
+<meta name="viewport" content="width=device-width" />
+<style type="text/css">
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000000;
+	font-size: 14px;
+}
+img {
+	border: none;
+}
+table {
+	border-collapse: collapse;
+}
+ @media only screen and (max-width:599px) {
+table[class=col] {
+	display: block !important;
+	width: 320px !important;
+}
+img[class=behrlogotop], img[class=imgvert] {
+	width: 84px!important;
+	height: auto!important;
+}
+img[class=imghd] {
+	width: auto!important;
+	height: 30px!important;
+}
+td[class=footer] { height:60px!important; }
+a[class=twitter] img, a[class=facebook] img {
+	padding-bottom: 4px!important;
+	height: 15px!important;
+	width: 15px!important;
+}
+td[class=top_banner] {padding:10px!important;}
+img[class=entertowinbutton] { padding-top:15px!important; padding-left: 20px!important; }
+}
+</style>
+</head>
+<body style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size: 14px; margin: 0;padding: 0;width: 100% !important;-webkit-font-smoothing: antialiased;-webkit-text-size-adjust:none;">
+<table width="100%" border="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td align="center" valign="top"><table class="col" width="600" border="0" cellpadding="0" cellspacing="0" >
+          <tbody>
+            <tr>
+              <td class="w20" width="25"></td>
+              <td class="w560" height="15" width="550"></td>
+              <td class="w20" width="25"></td>
+            </tr>
+            <tr>
+              <td class="w20" width="25"></td>
+              <td class="w560" width="550"><table style="padding-top:20px;background-color:#ffffff;" class="col" width="100%" bgcolor="#ffffff" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td style="" class="logo_holder" valign="top" width="50%" align="left"><a href="http://www.behrpro.com/BehrPro/prohome"> <img src="http://img03.en25.com/EloquaImages/clients/BehrProcessCorporation/{eedc1797-380a-4316-9c77-df9181d38200}_behr-kilz-logo.jpg" alt="BEHRPRO Kilz Logos" class="behrlogotop" style="border:none;width:196px;height:39px;"></a></td>
+                      <td class="behrprocom" style="" valign="bottom" width="50%" align="right"><a class="twitter" href="https://twitter.com/BehrPro"><img src="http://img03.en25.com/EloquaImages/clients/BehrProcessCorporation/{972031d7-e82d-4103-ac22-e78435e599e2}_twittericon.png" width="22" height="22" alt="Visit us on Twitter" /></a>&nbsp;&nbsp; <a class="facebook" href="https://www.facebook.com/BehrPro"> <img src="http://img03.en25.com/EloquaImages/clients/BehrProcessCorporation/{079d8c8b-8355-448f-b8ba-c834de16c7e1}_facebookicon.png" width="22" height="22" alt="Visit BehrPro on Facebook" /></a>&nbsp;&nbsp; <a class="facebook" href="http://www.youtube.com/behrprotv"> <img src="http://img03.en25.com/EloquaImages/clients/BehrProcessCorporation/{23665776-e279-4392-8c67-3ab13a247710}_youtubeicon.png" width="22" height="22" alt="Check out BehrProTV" /></a></td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="left" valign="top" bgcolor="#FFFFFF" class="" style="">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2" align="left" valign="middle" bgcolor="#bb1835" class="top_banner" style="color:#000000;font-size:36px;font-weight:bold;padding:10px 20px;">High Hide.</font><font color="ffffff"> New Lower Cost.</font></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              <td class="w25" width="25"><br></td>
+            </tr>
+            <tr>
+              <td class="w25" width="25"><br></td>
+              <td width="550" align="left" valign="top" class="w560"><br>
+                <p>Hi {!if(Lead.FirstName="", Contact.FirstName,Lead.FirstName)},</p>
+<p>I wanted you to be among the first to know about the New Lower Price for Kilz Pro-X<sup><font size="-6">&reg;</font></sup> 300 Series Paint. Now, you can put even more money in your pocket.</ p>
+
+<p>Maximum hide KILZ PRO-X 300 Series Paint is a versatile formula optimized for spray, roll, brush and superior touch-ups. 
+I know what this kind of performance and cost savings can mean to a business like {!if(Account.Name="", Lead.Company,Account.Name)}. Here's one of the customers who recently shared their Pro-X success stories with us: <a href="http://www.youtube.com/watch?v=-rP901k9Zw8">Click to watch the video.</a>
+
+</p><p><a href="http://www.kilz.com/pro-x/v/index.jsp?vgnextoid=394d5ecb9b799310VgnVCM100000176310acRCRD" alt="Kilz Pro-X Technical Library">Kilz Pro-X TDS &amp; MSDS sheets.</a></p>
+
+<p>Contact me any time at {!if(Contact.OwnerPhone="", Lead.OwnerPhone,Contact.OwnerPhone)} to talk specifics about KPX-300 for your projects, {!if(Lead.FirstName="", Contact.FirstName,Lead.FirstName)} -- or any <strong>BEHR<sup><font size="-6">&reg;</font></sup></strong> or <strong>Kilz<sup><font size="-6">&reg;</font></sup></strong> products.</p>
+                <p>Sincerely,<br /><br />
+                 {!if(Contact.OwnerFullName="",Lead.OwnerFullName,Contact.OwnerFullName)}<br />
+                {!if(Contact.OwnerTitle="", Lead.OwnerTitle,Contact.OwnerTitle)}<br />
+                {!if(Contact.OwnerPhone="", Lead.OwnerPhone,Contact.OwnerPhone)}<br />
+                 {!if(Contact.OwnerEmail="", Lead.OwnerEmail,Contact.OwnerEmail)}</p>
+                <p><a href="http://www.behrpro.com"><img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj4s&oid=00D700000008FyN&lastMod=1381298465000" width="114" height="21" alt="behrpro.com" border="0" style="border:none;"></a></p>
+                                    </p></td>
+              <td class="w20" width="25"><br></td>
+            </tr>
+            <tr>
+              <td  class="w25">&nbsp;</td>
+              <td height="56" align="right" valign="middle" bgcolor="#000000" style="background-color:#000000;padding-right:10px;" class="footer"><a href="http://www.behr.com/Behr/home"><img src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj52&oid=00D700000008FyN&lastMod=1381299174000" alt="BEHR Logo" style="border:none" height="37" width="106" class="imgvert"></a></a><a style="color:rgb(92, 92, 92);" href="http://www.kilz.com/"><img class="imgvert" src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj57&oid=00D700000008FyN&lastMod=1381299246000" alt="Kilz Logo" style="border:none" height="37" width="86"></a> <a style="color:rgb(92, 92, 92);" href="http://www.homedepot.com/"><img class="imghd" src="https://c.na5.content.force.com/servlet/servlet.ImageServer?id=01570000001Rj5C&oid=00D700000008FyN&lastMod=1381299418000" alt="Home Depot Logo" style="border:none;" height="46" width="39"></a></td>
+              <td  class="w20">&nbsp;</td>
+            </tr>
+           
+          </tbody>
+        </table>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>

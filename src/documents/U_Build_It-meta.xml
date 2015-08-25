@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>U Build It</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <role>Behr_Pro_Rep_East</role>
+        <role>Behr_Pro_Rep_East_1</role>
+        <role>Behr_Pro_Rep_East_3</role>
+        <role>Behr_Pro_Rep_Mid_Atlantic</role>
+        <role>Behr_Pro_Rep_North_Atlantic</role>
+        <role>Behr_Pro_Rep_Southwest</role>
+        <role>Behr_Pro_Rep_West</role>
+        <role>Behr_Pro_Rep_West_2</role>
+        <role>Behr_Pro_Rep_West_3</role>
+        <role>Behr_Pro_Rep_West_4</role>
+        <role>NAM_Manager</role>
+        <role>NAM_VP</role>
+        <role>PRSVP</role>
+        <role>Pro_Sales_VP_Central</role>
+        <role>Pro_Sales_VP_East</role>
+        <role>Pro_Sales_VP_West</role>
+        <role>ROM_RPSM_East</role>
+        <role>ROM_RPSM_East_2</role>
+        <role>ROM_RPSM_East_3</role>
+        <role>ROM_RPSM_Mid_Altantic</role>
+        <role>ROM_RPSM_North_Atlantic</role>
+        <role>ROM_RPSM_Southwest</role>
+        <role>ROM_RPSM_West</role>
+        <role>ROM_RPSM_West_2</role>
+        <role>ROM_RPSM_West_3</role>
+        <role>ROM_RPSM_West_4</role>
+    </sharedTo>
+</DocumentFolder>

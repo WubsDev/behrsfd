@@ -1,0 +1,72 @@
+A direct on-boarding request for {!Direct_Onboarding__c.Account_Name__c} has been submitted.
+
+Supporting Information:
+
+Date: {!Direct_Onboarding__c.CreatedDate}
+Sales Rep servicing this customer: {!Direct_Onboarding__c.Account_Owner__c}
+RPSM: {!Direct_Onboarding__c.Account_RPSM__c}
+Form completed by: {!Direct_Onboarding__c.CreatedBy}
+
+CUSTOMER INFORMATION:
+
+Company Name: {!Direct_Onboarding__c.Company_Name__c}
+Primary Contact: {!Direct_Onboarding__c.Primary_Contact__c}
+Address (street address): {!Direct_Onboarding__c.Onboard_Address_Line_1__c}
+Address (City, State, Zip): {!Direct_Onboarding__c.Onboard_City__c}, {!Direct_Onboarding__c.Onboard_State__c}, {!Direct_Onboarding__c.Onboard_Postal__c}
+Phone: {!Direct_Onboarding__c.Phone__c}
+Market Segment: {!Direct_Onboarding__c.Market_Segment__c}Estimated Annual Revenue: {!Direct_Onboarding__c.Estimated_Annual_Revenue__c}
+Projected Behr Estimated Capture %:  {!Direct_Onboarding__c.Projected_Behr_Capture_Percent__c}
+Is this opportunity tied to a planned project(s)?:  {!Direct_Onboarding__c.Project_Planned__c} 
+Projected 1st Purchase Date: {!Direct_Onboarding__c.Project_Start_Date__c}      
+Do we have the capabilities to deliver to their location from our DTP?:  {!Direct_Onboarding__c.Delivery_Capabilities__c}
+Requested Payment Terms: {!Direct_Onboarding__c.Payment_Terms__c}
+Requested Payment Terms - Other: {!Direct_Onboarding__c.Terms_Other__c}
+Type of Credit Required:  {!Direct_Onboarding__c.Credit_Req_Terms__c}
+Description: {!Direct_Onboarding__c.Description__c}
+
+COMPETITOR INFORMATION
+Requested Shop Zone:  {!Direct_Onboarding__c.Requested_Shop_Zone__c}
+Source Date:  {!Direct_Onboarding__c.Source_Date__c}
+Source of Information:  {!Direct_Onboarding__c.Source_of_information__c}
+
+PRODUCT 1:
+Competitor: {!Direct_Onboarding__c.Primary_Competitor1__c}
+Competitor Product:  {!Direct_Onboarding__c.Competitor_Product_1__c}
+Competitor Price:  {!Direct_Onboarding__c.Competitor_Price_1__c}
+% used:  {!Direct_Onboarding__c.Product_1_used__c}
+Product:  {!Direct_Onboarding__c.Product_1__c}
+Product Price:  {!Direct_Onboarding__c.Product_1_Price__c}
+Requested Zone:  {!Direct_Onboarding__c.Product_1_Zone__c}
+If Off Zone - Calculated Zone:  {!Direct_Onboarding__c.Off_zone_calculation_1__c}
+
+PRODUCT 2:
+Competitor:  {!Direct_Onboarding__c.Primary_Competitor_2__c}
+Competitor Product:  {!Direct_Onboarding__c.Competitor_Product_2__c}
+Competitor Price:  {!Direct_Onboarding__c.Competitor_Price_2__c}
+% used:  {!Direct_Onboarding__c.Product_2_used__c}
+Product:  {!Direct_Onboarding__c.Product_2__c}
+Product Price:  {!Direct_Onboarding__c.Product_2_price__c}
+Requested Zone:  {!Direct_Onboarding__c.Product_2_Zone__c}
+If Off Zone - Calculated Zone:  {!Direct_Onboarding__c.Off_zone_calculation_2__c}
+
+
+Link to Account Record: {!Direct_Onboarding__c.Account_Link__c} 
+Link to Direct Onboarding Record: {!Direct_Onboarding__c.Link}
+
+
+Approval Process. 
+Depending on Requested Zone for approval, Step 1 is the cooresponding approver: 
+Zone 1- 3 is approved by RPSM
+Zone 4 is approved by RVP
+Zone 5-7 or below is approved by SVP
+
+
+1. Pending Sales Approval - Waiting RPSM/RVP/SVP to approve request 
+2. Pending Credit Review - Finance will be performing a credit check to determine payment terms 
+3. Pending Account Setup - Finance has completed credit check and Sales Administration is setting up the Master Data in SAP 
+4. Account Setup Complete - Master Data setup has been completed in SAP 
+
+
+Support Information:
+
+Please email smart@behr.com with any questions.

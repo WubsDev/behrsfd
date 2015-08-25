@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Color For Orders</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Color For Orders</value>
+    </caseValues>
+    <fields>
+        <label><!-- Brand --></label>
+        <name>Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Color --></label>
+        <name>Competitor_Color__c</name>
+        <relationshipLabel><!-- Color For Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Line Item --></label>
+        <name>Quote_Line_Item__c</name>
+        <relationshipLabel><!-- Color For Orders --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Picka0d70000003e8vAAAQ --></label>
+        <name>Picka0d70000003e8vAAAQ</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka0fV0000001Qg3vIAC --></label>
+        <name>Picka0fV0000001Qg3vIAC</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Picka1BQ0000001z3F7MAI --></label>
+        <name>Picka1BQ0000001z3F7MAI</name>
+    </webLinks>
+</CustomObjectTranslation>

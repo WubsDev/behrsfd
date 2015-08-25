@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Tier Discount</value>
+        </caseValues>
+        <name>quotelineitem_discount</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>National Price</value>
+        </caseValues>
+        <name>quotelineitem_listprice</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Regional Price</value>
+        </caseValues>
+        <name>quotelineitem_salesprice</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Base --></label>
+        <name>Base1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base --></label>
+        <name>Base__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color Name/Code --></label>
+        <name>Color_Name_Code1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color Name/Code --></label>
+        <name>Color_Name_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color Vendor --></label>
+        <name>Color_Vendor__c</name>
+        <picklistValues>
+            <masterLabel>Behr</masterLabel>
+            <translation><!-- Behr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Benjamin Moore</masterLabel>
+            <translation><!-- Benjamin Moore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Color Formula</masterLabel>
+            <translation><!-- Color Formula --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Comex</masterLabel>
+            <translation><!-- Comex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dunn-Edwards</masterLabel>
+            <translation><!-- Dunn-Edwards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glidden</masterLabel>
+            <translation><!-- Glidden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICI</masterLabel>
+            <translation><!-- ICI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kelly Moore</masterLabel>
+            <translation><!-- Kelly Moore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kilz</masterLabel>
+            <translation><!-- Kilz --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Tint</masterLabel>
+            <translation><!-- No Tint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PPG</masterLabel>
+            <translation><!-- PPG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sherwin Williams</masterLabel>
+            <translation><!-- Sherwin Williams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vista</masterLabel>
+            <translation><!-- Vista --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Colorant 2 --></label>
+        <name>Colorant1__c</name>
+        <picklistValues>
+            <masterLabel>AXL</masterLabel>
+            <translation><!-- AXL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BL</masterLabel>
+            <translation><!-- BL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CL</masterLabel>
+            <translation><!-- CL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DL</masterLabel>
+            <translation><!-- DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EL</masterLabel>
+            <translation><!-- EL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JL</masterLabel>
+            <translation><!-- JL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KXL</masterLabel>
+            <translation><!-- KXL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LL</masterLabel>
+            <translation><!-- LL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RL</masterLabel>
+            <translation><!-- RL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUL</masterLabel>
+            <translation><!-- RUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TL</masterLabel>
+            <translation><!-- TL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VL</masterLabel>
+            <translation><!-- VL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VUL</masterLabel>
+            <translation><!-- VUL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Colorant 3 --></label>
+        <name>Colorant2__c</name>
+        <picklistValues>
+            <masterLabel>AXL</masterLabel>
+            <translation><!-- AXL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BL</masterLabel>
+            <translation><!-- BL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CL</masterLabel>
+            <translation><!-- CL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DL</masterLabel>
+            <translation><!-- DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EL</masterLabel>
+            <translation><!-- EL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JL</masterLabel>
+            <translation><!-- JL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KXL</masterLabel>
+            <translation><!-- KXL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LL</masterLabel>
+            <translation><!-- LL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RL</masterLabel>
+            <translation><!-- RL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUL</masterLabel>
+            <translation><!-- RUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TL</masterLabel>
+            <translation><!-- TL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VL</masterLabel>
+            <translation><!-- VL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VUL</masterLabel>
+            <translation><!-- VUL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Colorant 4 --></label>
+        <name>Colorant3__c</name>
+        <picklistValues>
+            <masterLabel>AXL</masterLabel>
+            <translation><!-- AXL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BL</masterLabel>
+            <translation><!-- BL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CL</masterLabel>
+            <translation><!-- CL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DL</masterLabel>
+            <translation><!-- DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EL</masterLabel>
+            <translation><!-- EL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JL</masterLabel>
+            <translation><!-- JL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KXL</masterLabel>
+            <translation><!-- KXL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LL</masterLabel>
+            <translation><!-- LL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RL</masterLabel>
+            <translation><!-- RL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUL</masterLabel>
+            <translation><!-- RUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TL</masterLabel>
+            <translation><!-- TL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VL</masterLabel>
+            <translation><!-- VL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VUL</masterLabel>
+            <translation><!-- VUL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Colorant 5 --></label>
+        <name>Colorant4__c</name>
+        <picklistValues>
+            <masterLabel>AXL</masterLabel>
+            <translation><!-- AXL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BL</masterLabel>
+            <translation><!-- BL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CL</masterLabel>
+            <translation><!-- CL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DL</masterLabel>
+            <translation><!-- DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EL</masterLabel>
+            <translation><!-- EL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JL</masterLabel>
+            <translation><!-- JL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KXL</masterLabel>
+            <translation><!-- KXL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LL</masterLabel>
+            <translation><!-- LL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RL</masterLabel>
+            <translation><!-- RL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUL</masterLabel>
+            <translation><!-- RUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TL</masterLabel>
+            <translation><!-- TL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VL</masterLabel>
+            <translation><!-- VL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VUL</masterLabel>
+            <translation><!-- VUL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Colorant 1 --></label>
+        <name>Colorant__c</name>
+        <picklistValues>
+            <masterLabel>AXL</masterLabel>
+            <translation><!-- AXL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BL</masterLabel>
+            <translation><!-- BL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CL</masterLabel>
+            <translation><!-- CL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DL</masterLabel>
+            <translation><!-- DL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EL</masterLabel>
+            <translation><!-- EL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JL</masterLabel>
+            <translation><!-- JL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KXL</masterLabel>
+            <translation><!-- KXL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LL</masterLabel>
+            <translation><!-- LL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RL</masterLabel>
+            <translation><!-- RL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RUL</masterLabel>
+            <translation><!-- RUL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TL</masterLabel>
+            <translation><!-- TL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VL</masterLabel>
+            <translation><!-- VL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VUL</masterLabel>
+            <translation><!-- VUL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OZ 1 --></label>
+        <name>OZ_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- OZ 2 --></label>
+        <name>OZ_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- OZ 3 --></label>
+        <name>OZ_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- OZ 4 --></label>
+        <name>OZ_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- OZ 5 --></label>
+        <name>OZ_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price per Gallon --></label>
+        <name>Price_per_Gallon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product ID --></label>
+        <name>Product_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Size --></label>
+        <name>Product_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recycling Fee --></label>
+        <name>Recycling_Fee_PDF__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recycling Fee --></label>
+        <name>Recycling_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recycling fee for 1 Gallon --></label>
+        <name>Recycling_fee_for_1_Gallon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recycling fee for 5 Gallon --></label>
+        <name>Recycling_fee_for_5_Gallon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sheen --></label>
+        <name>Sheen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size --></label>
+        <name>Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use --></label>
+        <name>Use__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor --></label>
+        <name>Vendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- 1 Gallon --></label>
+        <name>X1_Gallon__c</name>
+    </fields>
+    <fields>
+        <label><!-- 384ths 1 --></label>
+        <name>X384ths_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- 384ths 2 --></label>
+        <name>X384ths_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- 384ths 3 --></label>
+        <name>X384ths_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- 384ths 4 --></label>
+        <name>X384ths_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- 384ths 5 --></label>
+        <name>X384ths_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- 5 Gallon --></label>
+        <name>X5_Gallon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Your Price --></label>
+        <name>Your_Price__c</name>
+    </fields>
+    <layouts>
+        <layout>Quote Line Item Layout</layout>
+        <sections>
+            <label><!-- Order and Product Details --></label>
+            <section>Order and Product Details</section>
+        </sections>
+        <sections>
+            <label><!-- Quote Details (Not for Order) --></label>
+            <section>Quote Details (Not for Order)</section>
+        </sections>
+    </layouts>
+</CustomObjectTranslation>

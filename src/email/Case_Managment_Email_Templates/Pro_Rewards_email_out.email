@@ -1,0 +1,25 @@
+Please process the following request.  
+
+Case {!Case.CaseNumber}
+Created by: {!Case.CreatedBy}
+Requester:  {!Case.Requester__c}
+Account Name: {!Account.Name}
+Est Annual Spend:  {!Case.Estimated_Spend_Amount__c}
+Rolling Year Sales:  {!Case.Rolling_Year_Sales__c}
+Contact Name: {!Case.Contact}
+Description:  {!Case.Description}
+
+Date Need By: {!Case.Date_Needed_By__c} 
+Hot Rush: {!Case.Hot_Rush__c} 
+Hot Rush Reason: {!Case.Hot_Rush_Reason__c} 
+Ship To: {!Case.Ship_To__c} 
+{!Case.Ship_To_Street__c}
+{!Case.Ship_To_City__c}, {!Case.Ship_To_State__c}  {!Case.Ship_To_Zip__c}
+
+Card information:
+Account Name: {!Account.Name}
+Pro rewards #:  {!Case.Pro_Rewards_Phone__c}
+Pro Rewards Tier:  {!Case.Pro_Rewards_Tier__c}
+Rep Name:  {!Case.Behr_Representative__c}
+Rep Phone #:  {!Case.Pro_Rep_phone__c}
+# of cards:  {!Case.of_Cards__c}

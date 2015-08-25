@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChoosePricebook</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EditAllProduct</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Calculated_Zone__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(not(ispickval(Zone1__c, &quot;Off Zone&quot;)),  Zone__c , If (UnitPrice &lt;  PricebookEntry.X7__c ,8,If( UnitPrice &gt;=  PricebookEntry.X1__c , 1, If( UnitPrice&gt;= PricebookEntry.X2__c , 2,If( UnitPrice &gt;= PricebookEntry.X3__c , 3,If(UnitPrice &gt;= PricebookEntry.X4__c ,4,if(UnitPrice &gt;= PricebookEntry.X5__c ,5,If( UnitPrice &gt;= PricebookEntry.X6__c , 6,If( UnitPrice = PricebookEntry.X7__c , 7, Zone__c )))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Calculated Zone</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Price_per_Gallon__c</fullName>
+        <externalId>false</externalId>
+        <formula>ListPrice /(Value( PricebookEntry.Product2.Size__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Price per Gallon</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Product2Id</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Total_Unit_Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>TotalPrice / Quantity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Unit Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Zone1__c</fullName>
+        <description>Zone for selection (To be used to populate other zone)</description>
+        <externalId>false</externalId>
+        <label>Selected Zone</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>7</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Off Zone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Zone__c</fullName>
+        <description>Zone for opportunity that is direct</description>
+        <externalId>false</externalId>
+        <label>Calc Zone</label>
+        <precision>1</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>Contact_as_Mandatory_when_Product_Exist</fullName>
+        <active>true</active>
+        <description>To make the contact field as mandatory, when we try to add product for the opportunity</description>
+        <errorConditionFormula>ISBLANK(Opportunity.Primary_Contact__c)</errorConditionFormula>
+        <errorMessage>You must add a Contact to the Opportunity before proceeding</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Opportunity_Zone</fullName>
+        <active>true</active>
+        <description>There must be a zone selected if it is a direct opty</description>
+        <errorConditionFormula>AND( ispickval(Opportunity.Type, &quot;Direct&quot;), ispickval(Zone1__c,&quot;&quot; ))</errorConditionFormula>
+        <errorDisplayField>Zone1__c</errorDisplayField>
+        <errorMessage>You have created a &quot;Direct&quot; opportunity, you must select a Zone.</errorMessage>
+    </validationRules>
+</CustomObject>

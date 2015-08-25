@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AccountSharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <criteriaBasedRules>
+        <fullName>Nam2</fullName>
+        <sharedTo>
+            <roleAndSubordinates>NAM_VP</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>notEqual</operation>
+            <value>China Dealer Account,China Standard Account</value>
+        </criteriaItems>
+        <accountAccessLevel>Read</accountAccessLevel>
+        <caseAccessLevel>Read</caseAccessLevel>
+        <contactAccessLevel>Read</contactAccessLevel>
+        <name>Nam2</name>
+        <opportunityAccessLevel>Read</opportunityAccessLevel>
+    </criteriaBasedRules>
+    <ownerRules>
+        <fullName>China_Account_Share</fullName>
+        <sharedTo>
+            <group>China_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>China_Users</group>
+        </sharedFrom>
+        <accountAccessLevel>Edit</accountAccessLevel>
+        <caseAccessLevel>Edit</caseAccessLevel>
+        <contactAccessLevel>Edit</contactAccessLevel>
+        <name>China Account Share</name>
+        <opportunityAccessLevel>Edit</opportunityAccessLevel>
+    </ownerRules>
+    <ownerRules>
+        <fullName>NAM</fullName>
+        <sharedTo>
+            <roleAndSubordinates>PRSVP</roleAndSubordinates>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinates>NAM_VP</roleAndSubordinates>
+        </sharedFrom>
+        <accountAccessLevel>Read</accountAccessLevel>
+        <caseAccessLevel>Read</caseAccessLevel>
+        <contactAccessLevel>Read</contactAccessLevel>
+        <name>NAM</name>
+        <opportunityAccessLevel>Read</opportunityAccessLevel>
+    </ownerRules>
+    <ownerRules>
+        <fullName>US_Account_Sharing</fullName>
+        <sharedTo>
+            <group>US_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>US_Users</group>
+        </sharedFrom>
+        <accountAccessLevel>Read</accountAccessLevel>
+        <caseAccessLevel>Read</caseAccessLevel>
+        <contactAccessLevel>Read</contactAccessLevel>
+        <name>US Account Sharing</name>
+        <opportunityAccessLevel>Read</opportunityAccessLevel>
+    </ownerRules>
+</AccountSharingRules>

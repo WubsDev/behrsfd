@@ -1,0 +1,13 @@
+Opportunity ownership change was requested by {!Ownership_Approval_Opportunity__c.CreatedBy}
+
+Supporting Information:
+
+Opportunity Name: {!Opportunity.Name}
+Account Name:  {!Opportunity.Account}
+Current Owner: {!Ownership_Approval_Opportunity__c}
+New Owner: {!Ownership_Approval_Opportunity__c.New_Owner__c}
+Opportunity Actual Sales: {!Opportunity.Actual_Purchase_Amount__c}
+
+
+Link to Opportunity Record: {!Opportunity.Link}
+Link to Approval Detail Record: {!Ownership_Approval_Opportunity__c.Link}

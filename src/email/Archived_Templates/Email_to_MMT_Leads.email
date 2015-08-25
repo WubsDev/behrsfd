@@ -1,0 +1,42 @@
+<table height="400" width="600" cellpadding="5" border="0" cellspacing="5" >
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r1" locked="0" aEditID="c1r1" >
+<![CDATA[<br>]]></td>
+</tr>
+<tr height="300" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r2" locked="1" aEditID="c1r2" >
+<![CDATA[Hello {!Lead.FirstName},
+<br>
+<br>First, we would like to thank you for taking the time to visit us at
+ our Mobile Marketing Tour at THE HOME DEPOT USA. We hope you enjoyed 
+the event and found it helpful and informative. If you have any 
+questions or would like additional information, we offer the 
+accompanying possibilities:
+<br> 
+<br>1. Technical Information: 1 800 854 0133 ext 2.
+<br>2. Online resources: <a href="http://www.behr.com/" target="_blank">www.behr.com</a>, <a href="http://www.behrpro.com/" target="_blank">www.behrpro.com</a>, <a href="http://espanol.behrpro.com/" target="_blank">espanol.behrpro.com</a>, <a href="http://kilzpro-x.com/" target="_blank">kilzpro-x.com</a>
+<br>3. To discuss your requirements for Projects, Products, Services 
+(specifications, pricing, delivery, color matching, etc) you may 
+telephone me directly at 1800 854 0133 x 2845 or Cell 714 914 9710.
+<br>
+<br>I look forward to hearing from you.  
+<br>
+<br>
+<br>Best Regards,
+<br>
+<br>{!Lead.OwnerFullName}
+<br>{!Receiving_User.MobilePhone}
+<br>West Region Commercial Services
+<br>Behr Process Corporation
+<br>
+<br><a href="http://www.behrpro.com/" target="_BLANK"><br></a>]]></td>
+</tr>
+<tr height="50" valign="top" >
+<td style=" color:#000000; font-size:12pt; background-color:#FFFFFF; font-family:arial; bLabel:main; bEditID:r3st1;" tEditID="c1r3" locked="1" aEditID="c1r3" >
+<![CDATA[Corporate Office
+<br>Behr Paint Corporation
+<br>3400 Segerstrom Avenue
+<br>Santa Ana, CA 92704
+<br>(800) 854-0133<br>]]></td>
+</tr>
+</table>

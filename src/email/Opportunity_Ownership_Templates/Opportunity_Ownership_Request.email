@@ -1,0 +1,26 @@
+A request for an Opportunity ownership change was requested by {!Ownership_Approval_Opportunity__c.CreatedBy}
+
+Supporting Information:
+
+Comment: {!Ownership_Approval_Opportunity__c.Comments__c}
+Opportunity Name: {!Opportunity.Name}
+Account Name:  {!Opportunity.Account}
+Current Owner: {!Ownership_Approval_Opportunity__c.Old_Owner__c}
+New Owner: {!Ownership_Approval_Opportunity__c.New_Owner__c}
+Opportunity Actual Sales: {!Opportunity.Actual_Purchase_Amount__c}
+Link to Opportunity Record: {!Opportunity.Link}
+Link to Approval Detail Record: {!Ownership_Approval_Opportunity__c.Link}
+
+Approval Information:
+
+Current Approval Status: {!Ownership_Approval_Opportunity__c.Approval_Status__c}
+Recent Comments: {!ApprovalRequest.Comments}
+
+Approval Process:
+1. Pending RPSM Approval - The request has been sent to {!Ownership_Approval_Opportunity__c.Old_Owner_RPSM__c} for approval.
+2. Pending Ownership Change - The request has been approved by the RPSM.  Awaiting manual ownership change by Sales Administration.
+3. Change Complete - Sales Administration has updated the opportunity record with the new owner.
+
+Support Information:
+
+Please email smart@behr.com with any questions.

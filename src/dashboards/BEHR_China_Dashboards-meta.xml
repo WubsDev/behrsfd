@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DashboardFolder xmlns="http://soap.sforce.com/2006/04/metadata">
+    <accessType>Shared</accessType>
+    <name>BEHR China Dashboards</name>
+    <publicFolderAccess>ReadOnly</publicFolderAccess>
+    <sharedTo>
+        <group>China_Users</group>
+        <role>China_Users</role>
+        <role>IT_DEV</role>
+        <role>SystemAdministrator</role>
+    </sharedTo>
+</DashboardFolder>

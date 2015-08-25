@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <description>Rate KILZ PRO-X Products for a Chance to Win $500 in Paint (Thru 3-31)</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>KPX Rate for Paint</name>
+    <style>none</style>
+    <subject>KILZ PRO-X Rate for Paint Sweepstakes</subject>
+    <textOnly>{!if(Lead.FirstName=&quot;&quot;, Contact.FirstName,Lead.FirstName)},
+
+I just wanted to let you know we have a sweepstakes going on right now for our customers who use KILZ PRO-X®. Share your experience for a chance to win $500 worth of paint. Now thru March 31st, just go to the below link, select a KILZ PRO-X® product you&apos;ve used from the list, click Write a Review and fill in all required fields.
+
+Visit http://bit.ly/1fwD2o7 to enter for a chance to win in the ‘Rate for Paint’ sweepstakes. 
+
+Contact me if you need more information on our Primers and Paints, or have any questions.
+
+See you on the Job Site!
+
+Respectfully,
+
+{!if(Contact.OwnerFullName=&quot;&quot;,Lead.OwnerFullName,Contact.OwnerFullName)}
+{!if(Contact.OwnerTitle=&quot;&quot;, Lead.OwnerTitle,Contact.OwnerTitle)}
+{!if(Contact.OwnerPhone=&quot;&quot;, Lead.OwnerPhone,Contact.OwnerPhone)}
+{!if(Contact.OwnerEmail=&quot;&quot;, Lead.OwnerEmail,Contact.OwnerEmail)}
+
+
+To enter, you must be at least 21 years of age, have read and agree to the  official sweepstakes rules and wish to participate. Visit our KILZ PRO-X® Paint Ratings &amp; Reviews page for more information. 
+
+Rules: http://bit.ly/1gHCYV2
+Ratings &amp; Reviews page: http://bit.ly/1fwD2o7</textOnly>
+    <type>custom</type>
+</EmailTemplate>

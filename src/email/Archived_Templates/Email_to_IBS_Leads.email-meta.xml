@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>BehrPro_Letterhead</letterhead>
+    <name>Email to IBS Leads</name>
+    <style>formalLetter</style>
+    <subject>Behr/Kilz Professional Products and Services</subject>
+    <textOnly>Hello {!Lead.FirstName},
+
+My name is {!Lead.OwnerFullName}. I am the manufacturer representative for Behr/Kilz Paint and Primers. I hope you enjoyed the IBS 2011 show in Orlando last  month. It was a pleasure meeting all the contractors and business owners at the event. It was especially good to get positive feedback 
+firsthand from current and future customers of the Behr/Kilz brand. 
+
+The Behr/Kilz brands are no longer thought of as strictly DIY products. Since 1947, Behr has been a trusted name in quality and durability, providing our professional customer with a wide selection of  paints, primers, and stains. We offer a range of services geared towards our professional clientele, including:
+
+ •	Free Direct-to-Jobsite delivery with your order
+ •	Guaranteed order fulfillment in no more than 72hrs
+ •	Factory tinting for accurate and consistent color matching
+ •	Regular pricing discounts based on anticipated annual volumes
+ •	and much more.....
+
+Our goal is to save you and your business time and money while providing world class products. Please feel free to contact me anytime to further discuss all our products and services available to your business. 
+
+
+Respectfully,
+
+{!Lead.OwnerFullName}
+{!Receiving_User.MobilePhone}
+Behr/Kilz Paints and Primers 
+Professional Products &amp; Services
+
+ 
+Corporate Office
+Behr Paint Corporation
+3400 Segerstrom Avenue
+Santa Ana, CA 92704
+(800) 854-0133
+
+www.BehrPro.com </textOnly>
+    <type>html</type>
+</EmailTemplate>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Thanksgiving Greeting to Clients</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <letterhead>Thanksgiving_Template</letterhead>
+    <name>Thanksgiving Template</name>
+    <style>freeForm</style>
+    <subject>Thanksgiving Greeting</subject>
+    <textOnly>Hi {!if(Lead.FirstName=&quot;&quot;, Contact.FirstName,Lead.FirstName)},
+
+
+
+I want to wish {!if(Account.Name=&quot;&quot;, Lead.Company,Account.Name)} a Happy Thanksgiving and extend you a sincere thank you for your business.
+
+
+
+Sincerely,
+
+{!if(Contact.OwnerFullName=&quot;&quot;,Lead.OwnerFullName,Contact.OwnerFullName)}
+{!if(Contact.OwnerTitle=&quot;&quot;, Lead.OwnerTitle,Contact.OwnerTitle)}
+{!if(Contact.OwnerPhone=&quot;&quot;, Lead.OwnerPhone,Contact.OwnerPhone)}
+{!if(Contact.OwnerEmail=&quot;&quot;, Lead.OwnerEmail,Contact.OwnerEmail)}</textOnly>
+    <type>html</type>
+</EmailTemplate>

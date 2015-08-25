@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableEnhancedLookup>false</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <fields>
+        <fullName>Assign_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The user that will receive the leads associated to a particular zip code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The user that will receive the leads associated to a particular zip code.</inlineHelpText>
+        <label>Assign To</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Zip_Code_Assignments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Behr_InStore_Rep_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Behr InStore Rep Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Behr_InStore_Rep__c</fullName>
+        <externalId>false</externalId>
+        <label>Behr InStore Rep</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Manual_Assignment__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>checkbox to indicate the assignment has been manually overridden and for CRM fusion to ignore these stores. This will allow admins to set the store and have it stay to what they want until it can resort back to SAP&apos;s settings.</description>
+        <externalId>false</externalId>
+        <label>Manual Assignment</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Store_Number_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Store Number Lookup</label>
+        <referenceTo>Home_Depot_Store__c</referenceTo>
+        <relationshipLabel>Zip Code Assignments</relationshipLabel>
+        <relationshipName>Zip_Code_Assignments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Store_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Store Number</label>
+        <length>4</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Zip_Code__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>The zip code that will be matched against for assignment logic.</description>
+        <externalId>true</externalId>
+        <inlineHelpText>The zip code that will be matched against for assignment logic.</inlineHelpText>
+        <label>Zip Code</label>
+        <length>10</length>
+        <required>true</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <label>Zip Code Assignment</label>
+    <listViews>
+        <fullName>All_Zip_Codes_Assignments</fullName>
+        <columns>Store_Number_Lookup__c</columns>
+        <columns>OBJECT_ID</columns>
+        <columns>Zip_Code__c</columns>
+        <columns>Assign_To__c</columns>
+        <columns>Behr_InStore_Rep__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Zip_Code__c</field>
+            <operation>equals</operation>
+            <value>00501</value>
+        </filters>
+        <label>All Zip Codes Assignments</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <label>Zip Code Mappings Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Zip Code Assignments</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

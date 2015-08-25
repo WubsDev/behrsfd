@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Products(China)</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Products(China)</value>
+    </caseValues>
+    <fields>
+        <label><!-- Material# --></label>
+        <name>Material__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line(Chinese) --></label>
+        <name>Product_Line_Chinese__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line(English) --></label>
+        <name>Product_Line_English__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name(Chinese) --></label>
+        <name>Product_Name_Chinese__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Name(English) --></label>
+        <name>Product_Name_English__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product# --></label>
+        <name>Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Price --></label>
+        <name>Retail_Price__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sheen(Chinese) --></label>
+        <name>Sheen_Chinese__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sheen(English) --></label>
+        <name>Sheen_English__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size --></label>
+        <name>Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor SKU# --></label>
+        <name>Vendor_SKU__c</name>
+    </fields>
+    <layouts>
+        <layout>Products(China) Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

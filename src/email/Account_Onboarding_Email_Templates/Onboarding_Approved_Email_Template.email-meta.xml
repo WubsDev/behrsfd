@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify Sales Administrators to review and sync account record with SAP</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Direct Onboarding Approved Email Template</name>
+    <style>none</style>
+    <subject>There has been an Onboarding status update for {!Direct_Onboarding__c.Account_Name__c}</subject>
+    <type>text</type>
+</EmailTemplate>

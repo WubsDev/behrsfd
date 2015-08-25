@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email Flyer For Kilz 2 Promo</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Miami Kilz 2 Promotion</name>
+    <style>none</style>
+    <subject>Hot Summer Deal On Kilz 2 Primer</subject>
+    <type>text</type>
+</EmailTemplate>

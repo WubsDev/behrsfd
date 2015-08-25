@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template for RPSM approval</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Opporunity Ownership Approval Request</name>
+    <style>none</style>
+    <subject>Opportunity Ownership Change Approval Needed for {!Opportunity.Account}</subject>
+    <type>text</type>
+</EmailTemplate>
